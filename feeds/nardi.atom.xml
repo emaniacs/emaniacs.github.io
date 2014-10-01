@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>:)</title><link href="/" rel="alternate"></link><link href="/feeds/nardi.atom.xml" rel="self"></link><id>/</id><updated>2014-10-01T10:20:00+07:00</updated><entry><title>Hello</title><link href="/hello.html" rel="alternate"></link><updated>2014-10-01T10:20:00+07:00</updated><author><name>N.Ardi</name></author><id>tag:,2014-10-01:hello.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Hello&lt;/span&gt; &lt;span class="n"&gt;world&lt;/span&gt;&lt;span class="err"&gt;!&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary></entry></feed>
