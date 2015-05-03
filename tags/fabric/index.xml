@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Fabric on http://blog.aredhi.com </title>
-    <link>http://blog.aredhi.com/tags/fabric/</link>
+    <link>http://localhost:1313/tags/fabric/</link>
     <language>en-US</language>
-    <author>Enthusiastic Hugo User</author>
+    <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
     <updated>Sat, 14 Mar 2015 17:23:22 WIT</updated>
     
     <item>
       <title>Membangun website sederhana menggunakan golang nginx dan fabric</title>
-      <link>http://blog.aredhi.com/post/nginx-go-fab/</link>
+      <link>http://localhost:1313/post/nginx-go-fab/</link>
       <pubDate>Sat, 14 Mar 2015 17:23:22 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/nginx-go-fab/</guid>
+      <guid>http://localhost:1313/post/nginx-go-fab/</guid>
       <description>
 
 &lt;p&gt;#Intro

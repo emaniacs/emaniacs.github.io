@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title> on http://blog.aredhi.com </title>
-    <link>http://blog.aredhi.com/</link>
+    <link>http://localhost:1313/</link>
     <language>en-US</language>
-    <author>Enthusiastic Hugo User</author>
+    <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
     <updated>Tue, 31 Mar 2015 22:11:00 WIT</updated>
     
     <item>
       <title>Kentut Dalam Botol</title>
-      <link>http://blog.aredhi.com/post/kentut-dalam-botol/</link>
+      <link>http://localhost:1313/post/kentut-dalam-botol/</link>
       <pubDate>Tue, 31 Mar 2015 22:11:00 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/kentut-dalam-botol/</guid>
+      <guid>http://localhost:1313/post/kentut-dalam-botol/</guid>
       <description>
 
 &lt;h1 id=&#34;intro:7a098387ae2476f1cd39a152a2312b61&#34;&gt;Intro&lt;/h1&gt;
@@ -91,10 +91,10 @@ Dan seketika abang saya tertawa sangat puas..&lt;/p&gt;
     
     <item>
       <title>Membangun website sederhana menggunakan golang nginx dan fabric</title>
-      <link>http://blog.aredhi.com/post/nginx-go-fab/</link>
+      <link>http://localhost:1313/post/nginx-go-fab/</link>
       <pubDate>Sat, 14 Mar 2015 17:23:22 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/nginx-go-fab/</guid>
+      <guid>http://localhost:1313/post/nginx-go-fab/</guid>
       <description>
 
 &lt;p&gt;#Intro
@@ -266,10 +266,10 @@ digunakan saat deploy dengan fabric.&lt;/p&gt;
     
     <item>
       <title>Get absolute link on nix/linux</title>
-      <link>http://blog.aredhi.com/post/get-absolute-link-on-unix/</link>
+      <link>http://localhost:1313/post/get-absolute-link-on-unix/</link>
       <pubDate>Wed, 04 Mar 2015 09:10:00 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/get-absolute-link-on-unix/</guid>
+      <guid>http://localhost:1313/post/get-absolute-link-on-unix/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat script.sh
 #!/usr/bin/env bash
 
@@ -285,10 +285,10 @@ echo $THIS_DIR
     
     <item>
       <title>Sakit pertama</title>
-      <link>http://blog.aredhi.com/post/sakit-pertama/</link>
+      <link>http://localhost:1313/post/sakit-pertama/</link>
       <pubDate>Tue, 03 Mar 2015 15:12:00 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/sakit-pertama/</guid>
+      <guid>http://localhost:1313/post/sakit-pertama/</guid>
       <description>&lt;p&gt;Akhirnya sakit lagi, hari ini sedikit flu dan ini merupakan sakit pertama di 2015.
 Dan karena sakit ini juga gw mereview kembali hapalan-hapalan surat pendek gw,
     kemarin baru saja memperbaiki satu hafalan surat yang dulu pernah hafal.&lt;/p&gt;
@@ -303,10 +303,10 @@ membanggakan.&lt;/p&gt;
     
     <item>
       <title>Kill defunct process on nix/linux</title>
-      <link>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</link>
+      <link>http://localhost:1313/post/kill-defunct-proses-on-linux/</link>
       <pubDate>Tue, 13 Jan 2015 06:20:10 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</guid>
+      <guid>http://localhost:1313/post/kill-defunct-proses-on-linux/</guid>
       <description>&lt;p&gt;$ ps aux | grep name&lt;/p&gt;
 
 &lt;p&gt;$ pstree -sp &lt;pid&gt;&lt;/p&gt;
@@ -319,10 +319,10 @@ membanggakan.&lt;/p&gt;
     
     <item>
       <title>Paksa user untuk logout (GNU/Linux)</title>
-      <link>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</link>
+      <link>http://localhost:1313/post/paksa-user-logout-di-gnulinux/</link>
       <pubDate>Tue, 13 Jan 2015 06:20:10 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</guid>
+      <guid>http://localhost:1313/post/paksa-user-logout-di-gnulinux/</guid>
       <description>&lt;p&gt;Untuk memaksa user yang sedang logout di mesin Unix atau Gnu/Linux bisa
 menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt;
 
@@ -338,10 +338,10 @@ Perintah diatas akan memaksa user dengan login name &lt;em&gt;username&lt;/em&gt
     
     <item>
       <title>Add shortcut with lxde or openbox</title>
-      <link>http://blog.aredhi.com/post/add-shortcut-with-openbox/</link>
+      <link>http://localhost:1313/post/add-shortcut-with-openbox/</link>
       <pubDate>Tue, 13 Jan 2015 06:13:59 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/add-shortcut-with-openbox/</guid>
+      <guid>http://localhost:1313/post/add-shortcut-with-openbox/</guid>
       <description>
 
 &lt;p&gt;Edit file &lt;strong&gt;$HOME/.config/openbox/lxde-rc.xml&lt;/strong&gt; and then add your shortcut in.&lt;/p&gt;
@@ -361,10 +361,10 @@ Perintah diatas akan memaksa user dengan login name &lt;em&gt;username&lt;/em&gt
     
     <item>
       <title>About me</title>
-      <link>http://blog.aredhi.com/page/about/</link>
+      <link>http://localhost:1313/page/about/</link>
       <pubDate>Sun, 11 Jan 2015 12:23:38 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/page/about/</guid>
+      <guid>http://localhost:1313/page/about/</guid>
       <description>&lt;p&gt;Not finish yet,&lt;/p&gt;
 </description>
     </item>
