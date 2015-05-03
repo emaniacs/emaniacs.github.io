@@ -2,62 +2,66 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://blog.aredhi.com//tags</loc>
+        <loc>http://blog.aredhi.com/tags</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     <url>
-        <loc>http://blog.aredhi.com//page</loc>
+        <loc>http://blog.aredhi.com/page</loc>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.aredhi.com/post</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
 
     
     <url>
-        <loc>http://blog.aredhi.com//tags/command-line</loc>
+        <loc>http://blog.aredhi.com/tags/command-line</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com//tags/fabric</loc>
+        <loc>http://blog.aredhi.com/tags/fabric</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com//tags/fun</loc>
+        <loc>http://blog.aredhi.com/tags/fun</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com//tags/golang</loc>
+        <loc>http://blog.aredhi.com/tags/golang</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com//tags/linux</loc>
+        <loc>http://blog.aredhi.com/tags/linux</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com//tags/lxde</loc>
+        <loc>http://blog.aredhi.com/tags/lxde</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com//tags/nginx</loc>
+        <loc>http://blog.aredhi.com/tags/nginx</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com//tags/openbox</loc>
+        <loc>http://blog.aredhi.com/tags/openbox</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com//tags/timeline</loc>
+        <loc>http://blog.aredhi.com/tags/timeline</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com//tags/unix</loc>
+        <loc>http://blog.aredhi.com/tags/unix</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
