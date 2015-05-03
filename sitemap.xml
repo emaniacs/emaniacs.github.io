@@ -2,110 +2,110 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:1313/tags</loc>
+        <loc>http://blog.aredhi.com//tags</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     <url>
-        <loc>http://localhost:1313/page</loc>
+        <loc>http://blog.aredhi.com//page</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
 
     
     <url>
-        <loc>http://localhost:1313/tags/command-line</loc>
+        <loc>http://blog.aredhi.com//tags/command-line</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/tags/fabric</loc>
+        <loc>http://blog.aredhi.com//tags/fabric</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/tags/fun</loc>
+        <loc>http://blog.aredhi.com//tags/fun</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/tags/golang</loc>
+        <loc>http://blog.aredhi.com//tags/golang</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/tags/linux</loc>
+        <loc>http://blog.aredhi.com//tags/linux</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/tags/lxde</loc>
+        <loc>http://blog.aredhi.com//tags/lxde</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/tags/nginx</loc>
+        <loc>http://blog.aredhi.com//tags/nginx</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/tags/openbox</loc>
+        <loc>http://blog.aredhi.com//tags/openbox</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/tags/timeline</loc>
+        <loc>http://blog.aredhi.com//tags/timeline</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/tags/unix</loc>
+        <loc>http://blog.aredhi.com//tags/unix</loc>
         <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
     </url>
     
 
     
     <url>
-        <loc>http://localhost:1313/</loc>
+        <loc>http://blog.aredhi.com/</loc>
         <lastmod>2015-03-31T22:11:00+07:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
-        <loc>http://localhost:1313/post/kentut-dalam-botol/</loc>
+        <loc>http://blog.aredhi.com/post/kentut-dalam-botol/</loc>
         <lastmod>2015-03-31T22:11:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/post/nginx-go-fab/</loc>
+        <loc>http://blog.aredhi.com/post/nginx-go-fab/</loc>
         <lastmod>2015-03-14T17:23:22+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/post/get-absolute-link-on-unix/</loc>
+        <loc>http://blog.aredhi.com/post/get-absolute-link-on-unix/</loc>
         <lastmod>2015-03-04T09:10:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/post/sakit-pertama/</loc>
+        <loc>http://blog.aredhi.com/post/sakit-pertama/</loc>
         <lastmod>2015-03-03T15:12:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/post/kill-defunct-proses-on-linux/</loc>
+        <loc>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</loc>
         <lastmod>2015-01-13T06:20:10+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/post/paksa-user-logout-di-gnulinux/</loc>
+        <loc>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</loc>
         <lastmod>2015-01-13T06:20:10+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/post/add-shortcut-with-openbox/</loc>
+        <loc>http://blog.aredhi.com/post/add-shortcut-with-openbox/</loc>
         <lastmod>2015-01-13T06:13:59+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://localhost:1313/page/about/</loc>
+        <loc>http://blog.aredhi.com/page/about/</loc>
         <lastmod>2015-01-11T12:23:38+07:00</lastmod>
     </url>
     

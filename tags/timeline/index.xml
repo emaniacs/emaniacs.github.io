@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Timeline on http://blog.aredhi.com </title>
-    <link>http://localhost:1313/tags/timeline/</link>
+    <link>http://blog.aredhi.com/tags/timeline/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Sakit pertama</title>
-      <link>http://localhost:1313/post/sakit-pertama/</link>
+      <link>http://blog.aredhi.com/post/sakit-pertama/</link>
       <pubDate>Tue, 03 Mar 2015 15:12:00 WIT</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/sakit-pertama/</guid>
+      <guid>http://blog.aredhi.com/post/sakit-pertama/</guid>
       <description>&lt;p&gt;Akhirnya sakit lagi, hari ini sedikit flu dan ini merupakan sakit pertama di 2015.
 Dan karena sakit ini juga gw mereview kembali hapalan-hapalan surat pendek gw,
     kemarin baru saja memperbaiki satu hafalan surat yang dulu pernah hafal.&lt;/p&gt;
