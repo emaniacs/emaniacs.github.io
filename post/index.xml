@@ -326,11 +326,13 @@ membanggakan.&lt;/p&gt;
       <description>&lt;p&gt;Untuk memaksa user yang sedang logout di mesin Unix atau Gnu/Linux bisa
 menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;# pkill -KILL -u username&lt;/code&gt;
-Perintah diatas akan memaksa user dengan login name &lt;em&gt;username&lt;/em&gt; untuk logout.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# pkill -KILL -u username
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Jika hanya ingin melakukan stop sementara opsi &lt;code&gt;-KILL&lt;/code&gt; bisa diganti dengan
-&lt;code&gt;-STOP&lt;/code&gt; dan &lt;code&gt;-CONT&lt;/code&gt; untuk melanjutkan kembali.&lt;/p&gt;
+&lt;p&gt;Perintah diatas akan memaksa user dengan login name &lt;em&gt;username&lt;/em&gt; untuk logout.&lt;/p&gt;
+
+&lt;p&gt;Jika hanya ingin melakukan stop sementara opsi &lt;strong&gt;-KILL&lt;/strong&gt; bisa diganti dengan
+&lt;strong&gt;-STOP&lt;/strong&gt; dan &lt;strong&gt;-CONT&lt;/strong&gt; untuk melanjutkan kembali.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;Referensi: http://www.cybercity.biz&lt;/code&gt;&lt;/p&gt;
 </description>
