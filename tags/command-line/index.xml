@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Command Line on rainvoid </title>
+    <link>http://blog.aredhi.com/tags/command-line/</link>
+    <language>en-US</language>
+    <author>Enthusiastic Hugo User</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Wed, 04 Mar 2015 09:10:00 WIT</updated>
+    
+    <item>
+      <title>Get absolute link on nix/linux</title>
+      <link>http://blog.aredhi.com/post/get-absolute-link-on-unix/</link>
+      <pubDate>Wed, 04 Mar 2015 09:10:00 WIT</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/get-absolute-link-on-unix/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat script.sh
+#!/usr/bin/env bash
+
+THIS_FILE=$(readline -e $)
+THIS_DIR=$(dirname $THIS_FILE)
+
+echo $THIS_DIR
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself&#34;&gt;source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kill defunct process on nix/linux</title>
+      <link>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</link>
+      <pubDate>Tue, 13 Jan 2015 06:20:10 WIT</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</guid>
+      <description>&lt;p&gt;$ ps aux | grep name&lt;/p&gt;
+
+&lt;p&gt;$ pstree -sp &lt;pid&gt;&lt;/p&gt;
+
+&lt;p&gt;$ ps -ef &amp;ndash;forest&lt;/p&gt;
+
+&lt;p&gt;kill the parent&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Paksa user untuk logout (GNU/Linux)</title>
+      <link>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</link>
+      <pubDate>Tue, 13 Jan 2015 06:20:10 WIT</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</guid>
+      <description>&lt;p&gt;Untuk memaksa user yang sedang logout di mesin Unix atau Gnu/Linux bisa
+menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;# pkill -KILL -u username&lt;/code&gt;
+Perintah diatas akan memaksa user dengan login name &lt;em&gt;username&lt;/em&gt; untuk logout.&lt;/p&gt;
+
+&lt;p&gt;Jika hanya ingin melakukan stop sementara opsi &lt;code&gt;-KILL&lt;/code&gt; bisa diganti dengan
+&lt;code&gt;-STOP&lt;/code&gt; dan &lt;code&gt;-CONT&lt;/code&gt; untuk melanjutkan kembali.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Referensi: http://www.cybercity.biz&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

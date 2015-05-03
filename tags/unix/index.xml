@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Unix on rainvoid </title>
+    <link>http://blog.aredhi.com/tags/unix/</link>
+    <language>en-US</language>
+    <author>Enthusiastic Hugo User</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Wed, 04 Mar 2015 09:10:00 WIT</updated>
+    
+    <item>
+      <title>Get absolute link on nix/linux</title>
+      <link>http://blog.aredhi.com/post/get-absolute-link-on-unix/</link>
+      <pubDate>Wed, 04 Mar 2015 09:10:00 WIT</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/get-absolute-link-on-unix/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat script.sh
+#!/usr/bin/env bash
+
+THIS_FILE=$(readline -e $)
+THIS_DIR=$(dirname $THIS_FILE)
+
+echo $THIS_DIR
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself&#34;&gt;source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

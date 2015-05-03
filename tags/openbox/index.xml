@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Openbox on rainvoid </title>
+    <link>http://blog.aredhi.com/tags/openbox/</link>
+    <language>en-US</language>
+    <author>Enthusiastic Hugo User</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Tue, 13 Jan 2015 06:13:59 WIT</updated>
+    
+    <item>
+      <title>Add shortcut with lxde or openbox</title>
+      <link>http://blog.aredhi.com/post/add-shortcut-with-openbox/</link>
+      <pubDate>Tue, 13 Jan 2015 06:13:59 WIT</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/add-shortcut-with-openbox/</guid>
+      <description>
+
+&lt;p&gt;Edit file &lt;strong&gt;$HOME/.config/openbox/lxde-rc.xml&lt;/strong&gt; and then add your shortcut in.&lt;/p&gt;
+
+&lt;h2 id=&#34;example:1f01811bf99e5d5fe3916b9033aff375&#34;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;Set &lt;code&gt;Control+Winkey+F12&lt;/code&gt; as shortcut for &lt;code&gt;vim&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;keybind key=&amp;quot;C-W-F12&amp;quot;&amp;gt;
+    &amp;lt;action name=&amp;quot;Execute&amp;quot;&amp;gt;
+        &amp;lt;command&amp;gt;/usr/local/bin/grkill&amp;lt;/command&amp;gt;
+    &amp;lt;/action&amp;gt;
+&amp;lt;/keybind&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
