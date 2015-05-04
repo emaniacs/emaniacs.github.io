@@ -6,7 +6,19 @@
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Sat, 14 Mar 2015 17:23:22 WIB</updated>
+    <updated>Mon, 04 May 2015 11:19:22 WIB</updated>
+    
+    <item>
+      <title>Bloging with hugo and gitbook</title>
+      <link>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</link>
+      <pubDate>Mon, 04 May 2015 11:19:22 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</guid>
+      <description>&lt;p&gt;#Introduction&lt;/p&gt;
+
+&lt;p&gt;on the way&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Membangun website sederhana menggunakan golang nginx dan fabric</title>
