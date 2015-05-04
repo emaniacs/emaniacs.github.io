@@ -3,66 +3,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://blog.aredhi.com/tags</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     <url>
         <loc>http://blog.aredhi.com/page</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     <url>
         <loc>http://blog.aredhi.com/post</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
 
     
     <url>
         <loc>http://blog.aredhi.com/tags/command-line</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
     <url>
         <loc>http://blog.aredhi.com/tags/fabric</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
     <url>
         <loc>http://blog.aredhi.com/tags/fun</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
     <url>
         <loc>http://blog.aredhi.com/tags/golang</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
     <url>
         <loc>http://blog.aredhi.com/tags/linux</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
     <url>
         <loc>http://blog.aredhi.com/tags/lxde</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
     <url>
         <loc>http://blog.aredhi.com/tags/nginx</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
     <url>
         <loc>http://blog.aredhi.com/tags/openbox</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
     <url>
         <loc>http://blog.aredhi.com/tags/timeline</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
     <url>
         <loc>http://blog.aredhi.com/tags/unix</loc>
-        <lastmod>2015-03-31 22:11:00 &#43;0700 WIT</lastmod>
+        <lastmod>2015-03-31 22:11:00 &#43;0700 WIB</lastmod>
     </url>
     
 
@@ -94,12 +94,12 @@
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</loc>
+        <loc>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</loc>
         <lastmod>2015-01-13T06:20:10+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</loc>
+        <loc>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</loc>
         <lastmod>2015-01-13T06:20:10+07:00</lastmod>
     </url>
     

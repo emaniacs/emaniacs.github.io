@@ -6,12 +6,12 @@
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Wed, 04 Mar 2015 09:10:00 WIT</updated>
+    <updated>Wed, 04 Mar 2015 09:10:00 WIB</updated>
     
     <item>
       <title>Get absolute link on nix/linux</title>
       <link>http://blog.aredhi.com/post/get-absolute-link-on-unix/</link>
-      <pubDate>Wed, 04 Mar 2015 09:10:00 WIT</pubDate>
+      <pubDate>Wed, 04 Mar 2015 09:10:00 WIB</pubDate>
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/get-absolute-link-on-unix/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat script.sh

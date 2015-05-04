@@ -6,12 +6,12 @@
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Wed, 04 Mar 2015 09:10:00 WIT</updated>
+    <updated>Wed, 04 Mar 2015 09:10:00 WIB</updated>
     
     <item>
       <title>Get absolute link on nix/linux</title>
       <link>http://blog.aredhi.com/post/get-absolute-link-on-unix/</link>
-      <pubDate>Wed, 04 Mar 2015 09:10:00 WIT</pubDate>
+      <pubDate>Wed, 04 Mar 2015 09:10:00 WIB</pubDate>
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/get-absolute-link-on-unix/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat script.sh
@@ -30,7 +30,7 @@ echo $THIS_DIR
     <item>
       <title>Kill defunct process on nix/linux</title>
       <link>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</link>
-      <pubDate>Tue, 13 Jan 2015 06:20:10 WIT</pubDate>
+      <pubDate>Tue, 13 Jan 2015 06:20:10 WIB</pubDate>
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</guid>
       <description>&lt;p&gt;$ ps aux | grep name&lt;/p&gt;
@@ -46,7 +46,7 @@ echo $THIS_DIR
     <item>
       <title>Paksa user untuk logout (GNU/Linux)</title>
       <link>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</link>
-      <pubDate>Tue, 13 Jan 2015 06:20:10 WIT</pubDate>
+      <pubDate>Tue, 13 Jan 2015 06:20:10 WIB</pubDate>
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</guid>
       <description>&lt;p&gt;Untuk memaksa user yang sedang logout di mesin Unix atau Gnu/Linux bisa
