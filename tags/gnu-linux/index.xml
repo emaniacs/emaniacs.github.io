@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Gnu Linux on http://blog.aredhi.com </title>
+    <link>http://blog.aredhi.com/tags/gnu-linux/</link>
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Tue, 05 May 2015 11:12:00 WIB</updated>
+    
+    <item>
+      <title>VIm autocomplete with YouCompleteMe</title>
+      <link>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</link>
+      <pubDate>Tue, 05 May 2015 11:12:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</guid>
+      <description>&lt;p&gt;Finally i use an autocomplete plugin in my vim, my choice is &lt;a href=&#34;https://github.com/Valloric/YouCompleteMe&#34;&gt;YouCompleteMe&lt;/a&gt;.
+This plugin need vim 7.34+ and python support and my vim is still 7.3 so need to recompile it.&lt;/p&gt;
+
+&lt;p&gt;I use version 7.4, this is the stable version of vim and we can download it from [](&lt;a href=&#34;http://www.vim.org/sources.php&#34;&gt;http://www.vim.org/sources.php&lt;/a&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ wget ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2
+$ tar xf vim-7.4.tar.bz2
+$ cd vim74
+$ ./configure --with-features=huge --enable-pythoninterp
+$ make
+$ sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I need all of vim feature so i put &lt;code&gt;--with-features=huge&lt;/code&gt; and this option &lt;code&gt;--enable-pythoninterp&lt;/code&gt; to enable python support.&lt;/p&gt;
+
+&lt;p&gt;To checking vim version we can run &lt;code&gt;$ vim --version&lt;/code&gt; or from the inside of vim run this command &lt;code&gt;:version&lt;/code&gt; and then check python support &lt;code&gt;:echo has(&#39;python&#39;)&lt;/code&gt;, everything is ok so i need to install that plugin.&lt;/p&gt;
+
+&lt;p&gt;I use &lt;a href=&#34;https://github.com/junegunn/vim-plug&#34;&gt;vim-plug&lt;/a&gt; as plugin manager so put this code &lt;code&gt;Plug &#39;Valloric/YouCompleteMe&#39;&lt;/code&gt; in my vimrc, after vim reloaded install the plugin &lt;code&gt;:PlugInstall&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;And &lt;a href=&#34;https://github.com/Valloric/YouCompleteMe&#34;&gt;YouCompleteMe&lt;/a&gt; completing my vim. :)&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
