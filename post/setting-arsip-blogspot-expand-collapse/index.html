@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/setting-arsip-blogspot-expand-collapse/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Setting arsip blogspot ( Expand Collapse ) &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/setting-arsip-blogspot-expand-collapse/"><h2 class="post-title">Setting arsip blogspot ( Expand Collapse )</h2></a>
+
+                    <p class="post-meta">
+                        <i>Friday , 01 Apr 2011 11:11:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://1.bp.blogspot.com/-EHswd6Sbuz4/TY9XeYoLRGI/AAAAAAAAAVk/-upwk6Y1ho8/
+s1600/a-coll.png" alt="" />
+</p>
+
+<p>Blog Archive atau arsip blog pada blogspot merupakan salah fitur pada
+blogspot.com yang sangat bermanfaat, gadget ini adalah indeks postingan kita
+berdasarkan bulanan, mingguan atau harian.</p>
+
+<p>Secara default tampilannya adalah terbuka pada setiap postingannya atau auto
+expand, hal ini sebenarnya cukup bagus, tapi juga mengganggu tampilan blog
+ketika pertama dibuka, karena jika postingan telah sangat banyak maka akan
+sangat banyak link2 yang akan memenuhi halaman blog kita, meskipun sebenarnya
+bisa diatur berapa jumlah postingan yang akan ditampilkan.</p>
+
+<p>]()</p>
+
+<p>[Karena tidak nyaman dengan tampilan defaultnya tersebut akhirnya saya
+googling, bagaimana agar arsip kita secara default menutup atau auto collapse,
+salah satunya adalah <a href="http://sedatkurtulus.blogspot.com/2010/05/keep-
+archive-hierarchy-collapsed-on.html">disini</a>.</p>
+
+<p>Setelah berhasil akhirnya saya memutuskan untuk membagi trik agar membuat
+arsip menjadi auto collapse tersebut, berikut cara yang harus dilakukan.</p>
+
+<ol>
+<li>Mungkin anda sebaiknya melakukan backup terhadap template yang akan anda ubah.</li>
+<li><strong>Klik pada </strong>Design<strong> ,pilih </strong>Edit HTML<strong>, jangan lupa untuk mencentang </strong>Expand Widget Templates.****</li>
+<li>Carilah kalimat <strong>Blog Archive</strong> atau sesuaikan dengan title arsip anda ketika melakukan settingannya.</li>
+
+<li><p>Dibawahnya cari kata **** dan ganti semua kata tersebut sampai kata **** yang pertama (tag penutup dari kode tersebut) dengan kode berikut.</p>
+
+<p><a href="javascript:void(0)"> <br />
+</a></p></li>
+
+<li><p>Lakukan cara yang sama dengan kode berikut pada template anda.</p>
+
+<p><a href="javascript:void(0)"> <br />
+</a></p></li>
+</ol>
+
+<p>Ingat sesuaikan kode yang dirubah dengan judul kode yang akan dirubah..</p>
+
+<ol>
+<li>Coba lakukan preview pada template yang telah diubah tersebut, jika gagal, perhatikan kode yang telah diubah tadi, anda mungkin melakukan kesalahan.</li>
+</ol>
+
+<p>Tampilan Arsip sebelum diubah</p>
+
+<p><img src="http://1.bp.blogspot.com/-KWqFcluBQJk/TY9ellUxr1I/AAAAAAAAAVo/Tu4l2XwpUCg/
+s1600/lum.png" alt="" />
+</p>
+
+<blockquote>
+<p>Referensi :</p>
+
+<ul>
+<li><http://sedatkurtulus.blogspot.com/2010/05/keep-archive-hierarchy-
+collapsed-on.html></li>
+</ul>
+</blockquote>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/fungsi-showsource-highlight-file-pada-php/">fungsi showsource / highlight_file pada PHP</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/menjebol-password-berbintang-m/">Menjebol password berbintang, m****</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

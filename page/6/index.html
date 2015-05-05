@@ -1,0 +1,387 @@
+    <!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> http://blog.aredhi.com &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="http://blog.aredhi.com/index.xml" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+        <div id="layout" class="pure-g">
+                <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+            <div class="content pure-u-1 pure-u-md-3-4">
+                <div>
+                    
+                    <div class="posts">
+                        <h1 class="content-subhead">Homepage</h1>
+                        
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/python-dan-bilangan-prima/"><h2 class="post-title">Python dan Bilangan Prima</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Thursday , 24 Mar 2011 05:03:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    #!/usr/bin/env python import sys # untuk mengambil argument yang diberikan ret=True # return value def itsPrime(val): # definisi fungsi itsprime, return(1=prime, 0=not prime, -1=error value ) global ret; # agar ret bisa diakses dari fungsi if val &gt;= 2: # jika nilai yang diberikan besar dari 2 if val &gt; 9: # jika nilai yang diberikan besar dari 9 up=10 # nilai maksimum untuk pembagian =10 else: up=val # jika tidak maka nilai maksimum=nilai yang diberikan for p in range(2,up): # perulangan selama p=2 dan kecil dari nilai up if val % p == 0: # jika nilai modulus p == 0 ret=False # berarti bukan bilangan prime break # langsung keluar dari perulangan else: # nilai yang dimasukkan kecil dari 2 ret=-1 return ret if __name__ == &quot;__main__&quot;: try: prime=itsPrime(int(sys.argv[1])) if prime==1: print 'prime' elif prime==0: print 'Not prime' else: print 'Please integer above 2' except ValueError: print &quot;Please enter an integer number&quot; except IndexError: print &quot;Please input one argument&quot; Penjelasan dari kode diatas bisa dilihat di setiap baris komentarnya, untuk yang lainnya bisa dilihat dibawah ini baris ke 20 -&gt; untuk mencegah kemungkinan error maka digunakan try baris ke 21 -&gt; melakukan checking terhadap nilai yang diberikan kemudian nilai return dari fungsi itsPrime dimasukkan ke variabel prime, selanjutnya untuk yang dibawahnya adalah melakukan checking pada nilai prime.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/javascript-document-get-error-atau-menghasilkan-null/"><h2 class="post-title">Javascript: document.get - Error atau menghasilkan null</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Wednesday , 23 Mar 2011 15:33:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Suatu ketika sedang membuat sebuah dokumen html, yang tentu saja membutuhkan javascript sebagai pemanis halaman. Ane menemukan error yang sangat membuat stress, yaitu error atau null ketika mengambil elemen pada html, waktu itu dilakukan dengan perintah document.getElementById(&lsquo;element&rsquo;) padahal tak ada yang salah dengan perintah diatas begitu juga &ldquo;element&rdquo; telah dideklarasikan terlebih dahulu pada tag htmlnya, tapi kenapa masih error. Kurang lebih begini script yang ane bikin ELEMENT DISINI Tak ada yang salah bukan??
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/"><h2 class="post-title">Hacker Pencuri Chip Virtual Zynga  di penjara 2 tahun</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Tuesday , 22 Mar 2011 23:22:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/hacking">hacking</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Seorang hacker asal Inggris yang kecanduan judi poker buatan Zynga ditangkap polisi dan dipenjara selama 2 tahun setelah mencuri chips. Ashley Mitchell, 29 tahun melakukan hacking pada situs web Zynga yang kemudian mencuri chip game virtual dengan nilai $400 billion yang dipindahkan ke akun Facebook palsu miliknya. Chip virtual ini bisa digunakan hampir disemua game yang dibuat oleh Zynga. Awalnya Zynga menduga ini adalah tindakan dari orang dalam pada bulan Agustus 2009, tapi setelah dilakukan penyelidikan ternyata seorang hacker telah menyusup ke server Zynga yang berpura-pura sebagai karyawan untuk melakukan pencurian ini.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/singkatan-recursive-emacs/"><h2 class="post-title">Singkatan Recursive ( Emacs )</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Monday , 21 Mar 2011 06:44:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/windows">windows</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Judul diatas merupakan salah kebiasaan unik dari hacker, yaitu Singkatan Rekursif, atau singkatan yang memanggil dirinya sendiri. Tulisan ini saya dapat dari Emacs 23.1 pada file JOKES. Emacs memang membuat editing file lebih asyik meski Emacs sebenarnya mempunyai kemampuan yang jauh lebih dahsyat bahkan lebih powerfull daripada editor yang telah mendukung IDE sekalipun. Coba lihat video ini bagaimana melakukan coding html jauh lebih mudah dan mengasyikkan Berikut beberapa contoh Acronim
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/kamus-on-terminal-c-version/"><h2 class="post-title">Kamus on Terminal ( C Version )</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Sunday , 20 Mar 2011 22:00:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Sebelumnya setelah membuat program kamus, ada opsi yang akan ditambahkan yaitu opsi -a (untuk penambahan text ke dalam file dictionary). Namun tiba-tiba terlintas di pikiran W jika program ini W tambahin terus menerus kata-kata ke dalam file dictionary nya, besar kemungkinan akan membuat program di execute lebih lama karena besarnya file dictionary. Masalah ini W tanya di forum-forum, gimana cara menyelesaikan masalah seperti ini, setelah begitu banyak solusi, yang paling banyak ngasih bantuan bilangnya gini “write in C”.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/"><h2 class="post-title">Kirim Email GMAIL via Konsole/Terminal (ssmtp dan mail)</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Saturday , 19 Mar 2011 21:07:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Salah satu menariknya Gnu/Linux (buat saya pribadi) adalah dekatnya jarak antara user dengan sistem itu sendiri. Salah satu jalan itu adalah dengan menggunakan konsole atau terminal. Saat ini berkirim pesan lewat email adalah suatu yang cukup populer, meski mulai ditinggalkan terutam menjamurnya jejaring sosial, tapi untuk komunikasi antar programmer terutama para geek email adalah sarana yang efektif. Mail client saat ini sangat banyak dengan beragam fitur, namun ketika saya(mungkin juga anda) terbiasa menggunakan *nix system anda mau tak mau akan dan harus berhadapan dengan terminal atau konsole, maka kita membutuhkan sebuah program untuk bisa berkirim email dengan modus teks.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/jangan-ngaku-orang-minang-kalau-tidak-sholat/"><h2 class="post-title">Jangan ngaku orang Minang kalau tidak sholat</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Thursday , 17 Mar 2011 05:17:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/opini">opini</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Kira-kira jam 4 sore, ketika saya berada di daerah sekitar Puncak. Saat itu adalah waktu sholat Ashar untuk daerah Jakarta dan sekitarnya. Alhamdulillah saya diberi kekuatan untuk menunaikan kewajiban saya di sebuah mushola dekat situ. Selesai sholat kemudian duduk di sebuah tempat yang udah ditempati terlebih dahulu oleh seorang Bapak yang sudah cukup berumur namun terlihat masih gagah dan kuat. Tak lama obrolanpun dimulai, mulai dari nama hingga kota asal, saya dan bapak tersebut terus mengobrol.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/emacs-command-line-x-window/"><h2 class="post-title">Emacs Command Line (X window)</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Wednesday , 16 Mar 2011 16:16:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    X window yang dimaksud dalam penjelasan ini yaitu tampilan emacs ketika muncul dilayar. Hal ini berguna untuk mengatur tampilan emacs misalkan font yang ingin digunakan, atau warna background atau foreground tampilan emacs dan masih banyak lagi. Selain menggunakan opsi yang ada dibawah ini bisa juga menggunakan _init file _bahkan sepertinya lebih banyak menggunakan file init daripada opsi-opsi pada command line. Inilah salah satu fitur yang menurut saya tidak terlalu berguna yang terdapat pada Emacs.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/bactrace-aplikasi-di-linux/"><h2 class="post-title">Bactrace Aplikasi di Linux</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Wednesday , 16 Mar 2011 04:44:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/hacking">hacking</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Backtrace atau stack backtrace dengan kata lain bisa diartikan dengan melihat stack frame pada titik tertentu di suatu program yang sedang berjalan, atau secara realtime.Hal ini sering atau biasanya dilakukan untuk mencari bug atau masalah pada suatu program sehingga proses update dan revisi suatu program jadi lebih cepat. Proses backtrace ini saya rasa sangat penting diketahui (menurut saya pribadi, malah wajib) terutama buat pengguna aplikasi opensource dan juga Linux tentunya, karena dengan mengetahui cara untuk melakukan backtrace pada aplikasi dan mengirimkan hasil backtrace tersebut maka kita telah membantu para developer-developer suatu program untuk memperbaikinya.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/linux-redirection/"><h2 class="post-title">Linux Redirection : 2&gt;&amp;1</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Tuesday , 15 Mar 2011 03:15:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/hacking">hacking</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Redirection dalam sistem unix dan Linux merupakan salah satu cara untuk melewatkan output dari suatu program ke program lain, dengan redirection kita bisa menyimpan output suatu file baik kedalam sebuah file atau diproses dengan program lain. Ada 3 redirection yang sering dijumpai dalam perintah linux. Standar input (stdin) Standar output (stdout) Standar error (stderr) Pipe Seperti halnya filosofi *nix, yaitu “Everything is file”, semuanya adalah file begitu juga dengan 3 standar output,input dan error diatas, yang didefinisikan dengan angka(deskriptor file), stdin adalah 0, stdout = 1, dan stderr dengan angka 2.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/emacs-command-line-lisp-oriented/"><h2 class="post-title">Emacs Command line – (Lisp Oriented)</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Monday , 14 Mar 2011 14:14:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Emacs dibangun dengan bahasa Lisp dan bahasa C, dari sebuah sumber yang pernah dibaca dijelaskan bahwa program yang ditulis dengan bahasa Lisp maka otomatis bisa sebagai _interpreter_ dari bahasa Lisp itu sendiri, begitu juga dengan Emacs, bisa digunakan sebagai _interpreter_ bahasa Lisp, untuk hal ini bisa dicari sendiri referensinya karena saya sendiri tidak pernah membuat aplikasi dengan bahasa Lisp kecuali sintaks Lisp pada _macro_ yang digunaan pada Emacs. Seperti halnya bahasa python atau perl, ketika kita menjalankan perl seperti ini $perl -e 'print &quot;hello world&quot;' maka akan tercetak tulisan hello world di layar, hal ini disebut dengan _interpreter_ atau penerjemah, dimana program perl akan melakukan _parsing_ pada opsi yang diberikan kemudian mengeksekusinya.
+                                </p>
+                            </div>
+                        </section>
+                        
+
+                        <div class="pagination">
+                            <span class="info">95 posts</span>
+
+                            
+                                
+                                
+                                    <a href="/page/1" class="pure-button ">1</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/2" class="pure-button ">2</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/3" class="pure-button ">3</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/4" class="pure-button ">4</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/5" class="pure-button ">5</a>
+                                
+                            
+                                
+                                
+                                    <a href="javascript:" class="pure-button pure-button-disabled current">6</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/7" class="pure-button ">7</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/8" class="pure-button ">8</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/9" class="pure-button ">9</a>
+                                
+                            
+                        </div>
+                    </div>
+
+                    <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+            <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

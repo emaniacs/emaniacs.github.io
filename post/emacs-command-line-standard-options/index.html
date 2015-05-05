@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/emacs-command-line-standard-options/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Emacs Command line – (Standard Options) &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/emacs-command-line-standard-options/"><h2 class="post-title">Emacs Command line – (Standard Options)</h2></a>
+
+                    <p class="post-meta">
+                        <i>Sunday , 13 Mar 2011 01:13:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://3.bp.blogspot.com/-H0ynPXoLovY/TY9qm3hwvOI/AAAAAAAAAV4/rBG7Bq6iYCo/
+s320/emacs--help.png" alt="" />
+</p>
+
+<p>Beberapa opsi standar Emacs :</p>
+
+<ul>
+<li><p>namaFile<br />
+<code>**$emacs &quot;namafile&quot;**</code><br />
+artinya kurang lebih membuka file “namafile” dengan emacs.</p></li>
+
+<li><p>–file namaFile, –find-file namaFile, –visit namaFile<br />
+Perintah kurang lebih sama dengan perintah pertama diatas.</p></li>
+
+<li><p>+number<br />
+Ex: <code>**$emacs +12 &quot;namafile&quot;**</code><br />
+Membuka file “namafile” dan loncat ke baris 12, kolom pertama.</p></li>
+
+<li><p>+line:column<br />
+Sama dengan yang diatas tapi ditambahkan dengan opsi kolom yang ingin dituju</p></li>
+
+<li><p>-q, –no-init-file<br />
+Menjalankan Emacs dengan tidak meload file init atau file konfigurasi Emacs.
+Secara default file init yang akan diload emacs yaitu file <strong>~/.emacs</strong>atau
+<strong>~/.emacs.d/init.el</strong>.<br />
+File ini merupakan file untuk melakukan settingan pada emacs misalkan untuk
+melakukan konfigurasi shortcuts keyboard ketika pengeditan atau hal-hal
+lainnya.<br />
+Jika dijalankan dengan opsi ini maka konfigurasi emacs akan sama ketika
+pertama kali emacs dijalankan, atau default.</p></li>
+
+<li><p>–no-site-file</p></li>
+
+<li><p>–no-desktop</p></li>
+
+<li><p>-nl, –no-shared-memory</p></li>
+
+<li><p>-Q, –quick<br />
+Sama dengan –no-init-file namun ditambahkan dengan tidak meload splash screen
+Emacs atau opsi ini sama dengan –no-init-file –no-splash.</p></li>
+
+<li><p>–no-splash<br />
+tidak meload splash screen emacs ketika dijalankan.</p></li>
+
+<li><p>–debug-init<br />
+Melakukan debug atau mencari kesalahan pada file init (<strong>~/.emacs</strong>
+atau<strong>~/.emacs.d/init.el</strong>) ketika menjalankan emacs, hal ini berguna ketika
+kita melakukan konfigurasi emacs dengan file init dan mencari kesalahan
+sintaks pada file tersebut.</p></li>
+
+<li><p>-t namaFile, –terminal namaFile</p></li>
+
+<li><p>–multibyte, –no-unibyte</p></li>
+
+<li><p>–unibyte, –no-multibyte</p></li>
+
+<li><p>–version<br />
+Menampilkan versi dari emacs dan keluar aplikasi.</p></li>
+
+<li><p>–help<br />
+Menampilkan help/bantuan dari emacs dan keluar aplikasi.</p></li>
+</ul>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/">Emacs Command line – (Lisp Oriented)</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/emacs-command-line/">Emacs Command Line</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

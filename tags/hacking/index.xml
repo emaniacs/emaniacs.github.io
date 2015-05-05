@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Hacking on http://blog.aredhi.com </title>
+    <link>http://blog.aredhi.com/tags/hacking/</link>
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Mon, 07 Apr 2014 00:25:00 WIB</updated>
+    
+    <item>
+      <title>Git command: stash</title>
+      <link>http://blog.aredhi.com/post/git-command-stash/</link>
+      <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
+      <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
+ketika melakukan perintah ini.&lt;/p&gt;
+
+&lt;p&gt;Ketika melakukan aktifitas editing pada source-code yang belum selesai, tapi
+belum ingin di_commit_ dan harus pindah ke branch lain, maka perintah stash
+bisa digunakan.&lt;/p&gt;
+
+&lt;p&gt;Beberapa perintah sederhana git stash.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan menyimpan semua perubahan pada file yang kita edit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash save namaStash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini sama dengan perintah sebelumnya namun kita menentukan sendiri
+namanya.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash list&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan menampilkan daftar dari perintah stash yang pernah kita
+lakukan.&lt;/p&gt;
+
+&lt;p&gt;Contoh output:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $ git stash list&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{0}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{1}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{2}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{3}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{4}: On master: satu sampe lime&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;_&lt;br /&gt;
+_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash apply&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan mengembalikan kondisi file yang sebelumnya kita simpan,
+kondisi yang diambil adalah kondisi yang paling atas atau &lt;strong&gt;&lt;em&gt;stash@{0}&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash apply namaStash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini sama dengan perintah &lt;strong&gt;git stash apply&lt;/strong&gt;, bedanya kita menentukan
+sendiri kondisi mana yang akan diaplikasikan ke repository kode kita.&lt;/p&gt;
+
+&lt;p&gt;Berikut diatas adalah beberapa perintah &lt;strong&gt;stash&lt;/strong&gt; yang sering saya gunakan,
+untuk penggunaan lebih lanjut bisa dilihat di manual dari git tentang stash
+&lt;strong&gt;$ git help stash&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;NB: Perintah stash hanya berpengaruh terhadap file yang telah ditrack oleh
+git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt;
+**&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;**Source:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/book/en/Git-Tools-Stashing&#34;&gt;http://git-scm.com/book/en/Git-Tools-Stashing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to fill constant with array in PHP</title>
+      <link>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</link>
+      <pubDate>Mon, 20 Feb 2012 20:12:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</guid>
+      <description>&lt;p&gt;Create a constant variable in PHP so easy, we can use keyword
+&lt;a href=&#34;http://www.php.net/manual/en/function.define.php&#34;&gt;define&lt;/a&gt;, followed by name
+of constant and constant value, or we can adding once more argument (boolean
+true) to identified that is incase-sensitive, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;define (&#39;NAME&#39;, &#39;value of constant&#39;);  
+echo NAME; //output value of constant;  
+echo Name; //output value of constant with somes notice  
+
+define (&#39;OK&#39;, &#39;its ok&#39;, true);  
+echo OK; // output its ok.  
+echo oK; //output its ok, there are no problem here.  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Based on &lt;a href=&#34;http://www.php.net/manual&#34;&gt;PHP Manual&lt;/a&gt; we can&amp;rsquo;t define a constant
+variable with value as array, yes we can&amp;rsquo;t do that.&lt;br /&gt;
+But we can make a some tricky so a constant can be use as an array with
+&lt;a href=&#34;http://www.php.net/manual/en/function.serialize.php&#34;&gt;serialize &lt;/a&gt;and when we
+want to used it just reverse with
+&lt;a href=&#34;http://www.php.net/manual/en/function.unserialize.php&#34;&gt;unserialize&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$arr = array (&#39;one&#39;=&amp;gt;&#39;satu&#39;, &#39;two&#39;=&amp;gt;&#39;dua&#39;);  
+
+// create a constant   
+define (&#39;EN2ID&#39;, serialize($arr));  
+
+// and we use now  
+foreach (unserialize(EN2ID) as $key =&amp;gt; $val) {  
+      echo &#39;&amp;quot;&#39;, $key, &#39;&amp;quot; in Indonesia is &#39;, $val, &amp;quot;\&amp;quot;\n&amp;quot;;  
+
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yeah that is not array but string, i dont care.. :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Test Speed: Penggabungan string (concat dan implode)</title>
+      <link>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</link>
+      <pubDate>Mon, 08 Aug 2011 20:08:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</guid>
+      <description>&lt;p&gt;Pada PHP kita bisa menggunakan 2 cara untuk menggabung string yaitu dengan
+operator
+&lt;strong&gt;&lt;a href=&#34;http://php.net/manual/en/language.operators.string.php&#34;&gt;titik(.)&lt;/a&gt;&lt;/strong&gt; atau
+lebih dikenal dengan &lt;em&gt;concatenate&lt;/em&gt;, dan menggunakan fungsi
+&lt;strong&gt;&lt;a href=&#34;http://php.net/manual/en/function.implode.php&#34;&gt;implode&lt;/a&gt;&lt;/strong&gt;.Perbedaanya
+adalah pada fungsi &lt;em&gt;implode&lt;/em&gt; &lt;em&gt;string&lt;/em&gt; yang akan digabung adalah variabel
+&lt;em&gt;array&lt;/em&gt;, sedangkan menggunakan &lt;em&gt;concatenate&lt;/em&gt; kode jadi lebih mudah dimengerti
+dan tidak harus menggunakan &lt;em&gt;array&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Saya penasaran dengan kedua fitur tersebut terutama dalam masalah kecepatan,
+berikut beberapa baris kode yang saya gunakan untuk test kecepatan diantara
+kedua fitur tersebut.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// (a) emaniacs  
+define (&#39;STR&#39;, &#39;satu&#39;);  
+$COUNT = 10;  
+$arr = array();  
+
+function use_implode($arr) {  
+    $res = &#39;&#39; ;  
+
+    $s = microtime(true);  
+    $res = implode ($arr);  
+    $e = microtime (true) - $s;  
+    return $e;  
+}  
+function use_concat ($arr, $count) {  
+    $concat = &#39;&#39;;  
+
+    $s = microtime(true);  
+    for ($n = 0; $n &amp;lt; $count; $n++)  
+       $concat .= $arr[$n];  
+    $e = microtime (true) - $s;  
+    return $e;  
+}  
+
+for ($x = 1; $x &amp;lt; 5; $x++) {  
+    $arr = array();  
+
+    /* create array */  
+    for ($i = 0; $i $lt; $COUNT; $i++)  
+       $arr[] = STR;  
+
+    /* tampilkan hasil */  
+    echo &amp;quot;Jumlah looping &amp;quot; . $COUNT . &amp;quot;\n&amp;quot;;  
+    echo &amp;quot;implode = &amp;quot; . use_implode($arr) . &amp;quot;\n&amp;quot;;  
+    echo &amp;quot;concat  = &amp;quot; . use_concat($arr, $COUNT) . &amp;quot;\n&amp;quot;;  
+    echo &amp;quot;------------------\n&amp;quot;;  
+
+    /* naikkan nilai $COUNT */  
+    $COUNT = $COUNT . &#39;0&#39;;  
+    $COUNT = (int) $COUNT ;  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Versi PHP yang digunakan adalah versi 5.3.3 kompile dari source&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ElMmEh1UGMo/Tj76FodpoZI/AAAAAAAAAnE/NUKWB67cgaI/
+s400/concat-vs-implode.00.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Berikut hasil testnya, dengan jumlah &lt;em&gt;COUNT&lt;/em&gt;(jumlah array yang ingin digabung)
+yang berbeda.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-1Y8p4xq9PwQ/Tj76E2Gi1VI/AAAAAAAAAnA/kUO3bJGWip0/
+s1600/concat-vs-implode.01.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Dari hasil output diatas bisa dilihat, kalo &lt;em&gt;concat&lt;/em&gt; lebih hanya jika jumlah
+&lt;em&gt;COUNT&lt;/em&gt; atau array yang akan digabung berjumlah tidak kecil (dalam test diatas
+&lt;em&gt;COUNT&lt;/em&gt;=10), selebihnya &lt;em&gt;implode&lt;/em&gt; lebih cepat meski perbedaannya tidak terlalu
+mencolok.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Variabel Variabels dengan Bash / Shell Script</title>
+      <link>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</link>
+      <pubDate>Mon, 20 Jun 2011 06:20:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
+s1600/var-var.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Istilah Variabel variabels pertama kali saya dengar di PHP(saya pernah bikin
+tutorial tentang ini &lt;a href=&#34;http://chars19.blogspot.com/2011/06/variabel-
+variabels-dengan-php-fungsi.html&#34;&gt;disini&lt;/a&gt;), arti kalimat ini kurang lebih seperti ini,
+&lt;strong&gt;nilai sebuah variabel, dimana nilai tersebut juga merupakan sebuah
+variabel&lt;/strong&gt;. Bingung ya, sama berarti saya juga bingung, tapi memang seperti
+itulah adanya, saya sendiri juga kebingungan ketika pertama kali memahaminya,
+namun dengan praktek hal ini menjadi lebih mudah dan cepat dimengerti, ya
+lebih baik langsung praktek dan analisa. Kali ini saya menggunakan Shell
+Script sebagai bahasa programmingnya.&lt;/p&gt;
+
+&lt;p&gt;Misalkan ada sebuah variabel seperti ini&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;satu=&amp;quot;ini adalah nilai variabel satu&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Kemudian ada sebuah variabel lagi seperti ini&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;nilai=&amp;quot;satu&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Jika melakukan perintah&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo $nilai&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Maka yang dicetak adalah &amp;ldquo;satu&amp;rdquo;, Nah bagaimana menggunakan variabel &lt;strong&gt;nilai&lt;/strong&gt;,
+tapi mencetak nilai variabel dari satu, jika menggunakan PHP seperti di
+postingan ini bisa dengan&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo $$nilai&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Tapi di Shell Programming, bisa juga tapi menggunakan metode ini&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo ${!nilai}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;perintah diatas akan mencetak nilai dari variabel satu, yaitu &amp;ldquo;ini adalah
+nilai variabel satu&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Pertanyaannya, buat apa metode seperti ini?&lt;br /&gt;
+Sebenarnya banyak sekali kegunaanya diantaranya seperti kode berikut&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x1=&amp;quot;bulan ke BULAN tahun 2001&amp;quot;  
+x2=&amp;quot;bulan ke BULAN tahun 2002&amp;quot;  
+x3=&amp;quot;bulan ke BULAN tahun 2003&amp;quot;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Saya ingin mengambil nilai variabel x1, x2 dan x3 kemudian memprosesnya dalam
+sebuah looping yang sangat panjang, tentu jika menggunakan satu persatu ini
+akan membuat kode jadi lebih penjang, seperti ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x1=&amp;quot;bulan ke BULAN tahun 2001&amp;quot;  
+x2=&amp;quot;bulan ke BULAN tahun 2002&amp;quot;  
+x3=&amp;quot;bulan ke BULAN tahun 2003&amp;quot;  
+for x in {1..12}; do  
+     tmp=$(echo $x1 | sed -e s/BULAN/$x/ | sed -e s/tahun/TAHUN/ )  
+     echo $tmp  
+done  
+for x in {1..12}; do  
+     tmp=$(echo $x2 | sed -e s/BULAN/$x/ | sed -e s/nilai/TAHUN/ )  
+     echo $tmp  
+done  
+for x in {1..12}; do  
+     tmp=$(echo $x3 | sed -e s/BULAN/$x/ | sed -e s/nilai/TAHUN/ )  
+     echo $tmp  
+done  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hal kaya gini membuat kode jadi lebih panjang, apalagi nilai variabel utama
+seperti x1 itu sangat banyak. Dengan menggunakan variabel variabel kode diatas
+bisa dipersingkat menjadi seperti ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x1=&amp;quot;bulan ke BULAN tahun 2001&amp;quot;  
+x2=&amp;quot;bulan ke BULAN tahun 2002&amp;quot;  
+x3=&amp;quot;bulan ke BULAN tahun 2003&amp;quot;  
+for y in {1..3}; do  
+     yy=&amp;quot;x$y&amp;quot;  
+     vv=${!yy}  
+     for x in {1..12}; do  
+          tmp=$(echo $vv | sed -e s/BULAN/$x/ | sed -e s/tahun/TAHUN/ )  
+          echo $tmp  
+     done  
+done  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Terlihat kalo kode menjadi lebih singkat, apalagi jika variabel x1 tersebut
+mencapai 20 atau lebih kode akan menjadi sangat panjang.&lt;br /&gt;
+Selain menggunakan metode diatas yaitu&lt;br /&gt;
+&lt;code&gt;${!namaVariabel}&lt;/code&gt;&lt;br /&gt;
+bisa juga menggunakan metode ini&lt;br /&gt;
+&lt;code&gt;eval echo $&lt;/code&gt;echo $namaVariabel``&lt;/p&gt;
+
+&lt;p&gt;/************** END ***************/&lt;/p&gt;
+
+&lt;p&gt;Referensi&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&#34;&gt;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Emacs - Replace dengan teknik Grouping pada Regex</title>
+      <link>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</link>
+      <pubDate>Wed, 18 May 2011 21:09:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KPIb2o91HNI/TdKq77SjNMI/AAAAAAAAAfs/6LKBnHhd97I/
+s200/regexp.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Regex atau regexp (Regular Expression) merupakan salah satu teknik pencarian
+pada komputer yang benar-benar sangat membantu terutama dalam mengolah teks
+atau string. Salah teknik yang ada pada regexp adalah grouping, dimana kita
+bisa memfilter kata yang kita cari yang dimasukkan kedalam variabel sementara
+yang nanti bisa kita panggil untuk keperluan penggantian teks
+tersebut(replace).&lt;/p&gt;
+
+&lt;p&gt;Sederhananya begini adalah sebuah kalimat seperti berikut&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;class=&amp;ldquo;kolom satu&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;class=&amp;ldquo;kolom dua&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;class=&amp;ldquo;kolom tiga&amp;rdquo;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;class=&amp;ldquo;baris satu&amp;rdquo;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;class=&amp;ldquo;baris dua&amp;rdquo;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;class=&amp;ldquo;baris tiga&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Kemudian kita ingin mengganti semua kata setelah &lt;strong&gt;kolom&lt;/strong&gt; dengan &lt;strong&gt;kosong&lt;/strong&gt;,
+tapi hanya apabila kata setelah &lt;strong&gt;kolom&lt;/strong&gt; tersebut adalah kata &lt;strong&gt;satu&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Secara manual bisa dengan mengganti satu persatu, tapi bagaimana kalo ada 10
+atau 1000 kalimat yang mirip kalimat diatas, tentu cara ini akan sangat
+membosankan dan tidak efektif.&lt;/p&gt;
+
+&lt;p&gt;Dengan Regexp hal ini bisa dilakukan hanya dengan sekali jalan. Kali ini saya
+ingin menggunakan Emacs Regexps untuk melakukan hal tersebut (because i use
+Emacs), tekan kombinasi Ctrl+Alt+Shift+% pada keyboard, setelah itu minibuffer
+akan aktif ketikkan kata berikut&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;\(class=&amp;ldquo;kolom\) satu&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;kemudian tekan Enter dan ketik kata penggantinya (dalam hal ini &lt;strong&gt;kosong&lt;/strong&gt;)
+kemudian tekan Enter lagi.&lt;/p&gt;
+
+&lt;p&gt;Secara otomatis warna teks yang sesuai dengan karakter Regexp yang kita
+masukkan akan berbeda dengan yang lainnya, untuk melanjutkan penggantian tekan
+tombol y, atau !(tanda seru) untuk mengganti semua karakter tanpa konfirmasi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-MrSGPpeasMo/TdKhSg9o1sI/AAAAAAAAAfk/-eC_gu6bFlY/
+s1600/emacs-regex.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Regexp dengan Emacs&lt;/p&gt;
+
+&lt;p&gt;Ternyata ketika saya coba editor Vim, ternyata regexp yang digunakan tidak
+berbeda, hanya berbeda untuk pemanggilan dan penanganan ketika karaker
+ditemukan ada, jika pada Emacs otomatis akan ada konfirmasi untuk mengganti
+teks tersebut atau tidak sedangkan Vim secara default mengganti semua teks,
+kecuali ditambahkan modifier c setelah Regexp nya.&lt;br /&gt;
+Vim regexp tanpa konfirmasi&lt;br /&gt;
+&lt;strong&gt;:%s/\(class=&amp;ldquo;kolom\) satu/kosong/g&lt;/strong&gt;&lt;br /&gt;
+Vim regexp dengan konfirmasi&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;:%s/\(class=&amp;ldquo;kolom\) satu/kosong/gc&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Format Regexp Vim sendiri sesuai dengan kebanyakan Regexp dalam pemrograman
+umumnya yaitu diawali dengan sebuah pembatas (biasanya dengan slash(/))
+kemudian karakter regexp nya tambah dengan pembatas lagi (harus sama dengan
+pembatas yang digunakan diawal), kemudian kata penggantinya, sebuah pembatas
+lagi sebagai penutup baru kemudian &lt;a href=&#34;http://www.regular-
+expressions.info/modifiers.html&#34;&gt;modifier&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Format Regexp :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;/&lt;/strong&gt;&lt;strong&gt;Regexp&lt;/strong&gt;&lt;strong&gt;/&lt;/strong&gt;&lt;strong&gt;pengganti&lt;/strong&gt;&lt;strong&gt;/&lt;/strong&gt;&lt;strong&gt;modifier&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pada contoh dengan Vim diatas karakter pertama adalah standar dari Vim&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;:&lt;/strong&gt;&lt;br /&gt;
+untuk mengaktifkan command mode ( minibuffer kalo di Emacs)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;%&lt;/strong&gt;&lt;br /&gt;
+artinya buffer(file) yang sedang aktif&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;s&lt;/strong&gt;&lt;br /&gt;
+pencarian dan penggantian teks&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sedangkan modifier &lt;strong&gt;g&lt;/strong&gt; dan &lt;strong&gt;c&lt;/strong&gt; diatas berarti &lt;em&gt;global&lt;/em&gt; dan &lt;em&gt;confirmation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-8ZZHuc3IruI/TdKhUHTw0BI/AAAAAAAAAfo/VS39-OsWs9k/
+s1600/regex-vim.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Regexp dengan Vim&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reference&lt;br /&gt;
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Regex&#34;&gt;http://en.wikipedia.org/wiki/Regex&lt;/a&gt;&lt;http://www.regular-
+expressions.info/modifiers.html&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Menjebol password berbintang, m****</title>
+      <link>http://blog.aredhi.com/post/menjebol-password-berbintang-m/</link>
+      <pubDate>Mon, 28 Mar 2011 10:10:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/menjebol-password-berbintang-m/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-J13hhg2myg0/TY9lFdLLrZI/AAAAAAAAAVw/2jhnd2cTRpY/
+s1600/hack-fb.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Pernah menemukan kondisi dimana suatu browser udah terbuka pada suatu situs
+yang memerlukan login, dan asiknya lagi username dan password telah diisi?
+Jika sering main ke warnet2, hal ini pasti sering ditemui. Enak tinggal klik
+login maka kita akan masuk ke halaman user yang telah diisi tersebut, selain
+itu pasti juga pernah berpikiran ini passwordnya apa ya… Ya kita tidak apa
+sebenarnya password tersebut, karena semua karakter pada password tersebut
+telah diganti dengan tanda bintang atau karakter lainnya. Untuk menjebol
+password berbintang tersebut sebenarnya banyak software tersedia (ini saya
+lakukan dulu ketika menemukan kondisi seperti ini), namun sebenarnya ada trik
+yang jauh lebih sederhana, yaitu dengan sedikit pengetahuan tentang
+programming (berbahagialah para programmer), terutama javascript.&lt;/p&gt;
+
+&lt;p&gt;Ya dengan sedikit pengetahuan saja, hal ini bisa dilakukan dengan mudah,
+bahkan saya menemukan trik ini dengan browsing sebentar tentang javascript,
+mencoba dan berhasil.&lt;/p&gt;
+
+&lt;p&gt;Berikut kronologis menjebol password tersebut.&lt;/p&gt;
+
+&lt;p&gt;Kondisi ketika browser telah dibuka, dengan password dan username telah diisi.&lt;/p&gt;
+
+&lt;p&gt;Tekan Ctrl-u atau klik kanan dan pilih View Page Source, di Tab/Window baru
+akan ada source code dari halaman yang kita lihat tersebut.&lt;/p&gt;
+
+&lt;p&gt;Carilah kata tag &lt;strong&gt;&amp;lt;&lt;/strong&gt;&lt;strong&gt;form&lt;/strong&gt;, bisa dengan menggunakan fasilitas Find/Search
+pada browser, kemudian cari kata &lt;strong&gt;id&lt;/strong&gt;, kata sesudah tanda samadengan(&lt;strong&gt;=&lt;/strong&gt;)
+adalah id dari form tersebut, misalkan tertulis &lt;strong&gt;id=”login_form”&lt;/strong&gt;, berarti
+id form tersebut adalah &lt;strong&gt;login_form&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sb89LrWIHqs/TY9lFeJfq9I/AAAAAAAAAV0/8umM2QKwUDs/
+s320/hack-fb2.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Masih di dalam tag form tersebut carilah id dari textbox untuk input
+passwordnya, biasanya pass atau pwd.&lt;/p&gt;
+
+&lt;p&gt;Pada kasus ini saya menggunakan facebook sebagai contoh, dimana form idnya
+adalah “login_form” dan password idnya adalah “pass”.&lt;/p&gt;
+
+&lt;p&gt;Kita telah punya 2 hal yang sangat penting untuk menjebol password tersebut,
+sekarang disisi programmingnya yaitu menggunakan javascript. Sintaks yang kita
+gunakan adalah&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;document.form[&amp;ldquo;form_id&amp;rdquo;].text_id.value&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sekarang ganti masing-masing “id” diatas dengan yang telah kita temukan tadi,
+kemudian ketikkan langsung di Url Address browser seperti ini&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;javascript:alert(document.forms[&amp;quot;login_form&amp;quot;].pass.value)&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;kemudian tekan enter, maka akan keluar sebuah warning yang berisi password
+yang disembunyikan tersebut. Mudah bukan.!!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-djFSP2N-
+5pI/TY9lEymcQFI/AAAAAAAAAVs/GQVJov9cuQI/s1600/hack-fb3.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Untuk form selain menggunakan id bisa juga dengan nomor index form tersebut
+(diawali dengan 0), jadi jika formnya adalah form pertama dalam halaman
+tersebut berarti indexnya adalah 0, maka kode diatas bisa diganti seperti ini:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;javascript:alert(document.forms[0].pass.value)&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ide ini muncul ketika W belajar web programming dengan perl dan python, W
+melihat adanya fungsi dari module yang tersedia untuk mengirimkan atau
+menetapkan nilai pada suatu form yang ingin kita isi dengan menggunakan skrip.
+Dengan fungsi ini melakukan submit pada suatu web bisa dilakukan dengan mudah
+via command line, atau yang lebih sadis adalah bruteforce pada situs tersebut.
+Tidak salah bruteforce, jadi sebaiknya gunakanlah password yang menggunakan
+kombinasi angka, huruf besar dan kecil, dan juga simbol-simbol ( but please
+dont use freemason symbol).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hacker Pencuri Chip Virtual Zynga  di penjara 2 tahun</title>
+      <link>http://blog.aredhi.com/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</link>
+      <pubDate>Tue, 22 Mar 2011 23:22:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/-PvpazMI9CXI/TYjJXTBh2wI/AAAAAAAAAUM/sU-
+4T2eVCMs/s1600/download.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Seorang hacker asal Inggris yang kecanduan judi poker buatan
+&lt;a href=&#34;http://www.zynga.com/&#34;&gt;Zynga&lt;/a&gt; ditangkap polisi dan dipenjara selama 2 tahun
+setelah mencuri chips.&lt;/p&gt;
+
+&lt;p&gt;Ashley Mitchell, 29 tahun melakukan hacking pada situs web Zynga yang kemudian
+mencuri chip game virtual dengan nilai &lt;strong&gt;$400&lt;/strong&gt; billion yang dipindahkan ke
+akun Facebook palsu miliknya.&lt;/p&gt;
+
+&lt;p&gt;Chip virtual ini bisa digunakan hampir disemua game yang dibuat oleh Zynga.&lt;/p&gt;
+
+&lt;p&gt;Awalnya Zynga menduga ini adalah tindakan dari orang dalam pada bulan Agustus
+2009, tapi setelah dilakukan penyelidikan ternyata seorang hacker telah
+menyusup ke server Zynga yang berpura-pura sebagai karyawan untuk melakukan
+pencurian ini.&lt;/p&gt;
+
+&lt;p&gt;Setelah berhasil masuk ke system Zynga, Mitchell melakukan manipulasi data
+karyawan sehingga dia bisa memindahkan sejumlah chip tersebut, meski telah
+menghapus jejak ketika melakukan aktivitas hacking tersebut&lt;/p&gt;
+
+&lt;p&gt;tapi akhirnya polisi dapat menangkap Mitchel setelah menelusuri jaringan WIFI
+milik tetangganya yang telah dijebol terlebih dahulu oleh Mitchel.&lt;br /&gt;
+Sebelumnya pada tahun 2008 dia juga telah dihukum karena aktivitas hackingnya,
+yaitu dia menjebol server komputer tempat dia bekerja.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Referensi :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.theregister.co.uk/2011/03/22/poker_chip_hacker_jailed/&#34;&gt;http://www.theregister.co.uk/2011/03/22/poker_chip_hacker_jailed/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bactrace Aplikasi di Linux</title>
+      <link>http://blog.aredhi.com/post/bactrace-aplikasi-di-linux/</link>
+      <pubDate>Wed, 16 Mar 2011 04:44:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/bactrace-aplikasi-di-linux/</guid>
+      <description>&lt;p&gt;Backtrace atau stack backtrace dengan kata lain bisa diartikan dengan melihat
+stack frame pada titik tertentu di suatu program yang sedang berjalan, atau
+secara realtime.Hal ini sering atau biasanya dilakukan untuk mencari bug atau
+masalah pada suatu program sehingga proses update dan revisi suatu program
+jadi lebih cepat.&lt;/p&gt;
+
+&lt;p&gt;Proses backtrace ini saya rasa sangat penting diketahui (menurut saya pribadi,
+malah wajib) terutama buat pengguna aplikasi opensource dan juga Linux
+tentunya, karena dengan mengetahui cara untuk melakukan backtrace pada
+aplikasi dan mengirimkan hasil backtrace tersebut maka kita telah membantu
+para developer-developer suatu program untuk memperbaikinya.&lt;/p&gt;
+
+&lt;p&gt;Khususnya di Indonesia hal ini bisa dibilang sangat minim, orang Indonesia
+bisa dibilang termasuk kategori paling malas melaporkan suatu bug yang
+ditemukan, atau malah mereka ga ngarti kalau mereka itu lagi mendapatkan
+masalah pada aplikasinya. Makanya kadang orang Indonesia sangat sering
+disebut&lt;em&gt;t bisa make doank,_ parahnya lagi ketika menghadapi masalah atau bug
+pada program bukannya membantu programmernya untuk memperbaiki program tapi
+justru mencemooh programmer tersebut, menjelek-jelekan pembuat program dan
+bilang programmernya _payah&lt;/em&gt;.  Jangankan untuk membuat program untuk mencari
+masalah atau melaporkan bug tersebut dia ga bisa, sebenarnya siapa yang payah?&lt;/p&gt;
+
+&lt;p&gt;Sekarang udah saatnya berubah, mari kita mulai dari hal yang paling kecil
+yaitu bagaimana mencari suatu bug, dan menyimpannya dalam suatu file, dan
+selanjutnya melaporkan atau mengirim hasil backtrace tersebut ke pembuat
+program, meski saya sendiri tidak terlalu memahami dengan konsep stack frames,
+atau apalah didalam melakukan backtrace ataupun debugging, tapi setidaknya
+kita membantu agar program yang kita gunakan selalu update.&lt;/p&gt;
+
+&lt;p&gt;Salah satu caranya melakukan backtrace adalah dengan bantuan gdb, berikut cara
+melakukan bactrace pada suatu program dengan menggunakan gdb:&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;$gdb namaprogram 2&amp;gt;&amp;amp;1 | tee namaprogram-backtrace.txt&lt;/code&gt;&lt;/strong&gt;&lt;br /&gt;
+Perintah diatas bisa diartikan seperti ini, melakukan debug pada program
+‘namaprogram’ dengan ‘gdb’ yang outputnya diprint ke stderr(2) dan dilewatkan
+ke stdin(1) kemudian diteruskan pada program ‘tee’ untuk kemudian disimpan
+pada file dengan nama ‘namaprogram-backtrace.txt’, untuk lebih lanjut dengan
+redirection bisa dilihat &lt;a href=&#34;http://chars19.blogspot.com/2011/03/linux-
+redirection-2.html&#34;&gt;disini&lt;/a&gt;. tee adalah program yang membaca dari standar input dan
+diteruskan ke standar output.&lt;/p&gt;
+
+&lt;p&gt;perintah ini akan membuat kita masuk ke program gdb, dan di dalam gdb
+lanjutkan dengan perintah berikut.&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;(gdb) handle SIG33 pass nostop noprint  
+(gdb) set pagination 0  
+(gdb) run&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Setelah mengetikan run maka program akan berjalan seperti biasa, lakukan hal-
+hal yang mengakibatkan program menjadi crash, jika program mengalami hang
+namun tidak crash, pada terminal tempat gdb dijalankan tekan Ctrl-c. Setelah
+kembali ke gdb, jalankan perintah berikut&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;(gdb) backtrace full  
+(gdb) info registers  
+(gdb) x/16i $pc  
+(gdb) thread apply all backtrace  
+(gdb) quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Setelah perintah terakhir (quit) kita kembali ke terminal, di direktori aktif
+akan ada sebuah file yang berisi log dari program yang kita jalankan, file
+inilah yang kita lampirkan ketika melaporkan suatu bug. Atau mungkin dianalisa
+sendiri ^_^.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Referensi&lt;br /&gt;
+   + &lt;a href=&#34;https://wiki.ubuntu.com/Backtrace&#34;&gt;wiki.Ubuntu&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linux Redirection : 2&gt;&amp;1</title>
+      <link>http://blog.aredhi.com/post/linux-redirection/</link>
+      <pubDate>Tue, 15 Mar 2011 03:15:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/linux-redirection/</guid>
+      <description>
+
+&lt;p&gt;Redirection dalam sistem unix dan Linux merupakan salah satu cara untuk
+melewatkan output dari suatu program ke program lain, dengan redirection kita
+bisa menyimpan output suatu file baik kedalam sebuah file atau diproses dengan
+program lain.&lt;/p&gt;
+
+&lt;p&gt;Ada 3 redirection yang sering dijumpai dalam perintah linux.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Standar input (stdin)&lt;/li&gt;
+&lt;li&gt;Standar output (stdout)&lt;/li&gt;
+&lt;li&gt;Standar error (stderr)&lt;/li&gt;
+&lt;li&gt;Pipe&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Seperti halnya filosofi *nix, yaitu “Everything is file”, semuanya adalah file
+begitu juga dengan 3 standar output,input dan error diatas, yang didefinisikan
+dengan angka(deskriptor file), stdin adalah 0, stdout = 1, dan stderr dengan
+angka 2. Semua angka ini didefinisikan pada file /usr/include/unistd.h&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;$grep -n STDIN -2 /usr/include/unistd.h  
+181-  
+182-/* Standard file descriptors. */  
+183:#define STDIN_FILENO 0 /* Standard input. */  
+184-#define STDOUT_FILENO 1 /* Standard output. */  
+185-#define STDERR_FILENO 2 /* Standard error output. */&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;standar-input-stdin:65229fec76386ffbabfcc72f94c7be86&#34;&gt;Standar Input (stdin)&lt;/h2&gt;
+
+&lt;p&gt;Hampir semua program menerima input dari pemakainya, baik dari keyboard atau
+device input lainnya. Secara default stdin adalah keyboard. Disini penggunaan
+stdin bisa dengan tanda ‘&amp;lt;’.&lt;/p&gt;
+
+&lt;p&gt;Contoh:&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;$cat &amp;lt; its.file  
+line 1  
+line 2&lt;/code&gt;&lt;/strong&gt;&lt;br /&gt;
+pada perintah diatas _‘cat’_ menerima input _‘its.file’_ dan kemudian
+menampilkannya di stdout.&lt;/p&gt;
+
+&lt;h2 id=&#34;standar-output-stdout:65229fec76386ffbabfcc72f94c7be86&#34;&gt;Standar Output (stdout)&lt;/h2&gt;
+
+&lt;p&gt;Begitu juga dengan stdout, kebanyakan program di Linux juga memprint outputnya
+di stdout. Misalkan program&lt;em&gt; ls&lt;/em&gt;, program ini akan menampilkan isi direktori
+aktif kemudian mencetaknya di stdout.&lt;/p&gt;
+
+&lt;p&gt;Contoh:&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;$ls &amp;gt; listdirektori.txt&lt;/code&gt;**&lt;br /&gt;
+dari perintah diatas maka semua output dari ls akan disimpan ke dalam
+file&lt;em&gt;‘listdirektori.txt’&lt;/em&gt;, perintah ini (&amp;gt;) membuat file baru bernama
+&lt;em&gt;‘listdirektori.txt’_ jika file tersebut telah ada maka isi file tersebut akan
+diganti dengan output dari_ls&lt;/em&gt;.&lt;br /&gt;
+Agar file yang telah ada tidak diganti/ditimpa dengan yang baru gunakan 2
+tanda ‘&amp;gt;’&lt;br /&gt;
+**&lt;code&gt;$ls &amp;gt;&amp;gt; listdirektori.txt&lt;/code&gt;&lt;/strong&gt;&lt;br /&gt;
+Isi file ‘listdirektori.txt’ akan ditambahkan dengan output ls.&lt;/p&gt;
+
+&lt;p&gt;Perintah ini juga bisa digunakan untuk copi file ke file lain.&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;$cat file1 &amp;gt; file2&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Selain output pada file kita juga bisa melakukan redirect pada device.&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;$cat musik.wav &amp;gt; /dev/audio&lt;/code&gt;&lt;/strong&gt;&lt;br /&gt;
+Seperti memainkan file musik lewat pemutar mp3 kita, kita akan mendengarkan
+suara ketika melakukan perintah ini. Karena _/dev/audio_ adalah file
+deskriptor dari speaker yang kita punya.&lt;/p&gt;
+
+&lt;h2 id=&#34;pipe:65229fec76386ffbabfcc72f94c7be86&#34;&gt;Pipe&lt;/h2&gt;
+
+&lt;p&gt;Dari 2 hal diatas kita telah lihat bagaimana melakukan redirection input  ke
+dalam suatu program dan redirection output suatu program ke dalam sebuah file.
+Dengan pipe kita bisa melakukan redirection output suatu program menjadi input
+bagi program lain.&lt;/p&gt;
+
+&lt;p&gt;Contoh:&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;$cat &#39;file.txt&#39; | grep &#39;linux&#39;&lt;/code&gt;&lt;/strong&gt;&lt;br /&gt;
+Perintah ini berarti kita mencari kata ‘_linux_‘ di dalam file ‘_file.txt_‘,
+meski sebenarnya bisa dengan perintah grep ‘linux’ ‘file.txt’ namun pipe akan
+sangat berguna untuk melakukan proses secara berulang terhadap output
+tersebut, seperti contoh berikut:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;$cat &#39;file.txt&#39; | grep &#39;linux&#39; | tr a-z A-Z&lt;/code&gt;**&lt;br /&gt;
+Yaitu menampilkan file ‘file.txt’, kemudian hanya menampilkan kata ‘linux’
+kemudian mengubahnya menjadi huruf besar semua (**&lt;code&gt;tr a-z A-z&lt;/code&gt;&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Ketika melakukan perintah pada Linux, sering kita menemui error, dan kemudian
+error ini akan ditampilkan lewat stderr.&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;$cat &#39;not_exist_file&#39;  
+cat: not_exist_file: No such file or directory&lt;/code&gt;&lt;/strong&gt;&lt;br /&gt;
+Output dari perintah diatas ditampilkan di screen (terminal) lewat stderr,
+untuk menghindari error ini bisa dilakukan dengan cara berikut.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;$cat not_exist_file 2&amp;gt; /dev/null&lt;/code&gt;**&lt;br /&gt;
+tanda 2 diatas berarti semua output dari stderr akan diteruskan ke
+&lt;em&gt;/dev/null&lt;/em&gt;, dan tidak akan menampilkan apapun, jika file &lt;em&gt;not_exist_file&lt;/em&gt;
+benar-benar tidak ada.&lt;br /&gt;
+Mungkin tidak begitu terlihat perbedaannya tapi coba jalankan 2 perintah
+berikut, agar lebih memahami&lt;br /&gt;
+**&lt;code&gt;$find / -name *.txt  
+$find / -name *.txt 2&amp;gt;/dev/null&lt;/code&gt;&lt;/strong&gt;&lt;br /&gt;
+perintah pertama pasti akan mengeluarkan banyak output karena error yang
+didapat perintah find ketika mengakses file/direktori, sedangkan perintah
+kedua semua output error (dari stderr , angka 2) akan dilewatkan ke /dev/null.&lt;/p&gt;
+
+&lt;p&gt;Penggunaan redirection diatas juga bisa digabung dengan redirection lainnya.&lt;/p&gt;
+
+&lt;p&gt;Bagaimana dengan judul dari posting diatas &lt;strong&gt;2&amp;gt;&amp;amp;1&lt;/strong&gt;, kalimat ini dalam suatu
+perintah di Linux berarti melewatkan setiap output dari stderr ke stdin, jadi
+setiap error yang dikeluarkan akan diteruskan menuju standar output.
+tanda&lt;strong&gt;&amp;gt;&lt;/strong&gt; sendiri adalah redirection pada suatu file tapi karena tanda &lt;strong&gt;&amp;amp;&lt;/strong&gt;
+maka output tersebut diteruskan lagi ke stdout / 1. Jika tanda &lt;strong&gt;&amp;amp;&lt;/strong&gt; tidak ada
+maka outputnya adalah sebuah file dengan nama 1.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Referensi:&lt;br /&gt;
++ &lt;a href=&#34;http://linuxhelp.blogspot.com/2006/01
+/inputoutput-redirection-made-simple-in.html&#34;&gt;http://linuxhelp.blogspot.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

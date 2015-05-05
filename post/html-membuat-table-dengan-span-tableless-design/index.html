@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/html-membuat-table-dengan-span-tableless-design/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> HTML - Membuat table dengan span ( tableless design) &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/html-membuat-table-dengan-span-tableless-design/"><h2 class="post-title">HTML - Membuat table dengan span ( tableless design)</h2></a>
+
+                    <p class="post-meta">
+                        <i>Tuesday , 17 May 2011 21:19:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://2.bp.blogspot.com/-1u0IJywuvGM/Tb1r37eNAcI/AAAAAAAAAZA/-jgIRbxB3Us/
+s1600/tableless.png" alt="" />
+Ketika membaca sebuah cerita tentang test seorang web
+programmer dengan sebuah perusahaan saya melihat salah satu test yang
+dilakukan adalah membuat design web tanpa menggunakan tabel atau istilahnya
+_tableless. _<br />
+__Melihat ini saya tertantang untuk mencoba melakukannya, berikut contoh kode
+yang saya bikin, CMIIW.<br />
+Metode ini bisa diakalin dengan penggunaan tag <strong>span</strong> atau **div **yang
+diatur dengan css sehingga tampilannya lebih bagus.</p>
+
+<pre><code>Header 1  
+Header 2  
+Header 3  
+
+
+
+
+
+
+Kolom 1  
+Kolom 2  
+Kolom 3  
+
+
+
+
+
+
+Kolom 1  
+Kolom 2  
+Kolom 3  
+
+
+
+
+
+
+Kolom 1  
+Kolom 2  
+Kolom 3  
+</code></pre>
+
+<p>Kode diatas adalah kode html yang nantinya disisipkan pada tag body, kemudian
+kita tambahkan kode css untuk mepercantik tampilannya.</p>
+
+<p>Begini kira-kira tampilannya (gambar)</p>
+
+<p><img src="http://1.bp.blogspot.com/-Q1_ZHCnZ_ug/TdKVp547cMI/AAAAAAAAAfY/GqzqNx-
+w6BA/s1600/tableless.png" alt="" />
+</p>
+
+<p>Header 1Header 2Header 3</p>
+
+<p>Baris 1, Kolom 1Baris 1, Kolom 2Baris 1, Kolom 3</p>
+
+<p>Baris 2, Kolom 1Baris 2, Kolom 2Baris 2, Kolom 3</p>
+
+<p>Baris 3, Kolom 1Baris 3, Kolom 2Baris 3, Kolom 3</p>
+
+<p>Dengan ditambahkan property :hover maka tabel jadi lebih hidup,,<br />
+Untuk lebih bagus bisa juga ditambahkan zebra style untuk tabelnya dimana
+setiap baris memiliki warna yang beda dengan yang diatas atau dibawahnya..<br />
+Ini contoh yang saya kembangkan sendiri, menambahkan zebra style dan sebuah
+checkbox pada masing-masing baris, untuk zebra style menggunakan javascript
+agar lebih atraktif.</p>
+
+<p><img src="http://3.bp.blogspot.com/-EmUy7lkfma0/TdKVpCWdRlI/AAAAAAAAAfU/zTvMG3moE-o/
+s1600/tableless2.png" alt="" />
+</p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/">Emacs - Replace dengan teknik Grouping pada Regex</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/">Cream - Vim editor yang ramah</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Programming Web on http://blog.aredhi.com </title>
+    <link>http://blog.aredhi.com/tags/programming-web/</link>
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Mon, 19 Mar 2012 20:08:00 WIB</updated>
+    
+    <item>
+      <title>Using keyword as method in PHP</title>
+      <link>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</link>
+      <pubDate>Mon, 19 Mar 2012 20:08:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</guid>
+      <description>&lt;p&gt;As we know, we can&amp;rsquo;t use keyword like if, while in common language programming
+as function, method or variables, neither does in PHP Programming. Last time,
+i agree with this condition, but when i learn about Object Oriented
+Programming i found a way how to make this is possible, i&amp;rsquo;ve got a trick how
+to make keyword as a method or function (as a variable we can do that easily)
+in PHP Programming.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;How to do that?&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In PHP Programming there a feature in OOP, as known as with &lt;a href=&#34;http://php.net/manual/en/language.oop5.magic.php&#34;&gt;magic
+method&lt;/a&gt;, with this feature
+we can do a &amp;ldquo;magic&amp;rdquo; in PHP. For completed information about it you can click
+that link.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Keyword as Function.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Based on Php Manual about
+&lt;a href=&#34;http://www.blogger.com/php.net/manual/en/reserved.keywords.php&#34;&gt;keyword&lt;/a&gt;, we
+can&amp;rsquo;t use keyword as function, so if we coding like this, Php will show an
+error like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ljAkUiIgeUw/T2cdrmIkc9I/AAAAAAAAAsA/Deb6r4ipVz4/
+s640/Screenshot+at+2012-03-19+18:49:58.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;while as a function.&lt;/p&gt;
+
+&lt;p&gt;And, how to use it (or other keywords) as function? We can&amp;rsquo;t do that but, we
+can use it as a string in a variable with function create_function(). This is
+sample.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$if = &#39;&#39;;  
+$if = create_function (&#39;$var&#39;, &#39;return (bool)$var;&#39;);  
+
+var_dump ( $if(true));  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Keyword as Method.&lt;/strong&gt;&lt;/em&gt;&lt;br /&gt;
+Using keyword in method will give an error like above sample, we can use a
+trik like above, or we can use magic call with &lt;a href=&#34;http://id.php.net/manu
+al/en/language.oop5.overloading.php#object.call&#34;&gt;__call&lt;/a&gt; or &lt;a href=&#34;http://id.p
+hp.net/manual/en/language.oop5.overloading.php#object.callStatic&#34;&gt;__callStatic&lt;/a&gt;. First time
+this is failure example.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Keyword {  
+    public function if ($var) {  
+        return (bool)$var;  
+    }  
+}  
+
+$key = new KeyWord();  // got error here..  
+$key-&amp;gt;if (true;)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And this is solution to do that.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class KeyWord {  
+    public function __call ($name, $argument) {  
+        echo &amp;quot;You call $name with arguments: &amp;quot;. print_r ($argument, true);  
+    }  
+    public static function __callStatic ($name, $argument) {  
+        echo &amp;quot;You call statically $name with argument: &amp;quot;. print_r ($argument, true);  
+    }  
+}  
+
+$x = new KeyWord();  
+
+$x-&amp;gt;static (1,2);  
+
+KeyWord::unknownStaticMethod(1,2,3);  
+
+?&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now calling method with the keyword..&lt;/p&gt;
+
+&lt;p&gt;:)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PHP: Menghitung lama eksekusi sebuah skrip</title>
+      <link>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</link>
+      <pubDate>Sat, 25 Feb 2012 00:00:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-JLzChwOBXv4/T0d_Jj8_HYI/AAAAAAAAArA/BGcIwYJeqeQ/
+s1600/time.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Untuk apa menghitung lama eksekusi sebuah skrip? Alasan utama adalah
+performance dari skrip yang dibuat, hal ini bertujuan untuk membandingkan
+fungsi yang akan digunakan sehingga losstime bisa dikurangi. Dalam pemrograman
+PHP bisa dilakukan dengan mengambil nilai fungsi
+&lt;a href=&#34;http://php.net/manual/en/function.microtime.php&#34;&gt;microtime()&lt;/a&gt;, tentu saja
+ditambahkan parameter boolean bernilai true agar nilai yang dikembalikan
+adalah float, karena jika tidak ada parameter yang diberikan maka nilai return
+dari fungsi ini adalah string.&lt;/p&gt;
+
+&lt;p&gt;Cara paling mudah adalah dengan membuat sebuah variabel dari nilai return
+fungsi microtime() di awal perintah yang ingin dijalankan, kemudian ambil lagi
+nilai yang sama dibawah perintah yang ingin dijalankan dengan variabel lain,
+dan selisih nilai variabel terakhir dengan yang pertama diambil tersebut
+adalah lama eksekusi skrip tersebut. Seperti dibawah ini.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$arr=array();  
+$start = microtime(true);  
+for ($x=0; $x&amp;lt;100; ++$x)  
+    $arr[] = &#39;exec&#39;;  
+$end = microtime (true);  
+
+echo &#39;Selisih Waktunya adalah: &#39;, $end - $start, &#39; microsecond&#39;;  
+?&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kode diatas cukup simpel, berikut saya coba membuat sebuah class untuk
+menghitung lama eksekusi sebuah script yang ingin kita uji, sehingga bisa
+digunakan untuk membuat sebuah perbandingan.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/*  
+ *   
+ * (f) ExecTime.php  
+ * (d) Menghitung lama eksekusi sebuah perintah  
+ * (l) GPL  
+ * (a) emaniacs  
+ *   
+ */  
+
+class ExecTime {  
+ private $_start=null;  
+
+ // penanda bahwa object tidak bisa dipakai lagi.  
+ private $_finish=false;  
+
+ public function __construct($autoStart=true) {  
+  if ($autoStart)  
+   $this-&amp;gt;start();  
+ }  
+
+ public function start() {  
+  $this-&amp;gt;_start = microtime (true);  
+ }  
+
+ public function end() {  
+  // ambil end time  
+  $end = microtime(true);  
+
+  if ($this-&amp;gt;_finish)  
+   return false;  
+
+  /* cek apakah start telah didefinisikan  
+   * jika belum return array kosong  
+   */  
+  if (is_null ($this-&amp;gt;_start))  
+   return array();  
+
+  // set perbedaan waktu  
+  $diff = $end - $this-&amp;gt;_start;  
+
+  $ret = array (  
+   &#39;start&#39;  =&amp;gt; $this-&amp;gt;_start,  
+   &#39;end&#39;    =&amp;gt; $end,  
+   &#39;diff&#39;   =&amp;gt; $diff,  
+  );  
+
+  // hapus nilai _start  
+  $this-&amp;gt;_flush();  
+
+  return $ret;  
+ }  
+
+ public function restart() {  
+  $this-&amp;gt;start();  
+  $this-&amp;gt;_finish = false;  
+ }  
+
+ private function _flush() {  
+  $this-&amp;gt;_start = null;  
+ }  
+}  
+?&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sekarang saya buat sebuah file PHP untuk menghitung perbandingan eksekusi
+proses sebuah array menggunakan &lt;em&gt;for&lt;/em&gt; dengan &lt;em&gt;foreach&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$arr = range (1, 100);  
+
+include (&#39;ExecTime.php&#39;);  
+
+$tmp = count($arr);  
+
+//inisialisasi object  
+$s1 = new ExecTime(false);  
+
+// hitung nilai waktu untuk looping array dengan menggunakan for  
+$s1-&amp;gt;start();  
+for ($i=0; $i&amp;lt;$tmp; ++$i)  
+ $arr[$i] = &#39;test&#39;;  
+print_r ($s1-&amp;gt;end());  
+
+
+$s1-&amp;gt;restart();  
+foreach ($arr as $k =&amp;gt; $v)  
+ $k=&#39;test&#39;;  
+print_r($s1-&amp;gt;end());  
+
+?&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Berikut penampakan hasil kode diatas, sepertinya menggunakan &lt;em&gt;foreach&lt;/em&gt; lebih
+cepat.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-IImq9cj3mf0/T0etTn2vTzI/AAAAAAAAArI/llVOmWm1lgY/
+s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>localStorage dengan HTML5</title>
+      <link>http://blog.aredhi.com/post/localstorage-dengan-html/</link>
+      <pubDate>Tue, 17 Jan 2012 17:17:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/localstorage-dengan-html/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-_xFwIsxjJ3U/TxL4PvepcSI/AAAAAAAAAqo/0tfgksmnZe8/
+s1600/localStorage.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Salah satu fitur yang tersedia pada bahasa pemrograman &lt;strong&gt;HTML **khususnya
+**HTML5 **adalah penyimpanan sementara pada browser, meski telah ada **cookies
+**namun salah satu perbedaannya adalah tidak semua browser mendukung
+**localStorage&lt;/strong&gt;, terutama browser versi lama, namun keuntungannya adalah
+&lt;strong&gt;localStorage&lt;/strong&gt; tersedia sebagai object didalam Javascript sehingga ketika
+ingin mengaksesnya jadi lebih mudah. Selain itu mengakses **cookies **bisa
+dilakukan dari sisi server, sedangkan untuk **localStorage **jika ingin
+diakses lewat server bisa diakali dengan menggunakan method &lt;em&gt;GET _atau _POST&lt;/em&gt;,
+dimana data yang ingin diberikan pada server dijadikan sebagai parameter pada
+method tersebut.&lt;/p&gt;
+
+&lt;p&gt;Beberapa browser yang mendukung penggunaan localStorage adalah Safari 4+,
+Mobile Safari (iPhone/iPad), Firefox 3.5+, Internet Explorer 8+ and Chrome 4+.&lt;/p&gt;
+
+&lt;p&gt; &lt;em&gt;Deteksi browser.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Salah satu cara paling mudah untuk mengetahui suatu browser mendukung
+&lt;strong&gt;localStorage **atau tidak adalah dengan menggunakan keyword **typeof&lt;/strong&gt;. Jika
+hasil returnnya adalah **undefined **maka bisa dipastikan bahwa browser
+tersebut tidak mendukung untuk penyimpanan data pada sisi klien, sedangkan
+hasil kembaliannya adalah **object **maka browser tersebut mendukung untuk
+penyimpanan pada sisi klient.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if(typeof(localStorage) == &#39;undefined&#39;)  
+     alert(&#39;Browser anda tidak mendukung localStorage.!&#39;);  
+else  
+     alert(&#39;Browser anda mendukung localStorage.&#39;);  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Penggunaan localStorage&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Menyimpan data.&lt;br /&gt;
+Cara untuk menyimpan data menggunakan localStorage adalah dengan method
+setItem dengan 2 parameter, yang pertama sebagai key dan yang kedua merupakan
+nilainya.&lt;br /&gt;
+&lt;strong&gt;localStorage.setItem (key, value)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;localStorage.setItem (&#39;nama&#39;, &#39;data&#39;);  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;// menyimpan data dengan nilai &amp;lsquo;data&amp;rsquo; dengan key nya adalah &amp;lsquo;nama&amp;rsquo;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mengambil data.&lt;br /&gt;
+Sedangkan untuk mengambil data menggunakan method getItem dengan sebuah
+parameter yang merupakan key atau nama variabel data yang ingin diambil.&lt;br /&gt;
+&lt;strong&gt;localStorage.getItem (key)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;localStorage.getItem (&#39;nama&#39;);  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;// mengambil data dengan key nama.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Menghapus data.&lt;br /&gt;
+Untuk menghapus data yang tersimpan pada klient bisa menggunakan method
+removeItem dengan sebuah parameter yang merupakan nama key yang ingin dihapus.&lt;br /&gt;
+&lt;strong&gt;localStorage.removeItem (key)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;localStorage.removeItem (&#39;nama&#39;);  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;// menghapus data dengan key nama.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Berikut ini saya buat sebuah kode untuk mendeteksi browser yang anda pakai
+apakah support localStorage atau tidak.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Panada: Membuat Halaman Login Dengan Session</title>
+      <link>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</link>
+      <pubDate>Sun, 15 Jan 2012 23:59:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/
+s1600/lock.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Membuat login menggunakan Panada Framework tidak begitu sulit, kalo ini saya
+mencoba untuk membuat tutorial bagaimana membuat halaman login. Halaman login
+biasanya dibutuhkan jika user ingin mengakses halaman web yang terproteksi
+atau halaman yang bersifat private.&lt;br /&gt;
+&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br /&gt;
+ Hal-hal yang dibutuhkan untuk membuat halaman login, terutama library yang
+harus diload pada Panada, berikut diantaranya :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Library Request&lt;/strong&gt;&lt;br /&gt;
+untuk mengambil input dari user yang akan divalidasi&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Library Database&lt;/strong&gt;&lt;br /&gt;
+Ini bisa diabaikan jika tidak menggunakan database, dalam menyimpan username
+atau password.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Karena disini menggunakan database, diharapkan settingan** &amp;ldquo;config.php&amp;rdquo; **anda
+pada bagian database telah disetting dengan benar, sedangkan struktur tabelnya
+sendiri saya menggunakan seperti kode dibawah ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE IF NOT EXISTS `users` (  
+  `id` int(3) NOT NULL auto_increment,  
+  `username` varchar(16) NOT NULL,  
+  `password` varchar(32) NOT NULL,  
+  `nama_depan` varchar(32) NOT NULL,  
+  `nama_belakang` varchar(32) NOT NULL,  
+  `email` varchar(32) NOT NULL,  
+  PRIMARY KEY  (`id`)  
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;  
+
+INSERT INTO `users` (`id`, `username`, `password`, `nama_depan`, `nama_belakang`, `email`) VALUES  
+(1, &#39;chars19&#39;, &#39;b69d9bc635ccd79ad2c64bc862abe3b4&#39;, &#39;Lionel&#39;, &#39;Messi&#39;, &#39;my@email.com&#39;);  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Kebutuhan File&lt;/strong&gt;&lt;br /&gt;
+  Ada 2 file yang akan dibuat, yaitu 1 buah file &lt;em&gt;Controller&lt;/em&gt; dan 1 buah&lt;br /&gt;
+  file &lt;em&gt;View&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;/apps/controller/login.php&lt;/strong&gt;&lt;br /&gt;
+File ini adalah controller untuk penanganan login dan input user&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Controller_login extends Panada  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{&lt;br /&gt;
+    public function &lt;strong&gt;construct() {&lt;br /&gt;
+ parent::&lt;/strong&gt;construct();&lt;br /&gt;
+ $this-&amp;gt;request = new Library_request();&lt;/p&gt;
+
+&lt;p&gt;$this-&amp;gt;data_login =&lt;br /&gt;
+     array(&lt;br /&gt;
+    &amp;lsquo;has_login&amp;rsquo; =&amp;gt; false,&lt;br /&gt;
+    &amp;lsquo;error_stat&amp;rsquo;=&amp;gt;false,&lt;br /&gt;
+    &amp;lsquo;error_info&amp;rsquo;=&amp;gt;&amp;ldquo;,&lt;br /&gt;
+    &amp;lsquo;name&amp;rsquo;=&amp;gt;&amp;ldquo;,&lt;br /&gt;
+    &amp;lsquo;title&amp;rsquo;=&amp;gt;&amp;lsquo;Silahkan Login&amp;rsquo;);&lt;br /&gt;
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function index(){  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;if($this-&amp;gt;request-&amp;gt;post(&amp;lsquo;submit&amp;rsquo;))&lt;br /&gt;
+     $this-&amp;gt;proses_login();&lt;br /&gt;
+ else&lt;br /&gt;
+     $this-&amp;gt;view_loginform( $this-&amp;gt;data_login);&lt;br /&gt;
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private function proses_login() {  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$this-&amp;gt;db = new Library_db();&lt;/p&gt;
+
+&lt;p&gt;$name = $this-&amp;gt;request-&amp;gt;post(&amp;lsquo;username&amp;rsquo;, FILTER_SANITIZE_MAGIC_QUOTES);&lt;br /&gt;
+ $pass = $this-&amp;gt;request-&amp;gt;post(&amp;lsquo;password&amp;rsquo;, FILTER_SANITIZE_STRING);&lt;/p&gt;
+
+&lt;p&gt;$this-&amp;gt;data_login[&amp;lsquo;name&amp;rsquo;] = $name;&lt;br /&gt;
+ $this-&amp;gt;data_login[&amp;lsquo;error_stat&amp;rsquo;] = true ;&lt;/p&gt;
+
+&lt;p&gt;if(! empty($name) and !empty($pass)) {&lt;br /&gt;
+     $data = $this-&amp;gt;db-&amp;gt;find_one(&amp;lsquo;users&amp;rsquo;,&lt;br /&gt;
+     array(&amp;lsquo;username&amp;rsquo;=&amp;gt;$name, &amp;lsquo;password&amp;rsquo;=&amp;gt;md5($pass)));&lt;br /&gt;
+     if(false == $data)&lt;br /&gt;
+  $this-&amp;gt;data_login[&amp;lsquo;error_info&amp;rsquo;] = &amp;lsquo;Username / Password tidak valid&amp;rsquo;;&lt;br /&gt;
+     else {&lt;br /&gt;
+         $this-&amp;gt;data_login[&amp;lsquo;title&amp;rsquo;] = &amp;lsquo;Terima kasih telah login&amp;rsquo;;&lt;br /&gt;
+  $this-&amp;gt;data_login[&amp;lsquo;has_login&amp;rsquo;] = true;&lt;br /&gt;
+     }&lt;br /&gt;
+ }&lt;br /&gt;
+ else&lt;br /&gt;
+     $this-&amp;gt;data_login[&amp;lsquo;error_info&amp;rsquo;] = &amp;lsquo;Data tidak boleh kosong&amp;rsquo;;&lt;/p&gt;
+
+&lt;p&gt;$this-&amp;gt;view_loginform( $this-&amp;gt;data_login);&lt;br /&gt;
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function logout() {  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;echo &amp;ldquo;Anda telah logout&lt;br /&gt;
+&amp;rdquo;;&lt;br /&gt;
+ echo &amp;lsquo;&lt;a href=&#34;.$this-&amp;gt;location(&#34;&gt;Klik disini untuk login&lt;/a&gt;&amp;rsquo;;&lt;br /&gt;
+    }&lt;br /&gt;
+}&lt;br /&gt;
+?&amp;gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Penjelasan Kode&lt;br /&gt;
+** baris 6:** meload library request untuk mengambil hasil post dari form .&lt;br /&gt;
+** baris 8:** data yang akan dikirim ke view.&lt;br /&gt;
+** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses&lt;em&gt;login() jika tidak tampilkan view.&lt;br /&gt;
+** baris 25:** meload library database.&lt;br /&gt;
+** baris 27-28:** mengambil nilai post &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo;.&lt;br /&gt;
+Nilai post ini difilter dengan FILTER_SANITAZE_MAGIC_QUOTES&lt;br /&gt;
+untuk username dan password, filter ini untuk melakukan escape pada karakter-
+karakter tertentu.
+&lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;http://php.net/manual/en/filter.filters.sanitize.php&lt;/a&gt;)&lt;br /&gt;
+** baris 30-31:** set nilai untuk view.&lt;br /&gt;
+** baris 33:** cek apakah nilai submit &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo; tidak sama dengan kosong.&lt;br /&gt;
+** baris 34:** melakukan query ke database, $this-&amp;gt;db-&amp;gt;find_one() ini&lt;br /&gt;
+untuk mengambil 1 data berdasarkan argument yang&lt;br /&gt;
+diberikan, nilai kembaliannya adalah object dari hasil&lt;br /&gt;
+query jika data yang dicari ada, atau false jika data&lt;br /&gt;
+tidak ada. Info tentang perintah disini.&lt;br /&gt;
+** baris 37:** jika data yang dicari tidak ada set nilai &amp;lsquo;error_info&amp;rsquo;.&lt;br /&gt;
+** baris 39-40: &lt;strong&gt;Login sukses.&lt;br /&gt;
+** baris 44: **baris ini dieksekusi jika, data post tidak lengkap, misalkan password atau usernamenya kosong.&lt;br /&gt;
+** baris 50-52:&lt;/strong&gt; adalah fungsi untuk logout()&lt;br /&gt;
+fungsi $this-&amp;gt;location() adalah fungsi untuk menampilkan url yang&lt;br /&gt;
+ingin ditampilkan. _[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
+ferences/global_method.html)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;/apps/view/loginform.php&lt;br /&gt;
+Kode&lt;/p&gt;
+
+&lt;h2 id=&#34;selamat-datang:8121fbc2dacbc01c3f9c0ee5b301caaf&#34;&gt;Selamat Datang __&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;      [Logout](login/logout)  
+
+
+               action=&amp;quot;#&amp;quot;&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Name&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;            value=&amp;quot;&amp;quot;&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Password&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                value=&#39;Login&#39;&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Penjelasan Kode&lt;br /&gt;
+variabel-variabel pada file ini adalah &amp;lsquo;&lt;strong&gt;key&lt;/strong&gt;&amp;rsquo; dari&lt;br /&gt;
+_ $this-&amp;gt;data&lt;em&gt;login&lt;/em&gt; yang dikirim lewat view, secara default Panada&lt;br /&gt;
+akan merubah nilai &amp;lsquo;key&amp;rsquo; dari sebuah array yang dikirim lewat perintah view.&lt;br /&gt;
+Misalkan_ $data[&amp;lsquo;login&amp;rsquo;] = true_;&lt;br /&gt;
+maka di file &amp;lsquo;view&amp;rsquo;, kita bisa menggunakan variabel $login yang merupakan
+&amp;lsquo;key&amp;rsquo; dari $data, dimana nilainya adalah true.&lt;br /&gt;
+Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
+
+&lt;p&gt;** baris 8-10: &lt;strong&gt;adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
+** baris 15-29:&lt;/strong&gt; sebaliknya jika belum atau login gagal.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;&lt;br /&gt;
+  adalah tempat instalasi Panada&lt;/p&gt;
+
+&lt;p&gt;Referensi&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Test Speed: Penggabungan string (concat dan implode)</title>
+      <link>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</link>
+      <pubDate>Mon, 08 Aug 2011 20:08:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</guid>
+      <description>&lt;p&gt;Pada PHP kita bisa menggunakan 2 cara untuk menggabung string yaitu dengan
+operator
+&lt;strong&gt;&lt;a href=&#34;http://php.net/manual/en/language.operators.string.php&#34;&gt;titik(.)&lt;/a&gt;&lt;/strong&gt; atau
+lebih dikenal dengan &lt;em&gt;concatenate&lt;/em&gt;, dan menggunakan fungsi
+&lt;strong&gt;&lt;a href=&#34;http://php.net/manual/en/function.implode.php&#34;&gt;implode&lt;/a&gt;&lt;/strong&gt;.Perbedaanya
+adalah pada fungsi &lt;em&gt;implode&lt;/em&gt; &lt;em&gt;string&lt;/em&gt; yang akan digabung adalah variabel
+&lt;em&gt;array&lt;/em&gt;, sedangkan menggunakan &lt;em&gt;concatenate&lt;/em&gt; kode jadi lebih mudah dimengerti
+dan tidak harus menggunakan &lt;em&gt;array&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Saya penasaran dengan kedua fitur tersebut terutama dalam masalah kecepatan,
+berikut beberapa baris kode yang saya gunakan untuk test kecepatan diantara
+kedua fitur tersebut.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// (a) emaniacs  
+define (&#39;STR&#39;, &#39;satu&#39;);  
+$COUNT = 10;  
+$arr = array();  
+
+function use_implode($arr) {  
+    $res = &#39;&#39; ;  
+
+    $s = microtime(true);  
+    $res = implode ($arr);  
+    $e = microtime (true) - $s;  
+    return $e;  
+}  
+function use_concat ($arr, $count) {  
+    $concat = &#39;&#39;;  
+
+    $s = microtime(true);  
+    for ($n = 0; $n &amp;lt; $count; $n++)  
+       $concat .= $arr[$n];  
+    $e = microtime (true) - $s;  
+    return $e;  
+}  
+
+for ($x = 1; $x &amp;lt; 5; $x++) {  
+    $arr = array();  
+
+    /* create array */  
+    for ($i = 0; $i $lt; $COUNT; $i++)  
+       $arr[] = STR;  
+
+    /* tampilkan hasil */  
+    echo &amp;quot;Jumlah looping &amp;quot; . $COUNT . &amp;quot;\n&amp;quot;;  
+    echo &amp;quot;implode = &amp;quot; . use_implode($arr) . &amp;quot;\n&amp;quot;;  
+    echo &amp;quot;concat  = &amp;quot; . use_concat($arr, $COUNT) . &amp;quot;\n&amp;quot;;  
+    echo &amp;quot;------------------\n&amp;quot;;  
+
+    /* naikkan nilai $COUNT */  
+    $COUNT = $COUNT . &#39;0&#39;;  
+    $COUNT = (int) $COUNT ;  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Versi PHP yang digunakan adalah versi 5.3.3 kompile dari source&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ElMmEh1UGMo/Tj76FodpoZI/AAAAAAAAAnE/NUKWB67cgaI/
+s400/concat-vs-implode.00.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Berikut hasil testnya, dengan jumlah &lt;em&gt;COUNT&lt;/em&gt;(jumlah array yang ingin digabung)
+yang berbeda.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-1Y8p4xq9PwQ/Tj76E2Gi1VI/AAAAAAAAAnA/kUO3bJGWip0/
+s1600/concat-vs-implode.01.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Dari hasil output diatas bisa dilihat, kalo &lt;em&gt;concat&lt;/em&gt; lebih hanya jika jumlah
+&lt;em&gt;COUNT&lt;/em&gt; atau array yang akan digabung berjumlah tidak kecil (dalam test diatas
+&lt;em&gt;COUNT&lt;/em&gt;=10), selebihnya &lt;em&gt;implode&lt;/em&gt; lebih cepat meski perbedaannya tidak terlalu
+mencolok.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HTML: Mencegah teks otomatis pada input (autocomplete)</title>
+      <link>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</link>
+      <pubDate>Sun, 07 Aug 2011 20:07:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KbhobXi1PcA/TgbqURRNFKI/AAAAAAAAAmU/zO-
+3dd6Qz-k/s1600/autocomplete.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt; Fitur yang biasanya ada pada form adalah &lt;strong&gt;autocomplete&lt;/strong&gt;, yaitu teks yang
+otomatis menyesuaikan dengan yang kita input, fitur ini biasanya adalah fitur
+bawaan dari browser, meski kita juga bisa membuatnya dengan kode, baik
+javascript atau php. Penggunaannya yang paling sering kita lihat adalah pada
+halaman login.&lt;/p&gt;
+
+&lt;p&gt;Fitur ini sangat membantu apalagi jika sering login dan punya akun yang banyak
+pada beberapa situs. Saya sendiri menggunakan fitur ini pada komputer pribadi.&lt;br /&gt;
+Namun hal ini bisa jadi bahaya kalo kita login dikomputer umum seperti
+komputer kantor atau warnet, karena email atau username akan mudah diketahui.&lt;/p&gt;
+
+&lt;p&gt;Kadang saya sendiri jika masuk ke sebuah warnet, mencoba untuk menekan semua
+karakter(a-z) untuk melihat email atau user yang pernah login pada browser.&lt;br /&gt;
+Dari sisi coding autocomplete ini bisa dicegah dengan menambahkan atribut pada
+tag yang diinginkan, biasanya adalah pada tag input, yaitu menambahkan atribut
+**autocomplete=off **berikut contoh kodenya..&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;   type=&amp;quot;text&amp;quot;   
+   name=&amp;quot;nama&amp;quot;   
+   autocomplete=&amp;quot;off&amp;quot; &amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Autocomplete pada textarea&lt;br /&gt;
+Jika digunakan pada tag input atribut ini berfungsi dengan baik bagaiman jika
+digunakan pada textarea, hal ini tidak akan berfungsi.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Javascript: onclick, tag didalam tag (parent and child)</title>
+      <link>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</link>
+      <pubDate>Mon, 27 Jun 2011 06:27:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</guid>
+      <description>&lt;p&gt;Masalah ini berawal dari sebuah &lt;em&gt;thread&lt;/em&gt; yang ada di
+&lt;a href=&#34;http://kaskus.us/&#34;&gt;Kaskus&lt;/a&gt; disitu ada pertanyaan bagaimana mengatasi &lt;em&gt;event
+click&lt;/em&gt; pada sebuah &lt;strong&gt;div&lt;/strong&gt; yang merupakan &lt;strong&gt;child&lt;/strong&gt; dari &lt;strong&gt;div&lt;/strong&gt; yang juga
+mempunyai &lt;em&gt;event click&lt;/em&gt; pada div tersebut. Jika digambarkan kurang lebih,
+tampilan format div tersebut seperti ini.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-v1KJyAbJ_OY/TgbgTo5zfJI/AAAAAAAAAmQ/5P_e2rcElho/
+s320/parent-child.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Kalo menggunakan format javascript biasa seperti ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function parent_click(){  
+   alert(&amp;quot;parent diklik&amp;quot;);  
+}  
+function child_click(){  
+   alert(&amp;quot;child diklik&amp;quot;);  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Maka ketika diklik pada bagian child, akan terjadi 2 kali pemanggilan _&lt;strong&gt;event
+**_klik, yang pertama _&lt;/strong&gt;event **_untuk child dan yang kedua pada parent.
+Tentu hal in agak sedikit menggangu, untuk mengatasinya bisa dengan 2 cara
+yaitu&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Menggunakan logika pemrograman pada Javascript.&lt;/li&gt;
+&lt;li&gt;Menggunakan CSS style.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Menggunakan logika pemrograman pada Javascript&lt;/p&gt;
+
+&lt;p&gt;Disini kita mengunakan logika atau mengakalinya dengan coding itu sendiri,
+yaitu dengan &lt;em&gt;membuat sebuah variabel global untuk pengecekan event ketika
+diklik pada fungsi parent&lt;/em&gt;, berikut contoh kode untuk menangani masalah
+tersebut.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var childOnClick = false;  
+function parent_click(){  
+   if(childOnClick) {  
+       childOnClick=false;  
+       return;  
+   }  
+   alert(&amp;quot;parent diklik&amp;quot;);  
+}  
+function child_click(){  
+   childOnClick=true;  
+   alert(&amp;quot;child diklik&amp;quot;);  
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Diatas saya buat sebuah variabel yaitu &lt;em&gt;&lt;strong&gt;childOnClick&lt;/strong&gt;&lt;/em&gt; yang akan digunakan
+ketika fungsi &lt;em&gt;&lt;strong&gt;parent_click&lt;/strong&gt;&lt;/em&gt; dipanggil, jika dia true berarti _**event
+**_berasal dari **div **pada child yang diklik, dan hal ini diabaikan.&lt;/p&gt;
+
+&lt;p&gt;Menggunakan CSS style&lt;/p&gt;
+
+&lt;p&gt;Penggunaan ini lebih gampang, yaitu dengan menambahkan kode css yaitu
+&lt;em&gt;&lt;strong&gt;z-index&lt;/strong&gt;&lt;/em&gt; pada tag &lt;strong&gt;div **tersebut, misalkan tag parentnya adalah **&lt;/strong&gt;
+dan tag childnya ****, jadi pada tag child ditambah menjadi seperti ini.&lt;/p&gt;
+
+&lt;p&gt;Nilai &lt;em&gt;&lt;strong&gt;z-index&lt;/strong&gt;&lt;/em&gt; dari child harus lebih besar dari nilai &lt;em&gt;&lt;strong&gt;z-index&lt;/strong&gt;&lt;/em&gt;
+untuk parent.&lt;/p&gt;
+
+&lt;p&gt;========= C-x C-c ==========&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Panada: Membuat Halaman Login</title>
+      <link>http://blog.aredhi.com/post/panada-membuat-halaman-login/</link>
+      <pubDate>Sun, 19 Jun 2011 06:19:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/
+s1600/lock.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Membuat login menggunakan Panada Framework tidak begitu sulit, kalo ini saya
+mencoba untuk membuat tutorial bagaimana membuat halaman login. Halaman login
+biasanya dibutuhkan jika user ingin mengakses halaman web yang terproteksi
+atau halaman yang bersifat private.&lt;br /&gt;
+&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br /&gt;
+ Hal-hal yang dibutuhkan untuk membuat halaman login, terutama library yang
+harus diload pada Panada, berikut diantaranya :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Library Request&lt;/strong&gt;&lt;br /&gt;
+untuk mengambil input dari user yang akan divalidasi&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Library Database&lt;/strong&gt;&lt;br /&gt;
+Ini bisa diabaikan jika tidak menggunakan database, dalam menyimpan username
+atau password.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Karena disini menggunakan database, diharapkan settingan** &amp;ldquo;config.php&amp;rdquo; **anda
+pada bagian database telah disetting dengan benar, sedangkan struktur tabelnya
+sendiri saya menggunakan seperti kode dibawah ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE IF NOT EXISTS `users` (  
+  `id` int(3) NOT NULL auto_increment,  
+  `username` varchar(16) NOT NULL,  
+  `password` varchar(32) NOT NULL,  
+  `nama_depan` varchar(32) NOT NULL,  
+  `nama_belakang` varchar(32) NOT NULL,  
+  `email` varchar(32) NOT NULL,  
+  PRIMARY KEY  (`id`)  
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;  
+
+INSERT INTO `users` (`id`, `username`, `password`, `nama_depan`, `nama_belakang`, `email`) VALUES  
+(1, &#39;chars19&#39;, &#39;b69d9bc635ccd79ad2c64bc862abe3b4&#39;, &#39;Lionel&#39;, &#39;Messi&#39;, &#39;my@email.com&#39;);  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Kebutuhan File&lt;/strong&gt;&lt;br /&gt;
+  Ada 2 file yang akan dibuat, yaitu 1 buah file &lt;em&gt;Controller&lt;/em&gt; dan 1 buah&lt;br /&gt;
+  file &lt;em&gt;View&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;/apps/controller/login.php&lt;/strong&gt;&lt;br /&gt;
+File ini adalah controller untuk penanganan login dan input user&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Controller_login extends Panada  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{&lt;br /&gt;
+    public function &lt;strong&gt;construct() {&lt;br /&gt;
+ parent::&lt;/strong&gt;construct();&lt;br /&gt;
+ $this-&amp;gt;request = new Library_request();&lt;/p&gt;
+
+&lt;p&gt;$this-&amp;gt;data_login =&lt;br /&gt;
+     array(&lt;br /&gt;
+    &amp;lsquo;has_login&amp;rsquo; =&amp;gt; false,&lt;br /&gt;
+    &amp;lsquo;error_stat&amp;rsquo;=&amp;gt;false,&lt;br /&gt;
+    &amp;lsquo;error_info&amp;rsquo;=&amp;gt;&amp;ldquo;,&lt;br /&gt;
+    &amp;lsquo;name&amp;rsquo;=&amp;gt;&amp;ldquo;,&lt;br /&gt;
+    &amp;lsquo;title&amp;rsquo;=&amp;gt;&amp;lsquo;Silahkan Login&amp;rsquo;);&lt;br /&gt;
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function index(){  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;if($this-&amp;gt;request-&amp;gt;post(&amp;lsquo;submit&amp;rsquo;))&lt;br /&gt;
+     $this-&amp;gt;proses_login();&lt;br /&gt;
+ else&lt;br /&gt;
+     $this-&amp;gt;view_loginform( $this-&amp;gt;data_login);&lt;br /&gt;
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private function proses_login() {  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$this-&amp;gt;db = new Library_db();&lt;/p&gt;
+
+&lt;p&gt;$name = $this-&amp;gt;request-&amp;gt;post(&amp;lsquo;username&amp;rsquo;, FILTER_SANITIZE_MAGIC_QUOTES);&lt;br /&gt;
+ $pass = $this-&amp;gt;request-&amp;gt;post(&amp;lsquo;password&amp;rsquo;, FILTER_SANITIZE_STRING);&lt;/p&gt;
+
+&lt;p&gt;$this-&amp;gt;data_login[&amp;lsquo;name&amp;rsquo;] = $name;&lt;br /&gt;
+ $this-&amp;gt;data_login[&amp;lsquo;error_stat&amp;rsquo;] = true ;&lt;/p&gt;
+
+&lt;p&gt;if(! empty($name) and !empty($pass)) {&lt;br /&gt;
+     $data = $this-&amp;gt;db-&amp;gt;find_one(&amp;lsquo;users&amp;rsquo;,&lt;br /&gt;
+     array(&amp;lsquo;username&amp;rsquo;=&amp;gt;$name, &amp;lsquo;password&amp;rsquo;=&amp;gt;md5($pass)));&lt;br /&gt;
+     if(false == $data)&lt;br /&gt;
+  $this-&amp;gt;data_login[&amp;lsquo;error_info&amp;rsquo;] = &amp;lsquo;Username / Password tidak valid&amp;rsquo;;&lt;br /&gt;
+     else {&lt;br /&gt;
+         $this-&amp;gt;data_login[&amp;lsquo;title&amp;rsquo;] = &amp;lsquo;Terima kasih telah login&amp;rsquo;;&lt;br /&gt;
+  $this-&amp;gt;data_login[&amp;lsquo;has_login&amp;rsquo;] = true;&lt;br /&gt;
+     }&lt;br /&gt;
+ }&lt;br /&gt;
+ else&lt;br /&gt;
+     $this-&amp;gt;data_login[&amp;lsquo;error_info&amp;rsquo;] = &amp;lsquo;Data tidak boleh kosong&amp;rsquo;;&lt;/p&gt;
+
+&lt;p&gt;$this-&amp;gt;view_loginform( $this-&amp;gt;data_login);&lt;br /&gt;
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function logout() {  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;echo &amp;ldquo;Anda telah logout&lt;br /&gt;
+&amp;rdquo;;&lt;br /&gt;
+ echo &amp;lsquo;&lt;a href=&#34;.$this-&amp;gt;location(&#34;&gt;Klik disini untuk login&lt;/a&gt;&amp;rsquo;;&lt;br /&gt;
+    }&lt;br /&gt;
+}&lt;br /&gt;
+?&amp;gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Penjelasan Kode&lt;br /&gt;
+** baris 6:** meload library request untuk mengambil hasil post dari form .&lt;br /&gt;
+** baris 8:** data yang akan dikirim ke view.&lt;br /&gt;
+** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses&lt;em&gt;login() jika tidak tampilkan view.&lt;br /&gt;
+** baris 25:** meload library database.&lt;br /&gt;
+** baris 27-28:** mengambil nilai post &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo;.&lt;br /&gt;
+Nilai post ini difilter dengan FILTER_SANITAZE_MAGIC_QUOTES&lt;br /&gt;
+untuk username dan password, filter ini untuk melakukan escape pada karakter-
+karakter tertentu.
+&lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;http://php.net/manual/en/filter.filters.sanitize.php&lt;/a&gt;)&lt;br /&gt;
+** baris 30-31:** set nilai untuk view.&lt;br /&gt;
+** baris 33:** cek apakah nilai submit &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo; tidak sama dengan kosong.&lt;br /&gt;
+** baris 34:** melakukan query ke database, $this-&amp;gt;db-&amp;gt;find_one() ini&lt;br /&gt;
+untuk mengambil 1 data berdasarkan argument yang&lt;br /&gt;
+diberikan, nilai kembaliannya adalah object dari hasil&lt;br /&gt;
+query jika data yang dicari ada, atau false jika data&lt;br /&gt;
+tidak ada. Info tentang perintah disini.&lt;br /&gt;
+** baris 37:** jika data yang dicari tidak ada set nilai &amp;lsquo;error_info&amp;rsquo;.&lt;br /&gt;
+** baris 39-40: &lt;strong&gt;Login sukses.&lt;br /&gt;
+** baris 44: **baris ini dieksekusi jika, data post tidak lengkap, misalkan password atau usernamenya kosong.&lt;br /&gt;
+** baris 50-52:&lt;/strong&gt; adalah fungsi untuk logout()&lt;br /&gt;
+fungsi $this-&amp;gt;location() adalah fungsi untuk menampilkan url yang&lt;br /&gt;
+ingin ditampilkan. _[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
+ferences/global_method.html)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;/apps/view/loginform.php&lt;br /&gt;
+Kode&lt;/p&gt;
+
+&lt;h2 id=&#34;selamat-datang:0423ef0fcf049d52184a87db4c54110a&#34;&gt;Selamat Datang __&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;      [Logout](login/logout)  
+
+
+               action=&amp;quot;#&amp;quot;&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Name&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;            value=&amp;quot;&amp;quot;&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Password&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                value=&#39;Login&#39;&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Penjelasan Kode&lt;br /&gt;
+variabel-variabel pada file ini adalah &amp;lsquo;&lt;strong&gt;key&lt;/strong&gt;&amp;rsquo; dari&lt;br /&gt;
+_ $this-&amp;gt;data&lt;em&gt;login&lt;/em&gt; yang dikirim lewat view, secara default Panada&lt;br /&gt;
+akan merubah nilai &amp;lsquo;key&amp;rsquo; dari sebuah array yang dikirim lewat perintah view.&lt;br /&gt;
+Misalkan_ $data[&amp;lsquo;login&amp;rsquo;] = true_;&lt;br /&gt;
+maka di file &amp;lsquo;view&amp;rsquo;, kita bisa menggunakan variabel $login yang merupakan
+&amp;lsquo;key&amp;rsquo; dari $data, dimana nilainya adalah true.&lt;br /&gt;
+Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
+
+&lt;p&gt;** baris 8-10: &lt;strong&gt;adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
+** baris 15-29:&lt;/strong&gt; sebaliknya jika belum atau login gagal.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;&lt;br /&gt;
+  adalah tempat instalasi Panada&lt;/p&gt;
+
+&lt;p&gt;Referensi&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Format penulisan file pada Panada</title>
+      <link>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</link>
+      <pubDate>Sat, 11 Jun 2011 18:11:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ZRenRr8ZCuc/TfZI5My8iZI/AAAAAAAAAlg/gO5PC8tMvIk/
+s320/panada-format-file.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Seperti framework lainnya, Panada juga memiliki aturan/format tersendiri dalam
+penulisan file, baik untuk &lt;em&gt;Controller&lt;/em&gt;, &lt;em&gt;Model&lt;/em&gt; dan &lt;em&gt;View&lt;/em&gt;.&lt;br /&gt;
+Jika dengan &lt;a href=&#34;http://codeigniter.com/&#34;&gt;CodeIgniter&lt;/a&gt; aturan penulisan
+&lt;a href=&#34;http://codeigniter.com/user_guide/general/controllers.html&#34;&gt;Controller&lt;/a&gt;
+adalah, nama file harus huruf kecil, dan nama class sama dengan nama file
+tetapi harus diawali dengan huruf besar. Sedangkan dengan Panada format
+penulisan untuk Controller adalah nama file juga harus huruf kecil, dan nama
+class adalah nama file ditambah prefix &amp;ldquo;Controller_&amp;rdquo; (seperti pada gambar).&lt;br /&gt;
+Untuk lebih jelas perhatikan tulisan berikut ini&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Controller&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Format Penulisan File&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Nama file&lt;br /&gt;
+Harus huruf kecil semua, jika menggunakan pemisah gunakan underscore (_)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Nama class&lt;br /&gt;
+Sama dengan nama file, dan ditambahi kata &amp;ldquo;Controller&lt;em&gt;&amp;rdquo; diawal nama class, dan
+di _extends&lt;/em&gt; ke Panada&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Constructor function&lt;br /&gt;
+Pada constructor / &lt;strong&gt;construct() fungsi tambahkan kode berikut.&lt;br /&gt;
+**_parent::&lt;/strong&gt;construct()_**&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Default Action&lt;br /&gt;
+Default action adalah fungsi yang akan dipanggil jika tidak ada fungsi yang
+diminta oleh browser.&lt;br /&gt;
+Misalkan nama file adalah &lt;strong&gt;&lt;em&gt;home.php&lt;/em&gt;&lt;/strong&gt; dan alamat browser adalah
+&lt;strong&gt;&lt;em&gt;localhost/panada/home&lt;/em&gt;&lt;/strong&gt; maka yang akan dipanggil adalah fungsi
+&lt;strong&gt;&lt;em&gt;index.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Contoh :&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;nama file = home.php&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Controller_home extends Panada {  
+    public function __construct(){  
+        parent::__construct();  
+    }  
+    public function index(){  
+        echo &amp;quot;Hello world&amp;quot;;  
+    }  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Model&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Format Penulisan File&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Nama file&lt;br /&gt;
+Harus huruf kecil semua.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Nama class&lt;br /&gt;
+Sama dengan nama file tapi ditambahi kata &amp;ldquo;Model&lt;em&gt;&amp;rdquo; diawal nama class, dan tak
+perlu di _extends&lt;/em&gt; ke class Panada.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tak ada  &lt;em&gt;default action&lt;/em&gt; didalam file model.&lt;/p&gt;
+
+&lt;p&gt;Contoh :&lt;/p&gt;
+
+&lt;p&gt;nama file =Modeltest&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Model_Modeltest {  
+    function show_hello() {  
+        echo &amp;quot;Hello from model&amp;quot;;  
+    }  
+}  
+?&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Format Pemanggilan File&lt;/em&gt;&lt;br /&gt;
+Jika mengikuti nama file yang diatas maka model tersebut dipanggil dari
+Controller dengan cara berikut&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;$this-&amp;gt;testmodel = new Model_testmodel();&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;View&lt;/strong&gt;&lt;br /&gt;
+Pada file tak ada aturan khusus terhadap Panada, sama seperti syntax php
+lainnya.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Format Pemanggilan File&lt;/em&gt;&lt;br /&gt;
+_&lt;br /&gt;
+_&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$this-&amp;gt;view_namaview()  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;dimana &lt;strong&gt;&lt;em&gt;namaview&lt;/em&gt;&lt;/strong&gt; diatas adalah nama file yang akan dipanggil didirektori
+view, namaview ini harus sama dengan nama file yang disimpan, jika filenya
+adalah &lt;strong&gt;&lt;em&gt;namaView&lt;/em&gt;&lt;/strong&gt; maka skrip tersebut dipanggil dengan
+&lt;strong&gt;&lt;em&gt;$this-&amp;gt;view_namaView()&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Referensi&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id/&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Panada: Hello World</title>
+      <link>http://blog.aredhi.com/post/panada-hello-world/</link>
+      <pubDate>Thu, 09 Jun 2011 06:09:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/panada-hello-world/</guid>
+      <description>&lt;p&gt;Setelah sukses melakukan &lt;a href=&#34;http://chars19.blogspot.com/2011/06/install-panada.html&#34;&gt;instalasi
+Panada&lt;/a&gt; sekarang saya
+mo bikin sebuah tutorial untuk menampilkan &lt;em&gt;hello world&lt;/em&gt; menggunakan Panada.&lt;/p&gt;
+
+&lt;p&gt;Buatlah dua(2) buah file masing-masing di &lt;strong&gt;&lt;em&gt;apps/controller/helloworld.php&lt;/em&gt;&lt;/strong&gt;
+dan _apps/view/hworld.php _kemudian edit file tersebut seperti ini&lt;/p&gt;
+
+&lt;p&gt;apps/controller/helloworld.php&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Controller_helloworld extends Panada {  
+    function __construct() {  
+        parent::__construct();  
+    }  
+
+    function index() {  
+        // data yang akan dikirim ke view  
+        $data = array (  
+            &#39;title&#39; =&amp;gt; &#39;Panada Framework&#39;,  
+            &#39;h1&#39;    =&amp;gt; &#39;Hello, world with Panada&#39; );  
+
+        // tampilkan view  
+        $this-&amp;gt;view_hworld($data);  
+    }  
+}  
+
+?&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;apps/view/hworld.php&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tampilan HTML program bisa dilihat  _/index.php/helloworld _, sesuaikan &lt;strong&gt;__&lt;/strong&gt;
+dengan instalan panada di komputer anda.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-Hyw7irkF4T8/Te-
+kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Tampilan Hello World, Panada Framework&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Setting Nginx dan PHP</title>
+      <link>http://blog.aredhi.com/post/setting-nginx-dan-php/</link>
+      <pubDate>Mon, 06 Jun 2011 06:06:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/setting-nginx-dan-php/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-RLz6nQCv4tc/TetrQNz8nFI/AAAAAAAAAlM/TV0qZlbWCrw/
+s1600/nginx-logo.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Salah satu webserver yang ringan dan responsif adalah
+&lt;a href=&#34;http://nginx.org/&#34;&gt;Nginx&lt;/a&gt;, selain &lt;a href=&#34;http://lighttpd.net/&#34;&gt;Lighttpd&lt;/a&gt; juga
+tentunya, kali ini saya mau berbagi pengalaman bagaimana membuat settingan
+Nginx agar bisa mengeksekusi skrip PHP, saya menggunakan settingan fastcgi
+untuk menjalankan Php.&lt;/p&gt;
+
+&lt;p&gt;Hal yang pertama kali dilakukan adalah cek apakah php yang terinstall support
+untuk cgi atau fastcgi, yaitu dengan cara&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;$php -v&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;atau&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;$php-cgi -v&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;jika output dari perintah tersebut kurang lebih seperti ini ( terdapat kata
+cgi-fcgi )&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-lcEh0DmPNBs/Tet1K42_VeI/AAAAAAAAAlU/NrrEpzBUIY0/
+s320/php-fcgi.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;maka PHP yang digunakan support dengan fastcgi, jika tidak ada keluar seperti
+yang digambar anda harus kompile ulang dengan menambahkan opsi &lt;strong&gt;&lt;em&gt;--enable-
+fastcgi&lt;/em&gt;&lt;/strong&gt; saat &lt;strong&gt;&lt;em&gt;./configure&lt;/em&gt;&lt;/strong&gt; atau download php-cgi.&lt;/p&gt;
+
+&lt;h3 id=&#34;setting-php-sebagai-fastcgi:fa7b0e72cf98eb4eac9687437c0cbceb&#34;&gt;&lt;em&gt;Setting PHP sebagai FastCGI&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Pada bagian ini semua konfigurasi yang diatas harus telah benar, kalo tidak
+kemungkinan akan gagal ketika menjalankan Nginx atau PHP.&lt;/p&gt;
+
+&lt;p&gt;Buat sebuah file di &lt;strong&gt;&lt;em&gt;/etc/init.d/php-fcgi&lt;/em&gt;&lt;/strong&gt;, harus dengan akses root,
+kemudian ketik kode berikut didalam file tersebut.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash  
+BIND=127.0.0.1:9000  
+USER=www-data  
+PHP_FCGI_CHILDREN=15  
+PHP_FCGI_MAX_REQUESTS=1000  
+
+PHP_CGI=/usr/local/bin/php-cgi  
+PHP_CGI_NAME=`basename $PHP_CGI`  
+PHP_CGI_ARGS=&amp;quot;- USER=$USER PATH=/usr/bin PHP_FCGI_CHILDREN=$PHP_FCGI_CHILDREN PHP_FCGI_MAX_REQUESTS=$PHP_FCGI_MAX_REQUESTS $PHP_CGI -b $BIND&amp;quot;  
+RETVAL=0  
+
+start() {  
+      echo -n &amp;quot;Starting PHP FastCGI: &amp;quot;  
+      start-stop-daemon --quiet --start --background --chuid &amp;quot;$USER&amp;quot; --exec /usr/bin/env -- $PHP_CGI_ARGS  
+      RETVAL=$?  
+      echo &amp;quot;$PHP_CGI_NAME.&amp;quot;  
+}  
+stop() {  
+      echo -n &amp;quot;Stopping PHP FastCGI: &amp;quot;  
+      killall -q -w -u $USER $PHP_CGI  
+      RETVAL=$?  
+      echo &amp;quot;$PHP_CGI_NAME.&amp;quot;  
+}  
+
+case &amp;quot;$1&amp;quot; in  
+    start)  
+      start  
+  ;;  
+    stop)  
+      stop  
+  ;;  
+    restart)  
+      stop  
+      start  
+  ;;  
+    *)  
+      echo &amp;quot;Usage: php-fastcgi {start|stop|restart}&amp;quot;  
+      exit 1  
+  ;;  
+esac  
+exit $RETVAL  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;File ini untuk menjalankan PHP sebagai fastcgi.&lt;br /&gt;
+Kemudian beri akses execute pada file.&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;#chmod +x /etc/init.d/php-fcgi&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;setting-pada-nginx:fa7b0e72cf98eb4eac9687437c0cbceb&#34;&gt;&lt;em&gt;Setting pada Nginx&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;File konfigurasi Nginx pada system Linux ada di &lt;strong&gt;&lt;em&gt;/etc/nginx/nginx.conf&lt;/em&gt;&lt;/strong&gt;
+atau lebih baik edit file di &lt;strong&gt;&lt;em&gt;/etc/nginx/sites-enabled/default&lt;/em&gt;&lt;/strong&gt;.&lt;br /&gt;
+Cari kata server pada file. kemudian didalam scope server tersebut, tambahkan
+konfigurasi berikut pada file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;server {  
+ listen   80;  
+ server_name  localhost;  
+
+ access_log  /var/log/nginx/localhost.access.log;  
+
+ location / {  
+  root   /var/www/nginx-default;  
+  index  index.html index.htm index.php;  
+  if ( !-e $request_filename ) {  
+     rewrite ^(.+)$ /index.php?$1 last;  
+  }  
+ }  
+### &amp;lt;&amp;lt; tambahan untuk php  
+ location ~ \.php$ {  
+   fastcgi_pass   127.0.0.1:9000;  
+   fastcgi_index  index.php;  
+   fastcgi_param  SCRIPT_FILENAME  /var/www/nginx-default$fastcgi_script_name;  
+   include fastcgi_params;  
+ }  
+### &amp;gt;&amp;gt; tambahan untuk php  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Buat sebuah file dengan nama &lt;em&gt;info.php&lt;/em&gt; isikan kode &lt;strong&gt;phpinfo()&lt;/strong&gt; pada file.&lt;br /&gt;
+Kemudian jalankan php-fcgi dan nginx, dan buka browser coba akses ke
+&lt;strong&gt;localhost/info.php&lt;/strong&gt; jika telah keluar informasi tentang PHP, maka
+konfigurasi telah benar.&lt;/p&gt;
+
+&lt;h3 id=&#34;note:fa7b0e72cf98eb4eac9687437c0cbceb&#34;&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Hal yang paling penting dari semua diatas adalah pastikan php-fcgi telah
+dijalankan, jika tidak maka nginx akan mengeluarkan error seperti ini.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-gAUjXfNof_4/TetrROOIYKI/AAAAAAAAAlQ/cgjmm3tw4JU/
+s320/nginx-bad-gateway.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;perintah untuk menjalakan php-fcgi&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;#service php-fcgi start&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+perintah untuk menjalankan nginx&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;#nginx&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+perintah untuk menghentikan nginx&lt;br /&gt;
+&lt;em&gt;&lt;strong&gt;#nginx -s stop&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;referensi:fa7b0e72cf98eb4eac9687437c0cbceb&#34;&gt;&lt;em&gt;Referensi&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://wiki.nginx.org/PHPFcgiExample&#34;&gt;http://wiki.nginx.org/PHPFcgiExample&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install Panada</title>
+      <link>http://blog.aredhi.com/post/install-panada/</link>
+      <pubDate>Fri, 03 Jun 2011 18:03:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/install-panada/</guid>
+      <description>&lt;p&gt;Seperti instalasi Framework lainnya, cukup mudah untuk melakukan instalasi
+Framework ini,,&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Langkah-langkah instalasi Panada&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Download Panada Framework &lt;a href=&#34;http://github.com/k4ndar/Panada/archives/master&#34;&gt;disini&lt;/a&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Extrak dan copy ke direktory server.&lt;br /&gt;
+Dalam hal ini saya menggunakan &lt;strong&gt;Apache&lt;/strong&gt; di &lt;strong&gt;Linux&lt;/strong&gt;, dimana direktorinya
+adalah &lt;em&gt;/var/www/&lt;/em&gt;, saya membuat sebuah direktori lagi yaitu &lt;em&gt;panada&lt;/em&gt;,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;edit file config (/apps/config.php).&lt;br /&gt;
+Sebenarnya langkah ini bisa dilewati, jika hanya ingin melakukan testing pada
+instalasi.&lt;br /&gt;
+Bagian yang paling penting jika menggunakan database adalah pada database
+configuration,,&lt;br /&gt;
+isi driver, host, username, password dan database sesuai konfigurasi pada
+database yang digunakan.&lt;br /&gt;
+(saat ini Panada baru mendukung 3 database yaitu mysql, postgresql dan sqlite,
+selain itu bisa juga menggunakan mongoDB)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Test instalasi.&lt;br /&gt;
+buka web browser, ketikkan diurl&lt;br /&gt;
+_ &lt;a href=&#34;http://localhost/panada_&#34;&gt;http://localhost/panada_&lt;/a&gt;&lt;br /&gt;
+Jika tampilan browser seperti ini&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-td08tvLqUAI/TeUNUhnMhoI/AAAAAAAAAhk/rJXshuvf_uU/
+s400/panada-sukses-instalasi.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;maka instalasi telah berhasil&lt;/p&gt;
+
+&lt;p&gt;Ok instalasi telah selesai dan sukses, sekarang saatnya berkreasi dengan
+Panada.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Variabel Variabels dengan PHP (fungsi dan class)</title>
+      <link>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</link>
+      <pubDate>Thu, 02 Jun 2011 06:02:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
+s200/var-var.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Dengan PHP kita bisa mengambil sebuah nilai atau mengisi nilai pada sebuah
+variabel yang ditandai dengan &lt;em&gt;dollar($)&lt;/em&gt;, simbol ini merupakan simbol
+variabel dalam PHP. Selain melakukan 2 hal diatas, kita juga bisa membuat
+sebuah variabel dari sebuah nilai yang ada pada variabel, artinya jika &lt;strong&gt;var&lt;/strong&gt;
+bernilai &lt;strong&gt;satu&lt;/strong&gt;, &lt;strong&gt;var&lt;/strong&gt; adalah &lt;em&gt;variabel&lt;/em&gt; dan &lt;strong&gt;satu&lt;/strong&gt; adalah &lt;em&gt;nilai&lt;/em&gt;, dan
+jika kita memanggil variabel &lt;strong&gt;var &lt;/strong&gt;maka yang keluar adalah **satu. **Dengan
+Variabel Variabels nya PHP kita bisa membuat sebuah variabel yang bernama satu
+dengan nilai yang bisa kita tentukan sendiri.&lt;/p&gt;
+
+&lt;p&gt;Berikut Penjelasannya.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;$var = &amp;ldquo;satu&amp;rdquo; ;&lt;/strong&gt;&lt;br /&gt;
+Mengisi nilai variabel $var dengan string &amp;ldquo;satu&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;echo $var ;&lt;/strong&gt;&lt;br /&gt;
+Output: satu&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;$$var = 1 ;&lt;/strong&gt;&lt;br /&gt;
+membuat sebuah variabel yaitu &lt;em&gt;satu&lt;/em&gt; dengan nilai integer 1.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;echo $satu;&lt;/strong&gt;&lt;br /&gt;
+Output: 1&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hal ini bermanfat ketika ingin melakukan asosiasi sebuah variabel secara
+langsung ataupun ingin mengambil nilai variabel yang telah ditentukan namanya.&lt;/p&gt;
+
+&lt;p&gt;Perintah ini juga bisa dilakukan untuk variabel GLOBAL seperti &lt;strong&gt;$_GET&lt;/strong&gt; atau
+&lt;strong&gt;$_POST&lt;/strong&gt;, misalkan kita ingin mengambil nilai variabel $_POST, bisa dengan
+cara berikut&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$p = &amp;quot;_POST&amp;quot;;  
+$nilai = $$p  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Dengan kode diatas kita telah mengcopy nilai &lt;strong&gt;$_POST&lt;/strong&gt; ke &lt;strong&gt;$nilai&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Namun ketika saya coba melakukannya, dari dalam sebuah fungsi dan class, hal
+ini menghasilkan NULL, ini contoh kode yang saya gunakan.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function fn(){  
+  $x = &amp;quot;_POST&amp;quot;;  
+  $z = $$x;  
+  return $z;  
+}  
+
+echo &amp;quot;dari fungsi  
+&amp;quot;;  
+var_dump( fn());  
+
+echo &amp;quot;  
+manual  
+&amp;quot;;  
+$x=&#39;_POST&#39;;  
+var_dump( $$x)  
+
+?&amp;gt;  
+
+
+Submit  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;dan ini Outputnya..&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-Fu7C-
+3LFT1M/Teeqq5i91aI/AAAAAAAAAjA/Xt8MuHzIB4A/s320/variable-variables.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Saya sendiri ga tau kenapa, udah nyari-nyari tapi tetap ga nemu, satu-satunya
+jalan adalah berusaha menghindari pemakaian kode seperti tersebut, jika ingin
+membuat variable dari nilai sebuah variable.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Panada Framework, A PHP 5 Base Web Framework</title>
+      <link>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</link>
+      <pubDate>Wed, 01 Jun 2011 18:01:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</guid>
+      <description>&lt;p&gt;Berdasarkan&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt; dokumentasi
+Panada&lt;/a&gt;, framework ini adalah
+&lt;em&gt;framework sederhana dan simple untuk pembuatan website berbasiskan PHP 5.
+Panada dikembangkan dengan tujuan membantu para pengembang website untuk
+bekerja lebih cepat, lebih mudah dan lebih alamiah dalam penulisan kode.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Framework ini ditulis oleh  &lt;a href=&#34;http://kandar.info/&#34;&gt;Iskandar Soesman&lt;/a&gt;, seorang
+Software Engineer yang bekerja di &lt;a href=&#34;http://kompas.com/&#34;&gt;Kompas.com&lt;/a&gt; dan
+&lt;a href=&#34;http://detik.com/&#34;&gt;detik.com&lt;/a&gt;, ini adalah framework pertama yang dirilis asli
+bikinan Indonesia.&lt;/p&gt;
+
+&lt;p&gt;Panada merupakan framework opensource yang berlisensi &lt;a href=&#34;http://www.opensource.org/licenses/bsd-license.php&#34;&gt;BSD-
+License&lt;/a&gt;, artinya semua
+orang bebas menggunakannya baik untuk komersil atau non-komersil.&lt;/p&gt;
+
+&lt;p&gt;Fitur-Fitur Panada&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Sederhana dan Simple&lt;br /&gt;
+Sistem utama (&lt;em&gt;core system&lt;/em&gt;) Panada hanya terdiri dari sebuah file, yaitu
+&lt;strong&gt;gear.php&lt;/strong&gt;&lt;br /&gt;
+yang terletak pada direktori &lt;strong&gt;panada&lt;/strong&gt;. Hal ini bertujuan memudahkan&lt;br /&gt;
+pengguna dalam memahami alur kerja Panada.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mudah&lt;br /&gt;
+Dengan hanya sedikit mengisikan beberapa parameter pada file
+&lt;strong&gt;apps/config.php&lt;/strong&gt;&lt;br /&gt;
+Panada sudah bisa langsung digunakan.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Single Load&lt;br /&gt;
+Cukup sekali melakukan pengambilan komponen (&lt;em&gt;component load&lt;/em&gt;) dan
+sumberdayanya&lt;br /&gt;
+bisa langsung digunakan di semua komponen lainnya. Pengambilan bisa dilakukan&lt;br /&gt;
+pada bagian &lt;a href=&#34;http://www.panadaframework.com/documentation/id/refer
+ences/autoloader.html&#34;&gt;autoloader&lt;/a&gt;, di dalam &lt;a href=&#34;http://www.panadaframework.com/d
+ocumentation/id/references/controller.html&#34;&gt;controller&lt;/a&gt;, di dalam
+&lt;a href=&#34;http://www.panadaframework.com/documentation/id/references/model.html&#34;&gt;model&lt;/a&gt;
+atau di dalam &lt;a href=&#34;http://www.panadaframework.com/documentation/id/refere
+nces/library.html&#34;&gt;library&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Alamiah&lt;br /&gt;
+Dalam pengambilan sebuah komponen baik itu model ataupun library, Anda hanya&lt;br /&gt;
+cukup melakukan sekali pendeklarasian sebagaimana umumnya dalam
+mendeklarasikan&lt;br /&gt;
+sebuah class. Contohnya:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$this-&amp;gt;model = new model_namaModel();  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$this-&amp;gt;lib   = new library_namaLibrary();&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;MultiSite&lt;br /&gt;
+Beberapa website bisa dibuat dengan menggunakan satu sistem utama yang sama,
+baik itu&lt;br /&gt;
+dengan domain utama yang sama ataupun berbeda.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Salah satu format yang saya suka adalah format pemanggilan suatu model atau
+library Panada tersebut, yaitu dengan cara alami ketika memanggil sebuah class
+dalam bahasa PHP, hal ini menurut saya pribadi membuat kita tidak lupa dengan
+bahasa PHP itu sendiri, tidak seperti di CodeIgniter ketika memanggil suatu
+library atau model maka digunakan &lt;em&gt;$this-&amp;gt;load-&amp;gt;model(&amp;lsquo;nama_model&amp;rsquo;)&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trik / Rahasia PHP yang jarang diketahui</title>
+      <link>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</link>
+      <pubDate>Tue, 31 May 2011 14:22:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://www.php.net/images/logos/php-med-trans.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Sebenarnya lebih tepat aturan bukan rahasia, tapi karena orang jarang yang
+tahu makanya kadang disebut rahasia, hal ini dilupakan karena mungkin tidak
+terlalu penting atau juga karena memang tak peduli, padahal menurut ane, ini
+merupakan sesuatu yang bisa jadi nilai tambah ketika melakukan koding, ataupun
+ketika interview masalah PHP.&lt;/p&gt;
+
+&lt;p&gt;Berikut ini adalah beberapa aturan-aturan dalam PHP yang jarang diketahui oleh
+kebanyakan programmer,,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Fungsi dalam PHP incase-sensitif.&lt;br /&gt;
+Termasuk built-in fungsi dari PHP, fungsi
+&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.echo.php&#34;&gt;echo&lt;/a&gt;&lt;/em&gt; bisa dipanggil dengan
+Echo, ECHO atau yang lainnya.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;constant case-sensitif.&lt;br /&gt;
+const VAR = &amp;ldquo;variabel&amp;rdquo;,&lt;br /&gt;
+maka nilai VAR diatas hanya bisa dipanggil dengan VAR, error jika dipanggil
+dengan Var.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;keyword PHP seperti &lt;strong&gt;NULL&lt;/strong&gt; incase-sensitif&lt;br /&gt;
+NULL, null, NUll dan yang lainnya adalah sama.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Single quote (&amp;lsquo;) dan Double quote(&amp;ldquo;) adalah sama-sama string, tapi single quote tidak menerjemahkan nilai variabel.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$v = &#39;variabel&#39;;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;echo &amp;lsquo;nilai variabel = $x&amp;rsquo;;  // mencetak nilai variabel = $x&lt;br /&gt;
+echo &amp;ldquo;nilai variabel = $x&amp;rdquo;;  // mencetak nilai variabel = variabel&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;close tag pada baris comment tetap dianggap sebagai penutup tag PHP.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo &amp;quot;test&amp;quot;;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;// close tag pada comment ini akan dianggap sebagai close tag dari kode php yang dibuat ?&amp;gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Nilai false pada PHP&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;keyword &lt;strong&gt;false&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Keyword &lt;strong&gt;NULL&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;integer 0&lt;/li&gt;
+&lt;li&gt;floating point 0.0&lt;/li&gt;
+&lt;li&gt;empty string (&amp;ldquo;&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;string &amp;ldquo;0&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;array dengan jumlah element nol.&lt;/li&gt;
+&lt;li&gt;object tanpa nilai atau tanpa fungsi.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Variabel yang tidak diinisialisasikan bernilai &lt;strong&gt;NULL&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Nilai sebuah variabel bisa dijadikan variabel dengan double dollar (&lt;strong&gt;$$&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$v = &amp;quot;satu&amp;quot;;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$$v = 1;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Pada kode diatas baris kedua akan menciptakan sebuah variabel baru yaitu $satu
+yang bernilai 1.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Variabel alias bisa dengan menggunakan ampersand(&amp;amp;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$x = &amp;quot;satu&amp;quot;;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$y =&amp;amp; $x ;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Jika kita merubah nilai $y otomatis akan merubah nilai $x juga.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Jika sebuah variabel alias diberikan perintah unset maka variabel aslinya tidak berubah.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$x = &amp;quot;satu&amp;quot;;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$y =&amp;amp; $x ;&lt;br /&gt;
+echo &amp;ldquo;Nilai x = $x\n&amp;rdquo;;&lt;br /&gt;
+echo &amp;ldquo;Nilai y = $y\n&amp;rdquo;;&lt;br /&gt;
+$y = &amp;ldquo;dua&amp;rdquo;;&lt;br /&gt;
+echo &amp;ldquo;Nilai x setelah y diruba $x\n&amp;rdquo;;&lt;br /&gt;
+echo &amp;ldquo;Nilai y setelah dirubah $y\n&amp;rdquo;;&lt;br /&gt;
+unset($y);&lt;br /&gt;
+echo &amp;ldquo;Nilai x setelah y diunset $x\n&amp;rdquo;;&lt;br /&gt;
+echo &amp;ldquo;Nilai y setelah diunset $y\n&amp;rdquo;;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Pada baris terakhir akan menghasilkan error karena y telah dirubah.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Selain menggunakan &lt;strong&gt;!=&lt;/strong&gt; untuk pertidaksamaan bisa juga dengan &lt;strong&gt;&amp;lt;&amp;gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Persamaan dengan 3 samadengan (&lt;strong&gt;===&lt;/strong&gt;) bernilai &lt;strong&gt;TRUE&lt;/strong&gt; jika kedua variabel yang dijadikan perbandingan mempunyai _nilai dan type data yang sama _&lt;/li&gt;
+&lt;li&gt;Int + Float, maka Int akan dirubah menjadi Float terlebih dahulu.&lt;/li&gt;
+&lt;li&gt;String + Float, maka String dirubah menjadi Float.&lt;/li&gt;
+&lt;li&gt;String + Int, String dirubah menjadi Number, jika Number adalah Float maka Int dirubah menjadi Float.&lt;/li&gt;
+&lt;li&gt;String bisa di Increment.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Operasi pada String dilakukan pada semua huruf sesuai posisinya.&lt;br /&gt;
+&amp;ldquo;satu&amp;rdquo; | &amp;ldquo;dua&amp;rdquo; sama dengan &amp;ldquo;s&amp;rdquo;|&amp;ldquo;d&amp;rdquo;, &amp;ldquo;a&amp;rdquo;|&amp;ldquo;u&amp;rdquo;, &amp;ldquo;t&amp;rdquo;|&amp;ldquo;a&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Fungsi bisa bersarang(nested)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function induk() {  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;echo &amp;ldquo;ini dari fungsi induk\n&amp;rdquo;;&lt;br /&gt;
+   function anak() {&lt;br /&gt;
+      echo &amp;ldquo;ini dari fungsi anak\n&amp;rdquo;;&lt;br /&gt;
+   }&lt;br /&gt;
+}&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Untuk memanggil fungsi anak() maka fungsi induk harus dipanggil terlebih
+dahulu.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Memanggil fungsi bisa dengan nilai pada variabel.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function test(){  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;echo &amp;ldquo;ini fungsi test\n&amp;rdquo;;&lt;br /&gt;
+}&lt;br /&gt;
+$var = &amp;ldquo;test&amp;rdquo;;&lt;br /&gt;
+$var();&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Perintah terakhir diatas adalah memanggil fungsi test().&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Selain dengan &lt;strong&gt;function&lt;/strong&gt;, untuk membuat fungsi bisa dengan &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.create-function.php&#34;&gt;create_function()&lt;/a&gt;&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Didalam double-quote nilai variabel yang ingin diambil bisa dipisahkan dengan {}.&lt;/li&gt;
+&lt;li&gt;Jika escape karakter tidak diketahui, maka akan diignore atau diabaikan.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.echo.php&#34;&gt;echo&lt;/a&gt;&lt;/em&gt; bukanlah fungsi, karena itu echo lebih cepat dari &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.print.php&#34;&gt;print&lt;/a&gt;.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Karakter yang akan dihapus oleh trim, ltrim, rtrim&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&amp;rdquo; &amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;0x20&lt;/p&gt;
+
+&lt;p&gt;Space&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;\t&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;0x09&lt;/p&gt;
+
+&lt;p&gt;Tab&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;\n&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;0x0A&lt;/p&gt;
+
+&lt;p&gt;Newline(linefeed)&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;\r&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;0x0D&lt;/p&gt;
+
+&lt;p&gt;Carriage Return&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;\0&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;0x00&lt;/p&gt;
+
+&lt;p&gt;Null Byte&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;\x0B&lt;/p&gt;
+
+&lt;p&gt;0x0B&lt;/p&gt;
+
+&lt;p&gt;Vertical Tab&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Fungsi &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.trim.php&#34;&gt;trim()&lt;/a&gt;&lt;/em&gt; bisa juga untuk menghapus karakter lain, dengan mengisi variabel kedua pada fungsi tersebut.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$var = &amp;quot;XsatuX&amp;quot;;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;echo ltrim($var, &amp;ldquo;X&amp;rdquo;);&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Kode diatas akan mencetak &amp;ldquo;satuX&amp;rdquo;;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.substr-replace.php&#34;&gt;substr_replace()&lt;/a&gt;&lt;/em&gt; bisa digunakan untuk insert atau delete karakter.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.join.php&#34;&gt;join()&lt;/a&gt;&lt;/em&gt; adalah alias dari &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.implode.php&#34;&gt;implode()&lt;/a&gt;, &lt;a href=&#34;http://php.net/manual/en/function.sizeof.php&#34;&gt;sizeof()&lt;/a&gt; juga alias dari &lt;a href=&#34;http://php.net/manual/en/function.count.php&#34;&gt;count()&lt;/a&gt;.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strike&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.preg-match.php&#34;&gt;preg_match()&lt;/a&gt;&lt;/em&gt; bisa untuk mengcapture teks, tapi tak lebih dari 99 karakter&lt;/strike&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$variabel[3]&lt;/strong&gt; sama dengan &lt;strong&gt;$variabel[&amp;lsquo;3&amp;rsquo;]&lt;/strong&gt; tapi tidak dengan** $variabel[&amp;lsquo;03&amp;rsquo;]**&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$variabel[index]&lt;/strong&gt; sama dengan** $variabel[&amp;lsquo;index&amp;rsquo;]**, tapi yang pertama lebih lambat karena PHP akan melakukan cek terhadap nilai constant terlebih dahulu.&lt;/li&gt;
+&lt;li&gt;Jika perintah pada opsi diatas dilakukan pada string atau diapit double-quote maka cara yang benar adalah cara pertama ($variabel[index]).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.array-push.php&#34;&gt;array_push&lt;/a&gt;&lt;/em&gt;($array, 1) sama dengan $array[] = 1&lt;/li&gt;
+&lt;li&gt;Kecuali &lt;a href=&#34;http://php.net/manual/en/function.natsort.php&#34;&gt;natsort()&lt;/a&gt;_ dan _&lt;a href=&#34;http://php.net/manual/en/function.natcasesort.php&#34;&gt;natcasesort()&lt;/a&gt;, fungsi sort yang lainnya melakukan sorting berdasarkan ascii value.&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Normal SortAscii Sort&lt;/p&gt;
+
+&lt;p&gt;1.txt&lt;/p&gt;
+
+&lt;p&gt;1.txt&lt;/p&gt;
+
+&lt;p&gt;5.txt&lt;/p&gt;
+
+&lt;p&gt;10.txt&lt;/p&gt;
+
+&lt;p&gt;10.txt&lt;/p&gt;
+
+&lt;p&gt;5.txt&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Referensi:&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt; &lt;a href=&#34;http://php.net/manual/&#34;&gt;php-manual&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

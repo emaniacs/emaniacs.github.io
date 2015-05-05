@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Panada Framework, A PHP 5 Base Web Framework &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/panada-framework-a-php-base-web-framework/"><h2 class="post-title">Panada Framework, A PHP 5 Base Web Framework</h2></a>
+
+                    <p class="post-meta">
+                        <i>Wednesday , 01 Jun 2011 18:01:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/panada">panada</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p>Berdasarkan<a href="http://www.panadaframework.com/documentation/id"> dokumentasi
+Panada</a>, framework ini adalah
+<em>framework sederhana dan simple untuk pembuatan website berbasiskan PHP 5.
+Panada dikembangkan dengan tujuan membantu para pengembang website untuk
+bekerja lebih cepat, lebih mudah dan lebih alamiah dalam penulisan kode.</em></p>
+
+<p>Framework ini ditulis oleh  <a href="http://kandar.info/">Iskandar Soesman</a>, seorang
+Software Engineer yang bekerja di <a href="http://kompas.com/">Kompas.com</a> dan
+<a href="http://detik.com/">detik.com</a>, ini adalah framework pertama yang dirilis asli
+bikinan Indonesia.</p>
+
+<p>Panada merupakan framework opensource yang berlisensi <a href="http://www.opensource.org/licenses/bsd-license.php">BSD-
+License</a>, artinya semua
+orang bebas menggunakannya baik untuk komersil atau non-komersil.</p>
+
+<p>Fitur-Fitur Panada</p>
+
+<ul>
+<li><p>Sederhana dan Simple<br />
+Sistem utama (<em>core system</em>) Panada hanya terdiri dari sebuah file, yaitu
+<strong>gear.php</strong><br />
+yang terletak pada direktori <strong>panada</strong>. Hal ini bertujuan memudahkan<br />
+pengguna dalam memahami alur kerja Panada.</p></li>
+
+<li><p>Mudah<br />
+Dengan hanya sedikit mengisikan beberapa parameter pada file
+<strong>apps/config.php</strong><br />
+Panada sudah bisa langsung digunakan.</p></li>
+
+<li><p>Single Load<br />
+Cukup sekali melakukan pengambilan komponen (<em>component load</em>) dan
+sumberdayanya<br />
+bisa langsung digunakan di semua komponen lainnya. Pengambilan bisa dilakukan<br />
+pada bagian <a href="http://www.panadaframework.com/documentation/id/refer
+ences/autoloader.html">autoloader</a>, di dalam <a href="http://www.panadaframework.com/d
+ocumentation/id/references/controller.html">controller</a>, di dalam
+<a href="http://www.panadaframework.com/documentation/id/references/model.html">model</a>
+atau di dalam <a href="http://www.panadaframework.com/documentation/id/refere
+nces/library.html">library</a>.</p></li>
+
+<li><p>Alamiah<br />
+Dalam pengambilan sebuah komponen baik itu model ataupun library, Anda hanya<br />
+cukup melakukan sekali pendeklarasian sebagaimana umumnya dalam
+mendeklarasikan<br />
+sebuah class. Contohnya:</p>
+
+<pre><code>$this-&gt;model = new model_namaModel();  
+</code></pre>
+
+<p>$this-&gt;lib   = new library_namaLibrary();</p></li>
+
+<li><p>MultiSite<br />
+Beberapa website bisa dibuat dengan menggunakan satu sistem utama yang sama,
+baik itu<br />
+dengan domain utama yang sama ataupun berbeda.</p></li>
+</ul>
+
+<p>Salah satu format yang saya suka adalah format pemanggilan suatu model atau
+library Panada tersebut, yaitu dengan cara alami ketika memanggil sebuah class
+dalam bahasa PHP, hal ini menurut saya pribadi membuat kita tidak lupa dengan
+bahasa PHP itu sendiri, tidak seperti di CodeIgniter ketika memanggil suatu
+library atau model maka digunakan <em>$this-&gt;load-&gt;model(&lsquo;nama_model&rsquo;)</em>.</p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/">Variabel Variabels dengan PHP (fungsi dan class)</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/">Trik / Rahasia PHP yang jarang diketahui</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/php-array-key-exists-or-isset/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> php: array_key_exists or isset &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/php-array-key-exists-or-isset/"><h2 class="post-title">php: array_key_exists or isset</h2></a>
+
+                    <p class="post-meta">
+                        <i>Wednesday , 18 Apr 2012 06:18:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p>I know <em><a href="http://php.net/manual/en/function.array-key-
+exists.php">array_key_exists</a></em> is a function and
+<em>[isset</em>](<a href="http://php.net/manual/en/function.isset.php">http://php.net/manual/en/function.isset.php</a>) is a keyword, later, i
+think<a href="http://php.net/manual/en/function.array-key-
+exists.php"> <em>array_key_exists</em></a> and <em>[isset</em>](<a href="http://php.net/manual/en/function.isset.php">http://php.net/manual/en/function.isset.php</a>) in PHP
+is a same or array_key_exists is shortcut for isset. But when i read  on php
+manual, there is no document that explains that it is the same or related, so
+i try to look in php source code, and i got the same answers.</p>
+
+<p>and this is code for the which array_key_exists i look in the php source code.</p>
+
+<p><img src="http://www.google.com/uds/css/small-logo.png" alt="" />
+</p>
+
+<p>In my mind, array_key_exists is like that :)</p>
+
+<pre><code>boolean array_key_exists (key, arrayName) {  
+    return isset(arrayName[key]);  
+}  
+</code></pre>
+
+<p>and this is code for array_key_exists which i look in php source code.</p>
+
+<pre><code>/* {{{ proto bool array_key_exists(mixed key, array search)  
+   Checks if the given key or index exists in the array */  
+PHP_FUNCTION(array_key_exists)  
+{  
+ zval *key;     /* key to check for */  
+ HashTable *array;   /* array to check in */  
+
+ if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, &quot;zH&quot;, &amp;key;, &amp;array;) == FAILURE) {  
+  return;  
+ }  
+
+ switch (Z_TYPE_P(key)) {  
+  case IS_STRING:  
+   if (zend_symtable_exists(array, Z_STRVAL_P(key), Z_STRLEN_P(key) + 1)) {  
+    RETURN_TRUE;  
+   }  
+   RETURN_FALSE;  
+  case IS_LONG:  
+   if (zend_hash_index_exists(array, Z_LVAL_P(key))) {  
+    RETURN_TRUE;  
+   }  
+   RETURN_FALSE;  
+  case IS_NULL:  
+   if (zend_hash_exists(array, &quot;&quot;, 1)) {  
+    RETURN_TRUE;  
+   }  
+   RETURN_FALSE;  
+
+  default:  
+   php_error_docref(NULL TSRMLS_CC, E_WARNING, &quot;The first argument should be either a string or an integer&quot;);  
+   RETURN_FALSE;  
+ }  
+}  
+</code></pre>
+
+<p>yeah, its really different.</p>
+
+<p><strong><em>Difference.</em></strong><br />
+So what the big different between them, this is the list based in my mind and
+other source from internet.</p>
+
+<ol>
+<li><p>isset is keyword or language constructor and array_key_exists is function.<br />
+so isset faster then array_key_exists.</p></li>
+
+<li><p>isset will check value of variables.<br />
+if value of variable is null isset will return false, but with
+array_key_exists will return true even a value is null.</p>
+
+<pre><code>$ php -r '$var=array(&quot;php&quot;=&gt;null); var_dump(isset($var[&quot;php&quot;]));'  
+</code></pre>
+
+<p>(bool)false<br />
+$ php -r &lsquo;$var=array(&ldquo;php&rdquo;=&gt;null); var_dump(array_key_exists(&ldquo;php&rdquo;, $var));&rsquo;<br />
+(bool)true</p></li>
+</ol>
+
+<p>Source:</p>
+
+<ul>
+<li><a href="http://php.net/manual/en/function.array-key-exists.php">http://php.net/manual/en/function.array-key-exists.php</a></li>
+<li><a href="http://php.net/manual/en/function.isset.php">http://php.net/manual/en/function.isset.php</a></li>
+</ul>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/newbie-using-gnuchess/">Newbie using gnuchess</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/default-value-for-return/">Default value for return</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

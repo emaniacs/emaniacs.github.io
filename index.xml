@@ -432,5 +432,174 @@ menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt
 </description>
     </item>
     
+    <item>
+      <title>Arsenalisme</title>
+      <link>http://blog.aredhi.com/post/arsenalisme/</link>
+      <pubDate>Sat, 31 May 2014 00:46:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/arsenalisme/</guid>
+      <description>&lt;p&gt;Arsenalisme adalah sebuah paham tentang kesetiaan terhadap sesuatu yang sangat
+potensial.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Git command: stash</title>
+      <link>http://blog.aredhi.com/post/git-command-stash/</link>
+      <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
+      <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
+ketika melakukan perintah ini.&lt;/p&gt;
+
+&lt;p&gt;Ketika melakukan aktifitas editing pada source-code yang belum selesai, tapi
+belum ingin di_commit_ dan harus pindah ke branch lain, maka perintah stash
+bisa digunakan.&lt;/p&gt;
+
+&lt;p&gt;Beberapa perintah sederhana git stash.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan menyimpan semua perubahan pada file yang kita edit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash save namaStash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini sama dengan perintah sebelumnya namun kita menentukan sendiri
+namanya.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash list&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan menampilkan daftar dari perintah stash yang pernah kita
+lakukan.&lt;/p&gt;
+
+&lt;p&gt;Contoh output:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $ git stash list&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{0}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{1}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{2}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{3}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{4}: On master: satu sampe lime&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;_&lt;br /&gt;
+_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash apply&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan mengembalikan kondisi file yang sebelumnya kita simpan,
+kondisi yang diambil adalah kondisi yang paling atas atau &lt;strong&gt;&lt;em&gt;stash@{0}&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash apply namaStash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini sama dengan perintah &lt;strong&gt;git stash apply&lt;/strong&gt;, bedanya kita menentukan
+sendiri kondisi mana yang akan diaplikasikan ke repository kode kita.&lt;/p&gt;
+
+&lt;p&gt;Berikut diatas adalah beberapa perintah &lt;strong&gt;stash&lt;/strong&gt; yang sering saya gunakan,
+untuk penggunaan lebih lanjut bisa dilihat di manual dari git tentang stash
+&lt;strong&gt;$ git help stash&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;NB: Perintah stash hanya berpengaruh terhadap file yang telah ditrack oleh
+git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt;
+**&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;**Source:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/book/en/Git-Tools-Stashing&#34;&gt;http://git-scm.com/book/en/Git-Tools-Stashing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alam semesta berkabut</title>
+      <link>http://blog.aredhi.com/post/alam-semesta-berkabut/</link>
+      <pubDate>Mon, 06 Jan 2014 17:10:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/alam-semesta-berkabut/</guid>
+      <description>&lt;p&gt;Dalam perjalanan turun dari gunung ciremai&lt;br /&gt;
+diantara pos arban dan cigowong&lt;br /&gt;
+aku berpisah tidak begitu jauh&lt;br /&gt;
+dan berjalan sendiri ditengah hutan.&lt;br /&gt;
+Ketika suara binatang cukup jelas,aku merentangkan kedua tanganku,&lt;br /&gt;
+kututup mata ini, kuresapi suara hutan, suara alam&lt;br /&gt;
+dan tiba-tiba, aku merasakan jiwaku seperti terangkat dari tubuhku&lt;br /&gt;
+aku bisa melihat dengan jelas tubuhku sedang merentangkan kedua tangan,&lt;br /&gt;
+disebelah sebuah pohon.&lt;br /&gt;
+Seketika dengan kecepatan yang hebat aku terangkat semakin tinggi,&lt;br /&gt;
+sehingga aku melihat bumi semakin lama semakin kecil,&lt;br /&gt;
+dan aku melihat benua afrika hanya sebesar telapak tangan.&lt;br /&gt;
+Dan semakin cepat aku semakin terangkat semakin tinggi&lt;br /&gt;
+bumi semakin kecil dan bercahaya,&lt;br /&gt;
+banyak sekali cahaya yang bertebaran dimana-mana yang lebih kecil atau lebih
+besar&lt;br /&gt;
+dengan mata aku melihat alam semesta berkabut&lt;br /&gt;
+seperti melihat malam dari sebuah kaca yang berembun.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-npXgy5RulMM/UsqA-L-dnkI/AAAAAAAACKg/4enwVmPUQac/
+s1600/IMG_20140105_103642_297.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jingga dilangit Jakarta</title>
+      <link>http://blog.aredhi.com/post/jingga-dilangit-jakarta/</link>
+      <pubDate>Tue, 19 Nov 2013 19:10:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/jingga-dilangit-jakarta/</guid>
+      <description>&lt;p&gt;Sel Nov 19 18:51:29 WIT 2013&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-UqjAFunznsM/UotRNdaVgWI/AAAAAAAACIc/RfUSYyY3VYE/
+s320/IMG_20131119_175836_440.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-3MULX4fA8cY/UotRNKoW8nI/AAAAAAAACIY/mXjlh5n6u8I/
+s320/IMG_20131119_175858_148.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-yjaB1dgz2aQ/UotRNLBsyiI/AAAAAAAACIg/88IS6VBwxc4/
+s320/IMG_20131119_175941_341.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-tGJ-
+9ICSTtM/UotROFOzETI/AAAAAAAACIw/5lYOGRGNg4A/s320/IMG_20131119_180444_834.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-33njfVil87k/UotRPyvn_LI/AAAAAAAACJU/230B_jp-
+cBE/s320/IMG_20131119_180934_066.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-oiIb16whUI4/UotRPDNVJBI/AAAAAAAACJA/RjE16UTidQw/
+s320/IMG_20131119_180739_076.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-D1YTdGB9qdE/UotROmVpqsI/AAAAAAAACJE/YsTu7HYd_6s/
+s320/IMG_20131119_180545_028.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-yFmIGlxhYdg/UotROjLZC5I/AAAAAAAACJI/UcKog0A4CZ0/
+s320/IMG_20131119_180514_909.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-8QRBHp1D-
+1M/UotRP7W9phI/AAAAAAAACJM/M7kzx3S9nyo/s320/IMG_20131119_180941_759.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-PSJj1SQCZZc/UotRQLT3g8I/AAAAAAAACJQ/2eUZz1kN8-g/
+s320/IMG_20131119_181305_481.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

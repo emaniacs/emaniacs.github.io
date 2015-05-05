@@ -39,5 +39,1269 @@ $ sudo make install
 </description>
     </item>
     
+    <item>
+      <title>Git command: stash</title>
+      <link>http://blog.aredhi.com/post/git-command-stash/</link>
+      <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
+      <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
+ketika melakukan perintah ini.&lt;/p&gt;
+
+&lt;p&gt;Ketika melakukan aktifitas editing pada source-code yang belum selesai, tapi
+belum ingin di_commit_ dan harus pindah ke branch lain, maka perintah stash
+bisa digunakan.&lt;/p&gt;
+
+&lt;p&gt;Beberapa perintah sederhana git stash.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan menyimpan semua perubahan pada file yang kita edit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash save namaStash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini sama dengan perintah sebelumnya namun kita menentukan sendiri
+namanya.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash list&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan menampilkan daftar dari perintah stash yang pernah kita
+lakukan.&lt;/p&gt;
+
+&lt;p&gt;Contoh output:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $ git stash list&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{0}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{1}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{2}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{3}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{4}: On master: satu sampe lime&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;_&lt;br /&gt;
+_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash apply&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan mengembalikan kondisi file yang sebelumnya kita simpan,
+kondisi yang diambil adalah kondisi yang paling atas atau &lt;strong&gt;&lt;em&gt;stash@{0}&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash apply namaStash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini sama dengan perintah &lt;strong&gt;git stash apply&lt;/strong&gt;, bedanya kita menentukan
+sendiri kondisi mana yang akan diaplikasikan ke repository kode kita.&lt;/p&gt;
+
+&lt;p&gt;Berikut diatas adalah beberapa perintah &lt;strong&gt;stash&lt;/strong&gt; yang sering saya gunakan,
+untuk penggunaan lebih lanjut bisa dilihat di manual dari git tentang stash
+&lt;strong&gt;$ git help stash&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;NB: Perintah stash hanya berpengaruh terhadap file yang telah ditrack oleh
+git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt;
+**&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;**Source:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/book/en/Git-Tools-Stashing&#34;&gt;http://git-scm.com/book/en/Git-Tools-Stashing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get site ranking with python and beautifulsoup</title>
+      <link>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</link>
+      <pubDate>Wed, 21 Nov 2012 21:21:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</guid>
+      <description>&lt;p&gt;To get information about site, we can use &lt;a href=&#34;http://alexa.com/&#34;&gt;alexa.com&lt;/a&gt; but
+sometimes we just need some pieces of information like ranking of site global
+or local country.&lt;/p&gt;
+
+&lt;p&gt;In this case i just need that information, when i looking on alexa i found so
+many information about the target site.&lt;/p&gt;
+
+&lt;p&gt;I have some knowledge about &lt;a href=&#34;http://www.python.org/&#34;&gt;python&lt;/a&gt; and
+&lt;a href=&#34;http://www.crummy.com/software/BeautifulSoup/&#34;&gt;beautifulsoup&lt;/a&gt; library and i
+try to grep that information with them.&lt;/p&gt;
+
+&lt;p&gt;First time i analyzing structure of page of alexa.com, find element of html
+tag which contains &lt;em&gt;the data&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-v5ynJJJEaYs/UJlnw6wF6lI/AAAAAAAABCU/KxCxSDtlqyk/
+s640/alexa-tag-analyzing.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Based on screenshot, _the data_ on the div tag with class &lt;strong&gt;data&lt;/strong&gt;, first tag
+is global ranks, second is local ranks and then reputation and rating. So the
+script must be grep a div tag with specification then do a looping.&lt;/p&gt;
+
+&lt;p&gt;In the source i need somes python library like &lt;strong&gt;sys&lt;/strong&gt; to get arguments,
+&lt;strong&gt;urllib2&lt;/strong&gt; to opening url, &lt;strong&gt;BeautifulSoup&lt;/strong&gt; to parsing the html, &lt;strong&gt;re&lt;/strong&gt; to
+remove empty character which produced by BeautifulSoup output.&lt;/p&gt;
+
+&lt;p&gt;Ok, this is the source to get the information.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python  
+# -*- coding: utf8 -*-  
+
+# alexagrep.py  
+# Ardi nooneDOTnu1ATgmailDOTcom  
+# GNU GPL  
+
+import sys  
+import urllib2  
+from bs4 import BeautifulSoup  
+from re import sub  
+
+ATTR = [  
+    &#39;Global ranks &#39;,  
+    &#39;Local ranks  &#39;,  
+    &#39;Reputation   &#39;,  
+    &#39;Rating       &#39;,  
+]  
+
+def openLink(url):  
+    _url = &#39;http://www.alexa.com/siteinfo/&#39;+ url  
+    opener = urllib2.build_opener()  
+    opener.addheaders = [(&#39;User-agent&#39;, &#39;Mozilla/5.0&#39;)]  
+
+    return opener.open(_url).read()  
+
+if __name__ == &#39;__main__&#39;:  
+    try:  
+        url = sys.argv[1]  
+    except:  
+        print &#39;Error url&#39;  
+        sys.exit()  
+
+    html = openLink(url)  
+    soup = BeautifulSoup(html)  
+    tds = soup.find(&#39;tr&#39;, {&#39;class&#39;:&#39;data-row1&#39;}).findAll(&#39;td&#39;)  
+    i=0  
+
+    for td in tds:  
+        print ATTR[i] +&#39; =&amp;gt; &#39;+ sub(r&#39;\s+&#39;, &#39; &#39;, td.find(&#39;div&#39;, {&#39;class&#39;:&#39;data&#39;}).text.strip())  
+        i = i + 1  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This script can be downloaded on &lt;https://github.com/emaniacs/simple-
+script/blob/master/alexagrep.py&gt;.&lt;/p&gt;
+
+&lt;p&gt;To execute script just type _$ python alexagrep.py url_ or copying into
+_/usr/local/bin_ and adding execute permission to script (chmod +x).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-L160IZdmoTA/UKolYyTRmvI/AAAAAAAABDY/yCaXFMeSi5s/
+s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Newbie using gnuchess</title>
+      <link>http://blog.aredhi.com/post/newbie-using-gnuchess/</link>
+      <pubDate>Mon, 19 Nov 2012 18:00:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/newbie-using-gnuchess/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-gQLo__fmT9U/UKoLnuS_OfI/AAAAAAAABDI/IDqNtPEl-
+ws/s200/Selection_015.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Hari ini tepatnya dini hari tadi, pas ketika lagi bete _ngoding_ akhirnya
+browsing-browsing ga jelas vi Chromium tapi ternyata internet sangat lambat,
+karena koneksi IX dari kantor lagi kacau, buat ngebuka satu google.com aja
+lama banget, tapi yang aneh buka situs Indonesia juga lambat banget, yah..
+tingkat keboringan jadi meningkat gara-gara ini&lt;/p&gt;
+
+&lt;p&gt;Akhirnya buat ngilangin bosen dari browsing ane main catur, pas nyari di Games
+ternyata belum ada tuh caturnya,, dengan berat hati (karena koneksi lagi
+kacau) akhir nginstall via _apt-get_ meski agak lama akhirnya
+_&lt;a href=&#34;http://www.gnu.org/software/chess/&#34;&gt;gnuchess&lt;/a&gt; _sukses dengan gemilang
+terinstall.&lt;/p&gt;
+
+&lt;p&gt;Seperti biasa ketika jalanin aplikasi ane pencet ALT+F2 trus ketik
+_&lt;a href=&#34;http://www.gnu.org/software/chess/&#34;&gt;gnuchess&lt;/a&gt;_  dan dengan penuh semangat
+kelingking ane menekan Enter and&amp;hellip; ga ada muncul apa-apa?? Trus coba lagi
+dengan metode yang sama, ternyata ga muncul apa-apa juga&amp;hellip; Ok its time to
+googling.. ternyata gnuchess itu cuma engine nya doang, kalaupun ada tampilan
+ini juga sangat-sangat sederhana sekali.. like this screenshot&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-fSCmtHoGjwQ/UKoJTXtT5xI/AAAAAAAABDA/QkvAhIxYwsk/
+s400/gnuchess_on_terminal.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Gnuchess on Terminal.&lt;/p&gt;
+
+&lt;p&gt;Benar-benar geeks.. :)&lt;/p&gt;
+
+&lt;p&gt;Sempat tertarik pengen nyoba main catur kaya gini, tapi malah jadi tambah
+boring, dengan terpaksa nyari lagi GUInya, ketemu
+&lt;a href=&#34;http://www.gnu.org/software/xboard/&#34;&gt;Xboard&lt;/a&gt; dan kembali dengan berat hati
+melakukan _apt-get _lagi, ternyata ini cukup lama sekitar 2-3 menit, karena
+ada font yang didonlot oleh xboard, dependensi buat GUI nya, eh pas mau
+dijalanin xboardnya minta relogin biar bisa ngebaca font yang baru, wah males
+banget.. (eh kan harusnya udah langsung detect tu font, lagian kan juga bisa
+pake command line juga, tapi lupa??)&lt;/p&gt;
+
+&lt;p&gt;beberapa menit kemudian..&lt;/p&gt;
+
+&lt;p&gt;Ok, installation complete, tapi ada beberapa hal yang mulai aneh dari kompie
+ane, _load CPU_ mulai naik, begitu juga _CPU Temperatur_ juga naik tembus ke
+93C, bahkan dengan bantuan kipas cuma bisa turun ampe 83 abis itu naik lagi..&lt;/p&gt;
+
+&lt;p&gt;Karena ga mau kejadian kayak sebelumnya, tiba-tiba mati karena temperature
+yang luar biasa, akhirnya ane nyari ni masalah,,&lt;/p&gt;
+
+&lt;p&gt;Pertama dengan system monitornya XFCE, ga ada yang aneh, yang makan memory
+paling tinggi cuma Chromium, Opera dan Firefox, dan beberapa aplikasi lain
+yang makan memorynya lumayan besar. Selain dari Chromium, browser tersebut ane
+kill, trus tunggu bentar masih ga ada perubahan..&lt;/p&gt;
+
+&lt;p&gt;Berikutnya ane coba pake htop, dan tentu saja hasilnya ga bakal jauh beda,,
+ditengah kondisi yang tak menentu tersebut, ane lihat type sort dari data yang
+ditampilkan ternyata sortingnya berdasarkan _memory usage, _iseng-iseng
+sekalian belajar _command_nya htop ane coba sortir berdasarkan CPU usage, dan
+boom, yang diposisi atas ternyata ada sepasang gnuchess lagi ribut, dengan
+penuh keyakinan ane kill sepasang proses tersebut. Dan pas ane monitor
+temperatur CPU nya dengan cepat dia kembali turun, normal lagi ke 50,, hmmm
+ternyata ini dia..&lt;/p&gt;
+
+&lt;p&gt;Ok, keadaan kembali normal. Ternyata ada GUI lain yaitu
+&lt;a href=&#34;http://library.gnome.org/users/glchess/stable/playing-
+glchess.html.en&#34;&gt;glchess&lt;/a&gt;, dan ane install semua berjalan dengan sempurna&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Glchess-game.png
+/250px-Glchess-game.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Image from wikipedia&lt;/p&gt;
+
+&lt;p&gt;Hmm.. gnuchess almost kill my box.&lt;/p&gt;
+
+&lt;p&gt;NB: ternyata pas main catur ane adu komputer versus komputer pake 2 window
+mereka sepakat untuk _draw, _ kalo lawan ane kalah terus (anenya lho, bukan
+komputernya).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Touchpad Tap Button dengan Debian</title>
+      <link>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</link>
+      <pubDate>Fri, 04 Nov 2011 00:00:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/-z-YfCJD9ky0/TrQMSu3KFOI/AAAAAAAAAps/xEd
+OqxEmUTk/s1600/no-image.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Sewaktu install &lt;a href=&#34;http://www.debian.org/&#34;&gt;Debian&lt;/a&gt; squeeze, ternyata tap button1
+(tombol klik kiri dengan menekan touchpad) tidak terdeteksi oleh Debian, ane
+sempat bingung karena tombol klik kiri pada touchpad telah rusak dan hampir ga
+bisa dipake lagi.&lt;/p&gt;
+
+&lt;p&gt;Awalnya ane menggunakan cara manual yaitu dengan mengetikkan perintah
+&lt;strong&gt;synclient TapButton1=1&lt;/strong&gt; tapi lama-lama bosan juga tiap login harus ketik
+perintah itu dulu.&lt;/p&gt;
+
+&lt;p&gt;Pas browsing diinternet nyari bantuan ane kemudian &amp;ldquo;tersesat&amp;rdquo;
+&lt;a href=&#34;http://en.gentoo-wiki.com/wiki/Synaptics_Touchpad&#34;&gt;disini&lt;/a&gt; dan
+&lt;a href=&#34;http://fedorasolved.org/Members/khaytsus/configuring-synaptics-using-
+hal&#34;&gt;disini&lt;/a&gt; yaitu di situs wikinya Gentoo dan situs yang memuat informasi tentang
+Fedora, disitu ditawarkan(haha kaya jualan) beberapa alternatif untuk
+settingannya, mulai dari yang paling geek yaitu dengan setting langsung di-
+&lt;em&gt;kernel&lt;/em&gt; ampe setting lewat xorg.&lt;/p&gt;
+
+&lt;p&gt;Awalnya ane tentu pilih yang paling mudah yaitu setting lewat xorg, tapi
+karena malas bikin file xorg.conf nya selain itu jika user lain yang login
+tentu mereka akan mengalami masalah yang sama juga, akhirnya ane coba setting
+lewat file &lt;strong&gt;/etc/X11/xorg.conf.d/00-enable-taps.conf **tapi ane justru ga
+nemuin file tersebut, dari baca manual perintah synclient akhirnya ane tau
+kalo filenya ada di **/usr/share/X11/50-synaptics.conf&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Setelah nemu filenya ane tambahin kode berikut (yang dibold), kemudian reload
+konfigurasinya lagi dan semuanya beres&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Section &amp;quot;InputClass&amp;quot;  
+        Identifier &amp;quot;touchpad catchall&amp;quot;  
+        Driver &amp;quot;synaptics&amp;quot;  
+        MatchIsTouchpad &amp;quot;on&amp;quot;  
+        **Option &amp;quot;TapButton1&amp;quot; &amp;quot;1&amp;quot;**  
+EndSection  
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shell Scripting: Increment dan Decrement nilai dengan Bash</title>
+      <link>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</link>
+      <pubDate>Tue, 01 Nov 2011 21:19:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-hHNti_XJi0A/TqwP40jbm1I/AAAAAAAAApA/9GqFrLF4ckA/
+s1600/increment-decrement.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Increment dan Decrement pada bahasa pemrograman adalah menaikkan/menurunkan
+nilai satu variabel satu tingkat dari nilai yang telah diset pada variabel
+tersebut.&lt;br /&gt;
+Misalkan kita mempunya sebuah variabel dengan nama &lt;strong&gt;_var&lt;/strong&gt; yang nilainya
+adalah &lt;strong&gt;3&lt;/strong&gt; jika kita lakukan &lt;em&gt;decrement_ maka nilai variabel tersebut
+menjadi &lt;strong&gt;2&lt;/strong&gt; dan akan kembali menjadi **3 **jika kita melakukan proses
+_increment.&lt;/em&gt;&lt;br /&gt;
+_&lt;br /&gt;
+_&lt;br /&gt;
+Seperti kebanyakan bahasa pemrograman melakukan proses ini bisa dilakukan
+dengan mudah yaitu dengan menambahkan dua(2) karakter plus(+) untuk proses
+&lt;em&gt;increment_ dan minus(-) pada proses _decrement&lt;/em&gt;. Misalkan pada bahasa C
+seperti kode berikut.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int main() {  
+ int x = 3;  
+ x++; // nilai x menjadi 4  
+ x--; // nilai x kembali menjadi 3  
+
+ return;  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Bagaimana melakukannya pada scripting language seperti Bash, dulu saya
+berpikir bisa melakukannya dengan cara yang hampir sama dengan kebanyakan
+bahasa program pada umumnya seperti dibawah ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# deklarasi variabel _var  
+_var=3  
+
+#increment _var  
+$_var++  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Namun ternyata cara seperti itu justru menghasilkan error yang artinya tidak
+dikenali oleh bash sendiri, setelah saya baca beberapa tulisan di internet dan
+manual bash sendiri ada beberapa cara yang bisa dilakukan yaitu&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Menggunakan perintah &lt;strong&gt;expr.&lt;/strong&gt;&lt;br /&gt;
+Cara ini cara yang pertama yang saya pelajari (&lt;em&gt;&lt;strong&gt;man expr&lt;/strong&gt;&lt;/em&gt;), contoh
+menggunakan expr&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# deklarasi variabel _var  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;_var=3&lt;/p&gt;
+
+&lt;p&gt;#increment _var&lt;br /&gt;
+_var=$(expr $x + 1)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Menggunakan perintah &lt;strong&gt;let.&lt;/strong&gt;&lt;br /&gt;
+Meski menggunakan perintah &lt;strong&gt;let&lt;/strong&gt; tapi perintah ini bukanlah suatu program
+melainkan &lt;em&gt;built-in syntax_ dari Bash jadi perintah ini lebih cepat dari
+&lt;strong&gt;expr&lt;/strong&gt;. Perintahnya mirip dengan kebanyakan bahasa programming lainnya dalam
+melakukan operasi _increment.&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# deklarasi variabel _var  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;_var=3&lt;/p&gt;
+
+&lt;p&gt;#increment _var&lt;br /&gt;
+let &amp;lsquo;_var++&amp;rsquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Melakukan operasi didalam 2 tanda kurung.&lt;br /&gt;
+Cara ketiga yaitu mirip dengan cara yang biasa dilakukan pada bahasa
+programming lainnya tapi perintah ini harus diapit oleh 2 tanda kurung,
+contohnya seperti dibawah ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# deklarasi variabel _var  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;_var=3&lt;/p&gt;
+
+&lt;p&gt;#increment _var&lt;br /&gt;
+((_var++))&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Secara pribadi saya sendiri lebih suka melakukannya dengan cara ketiga,&lt;/p&gt;
+
+&lt;p&gt;HINT:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Dalam memberikan nilai variabel dalam shell-scripting(bash) tidak boleh ada spasi antara nama variabel dan nilai yang diberikan.&lt;br /&gt;
+Cara yang salah &lt;strong&gt;x = 5&lt;/strong&gt;&lt;br /&gt;
+Cara yang benar &lt;strong&gt;x=5&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Jika menggunakan &lt;strong&gt;expr&lt;/strong&gt; untuk perkalian adalah dengan menggunakan karakter &lt;strong&gt;bintang(*)&lt;/strong&gt;, agar bisa dikenali oleh &lt;strong&gt;expr&lt;/strong&gt; maka harus ditambahkan karakter &lt;strong&gt;escape(\)&lt;/strong&gt;, contoh: &lt;strong&gt;expr $x \* 4.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kenapa harus install ulang</title>
+      <link>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</link>
+      <pubDate>Sun, 26 Jun 2011 18:26:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-oF8IQg9FKaM/Tga8KVuIfZI/AAAAAAAAAmI/nubq1EI3aFs/
+s1600/logo-debian.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Gara-gara update _library _tanpa baca **README **terlebih dahulu akhirnya
+Linux ane jadi berantakan, window tampil sesuka, bahkan taskbar ada semacam
+tombol _minimize _dkk, setelah coba _update _dependensi program akhirnya saya
+nyerah, karena banyak banget ternyata yang harus diganti, dan keputusan
+akhirpun saya putuskan untuk install ulang. Tapi kali ini bukan dengan Ubuntu
+lagi, saya beralih menggunakan Debian.&lt;/p&gt;
+
+&lt;p&gt;Sebenarnya udah lama ingin ganti ke Debian, karena banyak hal terutama masalah
+stabilitas, Debian sudah terkenal sebagai distro yang sangat mengutamakan
+kestabilan dan security, bisa dilihat dari rilis Debian yang lebih
+mengutamakan hal tersebut. Meski saya sendiri tak terlalu mempermasalahkan
+distro yang digunakan, karena saya sendiri lebih suka menyebut diri saya
+sebagai GNU User dari pada Linuxer, atau mungkin Open Source Fans.&lt;/p&gt;
+
+&lt;p&gt;Oke balik kembali ke masalah yang saya hadapi diatas, ada banyak hal yang
+sebenarnya mengharuskan saya install ulang Linux di netbook, beberapa
+diantaranya.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Banyak aplikasi yang sama.&lt;br /&gt;
+Banyaknya aplikasi yang sama ini karena, saya sering melakukan install
+aplikasi lewat &lt;em&gt;source&lt;/em&gt;, terutama aplikasi-aplikasi yang masih &lt;em&gt;unstable&lt;/em&gt;, dan
+baru dirilis, kebanyakan semua program itu saya install di &lt;strong&gt;/opt&lt;/strong&gt;.
+Sebenarnya bisa aja dihapus tapi ada sebagian program yang justru saya gunakan
+sehingga hal ini kadang bentrok dengan aplikasi bawaan distro.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Library yang tidak beraturan.&lt;br /&gt;
+Hal ini masalahnya sama gara-gara yang diopsi pertama.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tampilan yang tak beraturan&lt;br /&gt;
+Hal ini yang paling membuat saya menjadi tidak nyaman, karena ingin mencoba
+GTK3 dan Gnome3, saya coba melakukan install lewat source, tapi karena masalah
+kompabilitas pada GTK3 dan 2 (hal ini saya dapat ketika membaca &lt;strong&gt;README&lt;/strong&gt;)
+harusnya ketika &lt;strong&gt;./configure&lt;/strong&gt; ada opsi agar tidak mengganggu GTK2 yang ada
+pada komputer saya, meski instalasi gagal, namun library lainnya telah
+terinstall, yang membuat tampilannya jadi berantakan. Selain itu juga karena
+saya mencoba membuat theme sendiri untuk window, desktop yang saya gunakan
+XFCE4 dan Gnome telah saya hapus, karena tidak mengerti dengan gtkrc akhirnya
+tampilannya agak sedikit kacau&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ingin mengubah partisi.&lt;br /&gt;
+Salah satu alasan saya ingin mengubah partisi agar nanti ketika install ulang
+beberapa direktori penting seperti &lt;em&gt;/opt/&lt;/em&gt;, &lt;em&gt;/var&lt;/em&gt; dan &lt;em&gt;/home&lt;/em&gt; tidak harus
+diformat ulang, tapi bisa digunakan untuk distro lainnya, baik yang akan
+diinstall atau dipartisi lain. Ini baru percobaan, rencananya saya mau
+menggunakan 2 distro tapi dengan direktori &lt;em&gt;/home&lt;/em&gt; yang sama.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sedangkan beberapa hal yang membuat saya agak berat melakukan instalasi ulang
+yaitu&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Aplikasi dan konfigurasinya&lt;br /&gt;
+Ini yang paling berat, karena aplikasi yang telah saya install sangat banyak,
+bahkan diantaranya telah dikonfigurasi sesuai dengan kebutuhan saya, hal ini
+terutama yang berkaitan dengan pemrograman dan server. Kalau masalah
+konfigurasi saya telah melakukan backup, namun tetap saja agar bisa berjalan
+dengan lancar perlu beberapa penyesuaian. Sedangkan masalah aplikasi mau tak
+mau saya harus install ulang lagi semua, hal ini yang paling berat. Ada
+beberapa diantara aplikasi tersebut hanya berupa skrip dan ini bisa diatasi
+dengan backup, tapi kalo untuk yang lain, hal ini tidak mungkin apalagi kalo
+&lt;em&gt;kernel.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Desktop dan shortcut&lt;br /&gt;
+Seperti biasa saya telah setting beberapa shortcut penting untuk aplikasi
+favorit saya, dan kalo diinstall ulang tentu perlu disetting lagi&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Karena masalah lebih banyak hal terbaiknya adalah install ulang, saya pun
+mulai mencari file iso dari Debian diinternet, untuk lokal ada di &lt;ftp://dl2
+.foss-id.web.id/iso/debian/&gt;, tapi yang disitu masih Debian 5, atau di
+&lt;a href=&#34;http://kambing.ui.ac.id/iso/debian/&#34;&gt;http://kambing.ui.ac.id/iso/debian/&lt;/a&gt;, saya lihat yang di kambing.ui lebih
+baru akhirnya saya coba download dari situ, yang terbaru adalah versi 6.0.1a
+namun ketika saya lihat disitu ada sekitar 8 iso dvd yang bisa didownload.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-3DgXae2ec3Q/TgbGQwtCVII/AAAAAAAAAmM/2m8ZTxTKcEg/
+s320/debian-dvd-number.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Saya coba cari informasi tentang penomoran tersebut, berdasarkan info dari
+sini &lt;a href=&#34;http://www.debian.org/CD/faq/#which-cd&#34;&gt;http://www.debian.org/CD/faq/#which-cd&lt;/a&gt; ternyata penomoran tersebut
+adalah sesuai dengan aplikasi yang dibundle, semakin kecil nomornya berarti
+aplikasinya adalah aplikasi yang digunakan kebanyakan, dan sepertinya pilihan
+saya adalah yang common atau kebanyakan.&lt;/p&gt;
+
+&lt;p&gt;Ok, this is the time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Variabel Variabels dengan Bash / Shell Script</title>
+      <link>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</link>
+      <pubDate>Mon, 20 Jun 2011 06:20:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
+s1600/var-var.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Istilah Variabel variabels pertama kali saya dengar di PHP(saya pernah bikin
+tutorial tentang ini &lt;a href=&#34;http://chars19.blogspot.com/2011/06/variabel-
+variabels-dengan-php-fungsi.html&#34;&gt;disini&lt;/a&gt;), arti kalimat ini kurang lebih seperti ini,
+&lt;strong&gt;nilai sebuah variabel, dimana nilai tersebut juga merupakan sebuah
+variabel&lt;/strong&gt;. Bingung ya, sama berarti saya juga bingung, tapi memang seperti
+itulah adanya, saya sendiri juga kebingungan ketika pertama kali memahaminya,
+namun dengan praktek hal ini menjadi lebih mudah dan cepat dimengerti, ya
+lebih baik langsung praktek dan analisa. Kali ini saya menggunakan Shell
+Script sebagai bahasa programmingnya.&lt;/p&gt;
+
+&lt;p&gt;Misalkan ada sebuah variabel seperti ini&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;satu=&amp;quot;ini adalah nilai variabel satu&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Kemudian ada sebuah variabel lagi seperti ini&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;nilai=&amp;quot;satu&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Jika melakukan perintah&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo $nilai&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Maka yang dicetak adalah &amp;ldquo;satu&amp;rdquo;, Nah bagaimana menggunakan variabel &lt;strong&gt;nilai&lt;/strong&gt;,
+tapi mencetak nilai variabel dari satu, jika menggunakan PHP seperti di
+postingan ini bisa dengan&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo $$nilai&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Tapi di Shell Programming, bisa juga tapi menggunakan metode ini&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo ${!nilai}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;perintah diatas akan mencetak nilai dari variabel satu, yaitu &amp;ldquo;ini adalah
+nilai variabel satu&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Pertanyaannya, buat apa metode seperti ini?&lt;br /&gt;
+Sebenarnya banyak sekali kegunaanya diantaranya seperti kode berikut&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x1=&amp;quot;bulan ke BULAN tahun 2001&amp;quot;  
+x2=&amp;quot;bulan ke BULAN tahun 2002&amp;quot;  
+x3=&amp;quot;bulan ke BULAN tahun 2003&amp;quot;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Saya ingin mengambil nilai variabel x1, x2 dan x3 kemudian memprosesnya dalam
+sebuah looping yang sangat panjang, tentu jika menggunakan satu persatu ini
+akan membuat kode jadi lebih penjang, seperti ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x1=&amp;quot;bulan ke BULAN tahun 2001&amp;quot;  
+x2=&amp;quot;bulan ke BULAN tahun 2002&amp;quot;  
+x3=&amp;quot;bulan ke BULAN tahun 2003&amp;quot;  
+for x in {1..12}; do  
+     tmp=$(echo $x1 | sed -e s/BULAN/$x/ | sed -e s/tahun/TAHUN/ )  
+     echo $tmp  
+done  
+for x in {1..12}; do  
+     tmp=$(echo $x2 | sed -e s/BULAN/$x/ | sed -e s/nilai/TAHUN/ )  
+     echo $tmp  
+done  
+for x in {1..12}; do  
+     tmp=$(echo $x3 | sed -e s/BULAN/$x/ | sed -e s/nilai/TAHUN/ )  
+     echo $tmp  
+done  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hal kaya gini membuat kode jadi lebih panjang, apalagi nilai variabel utama
+seperti x1 itu sangat banyak. Dengan menggunakan variabel variabel kode diatas
+bisa dipersingkat menjadi seperti ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x1=&amp;quot;bulan ke BULAN tahun 2001&amp;quot;  
+x2=&amp;quot;bulan ke BULAN tahun 2002&amp;quot;  
+x3=&amp;quot;bulan ke BULAN tahun 2003&amp;quot;  
+for y in {1..3}; do  
+     yy=&amp;quot;x$y&amp;quot;  
+     vv=${!yy}  
+     for x in {1..12}; do  
+          tmp=$(echo $vv | sed -e s/BULAN/$x/ | sed -e s/tahun/TAHUN/ )  
+          echo $tmp  
+     done  
+done  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Terlihat kalo kode menjadi lebih singkat, apalagi jika variabel x1 tersebut
+mencapai 20 atau lebih kode akan menjadi sangat panjang.&lt;br /&gt;
+Selain menggunakan metode diatas yaitu&lt;br /&gt;
+&lt;code&gt;${!namaVariabel}&lt;/code&gt;&lt;br /&gt;
+bisa juga menggunakan metode ini&lt;br /&gt;
+&lt;code&gt;eval echo $&lt;/code&gt;echo $namaVariabel``&lt;/p&gt;
+
+&lt;p&gt;/************** END ***************/&lt;/p&gt;
+
+&lt;p&gt;Referensi&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&#34;&gt;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Emacs: Folding kode dengan mouse</title>
+      <link>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</link>
+      <pubDate>Mon, 13 Jun 2011 18:13:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
+s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Ketika mencoba Emacs pertama kali, saya sempat bingung gimana caranya
+melakukan folding atau menyembunyikan kode didalam suatu blok. Folding kode
+sangat berguna untuk melakukan review terhadap kode. Saya cari di internet ada
+beberapa cara dan setelah dicoba saya paling tertarik dengan
+&lt;a href=&#34;http://www.emacswiki.org/emacs/HideShow&#34;&gt;hideshow&lt;/a&gt;, hal ini karena  hideshow
+melakukan folding code berdasarkan penanda ekspresi blok pada setiap bahasa
+programming, misalkan bahasa C, maka blok nya dimulai dari karakter &amp;ldquo;{&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Berdasarkan situsnya Hideshow merupakan minor-mode dari &lt;a href=&#34;http://www.emacswiki.org/emacs/OutlineMode&#34;&gt;Outline-
+mode&lt;/a&gt; yang secara default telah
+terinstall pada Emacs (saya menggunakan Emacs 23.2.3), cara mengaktifkannya
+bisa dengan M-xhs-minor-modeRet atau agar aktif setiap kali Emacs dijalankan,
+tambahkan kode berikut pada file&lt;strong&gt;_ .emacs_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(add-hook &#39;php-mode-hook &#39;hs-minor-mode)  
+(add-hook &#39;java-mode-hook &#39;hs-minor-mode)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kode diatas untuk mengaktifkan hideshow jika kita membuka file Java dan Php.&lt;/p&gt;
+
+&lt;p&gt;Agar lebih mudah saya sendiri membuat shortcut untuk  mengaktifkan atau
+menonaktifkan hideshow mode ini, yaitu dengan menggunakan tombol [f7],
+tambahkan kode berikut pada &lt;em&gt;&lt;strong&gt;.emacs&lt;/strong&gt;&lt;/em&gt; agar shortcutnya aktif&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(global-set-key [f7] &#39;hs-minor-mode)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Setelah mencoba beberapa lama, saya penasaran untuk membuat kode agar folding
+bisa dilakukan dengan mouse, hal ini saya dapat ketika mempelajari bagaimana
+membuat shortcut pada &lt;a href=&#34;http://www.emacswiki.org/emacs/TheFringe&#34;&gt;fringe&lt;/a&gt; di
+Emacs.&lt;a href=&#34;http://www.emacswiki.org/emacs/TheFringe&#34;&gt;Fringe&lt;/a&gt; sendiri adalah margin
+antara line-number dengan editor area, seperti yang terlihat pada gambar
+diatas.&lt;/p&gt;
+
+&lt;p&gt;Setelah melakukan beberapa percobaan akhirnya berhasil juga membuat beberapa
+baris kode untuk membuat hideshow mode menggunakan mouse.&lt;/p&gt;
+
+&lt;p&gt;Berikut kodenya&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(defun hideshow-toggle-with-mouse (event)  
+  &amp;quot; Toggle hideshow with mouse   &amp;quot;  
+  (interactive &amp;quot;@e&amp;quot;)  
+  (mouse-set-point event)  
+  (end-of-line)  
+  (hs-toggle-hiding))  
+
+(global-set-key (kbd &amp;quot;&amp;quot;) &#39;hideshow-toggle-with-mouse)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ketikkan kode tersebut di file .emacs dan sekarang folding bisa dilakukan
+dengan mouse. Untuk mengaktifkan perintah diatas hideshow-mode harus telah
+aktif.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Emacs - Replace dengan teknik Grouping pada Regex</title>
+      <link>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</link>
+      <pubDate>Wed, 18 May 2011 21:09:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KPIb2o91HNI/TdKq77SjNMI/AAAAAAAAAfs/6LKBnHhd97I/
+s200/regexp.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Regex atau regexp (Regular Expression) merupakan salah satu teknik pencarian
+pada komputer yang benar-benar sangat membantu terutama dalam mengolah teks
+atau string. Salah teknik yang ada pada regexp adalah grouping, dimana kita
+bisa memfilter kata yang kita cari yang dimasukkan kedalam variabel sementara
+yang nanti bisa kita panggil untuk keperluan penggantian teks
+tersebut(replace).&lt;/p&gt;
+
+&lt;p&gt;Sederhananya begini adalah sebuah kalimat seperti berikut&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;class=&amp;ldquo;kolom satu&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;class=&amp;ldquo;kolom dua&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;class=&amp;ldquo;kolom tiga&amp;rdquo;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;class=&amp;ldquo;baris satu&amp;rdquo;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;class=&amp;ldquo;baris dua&amp;rdquo;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;class=&amp;ldquo;baris tiga&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Kemudian kita ingin mengganti semua kata setelah &lt;strong&gt;kolom&lt;/strong&gt; dengan &lt;strong&gt;kosong&lt;/strong&gt;,
+tapi hanya apabila kata setelah &lt;strong&gt;kolom&lt;/strong&gt; tersebut adalah kata &lt;strong&gt;satu&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Secara manual bisa dengan mengganti satu persatu, tapi bagaimana kalo ada 10
+atau 1000 kalimat yang mirip kalimat diatas, tentu cara ini akan sangat
+membosankan dan tidak efektif.&lt;/p&gt;
+
+&lt;p&gt;Dengan Regexp hal ini bisa dilakukan hanya dengan sekali jalan. Kali ini saya
+ingin menggunakan Emacs Regexps untuk melakukan hal tersebut (because i use
+Emacs), tekan kombinasi Ctrl+Alt+Shift+% pada keyboard, setelah itu minibuffer
+akan aktif ketikkan kata berikut&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;\(class=&amp;ldquo;kolom\) satu&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;kemudian tekan Enter dan ketik kata penggantinya (dalam hal ini &lt;strong&gt;kosong&lt;/strong&gt;)
+kemudian tekan Enter lagi.&lt;/p&gt;
+
+&lt;p&gt;Secara otomatis warna teks yang sesuai dengan karakter Regexp yang kita
+masukkan akan berbeda dengan yang lainnya, untuk melanjutkan penggantian tekan
+tombol y, atau !(tanda seru) untuk mengganti semua karakter tanpa konfirmasi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-MrSGPpeasMo/TdKhSg9o1sI/AAAAAAAAAfk/-eC_gu6bFlY/
+s1600/emacs-regex.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Regexp dengan Emacs&lt;/p&gt;
+
+&lt;p&gt;Ternyata ketika saya coba editor Vim, ternyata regexp yang digunakan tidak
+berbeda, hanya berbeda untuk pemanggilan dan penanganan ketika karaker
+ditemukan ada, jika pada Emacs otomatis akan ada konfirmasi untuk mengganti
+teks tersebut atau tidak sedangkan Vim secara default mengganti semua teks,
+kecuali ditambahkan modifier c setelah Regexp nya.&lt;br /&gt;
+Vim regexp tanpa konfirmasi&lt;br /&gt;
+&lt;strong&gt;:%s/\(class=&amp;ldquo;kolom\) satu/kosong/g&lt;/strong&gt;&lt;br /&gt;
+Vim regexp dengan konfirmasi&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;:%s/\(class=&amp;ldquo;kolom\) satu/kosong/gc&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Format Regexp Vim sendiri sesuai dengan kebanyakan Regexp dalam pemrograman
+umumnya yaitu diawali dengan sebuah pembatas (biasanya dengan slash(/))
+kemudian karakter regexp nya tambah dengan pembatas lagi (harus sama dengan
+pembatas yang digunakan diawal), kemudian kata penggantinya, sebuah pembatas
+lagi sebagai penutup baru kemudian &lt;a href=&#34;http://www.regular-
+expressions.info/modifiers.html&#34;&gt;modifier&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Format Regexp :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;/&lt;/strong&gt;&lt;strong&gt;Regexp&lt;/strong&gt;&lt;strong&gt;/&lt;/strong&gt;&lt;strong&gt;pengganti&lt;/strong&gt;&lt;strong&gt;/&lt;/strong&gt;&lt;strong&gt;modifier&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pada contoh dengan Vim diatas karakter pertama adalah standar dari Vim&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;:&lt;/strong&gt;&lt;br /&gt;
+untuk mengaktifkan command mode ( minibuffer kalo di Emacs)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;%&lt;/strong&gt;&lt;br /&gt;
+artinya buffer(file) yang sedang aktif&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;s&lt;/strong&gt;&lt;br /&gt;
+pencarian dan penggantian teks&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sedangkan modifier &lt;strong&gt;g&lt;/strong&gt; dan &lt;strong&gt;c&lt;/strong&gt; diatas berarti &lt;em&gt;global&lt;/em&gt; dan &lt;em&gt;confirmation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-8ZZHuc3IruI/TdKhUHTw0BI/AAAAAAAAAfo/VS39-OsWs9k/
+s1600/regex-vim.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Regexp dengan Vim&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Reference&lt;br /&gt;
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Regex&#34;&gt;http://en.wikipedia.org/wiki/Regex&lt;/a&gt;&lt;http://www.regular-
+expressions.info/modifiers.html&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cream - Vim editor yang ramah</title>
+      <link>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</link>
+      <pubDate>Sat, 07 May 2011 17:55:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</guid>
+      <description>&lt;p&gt;Mendengar nama Vi(m) kita pasti ingat dengan sebuah editor mini dengan
+kemampuan yang luar biasa, begitu juga dengan Cream, editor ini menggunakan
+fasilitas yang ada pada Vim namun telah terkostumisasi seperti halnya editor-
+editor kebanyakan.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-IuVYpUBk52I/TcZmJTaj7iI/AAAAAAAAAZk/fFoLtbaKEd4/
+s400/Cream-default.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Bagi yang pertama kali menggunakan Vim (apalagi yang telah terbiasa dengan
+editor-editor yang lainnya) pasti akan kebingungan, seperti halnya saya ketika
+mencoba Vim, saya berfikir kalo keyboard saya rusak karena ketika saya pencet
+tak ada yang keluar apapun di editornya, baru ketika tak sengaja kepencet
+tombol i, keyboard saya kembali normal. Kemudian saya mencoba untuk belajar
+tentang Vim, ternyata memang begitu ketika Vim dijalankan, secara default kita
+akan masuk ke mode Normal.&lt;br /&gt;
+Perbedaan yang paling mendasar Cream dan Vim adalah pada kostumisasinya, tidak
+ada kode sumber Vim yang dirubah ketika digunakan oleh Cream, melainkan hanya
+script untuk membuat performance Vim lebih baik.&lt;br /&gt;
+Cream ditulis oleh Steve Hall, nama Cream ini diinspirasi dari kebiasaan dia
+minum kopi yang tidak suka dengan kopi yang hanya berwarna hitam, dengan kata
+lain kopi yang dicampur dengan krim, sehingga menurut dia kopi jadi lebih
+berwarna, begitu juga dengan Cream ini, karena tidak melakukan perubahan pada
+sourcecode Vim tapi hanya menambahkan kostumisasi pada Vim, ya tak ubahnya
+seperti menuang krim kedalam kopi, kita hanya membuatnya jadi lebih berwarna
+dan lebih enak(tapi kalau kopi, saya lebih suka kopi hitam).&lt;br /&gt;
+Salah satu yang paling kelihatan adalah shorcut Cream yang mendukung mode CUA
+(Common User Access), seperti teks editor kebanyakan, dimana Ctrl+c untuk
+copy, Ctrl+x untuk cut dan bebarapa shortcut yang lainnya sesuai dengan CUA.&lt;br /&gt;
+Sesuai dengan motto Cream sendiri, yaitu &amp;ldquo;&lt;em&gt;a modern configuration of the _Vim&lt;/em&gt;
+text editor_&amp;rdquo; kostumisasi yang dilakukan pada Vim benar-benar memudahkan untuk
+melakukan editing file, selain kecepatan dulu saya tidak menyukai Vim, tapi
+dengan konfigurasi dari Cream, Vim seperti teks editor kebanyakan yang mudah
+digunakan tapi tentu saja dengan fitur-fitur yang luar biasa, saya mulai
+mempertimbangkan editor ini.&lt;br /&gt;
+Beberapa shortcut dari Cream :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ctrl+c -&amp;gt; copy&lt;/li&gt;
+&lt;li&gt;Ctrl+x -&amp;gt; cut&lt;/li&gt;
+&lt;li&gt;Ctrl+v -&amp;gt; paste&lt;/li&gt;
+&lt;li&gt;Ctrl+z -&amp;gt; undo&lt;/li&gt;
+&lt;li&gt;Ctrl+y -&amp;gt; redo&lt;/li&gt;
+&lt;li&gt;Ctrl+f -&amp;gt; find&lt;/li&gt;
+&lt;li&gt;Ctrl+h -&amp;gt; replace&lt;/li&gt;
+&lt;li&gt;Ctrl+g -&amp;gt; goto line number
+Namun karena pernah mencoba Vim, tentu kenal dengan istilah Command Mode, kalo
+di Vim shortcutnya adalah titik dua(:), saya sempat kebingungan bagaimana
+untuk mengaktifkan Command Mode tersebut, setelah mencari-cari di menu saya
+menemukan di &lt;em&gt;Preferences - Behavior_ disitu ada 4(empat) mode yang disediakan
+yaitu Cream, Cream Lite, Vim, Vi. Untuk menggunakan command mode saya terpaksa
+menggunakan _behavior&lt;/em&gt; Vi(m) agar bisa menggunakan command mode. Ketika
+membaca FAQ dari Cream editor ini saya menemukan ternyata shorcut untuk
+menggunakan command mode adalah &lt;strong&gt;Ctrl+L&lt;/strong&gt;.&lt;br /&gt;
+&lt;strong&gt;Cream Behavior&lt;/strong&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-JjGWBHb1Zx4/TcZmIAD3W8I/AAAAAAAAAZg/TAM6SdmOfpg/
+s640/Cream-behavior.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;**&lt;br /&gt;
+**&lt;br /&gt;
+Seperti yang saya tulis diatas ada 4 mode (istilah Indonesia untuk behavior
+apa ya?), yang ada di &lt;em&gt;Preference -&amp;gt; Behavior&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Cream (Default)&lt;br /&gt;
+Pada behavior ini, semua kostumisasi dan konfigurasi Cream digunakan, termasuk
+mapping(keyboard shortcut) dan insert mode. Ini adalah mode default dari
+Cream.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Cream (Lite)&lt;br /&gt;
+Mode ini menggunakan semua kostumisasi Cream tapi menghapus kostumisasi
+shortcut dan insert mode.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Vim&lt;br /&gt;
+Menggunakan Vim mode, pada mode ini semua konfiguasi Cream akan dihapus dan
+editor akan seperti kita menjalankan gVim editor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Vi&lt;br /&gt;
+Vi mode.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Mungkin ingin melakukan/menambahkan beberapa konfigurasi pada editor Cream,
+silahkan buat file ~/.cream , file ini adalah file user configuration dari
+Cream.&lt;br /&gt;
+Ada 2 file konfigurasi utama dari Cream :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;cream-user.vim&lt;br /&gt;
+file ini diload diakhir startup, jadi ketika semua konfigurasi telah diload
+baru file ini diaktifkan dan Cream dijalankan, menurut FAQ dari Cream, jika
+ingin membuat konfigurasi lebih baik dilakukan di file ini, sehingga jika ada
+shortcut yang ingin diganti tidak ditimpa oleh konfigurasi utama.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;cream-conf.vim&lt;br /&gt;
+Sedangkan file ini kebalikan dari cream-user.vim, file ini diload pertama
+kali.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Untuk melihat semua file Cream ketika telah diinstall bisa dengan $dpkg -L
+cream (debian based).&lt;/p&gt;
+
+&lt;p&gt;Sumber :&lt;br /&gt;
+Try and Error&lt;br /&gt;
+Faq Cream&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ylmf Os, Linux Rasa Windows</title>
+      <link>http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/</link>
+      <pubDate>Wed, 06 Apr 2011 21:21:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://www.ylmf.org/static/images/logo.gif&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Ylmf Os, merupakan sebuah Linux yang mirip secara tampilan dengan Windows.
+bahkan persis banget, meski saya sendiri tidak menyukai tampilan windows yang
+kurang fleksibel tapi os ini sangat bagus untuk pengenalan Linux kepada user
+baru yang telah terbiasa dengan Windows (mungkin kurang tepat kalau disebut
+menipu), sistem operasi berbasis &lt;a href=&#34;http://kernel.org/&#34;&gt;kernel Linux&lt;/a&gt;
+2.6.32-22.33 ini menggunakan &lt;a href=&#34;http://www.x.org/&#34;&gt;xorg&lt;/a&gt; 1.7.6 dan sebagai
+desktop menggunakan &lt;a href=&#34;http://gnome.org/&#34;&gt;gnome&lt;/a&gt; 2.30.0.&lt;/p&gt;
+
+&lt;p&gt;Sistem operasi ini dikembangkan oleh orang China yang bernama Lailinfeng, yang
+berbasiskan &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu&lt;/a&gt; 10, versi terbaru dari sistem ini
+adalah versi 3.0 &lt;a href=&#34;http://www.ylmf.org/en/images/snaps/YlmfOS-8.jpg&#34;&gt;http://www.ylmf.org/en/images/snaps/YlmfOS-8.jpg&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Berikut beberapa fitur dari ylmf Os yang saya kutip dari &lt;a href=&#34;http://www.ylmf.org/&#34;&gt;situs
+resminya&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;System&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://winehq.org/&#34;&gt;wine&lt;/a&gt; : emulator program windows untuk linux.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.compiz.org/CCSM&#34;&gt;ccsm&lt;/a&gt; : sebagai pengatur settingan Compiz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/ailurus/&#34;&gt;ailurus&lt;/a&gt; : aplikasi penginstalan, agar penginstalan aplikasi Linux jadi lebih mudah.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://p7zip.sourceforge.net/&#34;&gt;p7zip&lt;/a&gt; : aplikasi untuk pengelolaan file-file kompresi di Linux.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://launchpad.net/ndisgtk&#34;&gt;ndisgtk&lt;/a&gt;, &lt;a href=&#34;http://www.samba.org/&#34;&gt;samba&lt;/a&gt;(sharing folder), &lt;a href=&#34;http://tarot.freeshell.org/leafpad/&#34;&gt;leafpad&lt;/a&gt;(editor).&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt; &lt;a href=&#34;https://launchpad.net/gmount-iso&#34;&gt;gmount-iso&lt;/a&gt;(untuk mounting file iso, atau virtual cd).
+&lt;strong&gt;Internet&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.mozilla.org/&#34;&gt;firefox&lt;/a&gt; sebagai browser default.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://live.gnome.org/Empathy&#34;&gt;Emphaty&lt;/a&gt; : chat client untuk linux.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;aMule : aplikasi untuk sharing file secara peer to peer.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://code.google.com/p/iptux&#34;&gt;Iptux&lt;/a&gt; : chatting berdasarkan Ip untuk linux.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;gFtp : ftp klient.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://xchat.org/&#34;&gt;Xchat&lt;/a&gt; : irc client (aplikasi untuk chating di irc server.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Emesene : Instant Messenger untuk Windows Live Messenger.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.transmissionbt.com/&#34;&gt;Transmision&lt;/a&gt; : bitTorrent client.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;vinagre : VNC Client.
+&lt;strong&gt;Multimedia&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://smplayer.sourceforge.net/&#34;&gt;SMPlayer&lt;/a&gt; : front-end dari aplikasi MPlayer sebagai pemutar video&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://audacious-media-player.org/&#34;&gt;Audacious&lt;/a&gt; : pemutar musik.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;mid3iconv : untuk konversi tag ID3 menjadi ID3v2 format.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;PiTiVi : Video editor untuk GNOME Desktop.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;gThumb : aplikasi untuk melihat gambar.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://projects.gnome.org/cheese&#34;&gt;cheese&lt;/a&gt; : aplikasi untuk mengambil gambar atau video dari webcam.
+&lt;strong&gt;Aplikasi Kantoran.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://openoffice.org/&#34;&gt;OpenOffice&lt;/a&gt; : pengolah kata, presentasi dan aplikasi untuk kantor lainnya.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;chmsee : melihat file berformat chm di Linux.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.gnome.org/projects/evince&#34;&gt;Evince&lt;/a&gt; : sebagai pdf reader dan juga mendukung format lainnya.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Gnote : catatan di desktop.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Simple Scan : aplikasi untuk melakukan scanning dokumen.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Stardict : aplikasi kamus
+&lt;strong&gt;Lain-lain&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bluefish : editor untuk programmer dan webdesigner.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Geany : editor  GTK+ yang cukup ringan berbasiskan Scintilla.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://vim.org/&#34;&gt;Vim&lt;/a&gt; : text editor yang powerfull
+Untuk lebih jelasnya bisa dilihat langsung di situs resminya,
+&lt;a href=&#34;http://www.ylmf.org/&#34;&gt;http://www.ylmf.org&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.ylmf.org/en/images/snaps/YlmfOS-8.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Screenshot Ylmf Os.&lt;/p&gt;
+
+&lt;p&gt;Screenshotnya bisa dilihat disini,  &lt;a href=&#34;http://www.ylmf.org/en/snapshot.html&#34;&gt;http://www.ylmf.org/en/snapshot.html&lt;/a&gt;
+,secara default username yang digunakan adalah &lt;strong&gt;ylmfos&lt;/strong&gt; dan passwordnya
+kosong.&lt;br /&gt;
+Cara instalasinya bisa dilihat &lt;a href=&#34;http://www.ylmf.org/en/faq.html&#34;&gt;http://www.ylmf.org/en/faq.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The one who&amp;rsquo;s only waiting for the benefical situation will never succed.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python dan Bilangan Prima</title>
+      <link>http://blog.aredhi.com/post/python-dan-bilangan-prima/</link>
+      <pubDate>Thu, 24 Mar 2011 05:03:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/python-dan-bilangan-prima/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh6.googleusercontent.com/-GM-
+B6lnAX1s/TYYlBO7jsfI/AAAAAAAAATk/J83gpbzNvQU/s200/python-prime.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python  
+import sys                         # untuk mengambil argument yang diberikan  
+ret=True                           # return value  
+def itsPrime(val):               # definisi fungsi itsprime, return(1=prime, 0=not prime, -1=error value )  
+    global ret;                     # agar ret bisa diakses dari fungsi  
+    if val &amp;gt;= 2:                   # jika nilai yang diberikan besar dari 2  
+        if val &amp;gt; 9:                 # jika nilai yang diberikan besar dari 9  
+            up=10                  # nilai maksimum untuk  pembagian =10  
+        else:  
+            up=val                 # jika tidak maka nilai maksimum=nilai yang diberikan  
+        for p in range(2,up):   # perulangan selama p=2 dan kecil dari nilai up  
+            if val % p == 0:    # jika nilai modulus p == 0  
+                ret=False          # berarti bukan bilangan prime  
+                break               # langsung keluar dari perulangan  
+    else:                            # nilai  yang dimasukkan kecil dari 2  
+        ret=-1  
+    return ret  
+
+if __name__ == &amp;quot;__main__&amp;quot;:  
+    try:  
+        prime=itsPrime(int(sys.argv[1]))  
+        if prime==1:  
+            print &#39;prime&#39;  
+        elif prime==0:  
+            print &#39;Not prime&#39;  
+        else:  
+            print &#39;Please integer above 2&#39;  
+    except ValueError:  
+        print &amp;quot;Please enter an integer number&amp;quot;  
+    except IndexError:  
+        print &amp;quot;Please input one argument&amp;quot;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Penjelasan dari kode diatas bisa dilihat di setiap baris komentarnya, untuk
+yang lainnya bisa dilihat dibawah ini&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;baris ke 20 -&amp;gt; untuk mencegah kemungkinan error maka digunakan &lt;strong&gt;try&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;baris ke 21 -&amp;gt; melakukan checking terhadap nilai yang diberikan kemudian nilai return dari fungsi &lt;strong&gt;itsPrime&lt;/strong&gt; dimasukkan ke variabel &lt;strong&gt;prime&lt;/strong&gt;, selanjutnya untuk yang dibawahnya adalah melakukan checking pada nilai &lt;strong&gt;prime&lt;/strong&gt;. Jika nilainya sama dengan 1 berarti bilangan prima, 0 jika bukan, -1 jika nilainya kecil dari 2.&lt;/li&gt;
+&lt;li&gt;baris ke 28 -&amp;gt; jika nilai yang dimasukkan bukan bilangan bulat positif(&amp;gt;0)&lt;/li&gt;
+&lt;li&gt;baris ke  30 -&amp;gt; jika tidak ada nilai yang dimasukkan.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sedangkan algoritma dari code diatas adalah seperti berikut:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/-cUghK_xanao/TYYmFPA6zBI/AAAAAAAAATo/HbH
+JhGI3XRc/s320/itsPrime.py.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tulisan ini dibuat dengan OS &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu 9.10&lt;/a&gt;, &lt;a href=&#34;http://www.gimp.org/&#34;&gt;Gimp
+2.6.7&lt;/a&gt;, &lt;a href=&#34;http://projects.gnome.org/dia/&#34;&gt;Dia 0.97&lt;/a&gt;, so
+its&lt;a href=&#34;http://www.igos.web.id/&#34;&gt;OPENSOURCE&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kirim Email GMAIL via Konsole/Terminal (ssmtp dan mail)</title>
+      <link>http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</link>
+      <pubDate>Sat, 19 Mar 2011 21:07:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</guid>
+      <description>&lt;p&gt;Salah satu menariknya Gnu/Linux (buat saya pribadi) adalah dekatnya jarak
+antara user dengan sistem itu sendiri. Salah satu jalan itu adalah dengan
+menggunakan konsole atau terminal. Saat ini berkirim pesan lewat email adalah
+suatu yang cukup populer, meski mulai ditinggalkan terutam menjamurnya
+jejaring sosial, tapi untuk komunikasi antar programmer terutama para geek
+email adalah sarana yang efektif.&lt;/p&gt;
+
+&lt;p&gt;Mail client saat ini sangat banyak dengan beragam fitur, namun ketika
+saya(mungkin juga anda) terbiasa menggunakan *nix system anda mau tak mau akan
+dan harus berhadapan dengan terminal atau konsole, maka kita membutuhkan
+sebuah program untuk bisa berkirim email dengan modus teks.&lt;br /&gt;
+Salah satu aplikasi modus teks yang bisa digunakan untuk berkirim email adalah
+mail tapi agar bisa menggunakan fasilitas email dari google kita membutuhkan
+satu software tambahan lagi yaitu &lt;strong&gt;ssmtp&lt;/strong&gt;. Aplikasi ini dibutuhkan untuk
+komunikasi dengan smtp server milik Google.&lt;/p&gt;
+
+&lt;p&gt;Langkah pertama adalah menginstall ssmtp dan mail.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$sudo apt-get install ssmtp mail&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Konfigurasi ssmtp&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;edit file /etc/ssmtp/sstmp.conf&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;root = &amp;lt; ALAMAT EMAIL ANDA &amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;mailhub = smtp.gmail.com:587&lt;br /&gt;
+hostname = &amp;lt; ALAMAT EMAIL ANDA &amp;gt;&lt;br /&gt;
+UseAuth = YES&lt;br /&gt;
+UseSTARTTLS = YES&lt;br /&gt;
+AuthUser = &amp;lt; USERNAME ANDA &amp;gt;&lt;br /&gt;
+AuthPass = &amp;lt; PASSWORD &amp;gt;&lt;br /&gt;
+FromLineOverride=YES&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ganti variabel diatas sesuai dengan variabel anda sendiri, agar lebih aman
+supaya password anda tidak bisa dilihat selain user root set permision filenya
+menjadi 0700&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;edit file /etc/ssmtp/revaliases
+Format text disini adalah
+&lt;strong&gt;root:your_login@your.domain:mailhub.your.domain[:port]&lt;/strong&gt; variabel port jika
+tidak diisi secara default akan mengambil port 25 contoh file
+/etc/ssmtp/revaliases :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;root:email-anda@gmail.com:smtp.gmail.com:587  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Coba lakukan test pengiriman email&lt;/p&gt;
+
+&lt;p&gt;Setelah mengetik pesan yang ingin dikirim, dan untuk mengakhirinya bisa dengan
+karakter TITIK dan tekan Enter, atau langsung tekan Ctrl+D di baris baru.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-G8ydCXb94z8/TYYL8TyRwEI/AAAAAAAAATU/-zKz6WMy7wo/
+s320/ssmtp.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Email terkirim.&lt;br /&gt;
+&lt;img src=&#34;http://1.bp.blogspot.com/-Un6kz6ZOLAA/TYYL8noaerI/AAAAAAAAATc/_mQNztm6jvk/
+s320/gmail.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Ref:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://tombuntu.com/index.php/2008/10/21/sending-email-from-your-system-with-ssmtp/&#34;&gt;http://tombuntu.com/index.php/2008/10/21/sending-email-from-your-system-with-ssmtp/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;$ man ssmtp&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Emacs Command Line (X window)</title>
+      <link>http://blog.aredhi.com/post/emacs-command-line-x-window/</link>
+      <pubDate>Wed, 16 Mar 2011 16:16:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/emacs-command-line-x-window/</guid>
+      <description>&lt;p&gt;X window yang dimaksud dalam penjelasan ini yaitu tampilan emacs ketika muncul
+dilayar.&lt;br /&gt;
+Hal ini berguna untuk mengatur tampilan emacs misalkan font yang ingin
+digunakan, atau warna background atau foreground tampilan emacs dan masih
+banyak lagi.&lt;/p&gt;
+
+&lt;p&gt;Selain menggunakan opsi yang ada dibawah ini bisa juga menggunakan _init file
+_bahkan sepertinya lebih banyak menggunakan file init daripada opsi-opsi pada
+command line. Inilah salah satu fitur yang menurut saya tidak terlalu berguna
+yang terdapat pada Emacs.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;–name name&lt;/strong&gt;&lt;br /&gt;
+Fungsinya untuk memberikan nama pada window yang akan digunakan oleh emacs.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-T name, –title name&lt;/strong&gt;&lt;br /&gt;
+Kurang lebih sama dengan yang diatas yaitu untuk mengganti titel window pada
+emacs.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-r, -rv, –reverse-video&lt;/strong&gt;&lt;br /&gt;
+Untuk membalik warna pada emacs.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-fn font, –font font&lt;/strong&gt;&lt;br /&gt;
+Menggunakan font pilihan sendiri&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;–xrm resources&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;–color=mode&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-bw pixels, –border-width pixels&lt;/strong&gt;&lt;br /&gt;
+Menentukan ukuran lebar border pada window emacs.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-ib pixels. –internal-border pixels&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-g geometry, –geometry geometry&lt;/strong&gt;&lt;br /&gt;
+Ukuran window emacs ketika tampil, untuk opsi geometry ini bisa dilihat pada
+manual X kemudian cari kata geometry ($man X) trus tekan slash(/) ketikkan
+geometry.&lt;br /&gt;
+Format opsi geometry yaitu: LEBARxTINGGI+Xoff+Yoff&lt;br /&gt;
+Untuk Xoff(X offset) dan Yoff(Y offset) bisa dikosongkan.&lt;br /&gt;
+Contoh: 1000×500 –&amp;gt; berarti window emacs akan tampil dengan lebar 1000 dan
+tinggi 500&lt;br /&gt;
+Penjelasan x dan y offset:&lt;br /&gt;
++0+0 –&amp;gt; pojok kiri atas.&lt;br /&gt;
+-0+0 –&amp;gt; pojok kanan atas.&lt;br /&gt;
+-0-0 –&amp;gt; pojok kanan bawah.&lt;br /&gt;
++0-0 –&amp;gt; pojok kiri bawah&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-lsp pixels, –line-spacing pixels&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-vb, –vertical-scroll-bar&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-fg, –fullheight&lt;/strong&gt;&lt;br /&gt;
+Menampilkan window emacs dengan tinggi window sama dengan tinggi layar.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-fs, –fullscreen&lt;/strong&gt;&lt;br /&gt;
+Menampilakan window emacs dalam keadaan fullscreen&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-fw, –fullwidth&lt;/strong&gt;&lt;br /&gt;
+Menampilkan window emacs dengan lebar window sama dengan lebar layar.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-fg color, –foreground-color color&lt;/strong&gt;&lt;br /&gt;
+Membuat warna text sesuai keinginan(Default “hitam”).&lt;br /&gt;
+Contoh: $emacs -fg red&lt;br /&gt;
+warna text pada emacs akan menjadi merah&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-bg color, –background-color color&lt;/strong&gt;&lt;br /&gt;
+Untuk mengganti warna background.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-bd color, –border-color color&lt;/strong&gt;&lt;br /&gt;
+Mengganti warna border.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-cr color, –cursor-color color&lt;/strong&gt;&lt;br /&gt;
+Mengganti warna cursor&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-ms color, –mouse-color color&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mengganti warna cursor&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-d displayname, –display displayname&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-nbi, –no-bitmap-icon&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;–iconic&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Menjalankan emacs d pada mode iconic, yaitu dalam keadaan minimize&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-nbc, –no-blinking-cursor&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Untuk membuat cursor tidak berkedip&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-nw, –no-window-system&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Menjalankan emacs tanpa menggunakan window, jika dulu saya menggunakan vim untuk mengedit file di shell atau terminal, karena jika menggunakan emacs akan sedikit lebih lama ketika loading awal, namun setelah saya mengetahui opsi ini saya sekarang lebih suka edit file di shell dengan menggunakan $emacs -Q -nw bahkan saya sendiri membuat alias perintah emacs –no-window ini dengan enw di file bash.rc&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;-D, –basic-display&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Referensi&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;$ emacs &amp;ndash;help&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

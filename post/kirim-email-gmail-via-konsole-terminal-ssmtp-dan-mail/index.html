@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Kirim Email GMAIL via Konsole/Terminal (ssmtp dan mail) &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/"><h2 class="post-title">Kirim Email GMAIL via Konsole/Terminal (ssmtp dan mail)</h2></a>
+
+                    <p class="post-meta">
+                        <i>Saturday , 19 Mar 2011 21:07:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p>Salah satu menariknya Gnu/Linux (buat saya pribadi) adalah dekatnya jarak
+antara user dengan sistem itu sendiri. Salah satu jalan itu adalah dengan
+menggunakan konsole atau terminal. Saat ini berkirim pesan lewat email adalah
+suatu yang cukup populer, meski mulai ditinggalkan terutam menjamurnya
+jejaring sosial, tapi untuk komunikasi antar programmer terutama para geek
+email adalah sarana yang efektif.</p>
+
+<p>Mail client saat ini sangat banyak dengan beragam fitur, namun ketika
+saya(mungkin juga anda) terbiasa menggunakan *nix system anda mau tak mau akan
+dan harus berhadapan dengan terminal atau konsole, maka kita membutuhkan
+sebuah program untuk bisa berkirim email dengan modus teks.<br />
+Salah satu aplikasi modus teks yang bisa digunakan untuk berkirim email adalah
+mail tapi agar bisa menggunakan fasilitas email dari google kita membutuhkan
+satu software tambahan lagi yaitu <strong>ssmtp</strong>. Aplikasi ini dibutuhkan untuk
+komunikasi dengan smtp server milik Google.</p>
+
+<p>Langkah pertama adalah menginstall ssmtp dan mail.</p>
+
+<ul>
+<li>$sudo apt-get install ssmtp mail</li>
+</ul>
+
+<p>Konfigurasi ssmtp</p>
+
+<ul>
+<li><p>edit file /etc/ssmtp/sstmp.conf</p>
+
+<pre><code>root = &lt; ALAMAT EMAIL ANDA &gt;  
+</code></pre>
+
+<p>mailhub = smtp.gmail.com:587<br />
+hostname = &lt; ALAMAT EMAIL ANDA &gt;<br />
+UseAuth = YES<br />
+UseSTARTTLS = YES<br />
+AuthUser = &lt; USERNAME ANDA &gt;<br />
+AuthPass = &lt; PASSWORD &gt;<br />
+FromLineOverride=YES</p></li>
+</ul>
+
+<p>Ganti variabel diatas sesuai dengan variabel anda sendiri, agar lebih aman
+supaya password anda tidak bisa dilihat selain user root set permision filenya
+menjadi 0700</p>
+
+<ul>
+<li><p>edit file /etc/ssmtp/revaliases
+Format text disini adalah
+<strong>root:your_login@your.domain:mailhub.your.domain[:port]</strong> variabel port jika
+tidak diisi secara default akan mengambil port 25 contoh file
+/etc/ssmtp/revaliases :</p>
+
+<pre><code>root:email-anda@gmail.com:smtp.gmail.com:587  
+</code></pre></li>
+</ul>
+
+<p>Coba lakukan test pengiriman email</p>
+
+<p>Setelah mengetik pesan yang ingin dikirim, dan untuk mengakhirinya bisa dengan
+karakter TITIK dan tekan Enter, atau langsung tekan Ctrl+D di baris baru.</p>
+
+<p><img src="http://3.bp.blogspot.com/-G8ydCXb94z8/TYYL8TyRwEI/AAAAAAAAATU/-zKz6WMy7wo/
+s320/ssmtp.png" alt="" />
+</p>
+
+<p>Email terkirim.<br />
+<img src="http://1.bp.blogspot.com/-Un6kz6ZOLAA/TYYL8noaerI/AAAAAAAAATc/_mQNztm6jvk/
+s320/gmail.png" alt="" />
+</p>
+
+<p>Ref:</p>
+
+<ul>
+<li><a href="http://tombuntu.com/index.php/2008/10/21/sending-email-from-your-system-with-ssmtp/">http://tombuntu.com/index.php/2008/10/21/sending-email-from-your-system-with-ssmtp/</a></li>
+<li>$ man ssmtp</li>
+</ul>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/kamus-on-terminal-c-version/">Kamus on Terminal ( C Version )</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/jangan-ngaku-orang-minang-kalau-tidak-sholat/">Jangan ngaku orang Minang kalau tidak sholat</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/localstorage-dengan-html/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> localStorage dengan HTML5 &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/localstorage-dengan-html/"><h2 class="post-title">localStorage dengan HTML5</h2></a>
+
+                    <p class="post-meta">
+                        <i>Tuesday , 17 Jan 2012 17:17:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://2.bp.blogspot.com/-_xFwIsxjJ3U/TxL4PvepcSI/AAAAAAAAAqo/0tfgksmnZe8/
+s1600/localStorage.PNG" alt="" />
+</p>
+
+<p>Salah satu fitur yang tersedia pada bahasa pemrograman <strong>HTML **khususnya
+**HTML5 **adalah penyimpanan sementara pada browser, meski telah ada **cookies
+**namun salah satu perbedaannya adalah tidak semua browser mendukung
+**localStorage</strong>, terutama browser versi lama, namun keuntungannya adalah
+<strong>localStorage</strong> tersedia sebagai object didalam Javascript sehingga ketika
+ingin mengaksesnya jadi lebih mudah. Selain itu mengakses **cookies **bisa
+dilakukan dari sisi server, sedangkan untuk **localStorage **jika ingin
+diakses lewat server bisa diakali dengan menggunakan method <em>GET _atau _POST</em>,
+dimana data yang ingin diberikan pada server dijadikan sebagai parameter pada
+method tersebut.</p>
+
+<p>Beberapa browser yang mendukung penggunaan localStorage adalah Safari 4+,
+Mobile Safari (iPhone/iPad), Firefox 3.5+, Internet Explorer 8+ and Chrome 4+.</p>
+
+<p> <em>Deteksi browser.</em></p>
+
+<p>Salah satu cara paling mudah untuk mengetahui suatu browser mendukung
+<strong>localStorage **atau tidak adalah dengan menggunakan keyword **typeof</strong>. Jika
+hasil returnnya adalah **undefined **maka bisa dipastikan bahwa browser
+tersebut tidak mendukung untuk penyimpanan data pada sisi klien, sedangkan
+hasil kembaliannya adalah **object **maka browser tersebut mendukung untuk
+penyimpanan pada sisi klient.</p>
+
+<pre><code>if(typeof(localStorage) == 'undefined')  
+     alert('Browser anda tidak mendukung localStorage.!');  
+else  
+     alert('Browser anda mendukung localStorage.');  
+</code></pre>
+
+<p><em>Penggunaan localStorage</em></p>
+
+<ul>
+<li><p>Menyimpan data.<br />
+Cara untuk menyimpan data menggunakan localStorage adalah dengan method
+setItem dengan 2 parameter, yang pertama sebagai key dan yang kedua merupakan
+nilainya.<br />
+<strong>localStorage.setItem (key, value)</strong></p>
+
+<pre><code>localStorage.setItem ('nama', 'data');  
+</code></pre>
+
+<p>// menyimpan data dengan nilai &lsquo;data&rsquo; dengan key nya adalah &lsquo;nama&rsquo;.</p></li>
+
+<li><p>Mengambil data.<br />
+Sedangkan untuk mengambil data menggunakan method getItem dengan sebuah
+parameter yang merupakan key atau nama variabel data yang ingin diambil.<br />
+<strong>localStorage.getItem (key)</strong></p>
+
+<pre><code>localStorage.getItem ('nama');  
+</code></pre>
+
+<p>// mengambil data dengan key nama.</p></li>
+
+<li><p>Menghapus data.<br />
+Untuk menghapus data yang tersimpan pada klient bisa menggunakan method
+removeItem dengan sebuah parameter yang merupakan nama key yang ingin dihapus.<br />
+<strong>localStorage.removeItem (key)</strong></p>
+
+<pre><code>localStorage.removeItem ('nama');  
+</code></pre>
+
+<p>// menghapus data dengan key nama.</p></li>
+</ul>
+
+<p>Berikut ini saya buat sebuah kode untuk mendeteksi browser yang anda pakai
+apakah support localStorage atau tidak.</p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/no-woman-no-cry-bobmarley-lyric/">No Woman No Cry bobmarley lyric</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/">Panada: Membuat Halaman Login Dengan Session</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

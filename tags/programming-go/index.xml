@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Programming Go on http://blog.aredhi.com </title>
+    <link>http://blog.aredhi.com/tags/programming-go/</link>
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Sun, 30 Oct 2011 12:00:00 WIB</updated>
+    
+    <item>
+      <title>Let&#39;s Go Programming Language</title>
+      <link>http://blog.aredhi.com/post/let-s-go-programming-language/</link>
+      <pubDate>Sun, 30 Oct 2011 12:00:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/let-s-go-programming-language/</guid>
+      <description>&lt;p&gt;Trying to learn a new language in programming, Go Language visit website at
+&lt;a href=&#34;http://golang.org/&#34;&gt;http://golang.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;My First go code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main  
+import &amp;quot;fmt&amp;quot;  
+func main() {  
+ fmt.Println(&amp;quot;Hello, World&amp;quot;)  
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Trying go on your browser. &lt;a href=&#34;http://golang.org/doc/play/&#34;&gt;http://golang.org/doc/play/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

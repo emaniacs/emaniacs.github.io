@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/git-command-stash/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Git command: stash &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/git-command-stash/"><h2 class="post-title">Git command: stash</h2></a>
+
+                    <p class="post-meta">
+                        <i>Monday , 07 Apr 2014 00:25:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/git">git</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/hacking">hacking</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p>Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh <strong>git</strong>
+ketika melakukan perintah ini.</p>
+
+<p>Ketika melakukan aktifitas editing pada source-code yang belum selesai, tapi
+belum ingin di_commit_ dan harus pindah ke branch lain, maka perintah stash
+bisa digunakan.</p>
+
+<p>Beberapa perintah sederhana git stash.</p>
+
+<p><strong>$ git stash</strong></p>
+
+<p>Perintah ini akan menyimpan semua perubahan pada file yang kita edit.</p>
+
+<p><strong>$ git stash save namaStash</strong></p>
+
+<p>Perintah ini sama dengan perintah sebelumnya namun kita menentukan sendiri
+namanya.</p>
+
+<p><strong>$ git stash list</strong></p>
+
+<p>Perintah ini akan menampilkan daftar dari perintah stash yang pernah kita
+lakukan.</p>
+
+<p>Contoh output:</p>
+
+<p><strong><em>ardi@dtk:~/ $ git stash list</em></strong></p>
+
+<p><strong><em>stash@{0}: WIP on master: e94b03b Setelah stash</em></strong></p>
+
+<p><strong><em>stash@{1}: WIP on master: e94b03b Setelah stash</em></strong></p>
+
+<p><strong><em>stash@{2}: WIP on wew: 62d7aa1 Update from wew</em></strong></p>
+
+<p><strong><em>stash@{3}: WIP on wew: 62d7aa1 Update from wew</em></strong></p>
+
+<p><strong><em>stash@{4}: On master: satu sampe lime</em></strong></p>
+
+<p><strong><em>ardi@dtk:~/ $</em></strong></p>
+
+<p><strong>_<br />
+_</strong></p>
+
+<p><strong>$ git stash apply</strong></p>
+
+<p>Perintah ini akan mengembalikan kondisi file yang sebelumnya kita simpan,
+kondisi yang diambil adalah kondisi yang paling atas atau <strong><em>stash@{0}</em></strong></p>
+
+<p><strong>$ git stash apply namaStash</strong></p>
+
+<p>Perintah ini sama dengan perintah <strong>git stash apply</strong>, bedanya kita menentukan
+sendiri kondisi mana yang akan diaplikasikan ke repository kode kita.</p>
+
+<p>Berikut diatas adalah beberapa perintah <strong>stash</strong> yang sering saya gunakan,
+untuk penggunaan lebih lanjut bisa dilihat di manual dari git tentang stash
+<strong>$ git help stash</strong>.</p>
+
+<p>NB: Perintah stash hanya berpengaruh terhadap file yang telah ditrack oleh
+git, termasuk file yang telah di <strong>git add</strong><br />
+**</p>
+
+<hr />
+
+<p>**Source:</p>
+
+<ul>
+<li><a href="http://git-scm.com/book/en/Git-Tools-Stashing">http://git-scm.com/book/en/Git-Tools-Stashing</a></li>
+<li><strong>$ git help stash</strong></li>
+</ul>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/arsenalisme/">Arsenalisme</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/alam-semesta-berkabut/">Alam semesta berkabut</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

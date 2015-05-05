@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Programming Python on http://blog.aredhi.com </title>
+    <link>http://blog.aredhi.com/tags/programming-python/</link>
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Mon, 20 May 2013 19:30:00 WIB</updated>
+    
+    <item>
+      <title>CTF Online EAsy Crypto 1 (EASY)</title>
+      <link>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</link>
+      <pubDate>Mon, 20 May 2013 19:30:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</guid>
+      <description>&lt;p&gt;Text yang akan diencrypt adalah seperti ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;GCW ESFLST, HMLSJDSZ AFA:  
+QZSLQFN R LFSFX PFWJSF GFMFLNF IFS XJINM,   
+NSIFM IFS LNLNM HNSYF PNYF IN IZSNF DFSL KFSF.   
+SDFBFRZ IFS SDFBFPZ INOTITMPFS QFSLNY,   
+IFS FSFP PNYF FPFS QFMNW IN HFPWFBFQF.   
+FIF UZS RFYF PNYF FPFS YJWZX GJWYFYFUFS MNSLLF GJWFGFI-FGFI QFRFSDF.  
+OZBNYFPZ DFSL HFPFU RJXPNUZS YFSUF IFSIFSFS   
+ZSYZPRZ MNIZUPZ YJWGZPF.   
+BFWSF-BFWSF PJMNIZUFS GJWUJSIFW-UJSIFW RJSFPOZGPFS   
+NXDFWFY-NXDFWFY LJYFWFS FOFNG RJSLLJWFPPFS UJSFPZ.   
+YFSUF XJPJOFU UZS QZUZY IFWN PJSFSLFS UFIFRZ   
+FPZ GJWLJWFP RJSZQNX UFRUQJY, RJRUJWYFMFSPFS PJMNIZUFS.  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Clue pertamanya adalah julius, yang berarti ini menggunakan encryption jenis
+Caesar cipher (&lt;a href=&#34;http://en.wikipedia.org/wiki/Caesar_cipher&#34;&gt;http://en.wikipedia.org/wiki/Caesar_cipher&lt;/a&gt;), enkripsi jenis
+ini menggeser karakter tertentu sejumlah x, dan x ini adalah kuncinya.&lt;/p&gt;
+
+&lt;p&gt;Untuk mendapatkan kuncinya saya pake sistem bruteforce, karena maksimum jumlah
+key adalah 26 sebanyak jumlah bilangan (A-Z).&lt;/p&gt;
+
+&lt;p&gt;Sebelumnya saya bikin enkriptor dengan python, berikut kodenya&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# julius.py  
+from string import maketrans  
+def julius(text, shift):  
+    alpha = unicode(&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;)  
+    enc = alpha[shift:] + alpha[:shift]  
+
+    table = maketrans(alpha, enc);  
+
+    return text.translate(table)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Untuk melakukan brute force tidak perlu menggunakan semua text yang akan
+didecrypt, dalam hal ini saya ambil &lt;strong&gt;HMLSJDSZ&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-64n2atxV_eM/UZoT9ptncCI/AAAAAAAAB0g/v856KCO1LHo/
+s400/ctf-caesar-crypto.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Terlihat Keynya adalah 8, sekarang decrypt semua textnya.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-kBHafOU3Ovs/UZoUvb4TsvI/AAAAAAAAB0s/r1RrnFHu5Wk/
+s400/ctf-caesar-crypto2.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Ternyata masih ada text yang masih dienkripsi, kalo dari kalimat yang muncul
+&amp;ldquo;&lt;strong&gt;OKE MANTAB, PUTARLAH INI:&lt;/strong&gt;&amp;rdquo; saya pikir semua text harus dibalik dulu
+ternyata tidak. Selanjutnya tinggal diulangi langkah-langkah sebelumnya.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-kmQZa2Mq4RY/UZoVlsfmnNI/AAAAAAAAB04/rYvjLHLdgzU/
+s400/ctf-caesar-cipher3.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Tinggal ambil beberapa kata dan disearch di google, akan terlihat kalo itu
+adalah petikan puisi &amp;ldquo;Aku Kangen&amp;rdquo; karangan WS Rendra.&lt;br /&gt;
+Jadi tokoh yang dimaksud adalah WS Rendra (rendra)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get site ranking with python and beautifulsoup</title>
+      <link>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</link>
+      <pubDate>Wed, 21 Nov 2012 21:21:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</guid>
+      <description>&lt;p&gt;To get information about site, we can use &lt;a href=&#34;http://alexa.com/&#34;&gt;alexa.com&lt;/a&gt; but
+sometimes we just need some pieces of information like ranking of site global
+or local country.&lt;/p&gt;
+
+&lt;p&gt;In this case i just need that information, when i looking on alexa i found so
+many information about the target site.&lt;/p&gt;
+
+&lt;p&gt;I have some knowledge about &lt;a href=&#34;http://www.python.org/&#34;&gt;python&lt;/a&gt; and
+&lt;a href=&#34;http://www.crummy.com/software/BeautifulSoup/&#34;&gt;beautifulsoup&lt;/a&gt; library and i
+try to grep that information with them.&lt;/p&gt;
+
+&lt;p&gt;First time i analyzing structure of page of alexa.com, find element of html
+tag which contains &lt;em&gt;the data&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-v5ynJJJEaYs/UJlnw6wF6lI/AAAAAAAABCU/KxCxSDtlqyk/
+s640/alexa-tag-analyzing.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Based on screenshot, _the data_ on the div tag with class &lt;strong&gt;data&lt;/strong&gt;, first tag
+is global ranks, second is local ranks and then reputation and rating. So the
+script must be grep a div tag with specification then do a looping.&lt;/p&gt;
+
+&lt;p&gt;In the source i need somes python library like &lt;strong&gt;sys&lt;/strong&gt; to get arguments,
+&lt;strong&gt;urllib2&lt;/strong&gt; to opening url, &lt;strong&gt;BeautifulSoup&lt;/strong&gt; to parsing the html, &lt;strong&gt;re&lt;/strong&gt; to
+remove empty character which produced by BeautifulSoup output.&lt;/p&gt;
+
+&lt;p&gt;Ok, this is the source to get the information.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python  
+# -*- coding: utf8 -*-  
+
+# alexagrep.py  
+# Ardi nooneDOTnu1ATgmailDOTcom  
+# GNU GPL  
+
+import sys  
+import urllib2  
+from bs4 import BeautifulSoup  
+from re import sub  
+
+ATTR = [  
+    &#39;Global ranks &#39;,  
+    &#39;Local ranks  &#39;,  
+    &#39;Reputation   &#39;,  
+    &#39;Rating       &#39;,  
+]  
+
+def openLink(url):  
+    _url = &#39;http://www.alexa.com/siteinfo/&#39;+ url  
+    opener = urllib2.build_opener()  
+    opener.addheaders = [(&#39;User-agent&#39;, &#39;Mozilla/5.0&#39;)]  
+
+    return opener.open(_url).read()  
+
+if __name__ == &#39;__main__&#39;:  
+    try:  
+        url = sys.argv[1]  
+    except:  
+        print &#39;Error url&#39;  
+        sys.exit()  
+
+    html = openLink(url)  
+    soup = BeautifulSoup(html)  
+    tds = soup.find(&#39;tr&#39;, {&#39;class&#39;:&#39;data-row1&#39;}).findAll(&#39;td&#39;)  
+    i=0  
+
+    for td in tds:  
+        print ATTR[i] +&#39; =&amp;gt; &#39;+ sub(r&#39;\s+&#39;, &#39; &#39;, td.find(&#39;div&#39;, {&#39;class&#39;:&#39;data&#39;}).text.strip())  
+        i = i + 1  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This script can be downloaded on &lt;https://github.com/emaniacs/simple-
+script/blob/master/alexagrep.py&gt;.&lt;/p&gt;
+
+&lt;p&gt;To execute script just type _$ python alexagrep.py url_ or copying into
+_/usr/local/bin_ and adding execute permission to script (chmod +x).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-L160IZdmoTA/UKolYyTRmvI/AAAAAAAABDY/yCaXFMeSi5s/
+s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

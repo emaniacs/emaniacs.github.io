@@ -1,0 +1,301 @@
+    <!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> http://blog.aredhi.com &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="http://blog.aredhi.com/index.xml" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+        <div id="layout" class="pure-g">
+                <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+            <div class="content pure-u-1 pure-u-md-3-4">
+                <div>
+                    
+                    <div class="posts">
+                        <h1 class="content-subhead">Homepage</h1>
+                        
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/mencari-bilangan-prima-dengan-python/"><h2 class="post-title">Mencari bilangan prima dengan Python</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Tuesday , 18 May 2010 23:45:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/windows">windows</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    #!/usr/bin/env python import sys # untuk mengambil argument yang diberikan ret=True # return value def itsPrime(val): # definisi fungsi itsprime, return(1=prime, 0=not prime, -1=error value ) global ret; # agar ret bisa diakses dari fungsi if val &gt;= 2: # jika nilai yang diberikan besar dari 2 if val &gt; 9: # jika nilai yang diberikan besar dari 9 up=10 # nilai maksimum untuk pembagian =10 else: up=val # jika tidak maka nilai maksimum=nilai yang diberikan for p in range(2,up): # perulangan selama p=2 dan kecil dari nilai up if val % p == 0: # jika nilai modulus p == 0 ret=False # berarti bukan bilangan prime break # langsung keluar dari perulangan else: # nilai yang dimasukkan kecil dari 2 ret=-1 return ret if __name__ == &quot;__main__&quot;: try: prime=itsPrime(int(sys.argv[1])) if prime==1: print 'prime' elif prime==0: print 'Not prime' else: print 'Please integer above 2' except ValueError: print &quot;Please enter an integer number&quot; except IndexError: print &quot;Please input one argument&quot; Penjelasan dari kode diatas bisa dilihat di setiap baris komentarnya, untuk yang lainnya bisa dilihat dibawah ini baris ke 20 -&gt; untuk mencegah kemungkinan error maka digunakan try baris ke 21 -&gt; melakukan checking terhadap nilai yang diberikan kemudian nilai return dari fungsi itsPrime dimasukkan ke variabel prime, selanjutnya untuk yang dibawahnya adalah melakukan checking pada nilai prime.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/kostumisasi-shorcut-ubuntu/"><h2 class="post-title">Kostumisasi Shorcut Ubuntu</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Sunday , 25 Apr 2010 04:53:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Penggunaan keyboard dalam hal sebagai shortcuts sangat penting apalagi jika kita ingin mempercepat untuk memanggil suatu aplikasi. Dengan Linux dalam hal ini Ubuntu kita dengan sangat mudah membuat shortcuts untuk sebuah aplikasi yang ingin kita jalankan, bahkan untuk komputer yang berlambang jendela di keyboard pun bisa kita gunakan untuk sebuah shortcuts. Salah satu caranya bisa dengan mengikuti trik berikut: Klik pada Main Menu → System → Preferences → Keyboard Kemudian pada tab Layout klik Layout Option Kemudian klik pada pilihan Alt/Win key behavior Dan aktifkan pilihan Super is mapped to Win keys Setelah ini maka keyboard anda khususnya tombol WinKeys telah dikenali.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/perintah-linux/"><h2 class="post-title">Perintah Linux 1</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Sunday , 25 Apr 2010 04:52:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Berikut ini adalah beberapa perintah perintah Linux sederhana namun sangat powerfull. Perintah ini saya dapat dari kegiatan oprek Linux yang dilakukan sendiri, ada juga dari internet, dari tutorial posting dari para pencinta Linux yang saya baca dari Internet. ifconfig -a Perintah ini melihat konfigurasi network pada lan card, lan card sendiri biasanya dinamai dengan eth0, eth1 dan seterusnya. Jika ingin melihat konfigurasi &lsquo;hanya&rsquo; pada satu device network bisa digunakan &ldquo;ifconfig &ldquo;.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/emacs-make-all-computing-simple/"><h2 class="post-title">Emacs Make All Computing Simple</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Sunday , 25 Apr 2010 04:49:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Judul diatas merupakan salah kebiasaan unik dari hacker, yaitu Singkatan Rekursif, atau singkatan yang memanggil dirinya sendiri. Tulisan ini saya dapat dari Emacs 23.1 pada file JOKES. Emacs memang membuat editing file lebih asyik meski Emacs sebenarnya mempunyai kemampuan yang jauh lebih dahsyat bahkan lebih powerfull daripada editor yang telah mendukung IDE sekalipun. Coba lihat video ini bagaimana melakukan coding html jauh lebih mudah dan mengasyikkan Berikut beberapa contoh Acronim
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/teknik-menyembunyikan-gambar-gimp/"><h2 class="post-title">Teknik Menyembunyikan Gambar (GIMP)</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Sunday , 25 Apr 2010 04:49:00</i>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Teknik Menyembunyikan Gambar Saat ini untuk menandai sebuah gambar oleh pembuatnya sering kali kita lihat dengan menggunakan teknik Watermark, hal ini digunakan untuk melindungi pembajakan atau manipulasi gambar oleh pihak-pihak yang tak diinginkan, atau malah sebagai ajang promosi bagi pembuatnya. Hal ini sangat bagus dan juga mendidik namun sayang kadang kala justru membuat kita terganggu, karena pandangan kita agak sedikit terganggu oleh nama pembuat, situs atau hal lain seputar pembuatnya Sedikit trik untuk menyembunyikan gambar yang dibuat dengan GIMP, yang juga bisa diterapkan pada Photoshop.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/was-born-enternet/"><h2 class="post-title">Was born EnterNET...</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Sunday , 25 Apr 2010 04:47:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/opini">opini</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Akhirnya salah satu cita cita W tercapai, diiringi lagu Saluang dan deru mesin motor yang lagi balapan liar didepan toko W, serta alunan ayat suci Alquran dari depan masjid, EnterNET sebuah warnet yang telah lama W impikan. 3 minggu sudah hari hari W dan Abang W pakai untuk merancang, mengimplementasikan hingga penyettingan akhirnya selesai saat ini juga. Salah satu hal yang paling membuat W capek adalah settingan komputer, mungkin ada yang ga percaya tapi ini benar apa yang dibilang orang tentang Linux itu susah adalah sebuah kesalahan.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/gedit-programming-edition/"><h2 class="post-title">Gedit Programming Edition</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Saturday , 23 Jan 2010 19:29:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Gedit merupakan text editor produksi Gnome yang sangat powerfull (menurut penulis), sama sepert Kedit jika kita menggunakan desktop KDE, editor ini akan terinstall default jika kita menggunakan Linux dengan salah satu desktop diatas. Pada tulisan ini saya akan coba memberikan sebuah trik untuk membuat Gedit lebih powerfull lagi dengan melakukan sedikit kostumisasi, meski sebenarnya Gedit telah datang dengan berbagai plugins namun tidak tersetting secara default. Kita akan coba untuk menambah atau mengaktifkan plugin2 yang akan membantu kita untuk menulis seperti programming, atau untuk hal lainnya.
+                                </p>
+                            </div>
+                        </section>
+                        
+
+                        <div class="pagination">
+                            <span class="info">95 posts</span>
+
+                            
+                                
+                                
+                                    <a href="/page/1" class="pure-button ">1</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/2" class="pure-button ">2</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/3" class="pure-button ">3</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/4" class="pure-button ">4</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/5" class="pure-button ">5</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/6" class="pure-button ">6</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/7" class="pure-button ">7</a>
+                                
+                            
+                                
+                                
+                                    <a href="/page/8" class="pure-button ">8</a>
+                                
+                            
+                                
+                                
+                                    <a href="javascript:" class="pure-button pure-button-disabled current">9</a>
+                                
+                            
+                        </div>
+                    </div>
+
+                    <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+            <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

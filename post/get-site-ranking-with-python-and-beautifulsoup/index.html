@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Get site ranking with python and beautifulsoup &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/get-site-ranking-with-python-and-beautifulsoup/"><h2 class="post-title">Get site ranking with python and beautifulsoup</h2></a>
+
+                    <p class="post-meta">
+                        <i>Wednesday , 21 Nov 2012 21:21:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-python">programming python</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p>To get information about site, we can use <a href="http://alexa.com/">alexa.com</a> but
+sometimes we just need some pieces of information like ranking of site global
+or local country.</p>
+
+<p>In this case i just need that information, when i looking on alexa i found so
+many information about the target site.</p>
+
+<p>I have some knowledge about <a href="http://www.python.org/">python</a> and
+<a href="http://www.crummy.com/software/BeautifulSoup/">beautifulsoup</a> library and i
+try to grep that information with them.</p>
+
+<p>First time i analyzing structure of page of alexa.com, find element of html
+tag which contains <em>the data</em>.</p>
+
+<p><img src="http://3.bp.blogspot.com/-v5ynJJJEaYs/UJlnw6wF6lI/AAAAAAAABCU/KxCxSDtlqyk/
+s640/alexa-tag-analyzing.jpeg" alt="" />
+</p>
+
+<p>Based on screenshot, _the data_ on the div tag with class <strong>data</strong>, first tag
+is global ranks, second is local ranks and then reputation and rating. So the
+script must be grep a div tag with specification then do a looping.</p>
+
+<p>In the source i need somes python library like <strong>sys</strong> to get arguments,
+<strong>urllib2</strong> to opening url, <strong>BeautifulSoup</strong> to parsing the html, <strong>re</strong> to
+remove empty character which produced by BeautifulSoup output.</p>
+
+<p>Ok, this is the source to get the information.</p>
+
+<pre><code>#!/usr/bin/env python  
+# -*- coding: utf8 -*-  
+
+# alexagrep.py  
+# Ardi nooneDOTnu1ATgmailDOTcom  
+# GNU GPL  
+
+import sys  
+import urllib2  
+from bs4 import BeautifulSoup  
+from re import sub  
+
+ATTR = [  
+    'Global ranks ',  
+    'Local ranks  ',  
+    'Reputation   ',  
+    'Rating       ',  
+]  
+
+def openLink(url):  
+    _url = 'http://www.alexa.com/siteinfo/'+ url  
+    opener = urllib2.build_opener()  
+    opener.addheaders = [('User-agent', 'Mozilla/5.0')]  
+
+    return opener.open(_url).read()  
+
+if __name__ == '__main__':  
+    try:  
+        url = sys.argv[1]  
+    except:  
+        print 'Error url'  
+        sys.exit()  
+
+    html = openLink(url)  
+    soup = BeautifulSoup(html)  
+    tds = soup.find('tr', {'class':'data-row1'}).findAll('td')  
+    i=0  
+
+    for td in tds:  
+        print ATTR[i] +' =&gt; '+ sub(r'\s+', ' ', td.find('div', {'class':'data'}).text.strip())  
+        i = i + 1  
+</code></pre>
+
+<p>This script can be downloaded on <https://github.com/emaniacs/simple-
+script/blob/master/alexagrep.py>.</p>
+
+<p>To execute script just type _$ python alexagrep.py url_ or copying into
+_/usr/local/bin_ and adding execute permission to script (chmod +x).</p>
+
+<p><img src="http://2.bp.blogspot.com/-L160IZdmoTA/UKolYyTRmvI/AAAAAAAABDY/yCaXFMeSi5s/
+s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg" alt="" />
+</p>
+
+<p>.</p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/">CTF Online EAsy Crypto 1 (EASY)</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/newbie-using-gnuchess/">Newbie using gnuchess</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

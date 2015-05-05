@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/teknik-menyembunyikan-gambar-gimp/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Teknik Menyembunyikan Gambar (GIMP) &middot; http://blog.aredhi.com </title>
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/teknik-menyembunyikan-gambar-gimp/"><h2 class="post-title">Teknik Menyembunyikan Gambar (GIMP)</h2></a>
+
+                    <p class="post-meta">
+                        <i>Sunday , 25 Apr 2010 04:49:00</i>
+
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    
+
+<h1 id="teknik-menyembunyikan-gambar:5df1697dec0ad0986556ba4f0192c584">Teknik Menyembunyikan Gambar</h1>
+
+<p>Saat ini untuk menandai sebuah gambar oleh pembuatnya sering kali kita lihat
+dengan menggunakan teknik Watermark, hal ini digunakan untuk melindungi
+pembajakan atau manipulasi gambar oleh pihak-pihak yang tak diinginkan, atau
+malah sebagai ajang promosi bagi pembuatnya. Hal ini sangat bagus dan juga
+mendidik namun sayang kadang kala justru membuat kita terganggu, karena
+pandangan kita agak sedikit terganggu oleh nama pembuat, situs atau hal lain
+seputar pembuatnya</p>
+
+<p>Sedikit trik untuk menyembunyikan gambar yang dibuat dengan GIMP, yang juga
+bisa diterapkan pada Photoshop.</p>
+
+<ol>
+<li>Buatlah sebuah background berwarna putih, dan klik pada T<strong>ool → Text</strong> atau shorcutnya T (huruf besar), kemudian klik pada background (Usahakan di pinggir gambar agar tidak mengganggu gambar asli atau objek sesungguhnya). Tulislah pada box yang keluar pada kalimat yang diinginkan (dalam hal ini &lsquo;secret&rsquo;).</li>
+</ol>
+
+<p><img src="http://i919.photobucket.com/albums/ad35/chars19/ambo/gimp-secret1.jpg" alt="" />
+</p>
+
+<ol>
+<li><p>Kemudian klik pada <strong>Colors → Level</strong> pada bagian <strong>All Channel</strong> isikan hingga mendekati 255, sewaktu mengisi usahakan hingga gambar tak terlihat tapi jangan sampai ke angka 255 karena hal ini akan mengakibatkan hal yang ingin disembunyikan tersebut justru tak bisa dilihat lagi.</p></li>
+
+<li><p><img src="http://i919.photobucket.com/albums/ad35/chars19/ambo/gimp-secret2-1.png" alt="" />
+</p></li>
+
+<li><p>Warna dari tulisan akan menjadi putih dan menyatu dengan background, sekarang tinggal mengisi background dengan gambar yang kita inginkan.</p></li>
+</ol>
+
+<p>Dalam hal ini kita coba untuk membuat sebuah efek warna dengan <strong>Blend Tool</strong>
+(L),</p>
+
+<p>Terlihat pada gambar sebuah background dengan warna hasil <strong>Blend Tool</strong> dan
+sebuah layer yang bernama secret.</p>
+
+<ol>
+<li>Terakhir&hellip;</li>
+</ol>
+
+<p>Satukan kedua layer tersebut, dengan cara klik kanan pada form layer kemudian
+pilih <strong>Merge Down</strong>, setelah kedua menjadi satu, maka gambar telah siap
+dipublikasikan, dan tentu saja dengan id yang telah kita sembunyikan tersebut.</p>
+
+<p><img src="http://i919.photobucket.com/albums/ad35/chars19/ambo/gimp-secret3.jpg" alt="" />
+</p>
+
+<p>Untuk pengujian gambar kita telah berhasil disembunyikan cek dengan cara
+berikut ( bisa anda tes dengan gambar diatas coba didownload).</p>
+
+<ul>
+<li><p>Terlihat pada gambar bahwa hanya ada sebuah gambar dengan efek blending hitam putih.</p></li>
+
+<li><p>Klik** Colors → Level** trus geser pada input level kekanan (putih), hingga gambar yang tadi kita sembunyikan berhasil terlihat lagi.</p></li>
+</ul>
+
+<p>Meski mungkin masih agak kelihatan tapi dengan sedikit polesan, akan membuat
+gambar jadi perfect dan siap dishare tanpa takut akan dibajak oleh orang lain,
+dan tentu saja tidak mengganggu tampilan gambar.</p>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p><em>Nb: Teknik ini terinspirasi dari Egg Photoshop.Tulisan ini dibuat dengan
+<a href="http://www.openoffice.org/">Open Office 3.0</a>, dan semua gambar diedit dengan
+<a href="http://www.gimp.org/">Gimp</a> 2.6.6, dan dibawah mesin Linux, jadi Open Source
+cui&hellip;</em></p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/emacs-make-all-computing-simple/">Emacs Make All Computing Simple</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/was-born-enternet/">Was born EnterNET...</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-05 11:12:00 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

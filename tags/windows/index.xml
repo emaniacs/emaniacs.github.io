@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Windows on http://blog.aredhi.com </title>
+    <link>http://blog.aredhi.com/tags/windows/</link>
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Mon, 13 Jun 2011 18:13:00 WIB</updated>
+    
+    <item>
+      <title>Emacs: Folding kode dengan mouse</title>
+      <link>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</link>
+      <pubDate>Mon, 13 Jun 2011 18:13:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
+s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Ketika mencoba Emacs pertama kali, saya sempat bingung gimana caranya
+melakukan folding atau menyembunyikan kode didalam suatu blok. Folding kode
+sangat berguna untuk melakukan review terhadap kode. Saya cari di internet ada
+beberapa cara dan setelah dicoba saya paling tertarik dengan
+&lt;a href=&#34;http://www.emacswiki.org/emacs/HideShow&#34;&gt;hideshow&lt;/a&gt;, hal ini karena  hideshow
+melakukan folding code berdasarkan penanda ekspresi blok pada setiap bahasa
+programming, misalkan bahasa C, maka blok nya dimulai dari karakter &amp;ldquo;{&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Berdasarkan situsnya Hideshow merupakan minor-mode dari &lt;a href=&#34;http://www.emacswiki.org/emacs/OutlineMode&#34;&gt;Outline-
+mode&lt;/a&gt; yang secara default telah
+terinstall pada Emacs (saya menggunakan Emacs 23.2.3), cara mengaktifkannya
+bisa dengan M-xhs-minor-modeRet atau agar aktif setiap kali Emacs dijalankan,
+tambahkan kode berikut pada file&lt;strong&gt;_ .emacs_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(add-hook &#39;php-mode-hook &#39;hs-minor-mode)  
+(add-hook &#39;java-mode-hook &#39;hs-minor-mode)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kode diatas untuk mengaktifkan hideshow jika kita membuka file Java dan Php.&lt;/p&gt;
+
+&lt;p&gt;Agar lebih mudah saya sendiri membuat shortcut untuk  mengaktifkan atau
+menonaktifkan hideshow mode ini, yaitu dengan menggunakan tombol [f7],
+tambahkan kode berikut pada &lt;em&gt;&lt;strong&gt;.emacs&lt;/strong&gt;&lt;/em&gt; agar shortcutnya aktif&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(global-set-key [f7] &#39;hs-minor-mode)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Setelah mencoba beberapa lama, saya penasaran untuk membuat kode agar folding
+bisa dilakukan dengan mouse, hal ini saya dapat ketika mempelajari bagaimana
+membuat shortcut pada &lt;a href=&#34;http://www.emacswiki.org/emacs/TheFringe&#34;&gt;fringe&lt;/a&gt; di
+Emacs.&lt;a href=&#34;http://www.emacswiki.org/emacs/TheFringe&#34;&gt;Fringe&lt;/a&gt; sendiri adalah margin
+antara line-number dengan editor area, seperti yang terlihat pada gambar
+diatas.&lt;/p&gt;
+
+&lt;p&gt;Setelah melakukan beberapa percobaan akhirnya berhasil juga membuat beberapa
+baris kode untuk membuat hideshow mode menggunakan mouse.&lt;/p&gt;
+
+&lt;p&gt;Berikut kodenya&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(defun hideshow-toggle-with-mouse (event)  
+  &amp;quot; Toggle hideshow with mouse   &amp;quot;  
+  (interactive &amp;quot;@e&amp;quot;)  
+  (mouse-set-point event)  
+  (end-of-line)  
+  (hs-toggle-hiding))  
+
+(global-set-key (kbd &amp;quot;&amp;quot;) &#39;hideshow-toggle-with-mouse)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ketikkan kode tersebut di file .emacs dan sekarang folding bisa dilakukan
+dengan mouse. Untuk mengaktifkan perintah diatas hideshow-mode harus telah
+aktif.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cream - Vim editor yang ramah</title>
+      <link>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</link>
+      <pubDate>Sat, 07 May 2011 17:55:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</guid>
+      <description>&lt;p&gt;Mendengar nama Vi(m) kita pasti ingat dengan sebuah editor mini dengan
+kemampuan yang luar biasa, begitu juga dengan Cream, editor ini menggunakan
+fasilitas yang ada pada Vim namun telah terkostumisasi seperti halnya editor-
+editor kebanyakan.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-IuVYpUBk52I/TcZmJTaj7iI/AAAAAAAAAZk/fFoLtbaKEd4/
+s400/Cream-default.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Bagi yang pertama kali menggunakan Vim (apalagi yang telah terbiasa dengan
+editor-editor yang lainnya) pasti akan kebingungan, seperti halnya saya ketika
+mencoba Vim, saya berfikir kalo keyboard saya rusak karena ketika saya pencet
+tak ada yang keluar apapun di editornya, baru ketika tak sengaja kepencet
+tombol i, keyboard saya kembali normal. Kemudian saya mencoba untuk belajar
+tentang Vim, ternyata memang begitu ketika Vim dijalankan, secara default kita
+akan masuk ke mode Normal.&lt;br /&gt;
+Perbedaan yang paling mendasar Cream dan Vim adalah pada kostumisasinya, tidak
+ada kode sumber Vim yang dirubah ketika digunakan oleh Cream, melainkan hanya
+script untuk membuat performance Vim lebih baik.&lt;br /&gt;
+Cream ditulis oleh Steve Hall, nama Cream ini diinspirasi dari kebiasaan dia
+minum kopi yang tidak suka dengan kopi yang hanya berwarna hitam, dengan kata
+lain kopi yang dicampur dengan krim, sehingga menurut dia kopi jadi lebih
+berwarna, begitu juga dengan Cream ini, karena tidak melakukan perubahan pada
+sourcecode Vim tapi hanya menambahkan kostumisasi pada Vim, ya tak ubahnya
+seperti menuang krim kedalam kopi, kita hanya membuatnya jadi lebih berwarna
+dan lebih enak(tapi kalau kopi, saya lebih suka kopi hitam).&lt;br /&gt;
+Salah satu yang paling kelihatan adalah shorcut Cream yang mendukung mode CUA
+(Common User Access), seperti teks editor kebanyakan, dimana Ctrl+c untuk
+copy, Ctrl+x untuk cut dan bebarapa shortcut yang lainnya sesuai dengan CUA.&lt;br /&gt;
+Sesuai dengan motto Cream sendiri, yaitu &amp;ldquo;&lt;em&gt;a modern configuration of the _Vim&lt;/em&gt;
+text editor_&amp;rdquo; kostumisasi yang dilakukan pada Vim benar-benar memudahkan untuk
+melakukan editing file, selain kecepatan dulu saya tidak menyukai Vim, tapi
+dengan konfigurasi dari Cream, Vim seperti teks editor kebanyakan yang mudah
+digunakan tapi tentu saja dengan fitur-fitur yang luar biasa, saya mulai
+mempertimbangkan editor ini.&lt;br /&gt;
+Beberapa shortcut dari Cream :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ctrl+c -&amp;gt; copy&lt;/li&gt;
+&lt;li&gt;Ctrl+x -&amp;gt; cut&lt;/li&gt;
+&lt;li&gt;Ctrl+v -&amp;gt; paste&lt;/li&gt;
+&lt;li&gt;Ctrl+z -&amp;gt; undo&lt;/li&gt;
+&lt;li&gt;Ctrl+y -&amp;gt; redo&lt;/li&gt;
+&lt;li&gt;Ctrl+f -&amp;gt; find&lt;/li&gt;
+&lt;li&gt;Ctrl+h -&amp;gt; replace&lt;/li&gt;
+&lt;li&gt;Ctrl+g -&amp;gt; goto line number
+Namun karena pernah mencoba Vim, tentu kenal dengan istilah Command Mode, kalo
+di Vim shortcutnya adalah titik dua(:), saya sempat kebingungan bagaimana
+untuk mengaktifkan Command Mode tersebut, setelah mencari-cari di menu saya
+menemukan di &lt;em&gt;Preferences - Behavior_ disitu ada 4(empat) mode yang disediakan
+yaitu Cream, Cream Lite, Vim, Vi. Untuk menggunakan command mode saya terpaksa
+menggunakan _behavior&lt;/em&gt; Vi(m) agar bisa menggunakan command mode. Ketika
+membaca FAQ dari Cream editor ini saya menemukan ternyata shorcut untuk
+menggunakan command mode adalah &lt;strong&gt;Ctrl+L&lt;/strong&gt;.&lt;br /&gt;
+&lt;strong&gt;Cream Behavior&lt;/strong&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-JjGWBHb1Zx4/TcZmIAD3W8I/AAAAAAAAAZg/TAM6SdmOfpg/
+s640/Cream-behavior.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;**&lt;br /&gt;
+**&lt;br /&gt;
+Seperti yang saya tulis diatas ada 4 mode (istilah Indonesia untuk behavior
+apa ya?), yang ada di &lt;em&gt;Preference -&amp;gt; Behavior&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Cream (Default)&lt;br /&gt;
+Pada behavior ini, semua kostumisasi dan konfigurasi Cream digunakan, termasuk
+mapping(keyboard shortcut) dan insert mode. Ini adalah mode default dari
+Cream.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Cream (Lite)&lt;br /&gt;
+Mode ini menggunakan semua kostumisasi Cream tapi menghapus kostumisasi
+shortcut dan insert mode.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Vim&lt;br /&gt;
+Menggunakan Vim mode, pada mode ini semua konfiguasi Cream akan dihapus dan
+editor akan seperti kita menjalankan gVim editor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Vi&lt;br /&gt;
+Vi mode.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Mungkin ingin melakukan/menambahkan beberapa konfigurasi pada editor Cream,
+silahkan buat file ~/.cream , file ini adalah file user configuration dari
+Cream.&lt;br /&gt;
+Ada 2 file konfigurasi utama dari Cream :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;cream-user.vim&lt;br /&gt;
+file ini diload diakhir startup, jadi ketika semua konfigurasi telah diload
+baru file ini diaktifkan dan Cream dijalankan, menurut FAQ dari Cream, jika
+ingin membuat konfigurasi lebih baik dilakukan di file ini, sehingga jika ada
+shortcut yang ingin diganti tidak ditimpa oleh konfigurasi utama.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;cream-conf.vim&lt;br /&gt;
+Sedangkan file ini kebalikan dari cream-user.vim, file ini diload pertama
+kali.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Untuk melihat semua file Cream ketika telah diinstall bisa dengan $dpkg -L
+cream (debian based).&lt;/p&gt;
+
+&lt;p&gt;Sumber :&lt;br /&gt;
+Try and Error&lt;br /&gt;
+Faq Cream&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Singkatan Recursive ( Emacs )</title>
+      <link>http://blog.aredhi.com/post/singkatan-recursive-emacs/</link>
+      <pubDate>Mon, 21 Mar 2011 06:44:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/singkatan-recursive-emacs/</guid>
+      <description>&lt;p&gt;Judul diatas merupakan salah kebiasaan unik dari hacker, yaitu Singkatan
+Rekursif, atau singkatan yang memanggil dirinya sendiri. Tulisan ini saya
+dapat dari Emacs 23.1 pada file JOKES.&lt;br /&gt;
+Emacs memang membuat editing file lebih asyik meski Emacs sebenarnya mempunyai
+kemampuan yang jauh lebih dahsyat bahkan lebih powerfull daripada editor yang
+telah mendukung IDE sekalipun.&lt;br /&gt;
+Coba lihat &lt;a href=&#34;http://www.youtube.com/watch?v=EQAd41VAXWo&#34;&gt;video ini&lt;/a&gt; bagaimana
+melakukan coding html jauh lebih mudah dan mengasyikkan&lt;/p&gt;
+
+&lt;p&gt;Berikut beberapa contoh  Acronim Recursive Untuk Emacs&lt;br /&gt;
+**&lt;br /&gt;
+——–&lt;br /&gt;
+Eight Megabytes And Constantly Swapping**&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Even a Master of Arts Comes Simpler&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Emacs Manuals Are Cryptic and Surreal&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Energetic Merchants Always Cultivate Sales&lt;/p&gt;
+
+&lt;p&gt;Each Manual’s Audience is Completely Stupified&lt;/p&gt;
+
+&lt;p&gt;Emacs Means A Crappy Screen&lt;/p&gt;
+
+&lt;p&gt;Eventually Munches All Computer Storage&lt;/p&gt;
+
+&lt;p&gt;Even My Aunt Crashes the System&lt;/p&gt;
+
+&lt;p&gt;Eradication of Memory Accomplished with Complete Simplicity&lt;/p&gt;
+
+&lt;p&gt;Elsewhere Maybe Alternative Civilizations Survive&lt;/p&gt;
+
+&lt;p&gt;Egregious Managers Actively Court Stallman&lt;/p&gt;
+
+&lt;p&gt;Esoteric Malleability Always Considered Silly&lt;/p&gt;
+
+&lt;p&gt;Emacs Manuals Always Cause Senility&lt;/p&gt;
+
+&lt;p&gt;Easily Maintained with the Assistance of Chemical Solutions&lt;/p&gt;
+
+&lt;p&gt;EMACS MACRO ACTED CREDO SODOM&lt;/p&gt;
+
+&lt;p&gt;Edwardian Manifestation of All Colonial Sins&lt;/p&gt;
+
+&lt;p&gt;Generally Not Used Except by Middle Aged Computer Scientists&lt;/p&gt;
+
+&lt;p&gt;Extended Macros Are Considered Superfluous&lt;/p&gt;
+
+&lt;p&gt;Every Mode Accelerates Creation of Software&lt;/p&gt;
+
+&lt;p&gt;Elsewhere Maybe  All Commands are Simple&lt;/p&gt;
+
+&lt;p&gt;Emacs May Allow Customized Screwups&lt;/p&gt;
+
+&lt;p&gt;Excellent Manuals Are Clearly Suppressed&lt;/p&gt;
+
+&lt;p&gt;Emetic Macros Assault Core and Segmentation&lt;/p&gt;
+
+&lt;p&gt;Embarrassed Manual-Writer Accused of Communist Subversion&lt;/p&gt;
+
+&lt;p&gt;Extensibility and Modifiability Aggravate Confirmed Simpletons&lt;/p&gt;
+
+&lt;p&gt;Emacs May Annihilate Command Structures&lt;/p&gt;
+
+&lt;p&gt;Easily Mangles, Aborts, Crashes and Stupifies&lt;/p&gt;
+
+&lt;p&gt;Extraneous Macros And Commands Stink&lt;/p&gt;
+
+&lt;p&gt;Exceptionally Mediocre Algorithm for Computer Scientists&lt;/p&gt;
+
+&lt;p&gt;EMACS Makes no Allowances Considering its Stiff price&lt;/p&gt;
+
+&lt;p&gt;Equine Mammals Are Considerably Smaller&lt;/p&gt;
+
+&lt;p&gt;Embarrassingly Mundane Advertising Cuts Sales&lt;/p&gt;
+
+&lt;p&gt;Every Moron Assumes CCA is Superior&lt;/p&gt;
+
+&lt;p&gt;Exceptionally Mediocre Autocratic Control System&lt;/p&gt;
+
+&lt;p&gt;EMACS May Alienate Clients and Supporters&lt;/p&gt;
+
+&lt;p&gt;Excavating Mayan Architecture Comes Simpler&lt;/p&gt;
+
+&lt;p&gt;Erasing Minds Allows Complete Submission&lt;/p&gt;
+
+&lt;p&gt;Every Male Adolescent Craves Sex&lt;/p&gt;
+
+&lt;p&gt;Elephantine Memory Absolutely Considered Sine que non&lt;/p&gt;
+
+&lt;p&gt;Emacs Makers Are Crazy Sickos&lt;/p&gt;
+
+&lt;p&gt;Eenie-Meenie-Miney-Mo- Macros Are Completely Slow&lt;/p&gt;
+
+&lt;p&gt;Experience the Mildest Ad Campaign ever Seen&lt;/p&gt;
+
+&lt;p&gt;Emacs Makefiles Annihilate C- Shells&lt;/p&gt;
+
+&lt;p&gt;Eradication of Memory Accomplished with Complete Simplicity&lt;/p&gt;
+
+&lt;p&gt;Emetic Macros Assault Core and Segmentation&lt;/p&gt;
+
+&lt;p&gt;Epileptic MLisp Aggravates Compiler Seizures&lt;/p&gt;
+
+&lt;p&gt;Eleven thousand Monkeys Asynchronously Crank out these Slogans&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;——-&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Copy Paste di Emacs (CUA mode)</title>
+      <link>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</link>
+      <pubDate>Mon, 07 Mar 2011 07:07:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</guid>
+      <description>&lt;p&gt;Dalam kebanyakan editor saat ini, untuk melakukan copy paste digunakan shorcut
+Control-c untuk copy, C-v untuk paste dan C-x untuk cut. Sedangkan Emacs yang
+menggunakan shorcut yang berbeda dan tentu saja membuat pusing bagi pemula,
+termasuk saya sendiri. Untuk melakukan copy Emacs bisa dengan M-w dan C-y
+untuk melakukan paste, sedangkan jika ingin mencut sebuah teks yang terseleksi
+bisa dengan C-w, yang sebenarnya bisa dilakukan mudah dengan
+&lt;a href=&#34;http://iamlinux.co.cc/2010/08/menggunakan-mouse-emacs/&#34;&gt;mouse&lt;/a&gt;, bahkan
+mendukung copy ke register, jadi jika suatu teks kita copy kemudian melakukan
+copy terhadap teks lain, maka teks yang dicopy pertama masih tersimpan di
+memori yang nantinya bisa digunakan lagi.&lt;/p&gt;
+
+&lt;p&gt;CUA mode ( Common User Acces ) yaitu standar interface untuk sebuah sistem dan
+suatu program &lt;a href=&#34;http://en.wikipedia.org/wiki/Common_User_Access&#34;&gt;(ref)&lt;/a&gt;, dengan
+mengaktifkan mode ini maka shortcut Emacs bisa digunakan selayaknya kebanyakan
+teks editor, meski tak secara total.&lt;/p&gt;
+
+&lt;p&gt;Untuk mengaktifkan cua-mode bisa dengan perintah M-x cua-mode, ketika emacs
+telah berjalan. Jika ingin mengaktifkan secara langsung bisa dengan mengedit
+file ~/.emacs dan menambahkan baris berikut :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(cua-mode t)  
+(setq cua-keep-region-after-copy t)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Perintah kedua &lt;strong&gt;&lt;code&gt;(setq cua-keep-region-after-copy t)&lt;/code&gt; &lt;/strong&gt;berfungsi agar teks
+yang kita copy tetap terseleksi, seperti halnya banyak teks editor.&lt;/p&gt;
+
+&lt;p&gt;Selain itu cua-mode masih mendukung penyimpanan ke register, yaitu dengan
+menggunakan shorcut &lt;strong&gt;&lt;code&gt;C-1 C-c&lt;/code&gt;** untuk menyimpan ke register 1, kemudian
+**&lt;code&gt;C-1 C-v&lt;/code&gt;&lt;/strong&gt; untuk paste teks yang ada di register 2.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Emacs Chatting dengan ERC</title>
+      <link>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</link>
+      <pubDate>Sun, 06 Mar 2011 06:06:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</guid>
+      <description>&lt;p&gt;Sekali lagi Emacs bukan teks editor biasa, bahkan kadang disebut sebagai
+sistem operasi, karna saking lengkapnnya aplikasi dan plugin2 emacs. Salah
+satu yang sering kita lakukan ketika online adalah chatting di channel irc,
+dengan Emacs kita bisa melakukannya dari dalam Emacs.&lt;/p&gt;
+
+&lt;p&gt;Plugin buat chatting ini namanya Erc (Emacs InternetRelayChat), project ini
+merupakan bagian dari GNU Project, dan alamat home projectnya
+&lt;a href=&#34;http://savannah.gnu.org/projects/erc/&#34;&gt;disini&lt;/a&gt;. Versi terbaru saat tulisan
+ini dibuat adalah versi 5.3.&lt;/p&gt;
+
+&lt;p&gt;Untuk menjalankan Erc bisa dengan &lt;strong&gt;&lt;code&gt;M-x erc RET&lt;/code&gt;&lt;strong&gt;, maka minibuffer akan
+aktif dan menanyakan beberapa hal diantaranya server yang akan digunakan port,
+username dan password. Seperti halnya Emacs yang customizable begitu juga
+dengan Erc ini yang datang dengan berbagai module yang diambil dari &lt;/strong&gt;&lt;code&gt;M-x
+customize-variable Ret erc-modules&lt;/code&gt;&lt;/strong&gt;, diantaranya :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;autoaway: Set away status automatically&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; autojoin: Join channels automatically&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; button: Buttonize URLs, nicknames, and other text&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; capab: Mark unidentified users on servers supporting CAPAB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; completion: Complete nicknames and commands (programmable)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; hecomplete: Complete nicknames and commands (old)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; dcc: Provide Direct Client-to-Client support&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; fill: Wrap long lines&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; identd: Launch an identd server on port 8113&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; irccontrols: Highlight or remove IRC control characters&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; keep-place: Leave point above un-viewed text&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; list: List channels in a separate buffer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; log: Save buffers in logs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; match: Highlight pals, fools, and other keywords&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; menu: Display a menu in ERC buffers&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; move-to-prompt: Move to the prompt when typing text&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; netsplit: Detect netsplits&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; networks: Provide data about IRC networks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; noncommands: Don’t display non-IRC commands after evaluation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; notify: Notify when the online status of certain users changes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; page: Process CTCP PAGE requests from IRC&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; readonly: Make displayed lines read-only&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; replace: Replace text in messages&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; ring: Enable an input history&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; scrolltobottom: Scroll to the bottom of the buffer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; services: Identify to Nickserv (IRC Services) automatically&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; smiley: Convert smileys to pretty icons&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; sound: Play sounds when you receive CTCP SOUND requests&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; stamp: Add timestamps to messages&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; spelling: Check spelling&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;√&lt;/strong&gt; track: Track channel activity in the mode-line&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; truncate: Truncate buffers to a certain size&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; unmorse: Translate morse code in messages&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; xdcc: Act as an XDCC file-server&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Module yang ditandai dengan &lt;strong&gt;√&lt;/strong&gt; diawal nama module berarti module tersebut
+aktif secara default, sedangkan tanda ‘-’ berarti sebaliknya.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-lfDwQsMRz9M/TY90xa97GFI/AAAAAAAAAWY/OCQP7GC52CI/
+s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GNU Emacs</title>
+      <link>http://blog.aredhi.com/post/gnu-emacs/</link>
+      <pubDate>Sun, 04 Jul 2010 19:41:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/gnu-emacs/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://i919.photobucket.com/albums/ad35/chars19/blogMe/emacs23.png&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+GNU Emacs merupakan editor yang sangat powerfull, aplikasi ini bahkan jauh
+lebih tua dari Linux. Bahkan bukan hanya sekadar text editor, aplikasi ini
+bisa dicustomize sesuai keinginan penggunanya. Kalo kata pencipta software ini
+&lt;strong&gt;&amp;ldquo;the extensible, customizable, self-documenting, real-time display
+editor&amp;rdquo;&lt;/strong&gt;. Ya tidak berlebihan, W secara pribadipun sangat menyukai editor ini
+dibanding editor lain seperti vim, meski untuk hal-hal lain vim lebih
+powerfull ( misalkan untuk melihat kode (bukan edit) ).&lt;/p&gt;
+
+&lt;p&gt;Editor ini awalnya merupakan editor macro untuk Editor
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Text_Editor_and_Corrector&#34;&gt;TECO&lt;/a&gt; pada system
+operasi ITS yang lebih tua dari Unix, ditulis oleh &lt;a href=&#34;http://en.wikipedia.org/wiki/Richard_Stallman&#34;&gt;Richard
+Stallman&lt;/a&gt; bersama dengan Guy
+Lewis Steele Jr, dan terinspirasi dari TECMAC dan TMACS yang juga merupakan
+Macro dari Editor TECO diatas. Sejarah Emacs pun cukup panjang hingga menjadi
+seperti saat sekarang ini. James Gosling (yang kemudian menemukan berita dan
+bahasa Java) menulis editor Emacs pertama yang berjalan di mesin Unix pada
+tahun 1991 yang ditulis dengan bahasa C , menggunakan sintaks Mocklisp sebagai
+bahasa pembuat ekstensionnya, yang kemudian di tahun 1984 menjadi proprietary
+software.&lt;/p&gt;
+
+&lt;p&gt;Pada tahun itu juga (1984), Stallman mulai membuat Gnu Emacs untuk alternatif
+Gosling Emacs, meski awalnya juga menggunakan Mocklisp sebagai bahasa
+Ekstensinya, tapi kemudian diganti dengan bahasa Lisp sesungguhnya. Program
+inipun menjadi program pertama yang dirilis untuk proyek GNU pada tanggal 20
+Maret 1985 versi 13, sedangkan versi 2 sampai 12 tidak pernah ada, saya pun
+juga belum menemukan kenapa versi dari Emacs ini langsung ke 13.&lt;/p&gt;
+
+&lt;p&gt;Emacs bersama vi merupakan editor yang telah jadi standar di lingkungan Unix
+khususnya bagi para programmer. Perdebatan tentang editor terbaik antara 2
+editor ini biasanya sering terjadi diforum, dimana kelompok masing masing
+menganggap editor merekalah yang terbaik, meski mereka melakukan ini hanya
+untuk humor, dan untuk menyampaikan komentar mereka tentang sebuah program.&lt;/p&gt;
+
+&lt;p&gt;Shorcuts Emacs sendiri menggunakan perpaduan beberapa tombol keyboard seperti
+Control atau Shift.&lt;/p&gt;
+
+&lt;p&gt;Penamaan tombol pada Emacs :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Escape -&amp;gt; Tombol Esc.&lt;/li&gt;
+&lt;li&gt;Meta -&amp;gt; tombol Alt.&lt;/li&gt;
+&lt;li&gt;Shift -&amp;gt; tombol Shift.&lt;/li&gt;
+&lt;li&gt;Ctrl -&amp;gt; tombol Control.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Google translate - Perl</title>
+      <link>http://blog.aredhi.com/post/google-translate-perl/</link>
+      <pubDate>Wed, 23 Jun 2010 19:56:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/google-translate-perl/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/_ypU0iaR-LmM/TDITz-
+BFVYI/AAAAAAAAAQs/umysQJAVTdk/s320/google-perl.png&#34; alt=&#34;&#34; /&gt;
+&lt;br /&gt;
+Didunia internet siapa yang tak mengenal Google, rasanya mungkin ga ada. Dan
+mungkin jika ada sepertinya anda baru&lt;br /&gt;
+mengenal internet. LOL.&lt;br /&gt;
+Banyak hal yang membuat Google begitu tangguh didunia internet (ga cuma
+disearch engine tapi hampir disemua aspek, bahkan baru-baru ini Google
+meluncurkan inovasi baru yaitu &lt;a href=&#34;http://googleblog.blogspot.com/2010/06/google-voice-for-everyone.html&#34;&gt;Google
+Voice&lt;/a&gt;
+yang diklaim sebagai metode baru dalam komunikasi.&lt;br /&gt;
+Salah satu yang fitur yang menurut saya menjadikan google powerfull adalah
+tersedianya &lt;a href=&#34;http://code.google.com/apis/ajaxlanguage/documentation/&#34;&gt;Google
+Api&lt;/a&gt;, yang membuat
+kita (terutama programmer) dapat dengan mudah berinteraksi dengan Google
+product.&lt;br /&gt;
+Ini yang akan saya bahas khususnya &lt;a href=&#34;http://code.google.com/apis/ajaxlanguage/documentation/&#34;&gt;Google Translate
+Api&lt;/a&gt;, dimana dengan
+menggunakan sebuah kode singkat kita bisa memanfaatkan Google Translate
+sebagai kamus yang mencakup seluruh bahasa didunia (tentu saja yang udah
+difasilitasi oleh Google).&lt;/p&gt;
+
+&lt;p&gt;Untuk Google translate kita bisa menggunakan alamat ini &lt;code&gt;http://ajax.googleapi
+s.com/ajax/services/language/translate?v=1.0&amp;amp;q;=$query&amp;amp;langpair;=$fromTo  
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;$query&lt;br /&gt;
+merupakan bahasa yang ingin kita translate.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$fromTo&lt;br /&gt;
+adalah bahasa yang ingin kita translate ke bahasa lainnya, formatnya adalah
+**&amp;ldquo;bahasaAwal|bahasaTujuan&amp;rdquo; **pembatas Pipe (|).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Misalkan kita ingin melakukan translate kata &amp;ldquo;home&amp;rdquo; dari bahasa Inggris(en) ke
+Indonesia(id), maka urlnya akan menjadi begini &lt;em&gt;&lt;a href=&#34;http://ajax.googleapis.com/aja&#34;&gt;http://ajax.googleapis.com/aja&lt;/a&gt;
+x/services/language/translate?v=1.0&amp;q;=home&amp;langpair;=en|id&lt;/em&gt;. Format output
+dari Url tersebut adalah begini:&lt;br /&gt;
+&lt;strong&gt;&lt;code&gt;{  
+&amp;quot;responseData&amp;quot;:  
+{&amp;quot;translatedText&amp;quot;:&amp;quot;rumah&amp;quot;},  
+&amp;quot;responseDetails&amp;quot;: null,  
+&amp;quot;responseStatus&amp;quot;: 200  
+}&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Output inilah yang akan kita coba parsing dengan bahasa Perl, berikut contoh
+kodenya :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/perl  
+if($#ARGV lt 0) {  
+print &amp;quot;Need 2 argument.\nUsage: $ARGV  .\n&amp;quot;;  
+print &amp;quot;Ex: $ARGV \&amp;quot;en.id\&amp;quot; \&amp;quot;keep moving\&amp;quot;.\n&amp;quot;;  
+exit;  
+}  
+use LWP::Simple;  
+$argS=0;  
+$fromTo=&amp;quot;en|id&amp;quot;;  
+if($ARGV[0] =~ /\./) {  
+$fromTo=$ARGV[0];  
+$fromTo=~ s/\./\|/;  
+$argS=1;  
+}  
+foreach $argNum ($argS .. $#ARGV) {  
+$query=join &amp;quot; &amp;quot;, $query, $ARGV[$argNum];  
+}  
+$ret= get(&amp;quot;http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&amp;amp;q;=$query&amp;amp;langpair;=$fromTo&amp;quot;);  
+if($ret =~ /200/) {  
+@retArr=split(/:/,$ret);  
+$retFinal=substr(@retArr[2],0,-20);  
+print &amp;quot;$retFinal&amp;quot;;  
+}else{  
+print &amp;quot;Check your input: Error..!\n&amp;quot;;  
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Penjelasan:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;baris 1 untuk memberitahukan interpreter yang kita gunakan yaitu Perl.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris 2 -6 untuk melakukan cek terhadap kata dari kalimat yang ingin ditranslate, jika tidak ada maka berikan warning, exit.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris 7 , kita menggunakan module _LWP:Simpl_e untuk melakukan akses ke internet.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris 8 dan 9 , merupakan nilai default untuk proses berikutnya.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris 10 kita melakukan cek pada argumen yang pertama (indeks 0, Perl memulai indeks array dari NOL) terhadap karakter titik, jika ada maka argument pertama dijadikan acuan translate bahasa (baris 11), kemudian tanda titik kita ganti dengan tanda Pipe (baris 12), yang berarti kalimat yang akan ditranslate dimulai dari argument ke dua(indeks 1) (baris 13).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris 15 - 17, mengambil semua argument dimulai dari &lt;strong&gt;$args&lt;/strong&gt; hingga panjang semua argument yang diberikan(&lt;strong&gt;$#ARGV&lt;/strong&gt;), yang kemudian semuanya disatukan (&lt;em&gt;join&lt;/em&gt;) pada variabel &lt;strong&gt;$query&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris 18, melakukan koneksi ke Google Translate, nilai baliknya dimasukkan ke variabel &lt;strong&gt;$ret&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris 19, cek nilai &lt;strong&gt;$ret&lt;/strong&gt;, jika ada angka 200 berarti format url yang diberikan sesuai, jika tidak berarti ada format yang salah pada argument (misalkan bahasa yang ditranslate tidak ada) (baris 23 - 25).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris 20, memecah nilai &lt;strong&gt;$ret&lt;/strong&gt; dengan pemisah : dan dimasukkan ke array &lt;strong&gt;@retArray&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris 21, membuang karakter pada &lt;strong&gt;@retArray&lt;/strong&gt; yang ke2 20 karakter dari belakang (Lihat dibawah), yang kemudian dimasukkan ke variabel &lt;strong&gt;$retFinal&lt;/strong&gt;, yang merupakan hasil dari translate bahasa yang diinginkan, kemudian mencetak ke monitor (baris 22).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Keterangan parsing output dari Google Translate:&lt;/p&gt;
+
+&lt;p&gt;Output Total : &lt;strong&gt;{&amp;ldquo;responseData&amp;rdquo;: {&amp;ldquo;translatedText&amp;rdquo;:&amp;ldquo;rumah&amp;rdquo;},
+&amp;ldquo;responseDetails&amp;rdquo;: null, &amp;ldquo;responseStatus&amp;rdquo;: 200}&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;@retArray[0]&lt;/strong&gt; → {&amp;ldquo;responseData&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;@retArray[1]&lt;/strong&gt; → {&amp;ldquo;translatedText&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;@retArray[2]&lt;/strong&gt; → &amp;ldquo;rumah&amp;rdquo;}, &amp;ldquo;responseDetails&amp;rdquo; → 27 karakter, dan kita buang 20 karakter dari belakang.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;@retArray[3]&lt;/strong&gt; → null, &amp;ldquo;responseStatus&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;@retArray[3]&lt;/strong&gt; → 200}&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sebuah translator dengan yang dilabelin &lt;strong&gt;Powered By Google Translate&lt;/strong&gt;, telah
+berhasil kita buat.&lt;/p&gt;
+
+&lt;p&gt;Contoh penggunaan:&lt;br /&gt;
+Translate dari Inggris ke Indonesia (default) :&lt;br /&gt;
+&lt;code&gt;$ gootranslate who are you&lt;/code&gt;&lt;br /&gt;
+Output → &amp;ldquo;siapa kau?&amp;rdquo;&lt;br /&gt;
+Translate dari Indonesia ke Inggris :&lt;br /&gt;
+&lt;code&gt;$ gootranslate id.en bagaimana menurut mu&lt;/code&gt;&lt;br /&gt;
+Output →&amp;rdquo;what do you think&amp;rdquo;&lt;br /&gt;
+Translate dari Inggris ke Jepang :&lt;br /&gt;
+&lt;code&gt;$ gootranslate en.ja i love you&lt;/code&gt;&lt;br /&gt;
+Output → &amp;ldquo;わたしは、あなたを愛しています&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Simpel bukan, meski terlalu panjang kodenya, atau malah bingung. Kalau mo
+lebih simple lagi kita bisa menggunakan perintah shell seperti curl dipadu
+dengan sed, dan hanya 1 baris lho, tapi tentu saja lebih membingungkan. Check
+this out&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ curl -s \  
+&#39;http://ajax.googleapis.com/ajax/services/language/translate?=1.0&amp;amp;q;=rumah&amp;amp;lan
+gpair;=en|id&#39; | \  
+sed &#39;s/.*{&amp;quot;translatedText&amp;quot;:&amp;quot;\\([^&amp;quot;]*\\)&amp;quot;.*/\1\n/&#39;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;**&lt;br /&gt;
+**&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mencari bilangan prima dengan Python</title>
+      <link>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</link>
+      <pubDate>Tue, 18 May 2010 23:45:00 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/_ypU0iaR-
+LmM/TDIhx5nD31I/AAAAAAAAARE/7HegaxuEUG8/s320/python-prime.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; #!/usr/bin/env python  
+import sys                         # untuk mengambil argument yang diberikan  
+ret=True                           # return value  
+def itsPrime(val):               # definisi fungsi itsprime, return(1=prime, 0=not prime, -1=error value )  
+global ret;                     # agar ret bisa diakses dari fungsi  
+if val &amp;gt;= 2:                   # jika nilai yang diberikan besar dari 2  
+    if val &amp;gt; 9:                 # jika nilai yang diberikan besar dari 9  
+        up=10                  # nilai maksimum untuk  pembagian =10  
+    else:  
+        up=val                 # jika tidak maka nilai maksimum=nilai yang diberikan  
+    for p in range(2,up):   # perulangan selama p=2 dan kecil dari nilai up  
+        if val % p == 0:    # jika nilai modulus p == 0  
+            ret=False          # berarti bukan bilangan prime  
+            break               # langsung keluar dari perulangan  
+else:                            # nilai  yang dimasukkan kecil dari 2  
+    ret=-1  
+return ret  
+
+if __name__ == &amp;quot;__main__&amp;quot;:  
+try:  
+    prime=itsPrime(int(sys.argv[1]))  
+    if prime==1:  
+        print &#39;prime&#39;  
+    elif prime==0:  
+        print &#39;Not prime&#39;  
+    else:  
+        print &#39;Please integer above 2&#39;  
+except ValueError:  
+    print &amp;quot;Please enter an integer number&amp;quot;  
+except IndexError:  
+    print &amp;quot;Please input one argument&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Penjelasan dari kode diatas bisa dilihat di setiap baris komentarnya, untuk
+yang lainnya bisa dilihat dibawah ini&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;baris ke 20 -&amp;gt; untuk mencegah kemungkinan error maka digunakan &lt;strong&gt;try&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris ke 21 -&amp;gt; melakukan checking terhadap nilai yang diberikan kemudian nilai return dari fungsi &lt;strong&gt;itsPrime&lt;/strong&gt; dimasukkan ke variabel &lt;strong&gt;prime&lt;/strong&gt;, selanjutnya untuk yang dibawahnya adalah melakukan checking pada nilai &lt;strong&gt;prime&lt;/strong&gt;. Jika nilainya sama dengan 1 berarti bilangan prima, 0 jika bukan, -1 jika nilainya kecil dari 2.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris ke 28 -&amp;gt; jika nilai yang dimasukkan bukan bilangan bulat positif(&amp;gt;0)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;baris ke 30 -&amp;gt; jika tidak ada nilai yang dimasukkan.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sedangkan algoritma dari code diatas adalah seperti berikut:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ambo.co.cc/wp-content/uploads/2010/05/itsPrime.py_-160x300.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tulisan ini dibuat dengan OS &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu 9.10&lt;/a&gt;, &lt;a href=&#34;http://www.gimp.org/&#34;&gt;Gimp
+2.6.7&lt;/a&gt;, &lt;a href=&#34;http://projects.gnome.org/dia/&#34;&gt;Dia 0.97&lt;/a&gt;, so
+its &lt;a href=&#34;http://www.igos.web.id/&#34;&gt;OPENSOURCE&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
