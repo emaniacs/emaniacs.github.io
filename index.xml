@@ -54,14 +54,18 @@ $ sudo make install
     </item>
     
     <item>
-      <title>Bloging with hugo and gitbook</title>
+      <title>Bloging with github, hugo and gitbook</title>
       <link>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</link>
       <pubDate>Mon, 04 May 2015 11:19:22 WIB</pubDate>
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</guid>
-      <description>&lt;p&gt;#Introduction&lt;/p&gt;
+      <description>&lt;p&gt;Today i use &lt;a href=&#34;https://www.gitbook.com&#34;&gt;GitBook&lt;/a&gt; and &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as my blogging platform.&lt;/p&gt;
 
-&lt;p&gt;on the way&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo as static generator and gitbook to write my markdown file&lt;/li&gt;
+&lt;li&gt;Github, i put the static file in github.&lt;/li&gt;
+&lt;li&gt;GitBook as markdown manager&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
