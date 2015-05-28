@@ -136,6 +136,11 @@
     </url>
     
     <url>
+        <loc>http://blog.aredhi.com/tags/rinjani</loc>
+        <lastmod>2015-05-05T11:12:00+07:00</lastmod>
+    </url>
+    
+    <url>
         <loc>http://blog.aredhi.com/tags/timeline</loc>
         <lastmod>2015-05-05T11:12:00+07:00</lastmod>
     </url>
@@ -175,6 +180,11 @@
     
     <url>
         <loc>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</loc>
+        <lastmod>2015-05-04T11:19:22+07:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://blog.aredhi.com/post/today-is-a-grey-day/</loc>
         <lastmod>2015-05-04T11:19:22+07:00</lastmod>
     </url>
     
