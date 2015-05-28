@@ -6,7 +6,19 @@
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Tue, 05 May 2015 11:12:00 WIB</updated>
+    <updated>Tue, 12 May 2015 11:19:22 WIB</updated>
+    
+    <item>
+      <title>Today is a grey day</title>
+      <link>http://blog.aredhi.com/post/today-is-a-grey-day/</link>
+      <pubDate>Tue, 12 May 2015 11:19:22 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/today-is-a-grey-day/</guid>
+      <description>&lt;p&gt;Belum genap seminggu saya pulang dari Lombok, habis mendaki Rinjani lanjut nenda di Gili Trawangan, tapi semua rongga tubuhku udah kembali terasa sesak, oleh masalah dan teman-temannya.&lt;/p&gt;
+
+&lt;p&gt;Ingin rasanya kembali ke danau segara anak, dimana tak perlu risau dengan suara-suara, tak peduli dengan koneksi, tak perlu risau dengan apapun.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>VIm autocomplete with YouCompleteMe</title>
@@ -66,18 +78,6 @@ $ sudo make install
 &lt;li&gt;Github, i put the static file in github.&lt;/li&gt;
 &lt;li&gt;GitBook as markdown manager&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Today is a grey day</title>
-      <link>http://blog.aredhi.com/post/today-is-a-grey-day/</link>
-      <pubDate>Mon, 04 May 2015 11:19:22 WIB</pubDate>
-      <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/today-is-a-grey-day/</guid>
-      <description>&lt;p&gt;Belum genap seminggu saya pulang dari Lombok, habis mendaki Rinjani lanjut nenda di Gili Trawangan, tapi semua rongga tubuhku udah kembali terasa sesak, oleh masalah dan teman-temannya.&lt;/p&gt;
-
-&lt;p&gt;Ingin rasanya kembali ke danau segara anak, dimana tak perlu risau dengan suara-suara, tak peduli dengan koneksi, tak perlu risau dengan apapun.&lt;/p&gt;
 </description>
     </item>
     
