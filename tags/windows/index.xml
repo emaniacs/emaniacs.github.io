@@ -15,8 +15,7 @@
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
-s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ketika mencoba Emacs pertama kali, saya sempat bingung gimana caranya
 melakukan folding atau menyembunyikan kode didalam suatu blok. Folding kode
@@ -85,8 +84,7 @@ fasilitas yang ada pada Vim namun telah terkostumisasi seperti halnya editor-
 editor kebanyakan.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-IuVYpUBk52I/TcZmJTaj7iI/AAAAAAAAAZk/fFoLtbaKEd4/
-s400/Cream-default.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/Cream-default.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Bagi yang pertama kali menggunakan Vim (apalagi yang telah terbiasa dengan
 editor-editor yang lainnya) pasti akan kebingungan, seperti halnya saya ketika
@@ -137,8 +135,7 @@ menggunakan command mode adalah &lt;strong&gt;Ctrl+L&lt;/strong&gt;.&lt;br /&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-JjGWBHb1Zx4/TcZmIAD3W8I/AAAAAAAAAZg/TAM6SdmOfpg/
-s640/Cream-behavior.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s640/Cream-behavior.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;**&lt;br /&gt;
 **&lt;br /&gt;
@@ -409,8 +406,7 @@ customize-variable Ret erc-modules&lt;/code&gt;&lt;/strong&gt;, diantaranya :&lt
 aktif secara default, sedangkan tanda ‘-’ berarti sebaliknya.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-lfDwQsMRz9M/TY90xa97GFI/AAAAAAAAAWY/OCQP7GC52CI/
-s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -420,8 +416,7 @@ s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;
       <pubDate>Sun, 04 Jul 2010 19:41:00 WIB</pubDate>
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/gnu-emacs/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://i919.photobucket.com/albums/ad35/chars19/blogMe/emacs23.png&#34; alt=&#34;&#34; /&gt;
-&lt;br /&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://i919.photobucket.com/albums/ad35/chars19/blogMe/emacs23.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
 GNU Emacs merupakan editor yang sangat powerfull, aplikasi ini bahkan jauh
 lebih tua dari Linux. Bahkan bukan hanya sekadar text editor, aplikasi ini
 bisa dicustomize sesuai keinginan penggunanya. Kalo kata pencipta software ini
@@ -476,8 +471,7 @@ Control atau Shift.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/google-translate-perl/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/_ypU0iaR-LmM/TDITz-
-BFVYI/AAAAAAAAAQs/umysQJAVTdk/s320/google-perl.png&#34; alt=&#34;&#34; /&gt;
-&lt;br /&gt;
+BFVYI/AAAAAAAAAQs/umysQJAVTdk/s320/google-perl.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
 Didunia internet siapa yang tak mengenal Google, rasanya mungkin ga ada. Dan
 mungkin jika ada sepertinya anda baru&lt;br /&gt;
 mengenal internet. LOL.&lt;br /&gt;
@@ -628,8 +622,7 @@ sed &#39;s/.*{&amp;quot;translatedText&amp;quot;:&amp;quot;\\([^&amp;quot;]*\\)&
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/_ypU0iaR-
-LmM/TDIhx5nD31I/AAAAAAAAARE/7HegaxuEUG8/s320/python-prime.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+LmM/TDIhx5nD31I/AAAAAAAAARE/7HegaxuEUG8/s320/python-prime.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt; #!/usr/bin/env python  
 import sys                         # untuk mengambil argument yang diberikan  
@@ -679,8 +672,7 @@ yang lainnya bisa dilihat dibawah ini&lt;/p&gt;
 
 &lt;p&gt;Sedangkan algoritma dari code diatas adalah seperti berikut:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ambo.co.cc/wp-content/uploads/2010/05/itsPrime.py_-160x300.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ambo.co.cc/wp-content/uploads/2010/05/itsPrime.py_-160x300.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Tulisan ini dibuat dengan OS &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu 9.10&lt;/a&gt;, &lt;a href=&#34;http://www.gimp.org/&#34;&gt;Gimp
 2.6.7&lt;/a&gt;, &lt;a href=&#34;http://projects.gnome.org/dia/&#34;&gt;Dia 0.97&lt;/a&gt;, so

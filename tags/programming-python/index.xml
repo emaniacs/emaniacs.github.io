@@ -54,22 +54,19 @@ def julius(text, shift):
 didecrypt, dalam hal ini saya ambil &lt;strong&gt;HMLSJDSZ&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-64n2atxV_eM/UZoT9ptncCI/AAAAAAAAB0g/v856KCO1LHo/
-s400/ctf-caesar-crypto.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/ctf-caesar-crypto.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Terlihat Keynya adalah 8, sekarang decrypt semua textnya.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-kBHafOU3Ovs/UZoUvb4TsvI/AAAAAAAAB0s/r1RrnFHu5Wk/
-s400/ctf-caesar-crypto2.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/ctf-caesar-crypto2.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ternyata masih ada text yang masih dienkripsi, kalo dari kalimat yang muncul
 &amp;ldquo;&lt;strong&gt;OKE MANTAB, PUTARLAH INI:&lt;/strong&gt;&amp;rdquo; saya pikir semua text harus dibalik dulu
 ternyata tidak. Selanjutnya tinggal diulangi langkah-langkah sebelumnya.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-kmQZa2Mq4RY/UZoVlsfmnNI/AAAAAAAAB04/rYvjLHLdgzU/
-s400/ctf-caesar-cipher3.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/ctf-caesar-cipher3.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Tinggal ambil beberapa kata dan disearch di google, akan terlihat kalo itu
 adalah petikan puisi &amp;ldquo;Aku Kangen&amp;rdquo; karangan WS Rendra.&lt;br /&gt;
@@ -98,8 +95,7 @@ try to grep that information with them.&lt;/p&gt;
 tag which contains &lt;em&gt;the data&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-v5ynJJJEaYs/UJlnw6wF6lI/AAAAAAAABCU/KxCxSDtlqyk/
-s640/alexa-tag-analyzing.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s640/alexa-tag-analyzing.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Based on screenshot, _the data_ on the div tag with class &lt;strong&gt;data&lt;/strong&gt;, first tag
 is global ranks, second is local ranks and then reputation and rating. So the
@@ -161,8 +157,7 @@ script/blob/master/alexagrep.py&gt;.&lt;/p&gt;
 _/usr/local/bin_ and adding execute permission to script (chmod +x).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-L160IZdmoTA/UKolYyTRmvI/AAAAAAAABDY/yCaXFMeSi5s/
-s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;.&lt;/p&gt;
 </description>

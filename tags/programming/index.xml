@@ -131,22 +131,19 @@ def julius(text, shift):
 didecrypt, dalam hal ini saya ambil &lt;strong&gt;HMLSJDSZ&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-64n2atxV_eM/UZoT9ptncCI/AAAAAAAAB0g/v856KCO1LHo/
-s400/ctf-caesar-crypto.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/ctf-caesar-crypto.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Terlihat Keynya adalah 8, sekarang decrypt semua textnya.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-kBHafOU3Ovs/UZoUvb4TsvI/AAAAAAAAB0s/r1RrnFHu5Wk/
-s400/ctf-caesar-crypto2.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/ctf-caesar-crypto2.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ternyata masih ada text yang masih dienkripsi, kalo dari kalimat yang muncul
 &amp;ldquo;&lt;strong&gt;OKE MANTAB, PUTARLAH INI:&lt;/strong&gt;&amp;rdquo; saya pikir semua text harus dibalik dulu
 ternyata tidak. Selanjutnya tinggal diulangi langkah-langkah sebelumnya.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-kmQZa2Mq4RY/UZoVlsfmnNI/AAAAAAAAB04/rYvjLHLdgzU/
-s400/ctf-caesar-cipher3.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/ctf-caesar-cipher3.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Tinggal ambil beberapa kata dan disearch di google, akan terlihat kalo itu
 adalah petikan puisi &amp;ldquo;Aku Kangen&amp;rdquo; karangan WS Rendra.&lt;br /&gt;
@@ -175,8 +172,7 @@ try to grep that information with them.&lt;/p&gt;
 tag which contains &lt;em&gt;the data&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-v5ynJJJEaYs/UJlnw6wF6lI/AAAAAAAABCU/KxCxSDtlqyk/
-s640/alexa-tag-analyzing.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s640/alexa-tag-analyzing.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Based on screenshot, _the data_ on the div tag with class &lt;strong&gt;data&lt;/strong&gt;, first tag
 is global ranks, second is local ranks and then reputation and rating. So the
@@ -238,8 +234,7 @@ script/blob/master/alexagrep.py&gt;.&lt;/p&gt;
 _/usr/local/bin_ and adding execute permission to script (chmod +x).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-L160IZdmoTA/UKolYyTRmvI/AAAAAAAABDY/yCaXFMeSi5s/
-s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;.&lt;/p&gt;
 </description>
@@ -262,8 +257,7 @@ i try to look in php source code, and i got the same answers.&lt;/p&gt;
 
 &lt;p&gt;and this is code for the which array_key_exists i look in the php source code.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.google.com/uds/css/small-logo.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.google.com/uds/css/small-logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In my mind, array_key_exists is like that :)&lt;/p&gt;
 
@@ -361,8 +355,7 @@ to test it, like this.&lt;/p&gt;
 &lt;p&gt;And this is result:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-7n-ZFEjMZ7s/T15DBKWNWLI/AAAAAAAAAr0/ahiKvksp6Dg/
-s320/Screenshot+at+2012-03-13+01:39:29.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/Screenshot+at+2012-03-13+01:39:29.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;What about with other programming language such as Python, Javascript, etc.&lt;br /&gt;
 Check this!&lt;/p&gt;
@@ -380,8 +373,7 @@ type(defaultValueForReturn())
 &lt;p&gt;Result:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-MfcGitBsriE/T2dTSGZTphI/AAAAAAAAAsI/CfFQOTuHWsw/
-s640/python-default-value.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s640/python-default-value.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Javascript.&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
 Code:&lt;/p&gt;
@@ -411,8 +403,7 @@ print y.class
 &lt;p&gt;Result:&lt;br /&gt;
 NilClass&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.google.com/uds/css/small-logo.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.google.com/uds/css/small-logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -444,8 +435,7 @@ can&amp;rsquo;t use keyword as function, so if we coding like this, Php will sho
 error like this.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ljAkUiIgeUw/T2cdrmIkc9I/AAAAAAAAAsA/Deb6r4ipVz4/
-s640/Screenshot+at+2012-03-19+18:49:58.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s640/Screenshot+at+2012-03-19+18:49:58.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;while as a function.&lt;/p&gt;
 
@@ -509,8 +499,7 @@ KeyWord::unknownStaticMethod(1,2,3);
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-JLzChwOBXv4/T0d_Jj8_HYI/AAAAAAAAArA/BGcIwYJeqeQ/
-s1600/time.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/time.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Untuk apa menghitung lama eksekusi sebuah skrip? Alasan utama adalah
 performance dari skrip yang dibuat, hal ini bertujuan untuk membandingkan
@@ -636,8 +625,7 @@ print_r($s1-&amp;gt;end());
 cepat.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-IImq9cj3mf0/T0etTn2vTzI/AAAAAAAAArI/llVOmWm1lgY/
-s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -693,8 +681,7 @@ foreach (unserialize(EN2ID) as $key =&amp;gt; $val) {
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/
-s1600/lock.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/lock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Membuat login menggunakan Panada Framework tidak begitu sulit, kalo ini saya
 mencoba untuk membuat tutorial bagaimana membuat halaman login. Halaman login
@@ -882,8 +869,7 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-hHNti_XJi0A/TqwP40jbm1I/AAAAAAAAApA/9GqFrLF4ckA/
-s1600/increment-decrement.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/increment-decrement.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Increment dan Decrement pada bahasa pemrograman adalah menaikkan/menurunkan
 nilai satu variabel satu tingkat dari nilai yang telah diset pada variabel
@@ -1042,15 +1028,13 @@ for ($x = 1; $x &amp;lt; 5; $x++) {
 &lt;p&gt;Versi PHP yang digunakan adalah versi 5.3.3 kompile dari source&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ElMmEh1UGMo/Tj76FodpoZI/AAAAAAAAAnE/NUKWB67cgaI/
-s400/concat-vs-implode.00.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/concat-vs-implode.00.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Berikut hasil testnya, dengan jumlah &lt;em&gt;COUNT&lt;/em&gt;(jumlah array yang ingin digabung)
 yang berbeda.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-1Y8p4xq9PwQ/Tj76E2Gi1VI/AAAAAAAAAnA/kUO3bJGWip0/
-s1600/concat-vs-implode.01.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/concat-vs-implode.01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Dari hasil output diatas bisa dilihat, kalo &lt;em&gt;concat&lt;/em&gt; lebih hanya jika jumlah
 &lt;em&gt;COUNT&lt;/em&gt; atau array yang akan digabung berjumlah tidak kecil (dalam test diatas
@@ -1066,8 +1050,7 @@ mencolok.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KbhobXi1PcA/TgbqURRNFKI/AAAAAAAAAmU/zO-
-3dd6Qz-k/s1600/autocomplete.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+3dd6Qz-k/s1600/autocomplete.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt; Fitur yang biasanya ada pada form adalah &lt;strong&gt;autocomplete&lt;/strong&gt;, yaitu teks yang
 otomatis menyesuaikan dengan yang kita input, fitur ini biasanya adalah fitur
@@ -1110,8 +1093,7 @@ mempunyai &lt;em&gt;event click&lt;/em&gt; pada div tersebut. Jika digambarkan k
 tampilan format div tersebut seperti ini.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-v1KJyAbJ_OY/TgbgTo5zfJI/AAAAAAAAAmQ/5P_e2rcElho/
-s320/parent-child.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/parent-child.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Kalo menggunakan format javascript biasa seperti ini&lt;/p&gt;
 
@@ -1178,8 +1160,7 @@ untuk parent.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
-s1600/var-var.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Istilah Variabel variabels pertama kali saya dengar di PHP(saya pernah bikin
 tutorial tentang ini &lt;a href=&#34;http://chars19.blogspot.com/2011/06/variabel-
@@ -1288,8 +1269,7 @@ bisa juga menggunakan metode ini&lt;br /&gt;
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/
-s1600/lock.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/lock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Membuat login menggunakan Panada Framework tidak begitu sulit, kalo ini saya
 mencoba untuk membuat tutorial bagaimana membuat halaman login. Halaman login

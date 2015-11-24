@@ -17,8 +17,7 @@
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/
-s1600/lock.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/lock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Membuat login menggunakan Panada Framework tidak begitu sulit, kalo ini saya
 mencoba untuk membuat tutorial bagaimana membuat halaman login. Halaman login
@@ -208,8 +207,7 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/
-s1600/lock.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/lock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Membuat login menggunakan Panada Framework tidak begitu sulit, kalo ini saya
 mencoba untuk membuat tutorial bagaimana membuat halaman login. Halaman login
@@ -397,8 +395,7 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ZRenRr8ZCuc/TfZI5My8iZI/AAAAAAAAAlg/gO5PC8tMvIk/
-s320/panada-format-file.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/panada-format-file.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Seperti framework lainnya, Panada juga memiliki aturan/format tersendiri dalam
 penulisan file, baik untuk &lt;em&gt;Controller&lt;/em&gt;, &lt;em&gt;Model&lt;/em&gt; dan &lt;em&gt;View&lt;/em&gt;.&lt;br /&gt;
@@ -545,8 +542,7 @@ dan _apps/view/hworld.php _kemudian edit file tersebut seperti ini&lt;/p&gt;
 dengan instalan panada di komputer anda.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-Hyw7irkF4T8/Te-
-kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Tampilan Hello World, Panada Framework&lt;/p&gt;
 </description>
@@ -587,8 +583,7 @@ Jika tampilan browser seperti ini&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-td08tvLqUAI/TeUNUhnMhoI/AAAAAAAAAhk/rJXshuvf_uU/
-s400/panada-sukses-instalasi.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/panada-sukses-instalasi.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;maka instalasi telah berhasil&lt;/p&gt;
 

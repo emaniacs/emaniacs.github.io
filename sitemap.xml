@@ -2,170 +2,175 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://blog.aredhi.com/tags</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     <url>
-        <loc>http://blog.aredhi.com/page</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.compage</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     <url>
-        <loc>http://blog.aredhi.com/post</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.compost</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
 
     
     <url>
-        <loc>http://blog.aredhi.com/tags/blog</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/blog</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/command-line</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/command-line</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/ctf</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/ctf</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/fabric</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/fabric</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/fun</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/fun</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/git</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/git</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/github</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/github</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/gnu-emacs</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/gnu-emacs</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/gnu-linux</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/gnu-linux</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/golang</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/golang</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/hacking</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/hacking</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/hugo</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/hugo</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/linux</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/linux</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/lxde</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/lxde</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/matematika</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/matematika</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/nginx</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/nginx</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/openbox</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/openbox</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/opini</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/opini</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/panada</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/panada</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/programming</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/programming</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/programming-go</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/programming-go</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/programming-php</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/programming-php</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/programming-python</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/programming-python</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/programming-web</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/programming-web</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/rinjani</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/rinjani</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/timeline</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/timeline</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/unix</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/unix</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/vim</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/vim</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/tags/windows</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <loc>http://blog.aredhi.comtags/windows</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
 
     
     <url>
         <loc>http://blog.aredhi.com/</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
         <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://blog.aredhi.com/post/cerpen-suara-musik-menjelang-tidur/</loc>
+        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
@@ -651,6 +656,11 @@
     <url>
         <loc>http://blog.aredhi.com/post/gedit-programming-edition/</loc>
         <lastmod>2010-01-23T19:29:00+07:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://blog.aredhi.com/post/kaktus-ku-mati/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
     </url>
     
 </urlset>

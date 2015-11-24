@@ -36,8 +36,7 @@ can&amp;rsquo;t use keyword as function, so if we coding like this, Php will sho
 error like this.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ljAkUiIgeUw/T2cdrmIkc9I/AAAAAAAAAsA/Deb6r4ipVz4/
-s640/Screenshot+at+2012-03-19+18:49:58.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s640/Screenshot+at+2012-03-19+18:49:58.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;while as a function.&lt;/p&gt;
 
@@ -101,8 +100,7 @@ KeyWord::unknownStaticMethod(1,2,3);
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-JLzChwOBXv4/T0d_Jj8_HYI/AAAAAAAAArA/BGcIwYJeqeQ/
-s1600/time.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/time.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Untuk apa menghitung lama eksekusi sebuah skrip? Alasan utama adalah
 performance dari skrip yang dibuat, hal ini bertujuan untuk membandingkan
@@ -228,8 +226,7 @@ print_r($s1-&amp;gt;end());
 cepat.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-IImq9cj3mf0/T0etTn2vTzI/AAAAAAAAArI/llVOmWm1lgY/
-s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -240,8 +237,7 @@ s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/localstorage-dengan-html/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-_xFwIsxjJ3U/TxL4PvepcSI/AAAAAAAAAqo/0tfgksmnZe8/
-s1600/localStorage.PNG&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/localStorage.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Salah satu fitur yang tersedia pada bahasa pemrograman &lt;strong&gt;HTML **khususnya
 **HTML5 **adalah penyimpanan sementara pada browser, meski telah ada **cookies
@@ -321,8 +317,7 @@ apakah support localStorage atau tidak.&lt;/p&gt;
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/
-s1600/lock.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/lock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Membuat login menggunakan Panada Framework tidak begitu sulit, kalo ini saya
 mencoba untuk membuat tutorial bagaimana membuat halaman login. Halaman login
@@ -567,15 +562,13 @@ for ($x = 1; $x &amp;lt; 5; $x++) {
 &lt;p&gt;Versi PHP yang digunakan adalah versi 5.3.3 kompile dari source&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ElMmEh1UGMo/Tj76FodpoZI/AAAAAAAAAnE/NUKWB67cgaI/
-s400/concat-vs-implode.00.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/concat-vs-implode.00.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Berikut hasil testnya, dengan jumlah &lt;em&gt;COUNT&lt;/em&gt;(jumlah array yang ingin digabung)
 yang berbeda.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-1Y8p4xq9PwQ/Tj76E2Gi1VI/AAAAAAAAAnA/kUO3bJGWip0/
-s1600/concat-vs-implode.01.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/concat-vs-implode.01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Dari hasil output diatas bisa dilihat, kalo &lt;em&gt;concat&lt;/em&gt; lebih hanya jika jumlah
 &lt;em&gt;COUNT&lt;/em&gt; atau array yang akan digabung berjumlah tidak kecil (dalam test diatas
@@ -591,8 +584,7 @@ mencolok.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KbhobXi1PcA/TgbqURRNFKI/AAAAAAAAAmU/zO-
-3dd6Qz-k/s1600/autocomplete.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+3dd6Qz-k/s1600/autocomplete.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt; Fitur yang biasanya ada pada form adalah &lt;strong&gt;autocomplete&lt;/strong&gt;, yaitu teks yang
 otomatis menyesuaikan dengan yang kita input, fitur ini biasanya adalah fitur
@@ -635,8 +627,7 @@ mempunyai &lt;em&gt;event click&lt;/em&gt; pada div tersebut. Jika digambarkan k
 tampilan format div tersebut seperti ini.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-v1KJyAbJ_OY/TgbgTo5zfJI/AAAAAAAAAmQ/5P_e2rcElho/
-s320/parent-child.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/parent-child.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Kalo menggunakan format javascript biasa seperti ini&lt;/p&gt;
 
@@ -705,8 +696,7 @@ untuk parent.&lt;/p&gt;
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/
-s1600/lock.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/lock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Membuat login menggunakan Panada Framework tidak begitu sulit, kalo ini saya
 mencoba untuk membuat tutorial bagaimana membuat halaman login. Halaman login
@@ -894,8 +884,7 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ZRenRr8ZCuc/TfZI5My8iZI/AAAAAAAAAlg/gO5PC8tMvIk/
-s320/panada-format-file.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/panada-format-file.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Seperti framework lainnya, Panada juga memiliki aturan/format tersendiri dalam
 penulisan file, baik untuk &lt;em&gt;Controller&lt;/em&gt;, &lt;em&gt;Model&lt;/em&gt; dan &lt;em&gt;View&lt;/em&gt;.&lt;br /&gt;
@@ -1042,8 +1031,7 @@ dan _apps/view/hworld.php _kemudian edit file tersebut seperti ini&lt;/p&gt;
 dengan instalan panada di komputer anda.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-Hyw7irkF4T8/Te-
-kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Tampilan Hello World, Panada Framework&lt;/p&gt;
 </description>
@@ -1058,8 +1046,7 @@ kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-RLz6nQCv4tc/TetrQNz8nFI/AAAAAAAAAlM/TV0qZlbWCrw/
-s1600/nginx-logo.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/nginx-logo.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Salah satu webserver yang ringan dan responsif adalah
 &lt;a href=&#34;http://nginx.org/&#34;&gt;Nginx&lt;/a&gt;, selain &lt;a href=&#34;http://lighttpd.net/&#34;&gt;Lighttpd&lt;/a&gt; juga
@@ -1080,8 +1067,7 @@ untuk cgi atau fastcgi, yaitu dengan cara&lt;/p&gt;
 cgi-fcgi )&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-lcEh0DmPNBs/Tet1K42_VeI/AAAAAAAAAlU/NrrEpzBUIY0/
-s320/php-fcgi.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/php-fcgi.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;maka PHP yang digunakan support dengan fastcgi, jika tidak ada keluar seperti
 yang digambar anda harus kompile ulang dengan menambahkan opsi &lt;strong&gt;&lt;em&gt;--enable-
@@ -1184,8 +1170,7 @@ konfigurasi telah benar.&lt;/p&gt;
 dijalankan, jika tidak maka nginx akan mengeluarkan error seperti ini.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-gAUjXfNof_4/TetrROOIYKI/AAAAAAAAAlQ/cgjmm3tw4JU/
-s320/nginx-bad-gateway.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/nginx-bad-gateway.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;perintah untuk menjalakan php-fcgi&lt;br /&gt;
 &lt;strong&gt;&lt;em&gt;#service php-fcgi start&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
@@ -1235,8 +1220,7 @@ Jika tampilan browser seperti ini&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-td08tvLqUAI/TeUNUhnMhoI/AAAAAAAAAhk/rJXshuvf_uU/
-s400/panada-sukses-instalasi.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/panada-sukses-instalasi.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;maka instalasi telah berhasil&lt;/p&gt;
 
@@ -1252,8 +1236,7 @@ Panada.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
-s200/var-var.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s200/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Dengan PHP kita bisa mengambil sebuah nilai atau mengisi nilai pada sebuah
 variabel yang ditandai dengan &lt;em&gt;dollar($)&lt;/em&gt;, simbol ini merupakan simbol
@@ -1321,8 +1304,7 @@ Submit
 &lt;p&gt;dan ini Outputnya..&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-Fu7C-
-3LFT1M/Teeqq5i91aI/AAAAAAAAAjA/Xt8MuHzIB4A/s320/variable-variables.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+3LFT1M/Teeqq5i91aI/AAAAAAAAAjA/Xt8MuHzIB4A/s320/variable-variables.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Saya sendiri ga tau kenapa, udah nyari-nyari tapi tetap ga nemu, satu-satunya
 jalan adalah berusaha menghindari pemakaian kode seperti tersebut, jika ingin
@@ -1407,8 +1389,7 @@ library atau model maka digunakan &lt;em&gt;$this-&amp;gt;load-&amp;gt;model(&am
       <pubDate>Tue, 31 May 2011 14:22:00 WIB</pubDate>
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://www.php.net/images/logos/php-med-trans.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://www.php.net/images/logos/php-med-trans.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sebenarnya lebih tepat aturan bukan rahasia, tapi karena orang jarang yang
 tahu makanya kadang disebut rahasia, hal ini dilupakan karena mungkin tidak

@@ -15,8 +15,7 @@
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
-s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ketika mencoba Emacs pertama kali, saya sempat bingung gimana caranya
 melakukan folding atau menyembunyikan kode didalam suatu blok. Folding kode
@@ -80,8 +79,7 @@ aktif.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KPIb2o91HNI/TdKq77SjNMI/AAAAAAAAAfs/6LKBnHhd97I/
-s200/regexp.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s200/regexp.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Regex atau regexp (Regular Expression) merupakan salah satu teknik pencarian
 pada komputer yang benar-benar sangat membantu terutama dalam mengolah teks
@@ -123,8 +121,7 @@ masukkan akan berbeda dengan yang lainnya, untuk melanjutkan penggantian tekan
 tombol y, atau !(tanda seru) untuk mengganti semua karakter tanpa konfirmasi.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-MrSGPpeasMo/TdKhSg9o1sI/AAAAAAAAAfk/-eC_gu6bFlY/
-s1600/emacs-regex.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/emacs-regex.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Regexp dengan Emacs&lt;/p&gt;
 
@@ -166,8 +163,7 @@ pencarian dan penggantian teks&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;Sedangkan modifier &lt;strong&gt;g&lt;/strong&gt; dan &lt;strong&gt;c&lt;/strong&gt; diatas berarti &lt;em&gt;global&lt;/em&gt; dan &lt;em&gt;confirmation&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-8ZZHuc3IruI/TdKhUHTw0BI/AAAAAAAAAfo/VS39-OsWs9k/
-s1600/regex-vim.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/regex-vim.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Regexp dengan Vim&lt;/p&gt;
 
@@ -186,8 +182,7 @@ expressions.info/modifiers.html&gt;&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-color-theme-new-theme/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-S1AZ7cPt5xA/TaMcWqeeOsI/AAAAAAAAAXo/XgQdIUXq9L0/
-s1600/emacs-logo.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/emacs-logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Setelah lelah membaca buku, capek mengetik kode ane bingung mau ngapain, trus
 coba jalan-jalan &lt;a href=&#34;http://www.emacswiki.org/&#34;&gt;http://www.emacswiki.org/&lt;/a&gt; trus kesasar di bagian &lt;a href=&#34;http://www.emacswiki.org/emacs/ColorTheme&#34;&gt;Color
@@ -222,8 +217,7 @@ $ sudo make install_&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-wf3pA9_maTM/TaMcrU_IKwI/AAAAAAAAAXs/nubVjRFl-j8/
-s400/my-emacs-theme1.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/my-emacs-theme1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Emacs dengan tema standar&lt;/p&gt;
 
@@ -233,8 +227,7 @@ kalo di emacs bisa dengan menekan tombol Alt+x list-color-display Ret untuk
 melihat daftar warna.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-pasBl4HTgBE/TaMnZLlVvHI/AAAAAAAAAX0/9QL6oM2SGLM/
-s320/list-color.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/list-color.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Setelah berhasil membuat sebuat tema, tema ini diberi nama &amp;ldquo;smooth-in-the-
 dark&amp;rdquo; seperti namanya tema ini cukup nyaman dilihat meski backgroundnya gelap,
@@ -274,8 +267,7 @@ Perintah ini harus dipanggil setelah perintah (require &amp;lsquo;color-theme) s
 yang tertera diatas.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-kGBJbuElDLQ/TaMcxyn1cDI/AAAAAAAAAXw/uiXDUhzdPFk/
-s400/my-emacs-theme2.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/my-emacs-theme2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Emacs dengan tema smooth-in-the-dark&lt;/p&gt;
 
@@ -528,8 +520,7 @@ Mengganti warna cursor&lt;/p&gt;&lt;/li&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-eKl6-EdJx5E/TY9qnfG_uJI/AAAAAAAAAWA/ohIyQE790h4/
-s1600/gnu-head-sm.jpg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/gnu-head-sm.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Emacs dibangun dengan bahasa Lisp dan bahasa C, dari sebuah sumber yang pernah
 dibaca dijelaskan bahwa program yang ditulis dengan bahasa Lisp maka otomatis
@@ -561,8 +552,7 @@ berikut perintah yang diberikan :&lt;br /&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-CDBONlUNL7g/TY9qnL6KdDI/AAAAAAAAAV8/QvpSlcqvvmc/
-s320/emacs-snake.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/emacs-snake.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;-l file, –load file&lt;/strong&gt; Opsi ini untuk meload fungsi atau command yang terdapat pada “file”.&lt;/li&gt;
@@ -600,8 +590,7 @@ awal file.&lt;/p&gt;&lt;/li&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-command-line-standard-options/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-H0ynPXoLovY/TY9qm3hwvOI/AAAAAAAAAV4/rBG7Bq6iYCo/
-s320/emacs--help.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/emacs--help.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Beberapa opsi standar Emacs :&lt;/p&gt;
 
@@ -673,8 +662,7 @@ Menampilkan help/bantuan dari emacs dan keluar aplikasi.&lt;/p&gt;&lt;/li&gt;
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-H0ynPXoLovY/TY9qm3hwvOI/AAAAAAAAAV4/rBG7Bq6iYCo/
-s320/emacs--help.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/emacs--help.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Salah satu hal yang hampir selalu ada disetiap program *nix adalah&lt;em&gt;command
 line options&lt;/em&gt;, begitu juga dengan Emacs juga memiliki hal ini._Command line
@@ -798,8 +786,7 @@ digunakan oleh Emacs.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-shorcuts/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-epd9Kfm92uw/TY9z9CMYMVI/AAAAAAAAAWU/xSXyE9QbZwM/
-s200/shorcuts.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s200/shorcuts.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Setelah menulis tentang sejarah Emacs kemarin rasanya tak lengkap jika tidak
 membahas Emacs lagi. Kali yang akan dibahas tentang shorcuts Emacs. Penjelasan
@@ -829,8 +816,7 @@ Contoh: f1 -&amp;gt; untuk F1 dan seterusnya hingga F12&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Beberapa _shorcuts_ standar dari Emacs&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-j5LQGPtEWUs/TY90ylZnTCI/AAAAAAAAAWs/FBwHBIXLanU/
-s320/emacs-find_file.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/emacs-find_file.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;C-x C-f&lt;br /&gt;
@@ -984,8 +970,7 @@ Undo&lt;/p&gt;&lt;/li&gt;
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-ncVKUpbf_I4/TY9z8hWaovI/AAAAAAAAAWM/y1LzMYSFS_k/
-s200/emacs-calculator.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s200/emacs-calculator.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Fasilitas lain yang dimiliki oleh Emacs yang mungkin juga sangat berguna
 adalah &lt;em&gt;calculator&lt;/em&gt;. Kalkulator terdiri dari 2 yaitu &lt;em&gt;simple calculator&lt;/em&gt;
@@ -1009,8 +994,7 @@ Selain itu juga bisa menggunakan tanda kurung untuk mengelompokan sebuah
 operasi matematika.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-TYt-
-yK5yLKs/TY90ySR9y5I/AAAAAAAAAWo/8p7kuncGHX0/s1600/emacs-simple-cal.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+yK5yLKs/TY90ySR9y5I/AAAAAAAAAWo/8p7kuncGHX0/s1600/emacs-simple-cal.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Seperti yang terlihat pada gambar, kita bisa mengetikan operasi matematika
 atau ‘?’ untuk bantuan.&lt;/p&gt;
@@ -1050,8 +1034,7 @@ mengklik tombol dan klik kanan untuk mengganti fungsi yang ada.&lt;/em&gt;&lt;/p
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-KCy2BrHaghY/TY90yB33XLI/AAAAAAAAAWk/0oivs9-n_9I/
-s320/emacs-calc-keypad.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/emacs-calc-keypad.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;C-x * E&lt;br /&gt;
@@ -1277,8 +1260,7 @@ customize-variable Ret erc-modules&lt;/code&gt;&lt;/strong&gt;, diantaranya :&lt
 aktif secara default, sedangkan tanda ‘-’ berarti sebaliknya.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-lfDwQsMRz9M/TY90xa97GFI/AAAAAAAAAWY/OCQP7GC52CI/
-s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1291,8 +1273,7 @@ s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/--ja8SCeUlpc/TY9z8TDWnRI/AAAAAAAAAWI/ZeLsYEn7xtQ/
-s320/emacs-mouse.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/emacs-mouse.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Mouse merupakan perangkat yang cukup penting dalam komputer, dengan mouse
 semua jadi lebih mudah dan cepat ketika berinteraksi dengan komputer, tapi
@@ -1341,8 +1322,7 @@ bisa dilihat di (Edit – Paste from Kill Menu).&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/_ypU0iaR-
 LmM/TY99j1EEt3I/AAAAAAAAAWw/ZJ6jCLOxQhU/s320/emacs-paste-from-
-menu%20(1).png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+menu%20(1).png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Klik 2 kali&lt;br /&gt;
@@ -1395,8 +1375,7 @@ pada keyboard seperti Alt atau Control.&lt;/em&gt;&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/mode-line-emacs/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-n5yHVAqmYj8/TY9z82yNdjI/AAAAAAAAAWQ/Ni8ipLLmeRY/
-s1600/emacs-modeline.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/emacs-modeline.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Mode Line dalam editor sekarang ini sering disebut dengan status bar, disini
 biasanya ditempatkan info tentang file yang sedang diedit, bisa dengan

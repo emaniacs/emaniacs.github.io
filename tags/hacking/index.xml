@@ -192,15 +192,13 @@ for ($x = 1; $x &amp;lt; 5; $x++) {
 &lt;p&gt;Versi PHP yang digunakan adalah versi 5.3.3 kompile dari source&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ElMmEh1UGMo/Tj76FodpoZI/AAAAAAAAAnE/NUKWB67cgaI/
-s400/concat-vs-implode.00.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s400/concat-vs-implode.00.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Berikut hasil testnya, dengan jumlah &lt;em&gt;COUNT&lt;/em&gt;(jumlah array yang ingin digabung)
 yang berbeda.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-1Y8p4xq9PwQ/Tj76E2Gi1VI/AAAAAAAAAnA/kUO3bJGWip0/
-s1600/concat-vs-implode.01.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/concat-vs-implode.01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Dari hasil output diatas bisa dilihat, kalo &lt;em&gt;concat&lt;/em&gt; lebih hanya jika jumlah
 &lt;em&gt;COUNT&lt;/em&gt; atau array yang akan digabung berjumlah tidak kecil (dalam test diatas
@@ -216,8 +214,7 @@ mencolok.&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
-s1600/var-var.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Istilah Variabel variabels pertama kali saya dengar di PHP(saya pernah bikin
 tutorial tentang ini &lt;a href=&#34;http://chars19.blogspot.com/2011/06/variabel-
@@ -324,8 +321,7 @@ bisa juga menggunakan metode ini&lt;br /&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KPIb2o91HNI/TdKq77SjNMI/AAAAAAAAAfs/6LKBnHhd97I/
-s200/regexp.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s200/regexp.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Regex atau regexp (Regular Expression) merupakan salah satu teknik pencarian
 pada komputer yang benar-benar sangat membantu terutama dalam mengolah teks
@@ -367,8 +363,7 @@ masukkan akan berbeda dengan yang lainnya, untuk melanjutkan penggantian tekan
 tombol y, atau !(tanda seru) untuk mengganti semua karakter tanpa konfirmasi.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-MrSGPpeasMo/TdKhSg9o1sI/AAAAAAAAAfk/-eC_gu6bFlY/
-s1600/emacs-regex.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/emacs-regex.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Regexp dengan Emacs&lt;/p&gt;
 
@@ -410,8 +405,7 @@ pencarian dan penggantian teks&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;Sedangkan modifier &lt;strong&gt;g&lt;/strong&gt; dan &lt;strong&gt;c&lt;/strong&gt; diatas berarti &lt;em&gt;global&lt;/em&gt; dan &lt;em&gt;confirmation&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-8ZZHuc3IruI/TdKhUHTw0BI/AAAAAAAAAfo/VS39-OsWs9k/
-s1600/regex-vim.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/regex-vim.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Regexp dengan Vim&lt;/p&gt;
 
@@ -430,8 +424,7 @@ expressions.info/modifiers.html&gt;&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/menjebol-password-berbintang-m/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-J13hhg2myg0/TY9lFdLLrZI/AAAAAAAAAVw/2jhnd2cTRpY/
-s1600/hack-fb.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s1600/hack-fb.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Pernah menemukan kondisi dimana suatu browser udah terbuka pada suatu situs
 yang memerlukan login, dan asiknya lagi username dan password telah diisi?
@@ -462,8 +455,7 @@ adalah id dari form tersebut, misalkan tertulis &lt;strong&gt;id=”login_form�
 id form tersebut adalah &lt;strong&gt;login_form&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sb89LrWIHqs/TY9lFeJfq9I/AAAAAAAAAV0/8umM2QKwUDs/
-s320/hack-fb2.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+s320/hack-fb2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Masih di dalam tag form tersebut carilah id dari textbox untuk input
 passwordnya, biasanya pass atau pwd.&lt;/p&gt;
@@ -486,8 +478,7 @@ kemudian ketikkan langsung di Url Address browser seperti ini&lt;/p&gt;
 yang disembunyikan tersebut. Mudah bukan.!!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-djFSP2N-
-5pI/TY9lEymcQFI/AAAAAAAAAVs/GQVJov9cuQI/s1600/hack-fb3.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+5pI/TY9lEymcQFI/AAAAAAAAAVs/GQVJov9cuQI/s1600/hack-fb3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Untuk form selain menggunakan id bisa juga dengan nomor index form tersebut
 (diawali dengan 0), jadi jika formnya adalah form pertama dalam halaman
@@ -513,8 +504,7 @@ dont use freemason symbol).&lt;/p&gt;
       <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/-PvpazMI9CXI/TYjJXTBh2wI/AAAAAAAAAUM/sU-
-4T2eVCMs/s1600/download.jpeg&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+4T2eVCMs/s1600/download.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Seorang hacker asal Inggris yang kecanduan judi poker buatan
 &lt;a href=&#34;http://www.zynga.com/&#34;&gt;Zynga&lt;/a&gt; ditangkap polisi dan dipenjara selama 2 tahun
