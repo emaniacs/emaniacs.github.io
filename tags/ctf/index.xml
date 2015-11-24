@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Ctf on http://blog.aredhi.com </title>
-    <link>http://localhost:1313/tags/ctf/</link>
+    <link>http://blog.aredhi.com/tags/ctf/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>CTF Online EAsy Crypto 1 (EASY)</title>
-      <link>http://localhost:1313/post/ctf-online-easy-crypto-easy/</link>
+      <link>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</link>
       <pubDate>Mon, 20 May 2013 19:30:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/ctf-online-easy-crypto-easy/</guid>
+      <guid>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</guid>
       <description>&lt;p&gt;Text yang akan diencrypt adalah seperti ini&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;GCW ESFLST, HMLSJDSZ AFA:  

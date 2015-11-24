@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Windows on http://blog.aredhi.com </title>
-    <link>http://localhost:1313/tags/windows/</link>
+    <link>http://blog.aredhi.com/tags/windows/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Emacs: Folding kode dengan mouse</title>
-      <link>http://localhost:1313/post/emacs-folding-kode-dengan-mouse/</link>
+      <link>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</link>
       <pubDate>Mon, 13 Jun 2011 18:13:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/emacs-folding-kode-dengan-mouse/</guid>
+      <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
 s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -74,10 +74,10 @@ aktif.&lt;/p&gt;
     
     <item>
       <title>Cream - Vim editor yang ramah</title>
-      <link>http://localhost:1313/post/cream-vim-editor-yang-ramah/</link>
+      <link>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</link>
       <pubDate>Sat, 07 May 2011 17:55:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/cream-vim-editor-yang-ramah/</guid>
+      <guid>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</guid>
       <description>&lt;p&gt;Mendengar nama Vi(m) kita pasti ingat dengan sebuah editor mini dengan
 kemampuan yang luar biasa, begitu juga dengan Cream, editor ini menggunakan
 fasilitas yang ada pada Vim namun telah terkostumisasi seperti halnya editor-
@@ -188,10 +188,10 @@ Faq Cream&lt;/p&gt;
     
     <item>
       <title>Singkatan Recursive ( Emacs )</title>
-      <link>http://localhost:1313/post/singkatan-recursive-emacs/</link>
+      <link>http://blog.aredhi.com/post/singkatan-recursive-emacs/</link>
       <pubDate>Mon, 21 Mar 2011 06:44:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/singkatan-recursive-emacs/</guid>
+      <guid>http://blog.aredhi.com/post/singkatan-recursive-emacs/</guid>
       <description>&lt;p&gt;Judul diatas merupakan salah kebiasaan unik dari hacker, yaitu Singkatan
 Rekursif, atau singkatan yang memanggil dirinya sendiri. Tulisan ini saya
 dapat dari Emacs 23.1 pada file JOKES.&lt;br /&gt;
@@ -306,10 +306,10 @@ Eight Megabytes And Constantly Swapping**&lt;/p&gt;
     
     <item>
       <title>Copy Paste di Emacs (CUA mode)</title>
-      <link>http://localhost:1313/post/copy-paste-di-emacs-cua-mode/</link>
+      <link>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</link>
       <pubDate>Mon, 07 Mar 2011 07:07:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/copy-paste-di-emacs-cua-mode/</guid>
+      <guid>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</guid>
       <description>&lt;p&gt;Dalam kebanyakan editor saat ini, untuk melakukan copy paste digunakan shorcut
 Control-c untuk copy, C-v untuk paste dan C-x untuk cut. Sedangkan Emacs yang
 menggunakan shorcut yang berbeda dan tentu saja membuat pusing bagi pemula,
@@ -345,10 +345,10 @@ menggunakan shorcut &lt;strong&gt;&lt;code&gt;C-1 C-c&lt;/code&gt;** untuk men
     
     <item>
       <title>Emacs Chatting dengan ERC</title>
-      <link>http://localhost:1313/post/emacs-chatting-dengan-erc/</link>
+      <link>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</link>
       <pubDate>Sun, 06 Mar 2011 06:06:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/emacs-chatting-dengan-erc/</guid>
+      <guid>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</guid>
       <description>&lt;p&gt;Sekali lagi Emacs bukan teks editor biasa, bahkan kadang disebut sebagai
 sistem operasi, karna saking lengkapnnya aplikasi dan plugin2 emacs. Salah
 satu yang sering kita lakukan ketika online adalah chatting di channel irc,
@@ -412,10 +412,10 @@ s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     
     <item>
       <title>GNU Emacs</title>
-      <link>http://localhost:1313/post/gnu-emacs/</link>
+      <link>http://blog.aredhi.com/post/gnu-emacs/</link>
       <pubDate>Sun, 04 Jul 2010 19:41:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/gnu-emacs/</guid>
+      <guid>http://blog.aredhi.com/post/gnu-emacs/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://i919.photobucket.com/albums/ad35/chars19/blogMe/emacs23.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
 GNU Emacs merupakan editor yang sangat powerfull, aplikasi ini bahkan jauh
 lebih tua dari Linux. Bahkan bukan hanya sekadar text editor, aplikasi ini
@@ -466,10 +466,10 @@ Control atau Shift.&lt;/p&gt;
     
     <item>
       <title>Google translate - Perl</title>
-      <link>http://localhost:1313/post/google-translate-perl/</link>
+      <link>http://blog.aredhi.com/post/google-translate-perl/</link>
       <pubDate>Wed, 23 Jun 2010 19:56:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/google-translate-perl/</guid>
+      <guid>http://blog.aredhi.com/post/google-translate-perl/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/_ypU0iaR-LmM/TDITz-
 BFVYI/AAAAAAAAAQs/umysQJAVTdk/s320/google-perl.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
 Didunia internet siapa yang tak mengenal Google, rasanya mungkin ga ada. Dan
@@ -617,10 +617,10 @@ sed &#39;s/.*{&amp;quot;translatedText&amp;quot;:&amp;quot;\\([^&amp;quot;]*\\)&
     
     <item>
       <title>Mencari bilangan prima dengan Python</title>
-      <link>http://localhost:1313/post/mencari-bilangan-prima-dengan-python/</link>
+      <link>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</link>
       <pubDate>Tue, 18 May 2010 23:45:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/mencari-bilangan-prima-dengan-python/</guid>
+      <guid>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/_ypU0iaR-
 LmM/TDIhx5nD31I/AAAAAAAAARE/7HegaxuEUG8/s320/python-prime.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 

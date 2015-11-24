@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Command Line on http://blog.aredhi.com </title>
-    <link>http://localhost:1313/tags/command-line/</link>
+    <link>http://blog.aredhi.com/tags/command-line/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Get absolute link on nix/linux</title>
-      <link>http://localhost:1313/post/get-absolute-link-on-unix/</link>
+      <link>http://blog.aredhi.com/post/get-absolute-link-on-unix/</link>
       <pubDate>Wed, 04 Mar 2015 09:10:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/get-absolute-link-on-unix/</guid>
+      <guid>http://blog.aredhi.com/post/get-absolute-link-on-unix/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat script.sh
 #!/usr/bin/env bash
 
@@ -29,10 +29,10 @@ echo $THIS_DIR
     
     <item>
       <title>Kill defunct process on nix/linux</title>
-      <link>http://localhost:1313/post/kill-defunct-proses-on-linux/</link>
+      <link>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</link>
       <pubDate>Tue, 13 Jan 2015 06:20:10 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/kill-defunct-proses-on-linux/</guid>
+      <guid>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</guid>
       <description>&lt;p&gt;$ ps aux | grep name&lt;/p&gt;
 
 &lt;p&gt;$ pstree -sp &lt;pid&gt;&lt;/p&gt;
@@ -45,10 +45,10 @@ echo $THIS_DIR
     
     <item>
       <title>Paksa user untuk logout (GNU/Linux)</title>
-      <link>http://localhost:1313/post/paksa-user-logout-di-gnulinux/</link>
+      <link>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</link>
       <pubDate>Tue, 13 Jan 2015 06:20:10 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/paksa-user-logout-di-gnulinux/</guid>
+      <guid>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</guid>
       <description>&lt;p&gt;Untuk memaksa user yang sedang logout di mesin Unix atau Gnu/Linux bisa
 menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt;
 

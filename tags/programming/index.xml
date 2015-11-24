@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Programming on http://blog.aredhi.com </title>
-    <link>http://localhost:1313/tags/programming/</link>
+    <link>http://blog.aredhi.com/tags/programming/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Git command: stash</title>
-      <link>http://localhost:1313/post/git-command-stash/</link>
+      <link>http://blog.aredhi.com/post/git-command-stash/</link>
       <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/git-command-stash/</guid>
+      <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
       <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
 ketika melakukan perintah ini.&lt;/p&gt;
 
@@ -87,10 +87,10 @@ git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt
     
     <item>
       <title>CTF Online EAsy Crypto 1 (EASY)</title>
-      <link>http://localhost:1313/post/ctf-online-easy-crypto-easy/</link>
+      <link>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</link>
       <pubDate>Mon, 20 May 2013 19:30:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/ctf-online-easy-crypto-easy/</guid>
+      <guid>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</guid>
       <description>&lt;p&gt;Text yang akan diencrypt adalah seperti ini&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;GCW ESFLST, HMLSJDSZ AFA:  
@@ -153,10 +153,10 @@ Jadi tokoh yang dimaksud adalah WS Rendra (rendra)&lt;/p&gt;
     
     <item>
       <title>Get site ranking with python and beautifulsoup</title>
-      <link>http://localhost:1313/post/get-site-ranking-with-python-and-beautifulsoup/</link>
+      <link>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</link>
       <pubDate>Wed, 21 Nov 2012 21:21:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/get-site-ranking-with-python-and-beautifulsoup/</guid>
+      <guid>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</guid>
       <description>&lt;p&gt;To get information about site, we can use &lt;a href=&#34;http://alexa.com/&#34;&gt;alexa.com&lt;/a&gt; but
 sometimes we just need some pieces of information like ranking of site global
 or local country.&lt;/p&gt;
@@ -242,10 +242,10 @@ s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;&l
     
     <item>
       <title>php: array_key_exists or isset</title>
-      <link>http://localhost:1313/post/php-array-key-exists-or-isset/</link>
+      <link>http://blog.aredhi.com/post/php-array-key-exists-or-isset/</link>
       <pubDate>Wed, 18 Apr 2012 06:18:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/php-array-key-exists-or-isset/</guid>
+      <guid>http://blog.aredhi.com/post/php-array-key-exists-or-isset/</guid>
       <description>&lt;p&gt;I know &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.array-key-
 exists.php&#34;&gt;array_key_exists&lt;/a&gt;&lt;/em&gt; is a function and
 &lt;em&gt;[isset&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;) is a keyword, later, i
@@ -336,10 +336,10 @@ $ php -r &amp;lsquo;$var=array(&amp;ldquo;php&amp;rdquo;=&amp;gt;null); var_dump
     
     <item>
       <title>Default value for return</title>
-      <link>http://localhost:1313/post/default-value-for-return/</link>
+      <link>http://blog.aredhi.com/post/default-value-for-return/</link>
       <pubDate>Mon, 09 Apr 2012 16:31:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/default-value-for-return/</guid>
+      <guid>http://blog.aredhi.com/post/default-value-for-return/</guid>
       <description>&lt;p&gt;A few days ago, i try to create a code with PHP, with a function i do a return
 in function with some values and then i got a mystery about default value for
 return keyword, to get absolutelly value with this keyword i create a function
@@ -409,10 +409,10 @@ NilClass&lt;/p&gt;
     
     <item>
       <title>Using keyword as method in PHP</title>
-      <link>http://localhost:1313/post/using-keyword-as-method-in-php/</link>
+      <link>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</link>
       <pubDate>Mon, 19 Mar 2012 20:08:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/using-keyword-as-method-in-php/</guid>
+      <guid>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</guid>
       <description>&lt;p&gt;As we know, we can&amp;rsquo;t use keyword like if, while in common language programming
 as function, method or variables, neither does in PHP Programming. Last time,
 i agree with this condition, but when i learn about Object Oriented
@@ -494,10 +494,10 @@ KeyWord::unknownStaticMethod(1,2,3);
     
     <item>
       <title>PHP: Menghitung lama eksekusi sebuah skrip</title>
-      <link>http://localhost:1313/post/php-menghitung-lama-eksekusi-sebuah-skrip/</link>
+      <link>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</link>
       <pubDate>Sat, 25 Feb 2012 00:00:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/php-menghitung-lama-eksekusi-sebuah-skrip/</guid>
+      <guid>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-JLzChwOBXv4/T0d_Jj8_HYI/AAAAAAAAArA/BGcIwYJeqeQ/
 s1600/time.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -631,10 +631,10 @@ s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     
     <item>
       <title>How to fill constant with array in PHP</title>
-      <link>http://localhost:1313/post/how-to-fill-constant-with-array-in-php/</link>
+      <link>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</link>
       <pubDate>Mon, 20 Feb 2012 20:12:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/how-to-fill-constant-with-array-in-php/</guid>
+      <guid>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</guid>
       <description>&lt;p&gt;Create a constant variable in PHP so easy, we can use keyword
 &lt;a href=&#34;http://www.php.net/manual/en/function.define.php&#34;&gt;define&lt;/a&gt;, followed by name
 of constant and constant value, or we can adding once more argument (boolean
@@ -674,10 +674,10 @@ foreach (unserialize(EN2ID) as $key =&amp;gt; $val) {
     
     <item>
       <title>Panada: Membuat Halaman Login Dengan Session</title>
-      <link>http://localhost:1313/post/panada-membuat-halaman-login-dengan-session/</link>
+      <link>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</link>
       <pubDate>Sun, 15 Jan 2012 23:59:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/panada-membuat-halaman-login-dengan-session/</guid>
+      <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/
@@ -864,10 +864,10 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     
     <item>
       <title>Shell Scripting: Increment dan Decrement nilai dengan Bash</title>
-      <link>http://localhost:1313/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</link>
+      <link>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</link>
       <pubDate>Tue, 01 Nov 2011 21:19:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</guid>
+      <guid>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-hHNti_XJi0A/TqwP40jbm1I/AAAAAAAAApA/9GqFrLF4ckA/
 s1600/increment-decrement.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -966,10 +966,10 @@ Cara yang benar &lt;strong&gt;x=5&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Test Speed: Penggabungan string (concat dan implode)</title>
-      <link>http://localhost:1313/post/test-speed-penggabungan-string-concat-dan-implode/</link>
+      <link>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</link>
       <pubDate>Mon, 08 Aug 2011 20:08:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/test-speed-penggabungan-string-concat-dan-implode/</guid>
+      <guid>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</guid>
       <description>&lt;p&gt;Pada PHP kita bisa menggunakan 2 cara untuk menggabung string yaitu dengan
 operator
 &lt;strong&gt;&lt;a href=&#34;http://php.net/manual/en/language.operators.string.php&#34;&gt;titik(.)&lt;/a&gt;&lt;/strong&gt; atau
@@ -1045,10 +1045,10 @@ mencolok.&lt;/p&gt;
     
     <item>
       <title>HTML: Mencegah teks otomatis pada input (autocomplete)</title>
-      <link>http://localhost:1313/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</link>
+      <link>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</link>
       <pubDate>Sun, 07 Aug 2011 20:07:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</guid>
+      <guid>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KbhobXi1PcA/TgbqURRNFKI/AAAAAAAAAmU/zO-
 3dd6Qz-k/s1600/autocomplete.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -1082,10 +1082,10 @@ digunakan pada textarea, hal ini tidak akan berfungsi.&lt;/p&gt;
     
     <item>
       <title>Javascript: onclick, tag didalam tag (parent and child)</title>
-      <link>http://localhost:1313/post/javascript-onclick-tag-didalam-tag-parent-and-child/</link>
+      <link>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</link>
       <pubDate>Mon, 27 Jun 2011 06:27:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/javascript-onclick-tag-didalam-tag-parent-and-child/</guid>
+      <guid>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</guid>
       <description>&lt;p&gt;Masalah ini berawal dari sebuah &lt;em&gt;thread&lt;/em&gt; yang ada di
 &lt;a href=&#34;http://kaskus.us/&#34;&gt;Kaskus&lt;/a&gt; disitu ada pertanyaan bagaimana mengatasi &lt;em&gt;event
 click&lt;/em&gt; pada sebuah &lt;strong&gt;div&lt;/strong&gt; yang merupakan &lt;strong&gt;child&lt;/strong&gt; dari &lt;strong&gt;div&lt;/strong&gt; yang juga
@@ -1155,10 +1155,10 @@ untuk parent.&lt;/p&gt;
     
     <item>
       <title>Variabel Variabels dengan Bash / Shell Script</title>
-      <link>http://localhost:1313/post/variabel-variabels-dengan-bash-shell-script/</link>
+      <link>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</link>
       <pubDate>Mon, 20 Jun 2011 06:20:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/variabel-variabels-dengan-bash-shell-script/</guid>
+      <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
 s1600/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -1262,10 +1262,10 @@ bisa juga menggunakan metode ini&lt;br /&gt;
     
     <item>
       <title>Panada: Membuat Halaman Login</title>
-      <link>http://localhost:1313/post/panada-membuat-halaman-login/</link>
+      <link>http://blog.aredhi.com/post/panada-membuat-halaman-login/</link>
       <pubDate>Sun, 19 Jun 2011 06:19:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/panada-membuat-halaman-login/</guid>
+      <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-a-2NfNOb_PY/Tf2qlSBZr7I/AAAAAAAAAl4/wjUcZZBoE84/

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Gnu Linux on http://blog.aredhi.com </title>
-    <link>http://localhost:1313/tags/gnu-linux/</link>
+    <link>http://blog.aredhi.com/tags/gnu-linux/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>VIm autocomplete with YouCompleteMe</title>
-      <link>http://localhost:1313/post/vim-autocomplete-with-youcompleteme/</link>
+      <link>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</link>
       <pubDate>Tue, 05 May 2015 11:12:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/vim-autocomplete-with-youcompleteme/</guid>
+      <guid>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</guid>
       <description>&lt;p&gt;Finally i use an autocomplete plugin in my vim, my choice is &lt;a href=&#34;https://github.com/Valloric/YouCompleteMe&#34;&gt;YouCompleteMe&lt;/a&gt;.
 This plugin need vim 7.34+ and python support and my vim is still 7.3 so need to recompile it.&lt;/p&gt;
 
@@ -41,10 +41,10 @@ $ sudo make install
     
     <item>
       <title>Git command: stash</title>
-      <link>http://localhost:1313/post/git-command-stash/</link>
+      <link>http://blog.aredhi.com/post/git-command-stash/</link>
       <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/git-command-stash/</guid>
+      <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
       <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
 ketika melakukan perintah ini.&lt;/p&gt;
 
@@ -118,10 +118,10 @@ git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt
     
     <item>
       <title>Get site ranking with python and beautifulsoup</title>
-      <link>http://localhost:1313/post/get-site-ranking-with-python-and-beautifulsoup/</link>
+      <link>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</link>
       <pubDate>Wed, 21 Nov 2012 21:21:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/get-site-ranking-with-python-and-beautifulsoup/</guid>
+      <guid>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</guid>
       <description>&lt;p&gt;To get information about site, we can use &lt;a href=&#34;http://alexa.com/&#34;&gt;alexa.com&lt;/a&gt; but
 sometimes we just need some pieces of information like ranking of site global
 or local country.&lt;/p&gt;
@@ -207,10 +207,10 @@ s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;&l
     
     <item>
       <title>Newbie using gnuchess</title>
-      <link>http://localhost:1313/post/newbie-using-gnuchess/</link>
+      <link>http://blog.aredhi.com/post/newbie-using-gnuchess/</link>
       <pubDate>Mon, 19 Nov 2012 18:00:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/newbie-using-gnuchess/</guid>
+      <guid>http://blog.aredhi.com/post/newbie-using-gnuchess/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-gQLo__fmT9U/UKoLnuS_OfI/AAAAAAAABDI/IDqNtPEl-
 ws/s200/Selection_015.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -291,10 +291,10 @@ komputernya).&lt;/p&gt;
     
     <item>
       <title>Touchpad Tap Button dengan Debian</title>
-      <link>http://localhost:1313/post/touchpad-tap-button-dengan-debian/</link>
+      <link>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</link>
       <pubDate>Fri, 04 Nov 2011 00:00:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/touchpad-tap-button-dengan-debian/</guid>
+      <guid>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/-z-YfCJD9ky0/TrQMSu3KFOI/AAAAAAAAAps/xEd
 OqxEmUTk/s1600/no-image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -337,10 +337,10 @@ EndSection
     
     <item>
       <title>Shell Scripting: Increment dan Decrement nilai dengan Bash</title>
-      <link>http://localhost:1313/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</link>
+      <link>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</link>
       <pubDate>Tue, 01 Nov 2011 21:19:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</guid>
+      <guid>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-hHNti_XJi0A/TqwP40jbm1I/AAAAAAAAApA/9GqFrLF4ckA/
 s1600/increment-decrement.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -439,10 +439,10 @@ Cara yang benar &lt;strong&gt;x=5&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Kenapa harus install ulang</title>
-      <link>http://localhost:1313/post/kenapa-harus-install-ulang/</link>
+      <link>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</link>
       <pubDate>Sun, 26 Jun 2011 18:26:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/kenapa-harus-install-ulang/</guid>
+      <guid>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-oF8IQg9FKaM/Tga8KVuIfZI/AAAAAAAAAmI/nubq1EI3aFs/
 s1600/logo-debian.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -536,10 +536,10 @@ saya adalah yang common atau kebanyakan.&lt;/p&gt;
     
     <item>
       <title>Variabel Variabels dengan Bash / Shell Script</title>
-      <link>http://localhost:1313/post/variabel-variabels-dengan-bash-shell-script/</link>
+      <link>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</link>
       <pubDate>Mon, 20 Jun 2011 06:20:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/variabel-variabels-dengan-bash-shell-script/</guid>
+      <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
 s1600/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -643,10 +643,10 @@ bisa juga menggunakan metode ini&lt;br /&gt;
     
     <item>
       <title>Emacs: Folding kode dengan mouse</title>
-      <link>http://localhost:1313/post/emacs-folding-kode-dengan-mouse/</link>
+      <link>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</link>
       <pubDate>Mon, 13 Jun 2011 18:13:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/emacs-folding-kode-dengan-mouse/</guid>
+      <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
 s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -707,10 +707,10 @@ aktif.&lt;/p&gt;
     
     <item>
       <title>Emacs - Replace dengan teknik Grouping pada Regex</title>
-      <link>http://localhost:1313/post/emacs-replace-dengan-teknik-grouping-pada-regex/</link>
+      <link>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</link>
       <pubDate>Wed, 18 May 2011 21:09:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
+      <guid>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KPIb2o91HNI/TdKq77SjNMI/AAAAAAAAAfs/6LKBnHhd97I/
 s200/regexp.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -810,10 +810,10 @@ expressions.info/modifiers.html&gt;&lt;/p&gt;
     
     <item>
       <title>Cream - Vim editor yang ramah</title>
-      <link>http://localhost:1313/post/cream-vim-editor-yang-ramah/</link>
+      <link>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</link>
       <pubDate>Sat, 07 May 2011 17:55:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/cream-vim-editor-yang-ramah/</guid>
+      <guid>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</guid>
       <description>&lt;p&gt;Mendengar nama Vi(m) kita pasti ingat dengan sebuah editor mini dengan
 kemampuan yang luar biasa, begitu juga dengan Cream, editor ini menggunakan
 fasilitas yang ada pada Vim namun telah terkostumisasi seperti halnya editor-
@@ -924,10 +924,10 @@ Faq Cream&lt;/p&gt;
     
     <item>
       <title>ylmf Os, Linux Rasa Windows</title>
-      <link>http://localhost:1313/post/ylmf-os-linux-rasa-windows/</link>
+      <link>http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/</link>
       <pubDate>Wed, 06 Apr 2011 21:21:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/ylmf-os-linux-rasa-windows/</guid>
+      <guid>http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://www.ylmf.org/static/images/logo.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ylmf Os, merupakan sebuah Linux yang mirip secara tampilan dengan Windows.
@@ -1025,10 +1025,10 @@ Cara instalasinya bisa dilihat &lt;a href=&#34;http://www.ylmf.org/en/faq.html&
     
     <item>
       <title>Python dan Bilangan Prima</title>
-      <link>http://localhost:1313/post/python-dan-bilangan-prima/</link>
+      <link>http://blog.aredhi.com/post/python-dan-bilangan-prima/</link>
       <pubDate>Thu, 24 Mar 2011 05:03:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/python-dan-bilangan-prima/</guid>
+      <guid>http://blog.aredhi.com/post/python-dan-bilangan-prima/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://lh6.googleusercontent.com/-GM-
 B6lnAX1s/TYYlBO7jsfI/AAAAAAAAATk/J83gpbzNvQU/s200/python-prime.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -1088,10 +1088,10 @@ its&lt;a href=&#34;http://www.igos.web.id/&#34;&gt;OPENSOURCE&lt;/a&gt;&lt;/em&g
     
     <item>
       <title>Kirim Email GMAIL via Konsole/Terminal (ssmtp dan mail)</title>
-      <link>http://localhost:1313/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</link>
+      <link>http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</link>
       <pubDate>Sat, 19 Mar 2011 21:07:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</guid>
+      <guid>http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</guid>
       <description>&lt;p&gt;Salah satu menariknya Gnu/Linux (buat saya pribadi) adalah dekatnya jarak
 antara user dengan sistem itu sendiri. Salah satu jalan itu adalah dengan
 menggunakan konsole atau terminal. Saat ini berkirim pesan lewat email adalah
@@ -1169,10 +1169,10 @@ s320/gmail.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     
     <item>
       <title>Emacs Command Line (X window)</title>
-      <link>http://localhost:1313/post/emacs-command-line-x-window/</link>
+      <link>http://blog.aredhi.com/post/emacs-command-line-x-window/</link>
       <pubDate>Wed, 16 Mar 2011 16:16:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/emacs-command-line-x-window/</guid>
+      <guid>http://blog.aredhi.com/post/emacs-command-line-x-window/</guid>
       <description>&lt;p&gt;X window yang dimaksud dalam penjelasan ini yaitu tampilan emacs ketika muncul
 dilayar.&lt;br /&gt;
 Hal ini berguna untuk mengatur tampilan emacs misalkan font yang ingin

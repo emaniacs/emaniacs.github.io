@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Vim on http://blog.aredhi.com </title>
-    <link>http://localhost:1313/tags/vim/</link>
+    <link>http://blog.aredhi.com/tags/vim/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>VIm autocomplete with YouCompleteMe</title>
-      <link>http://localhost:1313/post/vim-autocomplete-with-youcompleteme/</link>
+      <link>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</link>
       <pubDate>Tue, 05 May 2015 11:12:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://localhost:1313/post/vim-autocomplete-with-youcompleteme/</guid>
+      <guid>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</guid>
       <description>&lt;p&gt;Finally i use an autocomplete plugin in my vim, my choice is &lt;a href=&#34;https://github.com/Valloric/YouCompleteMe&#34;&gt;YouCompleteMe&lt;/a&gt;.
 This plugin need vim 7.34+ and python support and my vim is still 7.3 so need to recompile it.&lt;/p&gt;
 
