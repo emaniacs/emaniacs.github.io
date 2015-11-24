@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Hacking on http://blog.aredhi.com </title>
-    <link>http://blog.aredhi.com/tags/hacking/</link>
+    <link>http://localhost:1313/tags/hacking/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Git command: stash</title>
-      <link>http://blog.aredhi.com/post/git-command-stash/</link>
+      <link>http://localhost:1313/post/git-command-stash/</link>
       <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
+      <guid>http://localhost:1313/post/git-command-stash/</guid>
       <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
 ketika melakukan perintah ini.&lt;/p&gt;
 
@@ -87,10 +87,10 @@ git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt
     
     <item>
       <title>How to fill constant with array in PHP</title>
-      <link>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</link>
+      <link>http://localhost:1313/post/how-to-fill-constant-with-array-in-php/</link>
       <pubDate>Mon, 20 Feb 2012 20:12:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</guid>
+      <guid>http://localhost:1313/post/how-to-fill-constant-with-array-in-php/</guid>
       <description>&lt;p&gt;Create a constant variable in PHP so easy, we can use keyword
 &lt;a href=&#34;http://www.php.net/manual/en/function.define.php&#34;&gt;define&lt;/a&gt;, followed by name
 of constant and constant value, or we can adding once more argument (boolean
@@ -130,10 +130,10 @@ foreach (unserialize(EN2ID) as $key =&amp;gt; $val) {
     
     <item>
       <title>Test Speed: Penggabungan string (concat dan implode)</title>
-      <link>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</link>
+      <link>http://localhost:1313/post/test-speed-penggabungan-string-concat-dan-implode/</link>
       <pubDate>Mon, 08 Aug 2011 20:08:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</guid>
+      <guid>http://localhost:1313/post/test-speed-penggabungan-string-concat-dan-implode/</guid>
       <description>&lt;p&gt;Pada PHP kita bisa menggunakan 2 cara untuk menggabung string yaitu dengan
 operator
 &lt;strong&gt;&lt;a href=&#34;http://php.net/manual/en/language.operators.string.php&#34;&gt;titik(.)&lt;/a&gt;&lt;/strong&gt; atau
@@ -209,10 +209,10 @@ mencolok.&lt;/p&gt;
     
     <item>
       <title>Variabel Variabels dengan Bash / Shell Script</title>
-      <link>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</link>
+      <link>http://localhost:1313/post/variabel-variabels-dengan-bash-shell-script/</link>
       <pubDate>Mon, 20 Jun 2011 06:20:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</guid>
+      <guid>http://localhost:1313/post/variabel-variabels-dengan-bash-shell-script/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
 s1600/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -316,10 +316,10 @@ bisa juga menggunakan metode ini&lt;br /&gt;
     
     <item>
       <title>Emacs - Replace dengan teknik Grouping pada Regex</title>
-      <link>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</link>
+      <link>http://localhost:1313/post/emacs-replace-dengan-teknik-grouping-pada-regex/</link>
       <pubDate>Wed, 18 May 2011 21:09:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
+      <guid>http://localhost:1313/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KPIb2o91HNI/TdKq77SjNMI/AAAAAAAAAfs/6LKBnHhd97I/
 s200/regexp.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -419,10 +419,10 @@ expressions.info/modifiers.html&gt;&lt;/p&gt;
     
     <item>
       <title>Menjebol password berbintang, m****</title>
-      <link>http://blog.aredhi.com/post/menjebol-password-berbintang-m/</link>
+      <link>http://localhost:1313/post/menjebol-password-berbintang-m/</link>
       <pubDate>Mon, 28 Mar 2011 10:10:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/menjebol-password-berbintang-m/</guid>
+      <guid>http://localhost:1313/post/menjebol-password-berbintang-m/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-J13hhg2myg0/TY9lFdLLrZI/AAAAAAAAAVw/2jhnd2cTRpY/
 s1600/hack-fb.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -499,10 +499,10 @@ dont use freemason symbol).&lt;/p&gt;
     
     <item>
       <title>Hacker Pencuri Chip Virtual Zynga  di penjara 2 tahun</title>
-      <link>http://blog.aredhi.com/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</link>
+      <link>http://localhost:1313/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</link>
       <pubDate>Tue, 22 Mar 2011 23:22:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</guid>
+      <guid>http://localhost:1313/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/-PvpazMI9CXI/TYjJXTBh2wI/AAAAAAAAAUM/sU-
 4T2eVCMs/s1600/download.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -542,10 +542,10 @@ yaitu dia menjebol server komputer tempat dia bekerja.&lt;/p&gt;
     
     <item>
       <title>Bactrace Aplikasi di Linux</title>
-      <link>http://blog.aredhi.com/post/bactrace-aplikasi-di-linux/</link>
+      <link>http://localhost:1313/post/bactrace-aplikasi-di-linux/</link>
       <pubDate>Wed, 16 Mar 2011 04:44:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/bactrace-aplikasi-di-linux/</guid>
+      <guid>http://localhost:1313/post/bactrace-aplikasi-di-linux/</guid>
       <description>&lt;p&gt;Backtrace atau stack backtrace dengan kata lain bisa diartikan dengan melihat
 stack frame pada titik tertentu di suatu program yang sedang berjalan, atau
 secara realtime.Hal ini sering atau biasanya dilakukan untuk mencari bug atau
@@ -616,10 +616,10 @@ sendiri ^_^.&lt;/p&gt;
     
     <item>
       <title>Linux Redirection : 2&gt;&amp;1</title>
-      <link>http://blog.aredhi.com/post/linux-redirection/</link>
+      <link>http://localhost:1313/post/linux-redirection/</link>
       <pubDate>Tue, 15 Mar 2011 03:15:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/linux-redirection/</guid>
+      <guid>http://localhost:1313/post/linux-redirection/</guid>
       <description>
 
 &lt;p&gt;Redirection dalam sistem unix dan Linux merupakan salah satu cara untuk

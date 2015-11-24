@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Posts on http://blog.aredhi.com </title>
-    <link>http://blog.aredhi.com/post/</link>
+    <link>http://localhost:1313/post/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>cerpen - suara musik menjelang tidur</title>
-      <link>http://blog.aredhi.com/post/cerpen-suara-musik-menjelang-tidur/</link>
+      <link>http://localhost:1313/post/cerpen-suara-musik-menjelang-tidur/</link>
       <pubDate>Tue, 24 Nov 2015 21:02:21 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/cerpen-suara-musik-menjelang-tidur/</guid>
+      <guid>http://localhost:1313/post/cerpen-suara-musik-menjelang-tidur/</guid>
       <description>
 
 &lt;h1 id=&#34;cerpen:1b160b2d4da4a7a1ec0fc90db6d1772a&#34;&gt;Cerpen&lt;/h1&gt;
@@ -28,10 +28,10 @@ handphone. :)&lt;/p&gt;
     
     <item>
       <title>Today is a grey day</title>
-      <link>http://blog.aredhi.com/post/today-is-a-grey-day/</link>
+      <link>http://localhost:1313/post/today-is-a-grey-day/</link>
       <pubDate>Tue, 12 May 2015 11:19:22 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/today-is-a-grey-day/</guid>
+      <guid>http://localhost:1313/post/today-is-a-grey-day/</guid>
       <description>&lt;p&gt;Belum genap seminggu saya pulang dari Lombok, habis mendaki Rinjani lanjut nenda di Gili Trawangan, tapi semua rongga tubuhku udah kembali terasa sesak, oleh masalah dan teman-temannya.&lt;/p&gt;
 
 &lt;p&gt;Ingin rasanya kembali ke danau segara anak, dimana tak perlu risau dengan suara-suara, tak peduli dengan koneksi.&lt;/p&gt;
@@ -42,10 +42,10 @@ handphone. :)&lt;/p&gt;
     
     <item>
       <title>VIm autocomplete with YouCompleteMe</title>
-      <link>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</link>
+      <link>http://localhost:1313/post/vim-autocomplete-with-youcompleteme/</link>
       <pubDate>Tue, 05 May 2015 11:12:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</guid>
+      <guid>http://localhost:1313/post/vim-autocomplete-with-youcompleteme/</guid>
       <description>&lt;p&gt;Finally i use an autocomplete plugin in my vim, my choice is &lt;a href=&#34;https://github.com/Valloric/YouCompleteMe&#34;&gt;YouCompleteMe&lt;/a&gt;.
 This plugin need vim 7.34+ and python support and my vim is still 7.3 so need to recompile it.&lt;/p&gt;
 
@@ -73,10 +73,10 @@ $ sudo make install
     
     <item>
       <title>RIP my kaktus</title>
-      <link>http://blog.aredhi.com/post/rip-my-kaktus/</link>
+      <link>http://localhost:1313/post/rip-my-kaktus/</link>
       <pubDate>Mon, 04 May 2015 11:47:59 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/rip-my-kaktus/</guid>
+      <guid>http://localhost:1313/post/rip-my-kaktus/</guid>
       <description>&lt;p&gt;Kemarin, Minggu 4 Mei 2015 salah satu kaktus saya mati. Bagian batang membusuk sehingga menjadi patah, sebagai pemula di bidang ini saya tidak tahu penyebab pastinya.&lt;/p&gt;
 
 &lt;dl&gt;
@@ -89,10 +89,10 @@ $ sudo make install
     
     <item>
       <title>Bloging with github, hugo and gitbook</title>
-      <link>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</link>
+      <link>http://localhost:1313/post/bloging-with-hugo-and-gitbook/</link>
       <pubDate>Mon, 04 May 2015 11:19:22 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</guid>
+      <guid>http://localhost:1313/post/bloging-with-hugo-and-gitbook/</guid>
       <description>&lt;p&gt;Today i use &lt;a href=&#34;https://www.gitbook.com&#34;&gt;GitBook&lt;/a&gt; and &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as my blogging platform.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -105,10 +105,10 @@ $ sudo make install
     
     <item>
       <title>Kentut Dalam Botol</title>
-      <link>http://blog.aredhi.com/post/kentut-dalam-botol/</link>
+      <link>http://localhost:1313/post/kentut-dalam-botol/</link>
       <pubDate>Tue, 31 Mar 2015 22:11:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/kentut-dalam-botol/</guid>
+      <guid>http://localhost:1313/post/kentut-dalam-botol/</guid>
       <description>
 
 &lt;h1 id=&#34;intro:7a098387ae2476f1cd39a152a2312b61&#34;&gt;Intro&lt;/h1&gt;
@@ -186,10 +186,10 @@ Dan seketika abang saya tertawa sangat puas..&lt;/p&gt;
     
     <item>
       <title>Membangun website sederhana menggunakan golang nginx dan fabric</title>
-      <link>http://blog.aredhi.com/post/nginx-go-fab/</link>
+      <link>http://localhost:1313/post/nginx-go-fab/</link>
       <pubDate>Sat, 14 Mar 2015 17:23:22 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/nginx-go-fab/</guid>
+      <guid>http://localhost:1313/post/nginx-go-fab/</guid>
       <description>
 
 &lt;p&gt;#Intro
@@ -361,10 +361,10 @@ digunakan saat deploy dengan fabric.&lt;/p&gt;
     
     <item>
       <title>Get absolute link on nix/linux</title>
-      <link>http://blog.aredhi.com/post/get-absolute-link-on-unix/</link>
+      <link>http://localhost:1313/post/get-absolute-link-on-unix/</link>
       <pubDate>Wed, 04 Mar 2015 09:10:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/get-absolute-link-on-unix/</guid>
+      <guid>http://localhost:1313/post/get-absolute-link-on-unix/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat script.sh
 #!/usr/bin/env bash
 
@@ -380,10 +380,10 @@ echo $THIS_DIR
     
     <item>
       <title>Sakit pertama</title>
-      <link>http://blog.aredhi.com/post/sakit-pertama/</link>
+      <link>http://localhost:1313/post/sakit-pertama/</link>
       <pubDate>Tue, 03 Mar 2015 15:12:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/sakit-pertama/</guid>
+      <guid>http://localhost:1313/post/sakit-pertama/</guid>
       <description>&lt;p&gt;Akhirnya sakit lagi, hari ini sedikit flu dan ini merupakan sakit pertama di 2015.
 Dan karena sakit ini juga gw mereview kembali hapalan-hapalan surat pendek gw,
     kemarin baru saja memperbaiki satu hafalan surat yang dulu pernah hafal.&lt;/p&gt;
@@ -398,10 +398,10 @@ membanggakan.&lt;/p&gt;
     
     <item>
       <title>Kill defunct process on nix/linux</title>
-      <link>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</link>
+      <link>http://localhost:1313/post/kill-defunct-proses-on-linux/</link>
       <pubDate>Tue, 13 Jan 2015 06:20:10 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</guid>
+      <guid>http://localhost:1313/post/kill-defunct-proses-on-linux/</guid>
       <description>&lt;p&gt;$ ps aux | grep name&lt;/p&gt;
 
 &lt;p&gt;$ pstree -sp &lt;pid&gt;&lt;/p&gt;
@@ -414,10 +414,10 @@ membanggakan.&lt;/p&gt;
     
     <item>
       <title>Paksa user untuk logout (GNU/Linux)</title>
-      <link>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</link>
+      <link>http://localhost:1313/post/paksa-user-logout-di-gnulinux/</link>
       <pubDate>Tue, 13 Jan 2015 06:20:10 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</guid>
+      <guid>http://localhost:1313/post/paksa-user-logout-di-gnulinux/</guid>
       <description>&lt;p&gt;Untuk memaksa user yang sedang logout di mesin Unix atau Gnu/Linux bisa
 menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt;
 
@@ -435,10 +435,10 @@ menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt
     
     <item>
       <title>Add shortcut with lxde or openbox</title>
-      <link>http://blog.aredhi.com/post/add-shortcut-with-openbox/</link>
+      <link>http://localhost:1313/post/add-shortcut-with-openbox/</link>
       <pubDate>Tue, 13 Jan 2015 06:13:59 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/add-shortcut-with-openbox/</guid>
+      <guid>http://localhost:1313/post/add-shortcut-with-openbox/</guid>
       <description>
 
 &lt;p&gt;Edit file &lt;strong&gt;$HOME/.config/openbox/lxde-rc.xml&lt;/strong&gt; and then add your shortcut in.&lt;/p&gt;
@@ -458,10 +458,10 @@ menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt
     
     <item>
       <title>Arsenalisme</title>
-      <link>http://blog.aredhi.com/post/arsenalisme/</link>
+      <link>http://localhost:1313/post/arsenalisme/</link>
       <pubDate>Sat, 31 May 2014 00:46:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/arsenalisme/</guid>
+      <guid>http://localhost:1313/post/arsenalisme/</guid>
       <description>&lt;p&gt;Arsenalisme adalah sebuah paham tentang kesetiaan terhadap sesuatu yang sangat
 potensial.&lt;/p&gt;
 </description>
@@ -469,10 +469,10 @@ potensial.&lt;/p&gt;
     
     <item>
       <title>Git command: stash</title>
-      <link>http://blog.aredhi.com/post/git-command-stash/</link>
+      <link>http://localhost:1313/post/git-command-stash/</link>
       <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
+      <guid>http://localhost:1313/post/git-command-stash/</guid>
       <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
 ketika melakukan perintah ini.&lt;/p&gt;
 
@@ -546,10 +546,10 @@ git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt
     
     <item>
       <title>Alam semesta berkabut</title>
-      <link>http://blog.aredhi.com/post/alam-semesta-berkabut/</link>
+      <link>http://localhost:1313/post/alam-semesta-berkabut/</link>
       <pubDate>Mon, 06 Jan 2014 17:10:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/alam-semesta-berkabut/</guid>
+      <guid>http://localhost:1313/post/alam-semesta-berkabut/</guid>
       <description>&lt;p&gt;Dalam perjalanan turun dari gunung ciremai&lt;br /&gt;
 diantara pos arban dan cigowong&lt;br /&gt;
 aku berpisah tidak begitu jauh&lt;br /&gt;

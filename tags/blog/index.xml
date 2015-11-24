@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Blog on http://blog.aredhi.com </title>
-    <link>http://blog.aredhi.com/tags/blog/</link>
+    <link>http://localhost:1313/tags/blog/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Bloging with github, hugo and gitbook</title>
-      <link>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</link>
+      <link>http://localhost:1313/post/bloging-with-hugo-and-gitbook/</link>
       <pubDate>Mon, 04 May 2015 11:19:22 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</guid>
+      <guid>http://localhost:1313/post/bloging-with-hugo-and-gitbook/</guid>
       <description>&lt;p&gt;Today i use &lt;a href=&#34;https://www.gitbook.com&#34;&gt;GitBook&lt;/a&gt; and &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as my blogging platform.&lt;/p&gt;
 
 &lt;ul&gt;

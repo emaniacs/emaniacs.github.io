@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Pages on http://blog.aredhi.com </title>
-    <link>http://blog.aredhi.com/page/</link>
+    <link>http://localhost:1313/page/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>About me</title>
-      <link>http://blog.aredhi.com/page/about/</link>
+      <link>http://localhost:1313/page/about/</link>
       <pubDate>Sun, 11 Jan 2015 12:23:38 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/page/about/</guid>
+      <guid>http://localhost:1313/page/about/</guid>
       <description>&lt;p&gt;Not finish yet,&lt;/p&gt;
 </description>
     </item>

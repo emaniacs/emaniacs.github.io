@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Fun on http://blog.aredhi.com </title>
-    <link>http://blog.aredhi.com/tags/fun/</link>
+    <link>http://localhost:1313/tags/fun/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Kentut Dalam Botol</title>
-      <link>http://blog.aredhi.com/post/kentut-dalam-botol/</link>
+      <link>http://localhost:1313/post/kentut-dalam-botol/</link>
       <pubDate>Tue, 31 Mar 2015 22:11:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/kentut-dalam-botol/</guid>
+      <guid>http://localhost:1313/post/kentut-dalam-botol/</guid>
       <description>
 
 &lt;h1 id=&#34;intro:7a098387ae2476f1cd39a152a2312b61&#34;&gt;Intro&lt;/h1&gt;

@@ -2,664 +2,664 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://blog.aredhi.comtags</loc>
+        <loc>http://localhost:1313/tags</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     <url>
-        <loc>http://blog.aredhi.compage</loc>
+        <loc>http://localhost:1313/page</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     <url>
-        <loc>http://blog.aredhi.compost</loc>
+        <loc>http://localhost:1313/post</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
 
     
     <url>
-        <loc>http://blog.aredhi.comtags/blog</loc>
+        <loc>http://localhost:1313/tags/blog</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/command-line</loc>
+        <loc>http://localhost:1313/tags/command-line</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/ctf</loc>
+        <loc>http://localhost:1313/tags/ctf</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/fabric</loc>
+        <loc>http://localhost:1313/tags/fabric</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/fun</loc>
+        <loc>http://localhost:1313/tags/fun</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/git</loc>
+        <loc>http://localhost:1313/tags/git</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/github</loc>
+        <loc>http://localhost:1313/tags/github</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/gnu-emacs</loc>
+        <loc>http://localhost:1313/tags/gnu-emacs</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/gnu-linux</loc>
+        <loc>http://localhost:1313/tags/gnu-linux</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/golang</loc>
+        <loc>http://localhost:1313/tags/golang</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/hacking</loc>
+        <loc>http://localhost:1313/tags/hacking</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/hugo</loc>
+        <loc>http://localhost:1313/tags/hugo</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/linux</loc>
+        <loc>http://localhost:1313/tags/linux</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/lxde</loc>
+        <loc>http://localhost:1313/tags/lxde</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/matematika</loc>
+        <loc>http://localhost:1313/tags/matematika</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/nginx</loc>
+        <loc>http://localhost:1313/tags/nginx</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/openbox</loc>
+        <loc>http://localhost:1313/tags/openbox</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/opini</loc>
+        <loc>http://localhost:1313/tags/opini</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/panada</loc>
+        <loc>http://localhost:1313/tags/panada</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/programming</loc>
+        <loc>http://localhost:1313/tags/programming</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/programming-go</loc>
+        <loc>http://localhost:1313/tags/programming-go</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/programming-php</loc>
+        <loc>http://localhost:1313/tags/programming-php</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/programming-python</loc>
+        <loc>http://localhost:1313/tags/programming-python</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/programming-web</loc>
+        <loc>http://localhost:1313/tags/programming-web</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/rinjani</loc>
+        <loc>http://localhost:1313/tags/rinjani</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/timeline</loc>
+        <loc>http://localhost:1313/tags/timeline</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/unix</loc>
+        <loc>http://localhost:1313/tags/unix</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/vim</loc>
+        <loc>http://localhost:1313/tags/vim</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.comtags/windows</loc>
+        <loc>http://localhost:1313/tags/windows</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
 
     
     <url>
-        <loc>http://blog.aredhi.com/</loc>
+        <loc>http://localhost:1313/</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/cerpen-suara-musik-menjelang-tidur/</loc>
+        <loc>http://localhost:1313/post/cerpen-suara-musik-menjelang-tidur/</loc>
         <lastmod>2015-11-24T21:02:21+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/today-is-a-grey-day/</loc>
+        <loc>http://localhost:1313/post/today-is-a-grey-day/</loc>
         <lastmod>2015-05-12T11:19:22+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</loc>
+        <loc>http://localhost:1313/post/vim-autocomplete-with-youcompleteme/</loc>
         <lastmod>2015-05-05T11:12:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/rip-my-kaktus/</loc>
+        <loc>http://localhost:1313/post/rip-my-kaktus/</loc>
         <lastmod>2015-05-04T11:47:59+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</loc>
+        <loc>http://localhost:1313/post/bloging-with-hugo-and-gitbook/</loc>
         <lastmod>2015-05-04T11:19:22+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/kentut-dalam-botol/</loc>
+        <loc>http://localhost:1313/post/kentut-dalam-botol/</loc>
         <lastmod>2015-03-31T22:11:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/nginx-go-fab/</loc>
+        <loc>http://localhost:1313/post/nginx-go-fab/</loc>
         <lastmod>2015-03-14T17:23:22+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/get-absolute-link-on-unix/</loc>
+        <loc>http://localhost:1313/post/get-absolute-link-on-unix/</loc>
         <lastmod>2015-03-04T09:10:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/sakit-pertama/</loc>
+        <loc>http://localhost:1313/post/sakit-pertama/</loc>
         <lastmod>2015-03-03T15:12:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</loc>
+        <loc>http://localhost:1313/post/kill-defunct-proses-on-linux/</loc>
         <lastmod>2015-01-13T06:20:10+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</loc>
+        <loc>http://localhost:1313/post/paksa-user-logout-di-gnulinux/</loc>
         <lastmod>2015-01-13T06:20:10+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/add-shortcut-with-openbox/</loc>
+        <loc>http://localhost:1313/post/add-shortcut-with-openbox/</loc>
         <lastmod>2015-01-13T06:13:59+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/page/about/</loc>
+        <loc>http://localhost:1313/page/about/</loc>
         <lastmod>2015-01-11T12:23:38+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/arsenalisme/</loc>
+        <loc>http://localhost:1313/post/arsenalisme/</loc>
         <lastmod>2014-05-31T00:46:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/git-command-stash/</loc>
+        <loc>http://localhost:1313/post/git-command-stash/</loc>
         <lastmod>2014-04-07T00:25:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/alam-semesta-berkabut/</loc>
+        <loc>http://localhost:1313/post/alam-semesta-berkabut/</loc>
         <lastmod>2014-01-06T17:10:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/jingga-dilangit-jakarta/</loc>
+        <loc>http://localhost:1313/post/jingga-dilangit-jakarta/</loc>
         <lastmod>2013-11-19T19:10:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/mendeteksi-keanehan-kegilaan-menggunakan-matematika/</loc>
+        <loc>http://localhost:1313/post/mendeteksi-keanehan-kegilaan-menggunakan-matematika/</loc>
         <lastmod>2013-05-28T17:51:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</loc>
+        <loc>http://localhost:1313/post/ctf-online-easy-crypto-easy/</loc>
         <lastmod>2013-05-20T19:30:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</loc>
+        <loc>http://localhost:1313/post/get-site-ranking-with-python-and-beautifulsoup/</loc>
         <lastmod>2012-11-21T21:21:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/newbie-using-gnuchess/</loc>
+        <loc>http://localhost:1313/post/newbie-using-gnuchess/</loc>
         <lastmod>2012-11-19T18:00:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/php-array-key-exists-or-isset/</loc>
+        <loc>http://localhost:1313/post/php-array-key-exists-or-isset/</loc>
         <lastmod>2012-04-18T06:18:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/default-value-for-return/</loc>
+        <loc>http://localhost:1313/post/default-value-for-return/</loc>
         <lastmod>2012-04-09T16:31:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</loc>
+        <loc>http://localhost:1313/post/using-keyword-as-method-in-php/</loc>
         <lastmod>2012-03-19T20:08:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</loc>
+        <loc>http://localhost:1313/post/php-menghitung-lama-eksekusi-sebuah-skrip/</loc>
         <lastmod>2012-02-25T00:00:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</loc>
+        <loc>http://localhost:1313/post/how-to-fill-constant-with-array-in-php/</loc>
         <lastmod>2012-02-20T20:12:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/no-woman-no-cry-bobmarley-lyric/</loc>
+        <loc>http://localhost:1313/post/no-woman-no-cry-bobmarley-lyric/</loc>
         <lastmod>2012-01-27T00:00:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/localstorage-dengan-html/</loc>
+        <loc>http://localhost:1313/post/localstorage-dengan-html/</loc>
         <lastmod>2012-01-17T17:17:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</loc>
+        <loc>http://localhost:1313/post/panada-membuat-halaman-login-dengan-session/</loc>
         <lastmod>2012-01-15T23:59:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/tombol-shortcut-pada-twitter/</loc>
+        <loc>http://localhost:1313/post/tombol-shortcut-pada-twitter/</loc>
         <lastmod>2012-01-10T00:00:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</loc>
+        <loc>http://localhost:1313/post/touchpad-tap-button-dengan-debian/</loc>
         <lastmod>2011-11-04T00:00:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</loc>
+        <loc>http://localhost:1313/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</loc>
         <lastmod>2011-11-01T21:19:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/let-s-go-programming-language/</loc>
+        <loc>http://localhost:1313/post/let-s-go-programming-language/</loc>
         <lastmod>2011-10-30T12:00:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</loc>
+        <loc>http://localhost:1313/post/test-speed-penggabungan-string-concat-dan-implode/</loc>
         <lastmod>2011-08-08T20:08:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</loc>
+        <loc>http://localhost:1313/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</loc>
         <lastmod>2011-08-07T20:07:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</loc>
+        <loc>http://localhost:1313/post/javascript-onclick-tag-didalam-tag-parent-and-child/</loc>
         <lastmod>2011-06-27T06:27:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</loc>
+        <loc>http://localhost:1313/post/kenapa-harus-install-ulang/</loc>
         <lastmod>2011-06-26T18:26:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</loc>
+        <loc>http://localhost:1313/post/variabel-variabels-dengan-bash-shell-script/</loc>
         <lastmod>2011-06-20T06:20:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/panada-membuat-halaman-login/</loc>
+        <loc>http://localhost:1313/post/panada-membuat-halaman-login/</loc>
         <lastmod>2011-06-19T06:19:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</loc>
+        <loc>http://localhost:1313/post/emacs-folding-kode-dengan-mouse/</loc>
         <lastmod>2011-06-13T18:13:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</loc>
+        <loc>http://localhost:1313/post/format-penulisan-file-pada-panada/</loc>
         <lastmod>2011-06-11T18:11:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/panada-hello-world/</loc>
+        <loc>http://localhost:1313/post/panada-hello-world/</loc>
         <lastmod>2011-06-09T06:09:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/setting-nginx-dan-php/</loc>
+        <loc>http://localhost:1313/post/setting-nginx-dan-php/</loc>
         <lastmod>2011-06-06T06:06:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/install-panada/</loc>
+        <loc>http://localhost:1313/post/install-panada/</loc>
         <lastmod>2011-06-03T18:03:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</loc>
+        <loc>http://localhost:1313/post/variabel-variabels-dengan-php-fungsi-dan-class/</loc>
         <lastmod>2011-06-02T06:02:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</loc>
+        <loc>http://localhost:1313/post/panada-framework-a-php-base-web-framework/</loc>
         <lastmod>2011-06-01T18:01:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</loc>
+        <loc>http://localhost:1313/post/trik-rahasia-php-yang-jarang-diketahui/</loc>
         <lastmod>2011-05-31T14:22:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/menang-iwanfals/</loc>
+        <loc>http://localhost:1313/post/menang-iwanfals/</loc>
         <lastmod>2011-05-19T09:19:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</loc>
+        <loc>http://localhost:1313/post/emacs-replace-dengan-teknik-grouping-pada-regex/</loc>
         <lastmod>2011-05-18T21:09:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/html-membuat-table-dengan-span-tableless-design/</loc>
+        <loc>http://localhost:1313/post/html-membuat-table-dengan-span-tableless-design/</loc>
         <lastmod>2011-05-17T21:19:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</loc>
+        <loc>http://localhost:1313/post/cream-vim-editor-yang-ramah/</loc>
         <lastmod>2011-05-07T17:55:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/konversi-bilangan-ip-address-dengan-php/</loc>
+        <loc>http://localhost:1313/post/konversi-bilangan-ip-address-dengan-php/</loc>
         <lastmod>2011-04-22T18:06:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-color-theme-new-theme/</loc>
+        <loc>http://localhost:1313/post/emacs-color-theme-new-theme/</loc>
         <lastmod>2011-04-11T23:09:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/</loc>
+        <loc>http://localhost:1313/post/ylmf-os-linux-rasa-windows/</loc>
         <lastmod>2011-04-06T21:21:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/fungsi-showsource-highlight-file-pada-php/</loc>
+        <loc>http://localhost:1313/post/fungsi-showsource-highlight-file-pada-php/</loc>
         <lastmod>2011-04-05T11:11:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/setting-arsip-blogspot-expand-collapse/</loc>
+        <loc>http://localhost:1313/post/setting-arsip-blogspot-expand-collapse/</loc>
         <lastmod>2011-04-01T11:11:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/menjebol-password-berbintang-m/</loc>
+        <loc>http://localhost:1313/post/menjebol-password-berbintang-m/</loc>
         <lastmod>2011-03-28T10:10:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/belajar-programming-secara-online/</loc>
+        <loc>http://localhost:1313/post/belajar-programming-secara-online/</loc>
         <lastmod>2011-03-25T15:12:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/python-dan-bilangan-prima/</loc>
+        <loc>http://localhost:1313/post/python-dan-bilangan-prima/</loc>
         <lastmod>2011-03-24T05:03:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/javascript-document-get-error-atau-menghasilkan-null/</loc>
+        <loc>http://localhost:1313/post/javascript-document-get-error-atau-menghasilkan-null/</loc>
         <lastmod>2011-03-23T15:33:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</loc>
+        <loc>http://localhost:1313/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</loc>
         <lastmod>2011-03-22T23:22:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/singkatan-recursive-emacs/</loc>
+        <loc>http://localhost:1313/post/singkatan-recursive-emacs/</loc>
         <lastmod>2011-03-21T06:44:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/kamus-on-terminal-c-version/</loc>
+        <loc>http://localhost:1313/post/kamus-on-terminal-c-version/</loc>
         <lastmod>2011-03-20T22:00:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</loc>
+        <loc>http://localhost:1313/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</loc>
         <lastmod>2011-03-19T21:07:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/jangan-ngaku-orang-minang-kalau-tidak-sholat/</loc>
+        <loc>http://localhost:1313/post/jangan-ngaku-orang-minang-kalau-tidak-sholat/</loc>
         <lastmod>2011-03-17T05:17:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-command-line-x-window/</loc>
+        <loc>http://localhost:1313/post/emacs-command-line-x-window/</loc>
         <lastmod>2011-03-16T16:16:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/bactrace-aplikasi-di-linux/</loc>
+        <loc>http://localhost:1313/post/bactrace-aplikasi-di-linux/</loc>
         <lastmod>2011-03-16T04:44:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/linux-redirection/</loc>
+        <loc>http://localhost:1313/post/linux-redirection/</loc>
         <lastmod>2011-03-15T03:15:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/</loc>
+        <loc>http://localhost:1313/post/emacs-command-line-lisp-oriented/</loc>
         <lastmod>2011-03-14T14:14:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-command-line-standard-options/</loc>
+        <loc>http://localhost:1313/post/emacs-command-line-standard-options/</loc>
         <lastmod>2011-03-13T01:13:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-command-line/</loc>
+        <loc>http://localhost:1313/post/emacs-command-line/</loc>
         <lastmod>2011-03-11T11:11:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-shorcuts/</loc>
+        <loc>http://localhost:1313/post/emacs-shorcuts/</loc>
         <lastmod>2011-03-10T10:10:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/calculator-emacs/</loc>
+        <loc>http://localhost:1313/post/calculator-emacs/</loc>
         <lastmod>2011-03-09T09:09:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/perintah-perintah-emacs-untuk-pengeditan-file/</loc>
+        <loc>http://localhost:1313/post/perintah-perintah-emacs-untuk-pengeditan-file/</loc>
         <lastmod>2011-03-08T08:08:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</loc>
+        <loc>http://localhost:1313/post/copy-paste-di-emacs-cua-mode/</loc>
         <lastmod>2011-03-07T07:07:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</loc>
+        <loc>http://localhost:1313/post/emacs-chatting-dengan-erc/</loc>
         <lastmod>2011-03-06T06:06:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/menggunakan-mouse-emacs/</loc>
+        <loc>http://localhost:1313/post/menggunakan-mouse-emacs/</loc>
         <lastmod>2011-03-05T05:05:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/mode-line-emacs/</loc>
+        <loc>http://localhost:1313/post/mode-line-emacs/</loc>
         <lastmod>2011-03-04T04:44:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/mengubah-gedit-menjadi-web-editor-powerfull/</loc>
+        <loc>http://localhost:1313/post/mengubah-gedit-menjadi-web-editor-powerfull/</loc>
         <lastmod>2011-01-30T01:17:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/syntax-highlighter-pada-blogspot-com/</loc>
+        <loc>http://localhost:1313/post/syntax-highlighter-pada-blogspot-com/</loc>
         <lastmod>2011-01-28T21:32:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/compiled-atau-interpreted/</loc>
+        <loc>http://localhost:1313/post/compiled-atau-interpreted/</loc>
         <lastmod>2011-01-27T22:33:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/kenikmatan-berbuka/</loc>
+        <loc>http://localhost:1313/post/kenikmatan-berbuka/</loc>
         <lastmod>2010-08-20T22:08:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/gnu-emacs/</loc>
+        <loc>http://localhost:1313/post/gnu-emacs/</loc>
         <lastmod>2010-07-04T19:41:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/tambun-harco/</loc>
+        <loc>http://localhost:1313/post/tambun-harco/</loc>
         <lastmod>2010-07-03T02:41:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/google-recursive/</loc>
+        <loc>http://localhost:1313/post/google-recursive/</loc>
         <lastmod>2010-06-25T23:52:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/google-translate-perl-update/</loc>
+        <loc>http://localhost:1313/post/google-translate-perl-update/</loc>
         <lastmod>2010-06-25T00:15:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/google-translate-perl/</loc>
+        <loc>http://localhost:1313/post/google-translate-perl/</loc>
         <lastmod>2010-06-23T19:56:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/opera-on-zencafe/</loc>
+        <loc>http://localhost:1313/post/opera-on-zencafe/</loc>
         <lastmod>2010-06-10T02:21:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/defacement-rasa-palestine/</loc>
+        <loc>http://localhost:1313/post/defacement-rasa-palestine/</loc>
         <lastmod>2010-06-04T01:13:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/perintah-perintah-crontab/</loc>
+        <loc>http://localhost:1313/post/perintah-perintah-crontab/</loc>
         <lastmod>2010-05-19T23:50:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/my-favorite-applications/</loc>
+        <loc>http://localhost:1313/post/my-favorite-applications/</loc>
         <lastmod>2010-05-19T18:36:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</loc>
+        <loc>http://localhost:1313/post/mencari-bilangan-prima-dengan-python/</loc>
         <lastmod>2010-05-18T23:45:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/kostumisasi-shorcut-ubuntu/</loc>
+        <loc>http://localhost:1313/post/kostumisasi-shorcut-ubuntu/</loc>
         <lastmod>2010-04-25T04:53:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/perintah-linux/</loc>
+        <loc>http://localhost:1313/post/perintah-linux/</loc>
         <lastmod>2010-04-25T04:52:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/emacs-make-all-computing-simple/</loc>
+        <loc>http://localhost:1313/post/emacs-make-all-computing-simple/</loc>
         <lastmod>2010-04-25T04:49:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/teknik-menyembunyikan-gambar-gimp/</loc>
+        <loc>http://localhost:1313/post/teknik-menyembunyikan-gambar-gimp/</loc>
         <lastmod>2010-04-25T04:49:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/was-born-enternet/</loc>
+        <loc>http://localhost:1313/post/was-born-enternet/</loc>
         <lastmod>2010-04-25T04:47:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/gedit-programming-edition/</loc>
+        <loc>http://localhost:1313/post/gedit-programming-edition/</loc>
         <lastmod>2010-01-23T19:29:00+07:00</lastmod>
     </url>
     
     <url>
-        <loc>http://blog.aredhi.com/post/kaktus-ku-mati/</loc>
+        <loc>http://localhost:1313/post/kaktus-ku-mati/</loc>
         <lastmod>0001-01-01T00:00:00+00:00</lastmod>
     </url>
     

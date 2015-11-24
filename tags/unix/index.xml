@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Unix on http://blog.aredhi.com </title>
-    <link>http://blog.aredhi.com/tags/unix/</link>
+    <link>http://localhost:1313/tags/unix/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Get absolute link on nix/linux</title>
-      <link>http://blog.aredhi.com/post/get-absolute-link-on-unix/</link>
+      <link>http://localhost:1313/post/get-absolute-link-on-unix/</link>
       <pubDate>Wed, 04 Mar 2015 09:10:00 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/get-absolute-link-on-unix/</guid>
+      <guid>http://localhost:1313/post/get-absolute-link-on-unix/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat script.sh
 #!/usr/bin/env bash
 

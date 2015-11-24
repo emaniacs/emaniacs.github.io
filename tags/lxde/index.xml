@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Lxde on http://blog.aredhi.com </title>
-    <link>http://blog.aredhi.com/tags/lxde/</link>
+    <link>http://localhost:1313/tags/lxde/</link>
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Add shortcut with lxde or openbox</title>
-      <link>http://blog.aredhi.com/post/add-shortcut-with-openbox/</link>
+      <link>http://localhost:1313/post/add-shortcut-with-openbox/</link>
       <pubDate>Tue, 13 Jan 2015 06:13:59 WIB</pubDate>
       <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/add-shortcut-with-openbox/</guid>
+      <guid>http://localhost:1313/post/add-shortcut-with-openbox/</guid>
       <description>
 
 &lt;p&gt;Edit file &lt;strong&gt;$HOME/.config/openbox/lxde-rc.xml&lt;/strong&gt; and then add your shortcut in.&lt;/p&gt;
