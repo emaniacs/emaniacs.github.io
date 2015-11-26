@@ -6,7 +6,34 @@
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Tue, 24 Nov 2015 21:02:21 WIB</updated>
+    <updated>Thu, 26 Nov 2015 17:20:15 WIB</updated>
+    
+    <item>
+      <title>cara baru minum kopi gayo</title>
+      <link>http://blog.aredhi.com/post/cara-baru-minum-kopi-gayo/</link>
+      <pubDate>Thu, 26 Nov 2015 17:20:15 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/cara-baru-minum-kopi-gayo/</guid>
+      <description>&lt;p&gt;Kebiasaan habis makan siang selalu minum kopi, karena stok kopi gayo &lt;code&gt;peaberry&lt;/code&gt;
+dan &lt;code&gt;wine&lt;/code&gt; masih banyak akhirnya saya mencoba untuk mencampur kedua jenis
+tersebut tapi dengan cara yang berbeda.&lt;/p&gt;
+
+&lt;p&gt;Biasa penggabungan kopi itu dilakukan sebelum dihaluskan, tapi kali ini saya
+melakukan dengan cara yang agak sedikit berbeda, yaitu mencampur biji kopi yang
+sudah digrind dengan yang belum.&lt;/p&gt;
+
+&lt;p&gt;Komposisinya adalah 39 biji wine yang belum digrind dicampur dengan sekitar 80
+biji &lt;code&gt;peaberry&lt;/code&gt; yang sudah digrind.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;cara baru minum kopi&#34; class=&#34;img-center&#34; src=&#34;https://lh3.googleusercontent.com/wV9Cswtr24aS8yjBq5C3KR1VM2im7SjJQUK8dhpEtigFTDE-Pw8mEShfiX1QUyWj0uH_yWPvufLh_M7g0w-YrUrqtnwHBIzaduyep8cAAvkhXXroOWHSW2gMbo_y24wNtJ2cYewp00gjh3gqTr6RPE3do7zKnHy4TCZR-2qPgw-A8VobNdyXED5zBErfPwPbdSGti6ypbEYomufDT30tNZFUIVme0xonPNGEYDa9iI-VPaVgLD_VRl6O5rHQBw6IfnQ3ntZNXtzw4l6RD4PiPaVBs-xAAq33_t0xLOaPi2bwreJTyU2WO_tdA2FHpZbPsYQjKVVzaNXd_mRiLZ04j_5Hs98gS5wtleYghfJQ9-F42wirT7D8uhbDqn7c53gZc_PoEwIhybcCDNue0CzB-cvKIYpvqbzpH5He1_jdoYtHE57Z70O5QYk479-mHUBBeVhR7MPmX8mqQaW7uZZM_Qnk-1E-_o6CKYh6yp43C6Z5Sv7hdJM3F4XeG5kDO3W5-DnaDvoryLRCz6Z7aTC8HM8iZZFUFPiQxnAH6EMkNGY=w496-h661-no&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Metode yang digunakan untuk penyajian kopi ini saya pakai &lt;code&gt;plunger&lt;/code&gt; atau yang
+lebih dikenal &lt;code&gt;french press&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Karena gayo &lt;code&gt;wine&lt;/code&gt; tipikal rasanya asem jadi rasa kopi ini ada rasa asamnya tapi
+tidak begitu terasa karena hampir kalah oleh rasa &lt;code&gt;peaberry&lt;/code&gt; yang agak pahit.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>cerpen - suara musik menjelang tidur</title>
@@ -474,83 +501,6 @@ menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt
       <guid>http://blog.aredhi.com/post/arsenalisme/</guid>
       <description>&lt;p&gt;Arsenalisme adalah sebuah paham tentang kesetiaan terhadap sesuatu yang sangat
 potensial.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Git command: stash</title>
-      <link>http://blog.aredhi.com/post/git-command-stash/</link>
-      <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
-      <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
-      <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
-ketika melakukan perintah ini.&lt;/p&gt;
-
-&lt;p&gt;Ketika melakukan aktifitas editing pada source-code yang belum selesai, tapi
-belum ingin di_commit_ dan harus pindah ke branch lain, maka perintah stash
-bisa digunakan.&lt;/p&gt;
-
-&lt;p&gt;Beberapa perintah sederhana git stash.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$ git stash&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Perintah ini akan menyimpan semua perubahan pada file yang kita edit.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$ git stash save namaStash&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Perintah ini sama dengan perintah sebelumnya namun kita menentukan sendiri
-namanya.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$ git stash list&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Perintah ini akan menampilkan daftar dari perintah stash yang pernah kita
-lakukan.&lt;/p&gt;
-
-&lt;p&gt;Contoh output:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $ git stash list&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{0}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{1}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{2}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{3}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{4}: On master: satu sampe lime&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;_&lt;br /&gt;
-_&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$ git stash apply&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Perintah ini akan mengembalikan kondisi file yang sebelumnya kita simpan,
-kondisi yang diambil adalah kondisi yang paling atas atau &lt;strong&gt;&lt;em&gt;stash@{0}&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;$ git stash apply namaStash&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Perintah ini sama dengan perintah &lt;strong&gt;git stash apply&lt;/strong&gt;, bedanya kita menentukan
-sendiri kondisi mana yang akan diaplikasikan ke repository kode kita.&lt;/p&gt;
-
-&lt;p&gt;Berikut diatas adalah beberapa perintah &lt;strong&gt;stash&lt;/strong&gt; yang sering saya gunakan,
-untuk penggunaan lebih lanjut bisa dilihat di manual dari git tentang stash
-&lt;strong&gt;$ git help stash&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;NB: Perintah stash hanya berpengaruh terhadap file yang telah ditrack oleh
-git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt;
-**&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;**Source:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://git-scm.com/book/en/Git-Tools-Stashing&#34;&gt;http://git-scm.com/book/en/Git-Tools-Stashing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
