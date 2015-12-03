@@ -74,6 +74,27 @@
                         
                         <section class="post">
                             <header class="post-header">
+                                <a href="/post/setting-nginx-dan-php/"><h2 class="post-title">Setting Nginx dan PHP</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Monday , 06 Jun 2011 06:06:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Salah satu webserver yang ringan dan responsif adalah Nginx, selain Lighttpd juga tentunya, kali ini saya mau berbagi pengalaman bagaimana membuat settingan Nginx agar bisa mengeksekusi skrip PHP, saya menggunakan settingan fastcgi untuk menjalankan Php. Hal yang pertama kali dilakukan adalah cek apakah php yang terinstall support untuk cgi atau fastcgi, yaitu dengan cara $php -v atau $php-cgi -v jika output dari perintah tersebut kurang lebih seperti ini ( terdapat kata cgi-fcgi ) maka PHP yang digunakan support dengan fastcgi, jika tidak ada keluar seperti yang digambar anda harus kompile ulang dengan menambahkan opsi --enable- fastcgi saat ./configure atau download php-cgi.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
                                 <a href="/post/install-panada/"><h2 class="post-title">Install Panada</h2></a>
 
                                 <p class="post-meta">
@@ -282,28 +303,9 @@
                             </div>
                         </section>
                         
-                        <section class="post">
-                            <header class="post-header">
-                                <a href="/post/ylmf-os-linux-rasa-windows/"><h2 class="post-title">ylmf Os, Linux Rasa Windows</h2></a>
-
-                                <p class="post-meta">
-                                    <i>Wednesday , 06 Apr 2011 21:21:00</i>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
-                                    
-                                </p>
-                            </header>
-
-                            <div class="post-description">
-                                <p>
-                                    Ylmf Os, merupakan sebuah Linux yang mirip secara tampilan dengan Windows. bahkan persis banget, meski saya sendiri tidak menyukai tampilan windows yang kurang fleksibel tapi os ini sangat bagus untuk pengenalan Linux kepada user baru yang telah terbiasa dengan Windows (mungkin kurang tepat kalau disebut menipu), sistem operasi berbasis kernel Linux 2.6.32-22.33 ini menggunakan xorg 1.7.6 dan sebagai desktop menggunakan gnome 2.30.0. Sistem operasi ini dikembangkan oleh orang China yang bernama Lailinfeng, yang berbasiskan Ubuntu 10, versi terbaru dari sistem ini adalah versi 3.0 http://www.ylmf.org/en/images/snaps/YlmfOS-8.jpg Berikut beberapa fitur dari ylmf Os yang saya kutip dari situs resminya System wine : emulator program windows untuk linux.
-                                </p>
-                            </div>
-                        </section>
-                        
 
                         <div class="pagination">
-                            <span class="info">100 posts</span>
+                            <span class="info">101 posts</span>
 
                             
                                 
@@ -373,7 +375,7 @@
                 <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
             
         </ul>
-        <p class="last-update"> Last update 2015-11-26 17:20:15 &#43;0700 WIB</p>
+        <p class="last-update"> Last update 2015-12-03 11:48:30 &#43;0700 WIB</p>
     </div>
 </div>
 
