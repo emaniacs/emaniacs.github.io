@@ -1,36 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Opini on http://blog.aredhi.com </title>
+    <title>Opini on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/opini/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Tue, 24 Nov 2015 21:02:21 WIB</updated>
-    
-    <item>
-      <title>cerpen - suara musik menjelang tidur</title>
-      <link>http://blog.aredhi.com/post/cerpen-suara-musik-menjelang-tidur/</link>
-      <pubDate>Tue, 24 Nov 2015 21:02:21 WIB</pubDate>
-      <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/cerpen-suara-musik-menjelang-tidur/</guid>
-      <description>
-
-&lt;h1 id=&#34;cerpen:1b160b2d4da4a7a1ec0fc90db6d1772a&#34;&gt;Cerpen&lt;/h1&gt;
-
-&lt;p&gt;Disebuah malam ketika sedang bersiap mau tidur, semua lampu telah dimatikan
-dengan sebuah doa aku mencoba tidur.
-Perlahan terdengar suara musik sangat sendu yang sangat pelan, suara ini
-lama-lama makin keras, seketika aku buka mata ternyata suara itu berasal dari
-handphone. :)&lt;/p&gt;
-</description>
-    </item>
+    <description>Recent content in Opini on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 May 2015 11:19:22 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/opini/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Today is a grey day</title>
       <link>http://blog.aredhi.com/post/today-is-a-grey-day/</link>
-      <pubDate>Tue, 12 May 2015 11:19:22 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 12 May 2015 11:19:22 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/today-is-a-grey-day/</guid>
       <description>&lt;p&gt;Belum genap seminggu saya pulang dari Lombok, habis mendaki Rinjani lanjut nenda di Gili Trawangan, tapi semua rongga tubuhku udah kembali terasa sesak, oleh masalah dan teman-temannya.&lt;/p&gt;
 
@@ -43,8 +26,8 @@ handphone. :)&lt;/p&gt;
     <item>
       <title>Alam semesta berkabut</title>
       <link>http://blog.aredhi.com/post/alam-semesta-berkabut/</link>
-      <pubDate>Mon, 06 Jan 2014 17:10:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 06 Jan 2014 17:10:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/alam-semesta-berkabut/</guid>
       <description>&lt;p&gt;Dalam perjalanan turun dari gunung ciremai&lt;br /&gt;
 diantara pos arban dan cigowong&lt;br /&gt;
@@ -73,8 +56,8 @@ s1600/IMG_20140105_103642_297.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>Jingga dilangit Jakarta</title>
       <link>http://blog.aredhi.com/post/jingga-dilangit-jakarta/</link>
-      <pubDate>Tue, 19 Nov 2013 19:10:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 19 Nov 2013 19:10:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/jingga-dilangit-jakarta/</guid>
       <description>&lt;p&gt;Sel Nov 19 18:51:29 WIT 2013&lt;/p&gt;
 
@@ -113,8 +96,8 @@ s320/IMG_20131119_181305_481.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>Mendeteksi keanehan/kegilaan menggunakan matematika</title>
       <link>http://blog.aredhi.com/post/mendeteksi-keanehan-kegilaan-menggunakan-matematika/</link>
-      <pubDate>Tue, 28 May 2013 17:51:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 28 May 2013 17:51:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/mendeteksi-keanehan-kegilaan-menggunakan-matematika/</guid>
       <description>
 
@@ -133,7 +116,9 @@ tidak.&lt;/p&gt;
 &lt;li&gt;Bilangan ganjil + bilangan ganjil hasilnya bilangan genap.&lt;/li&gt;
 &lt;li&gt;Bilangan ganjil + bilangan genap hasilnya bilangan ganjil.&lt;/li&gt;
 &lt;li&gt;Bilangan genap + bilangan ganjil hasilnya bilangan ganjil.&lt;/li&gt;
-&lt;li&gt;Bilangan genap + bilangan genap hasilnya bilangan genap.&lt;/li&gt;
+&lt;li&gt;Bilangan genap + bilangan genap hasilnya bilangan genap.
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Misalkan seorang yang gila berdiskusi dengan seorang yang normal, tentu saja
@@ -149,7 +134,9 @@ digabung dengan sesuatu yang tidak sama dengannya.&lt;/em&gt;&lt;/p&gt;
 &lt;li&gt;Bilangan ganjil * bilangan ganjil hasilnya bilangan ganjil.&lt;/li&gt;
 &lt;li&gt;Bilangan ganjil * bilangan genap hasilnya bilangan genap.&lt;/li&gt;
 &lt;li&gt;Bilangan genap * bilangan ganjil hasilnya bilangan genap.&lt;/li&gt;
-&lt;li&gt;Bilangan genap * bilangan genap hasilnya bilangan genap.&lt;/li&gt;
+&lt;li&gt;Bilangan genap * bilangan genap hasilnya bilangan genap.
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Kesimpulannya: &lt;em&gt;sesuatu yang aneh itu adalah jika sesuatu yang aneh
@@ -165,7 +152,9 @@ dikatakan gila, sehingga berlipat gandalah kegilaan tersebut,,,&lt;/p&gt;
 &lt;li&gt;Bilangan ganjil - bilangan ganjil hasilnya bilangan genap.&lt;/li&gt;
 &lt;li&gt;Bilangan ganjil - bilangan genap hasilnya bilangan ganjil.&lt;/li&gt;
 &lt;li&gt;Bilangan genap - bilangan ganjil hasilnya bilangan ganjil.&lt;/li&gt;
-&lt;li&gt;Bilangan genap - bilangan genap hasilnya bilangan genap.&lt;/li&gt;
+&lt;li&gt;Bilangan genap - bilangan genap hasilnya bilangan genap.
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Kesimpulannya, &lt;em&gt;sesuatu itu akan aneh apabila dibuang bagian yang tidak sama
@@ -182,7 +171,9 @@ gila, begitu juga orang yang normal jika dibuang bagian gila-nya&lt;/p&gt;
 &lt;li&gt;Bilangan ganjil / bilangan ganjil hasilnya bilangan ganjil atau bilangan berkoma.&lt;/li&gt;
 &lt;li&gt;Bilangan ganjil / bilangan genap hasilnya bilangan berkoma.&lt;/li&gt;
 &lt;li&gt;Bilangan genap / bilangan ganjil hasilnya bilangan berkoma.&lt;/li&gt;
-&lt;li&gt;Bilangan genap / bilangan genap hasilnya bilangan genap / bilangan berkoma.&lt;/li&gt;
+&lt;li&gt;Bilangan genap / bilangan genap hasilnya bilangan genap / bilangan berkoma.
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Sekarang ada jenis bilangan baru yaitu bilangan berkoma dan menurut seseorang
@@ -194,7 +185,7 @@ kelipatan dari 2.&lt;br /&gt;
 Kesimpulannya: &lt;em&gt;didalam pembagian, sesuatu itu tidak aneh hanya jika pembilang
 adalah kelipatan dari penyebut.&lt;/em&gt;&lt;br /&gt;
 _&lt;br /&gt;
-&lt;em&gt;Ini lumayan susah dibuat analoginya, silahkan anda berkreasi sendiri. _alasan
+_Ini lumayan susah dibuat analoginya, silahkan anda berkreasi sendiri. &lt;em&gt;alasan
 klasik kalo gak bisa ngejelasin sesuatu, :))&lt;/em&gt;&lt;br /&gt;
 Tapi satu yang pasti jangan mau dibagi-bagi (dipecah) karena peluang menjadi
 gila sangat besar disini.&lt;/p&gt;
@@ -207,8 +198,8 @@ Ok brother, see you next life yea&lt;/p&gt;
     <item>
       <title>Newbie using gnuchess</title>
       <link>http://blog.aredhi.com/post/newbie-using-gnuchess/</link>
-      <pubDate>Mon, 19 Nov 2012 18:00:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 19 Nov 2012 18:00:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/newbie-using-gnuchess/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-gQLo__fmT9U/UKoLnuS_OfI/AAAAAAAABDI/IDqNtPEl-
 ws/s200/Selection_015.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -291,8 +282,8 @@ komputernya).&lt;/p&gt;
     <item>
       <title>Default value for return</title>
       <link>http://blog.aredhi.com/post/default-value-for-return/</link>
-      <pubDate>Mon, 09 Apr 2012 16:31:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 09 Apr 2012 16:31:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/default-value-for-return/</guid>
       <description>&lt;p&gt;A few days ago, i try to create a code with PHP, with a function i do a return
 in function with some values and then i got a mystery about default value for
@@ -364,8 +355,8 @@ NilClass&lt;/p&gt;
     <item>
       <title>No Woman No Cry bobmarley lyric</title>
       <link>http://blog.aredhi.com/post/no-woman-no-cry-bobmarley-lyric/</link>
-      <pubDate>Fri, 27 Jan 2012 00:00:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 27 Jan 2012 00:00:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/no-woman-no-cry-bobmarley-lyric/</guid>
       <description>&lt;p&gt;Cause I remember when we used to sit&lt;br /&gt;
 In the government yard in Trenchtown&lt;br /&gt;
@@ -422,8 +413,8 @@ Copied from MetroLyrics.com&lt;/p&gt;
     <item>
       <title>Tombol Shortcut pada Twitter</title>
       <link>http://blog.aredhi.com/post/tombol-shortcut-pada-twitter/</link>
-      <pubDate>Tue, 10 Jan 2012 00:00:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 10 Jan 2012 00:00:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/tombol-shortcut-pada-twitter/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://a2.twimg.com/a/1325788954/images/logos/twitter_newbird_boxed_whiteo
 nblue.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -476,8 +467,8 @@ Jangan coba di handphone ya..!!!
     <item>
       <title>Touchpad Tap Button dengan Debian</title>
       <link>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</link>
-      <pubDate>Fri, 04 Nov 2011 00:00:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 04 Nov 2011 00:00:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/-z-YfCJD9ky0/TrQMSu3KFOI/AAAAAAAAAps/xEd
 OqxEmUTk/s1600/no-image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -502,9 +493,9 @@ settingannya, mulai dari yang paling geek yaitu dengan setting langsung di-
 &lt;p&gt;Awalnya ane tentu pilih yang paling mudah yaitu setting lewat xorg, tapi
 karena malas bikin file xorg.conf nya selain itu jika user lain yang login
 tentu mereka akan mengalami masalah yang sama juga, akhirnya ane coba setting
-lewat file &lt;strong&gt;/etc/X11/xorg.conf.d/00-enable-taps.conf **tapi ane justru ga
+lewat file **/etc/X11/xorg.conf.d/00-enable-taps.conf **tapi ane justru ga
 nemuin file tersebut, dari baca manual perintah synclient akhirnya ane tau
-kalo filenya ada di **/usr/share/X11/50-synaptics.conf&lt;/strong&gt;.&lt;/p&gt;
+kalo filenya ada di &lt;strong&gt;/usr/share/X11/50-synaptics.conf&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Setelah nemu filenya ane tambahin kode berikut (yang dibold), kemudian reload
 konfigurasinya lagi dan semuanya beres&lt;/p&gt;
@@ -522,8 +513,8 @@ EndSection
     <item>
       <title>Kenapa harus install ulang</title>
       <link>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</link>
-      <pubDate>Sun, 26 Jun 2011 18:26:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 26 Jun 2011 18:26:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-oF8IQg9FKaM/Tga8KVuIfZI/AAAAAAAAAmI/nubq1EI3aFs/
 s1600/logo-debian.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -619,8 +610,8 @@ saya adalah yang common atau kebanyakan.&lt;/p&gt;
     <item>
       <title>Menang @iwanfals</title>
       <link>http://blog.aredhi.com/post/menang-iwanfals/</link>
-      <pubDate>Thu, 19 May 2011 09:19:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Thu, 19 May 2011 09:19:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/menang-iwanfals/</guid>
       <description>&lt;p&gt;Udah dengar Lagu 4 (Menang) dari album Hijau milik Iwan Fals lum,,&lt;br /&gt;
 Asli ternyata setelah ane dengar liriknya dalam banget,, sangat menyentuh,&lt;br /&gt;
@@ -661,8 +652,8 @@ industri musik sekarang&amp;hellip;&lt;/p&gt;
     <item>
       <title>Jangan ngaku orang Minang kalau tidak sholat</title>
       <link>http://blog.aredhi.com/post/jangan-ngaku-orang-minang-kalau-tidak-sholat/</link>
-      <pubDate>Thu, 17 Mar 2011 05:17:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Thu, 17 Mar 2011 05:17:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/jangan-ngaku-orang-minang-kalau-tidak-sholat/</guid>
       <description>
 
@@ -782,8 +773,8 @@ tentu saja juga orang Minang.&lt;/p&gt;
     <item>
       <title>Syntax Highlighter pada blogspot.com</title>
       <link>http://blog.aredhi.com/post/syntax-highlighter-pada-blogspot-com/</link>
-      <pubDate>Fri, 28 Jan 2011 21:32:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 28 Jan 2011 21:32:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/syntax-highlighter-pada-blogspot-com/</guid>
       <description>&lt;p&gt;Seorang programmer sangat sering melakukan posting yang berhubungan dengan
 _source code _baik yang berupa project atau cuma sebuah sample kode. Agar kode
@@ -818,7 +809,10 @@ langkah-langkahnya:&lt;/p&gt;
 &lt;li&gt;klik &lt;strong&gt;Disain.&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Klik** Edit Html.**&lt;/li&gt;
 &lt;li&gt;centang &lt;strong&gt;Expand Widget Templates.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Sebelum tag pada file template kemudian tambahkan  baris berikut sehingga jadi seperti ini.       &lt;/li&gt;
+&lt;li&gt;Sebelum tag pada file template kemudian tambahkan  baris berikut sehingga jadi seperti ini.       
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Contoh Penggunaan kode.&lt;/strong&gt;&lt;br /&gt;
@@ -876,8 +870,8 @@ scripts/&gt;&lt;/p&gt;
     <item>
       <title>Kenikmatan Berbuka</title>
       <link>http://blog.aredhi.com/post/kenikmatan-berbuka/</link>
-      <pubDate>Fri, 20 Aug 2010 22:08:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 20 Aug 2010 22:08:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/kenikmatan-berbuka/</guid>
       <description>&lt;p&gt;Ingin tau gimana cara makan makanan enak tapi dengan harga super murah,
 sebenarnya gampang, gampang banget malahan, triknya cuma satu, JANGAN MAKAN
@@ -919,6 +913,112 @@ kemewahan itu.&lt;/p&gt;
 &lt;p&gt;Untuk saudaraku yang menangis karena tak ada yang mereka makan.&lt;br /&gt;
 Untuk saudaraku yang terisak karena meminum airmatanya&lt;br /&gt;
 Untuk saudaraku…&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tambun - Harco</title>
+      <link>http://blog.aredhi.com/post/tambun-harco/</link>
+      <pubDate>Sat, 03 Jul 2010 02:41:00 +0700</pubDate>
+      
+      <guid>http://blog.aredhi.com/post/tambun-harco/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://i919.photobucket.com/albums/ad35/chars19/blogMe/macet.jpg&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
+Hari ini abis pulang dari Harco Mangga 2 lihat komputer, W naik kereta pulang
+pergi dari stasiun Bekasi, KRL Ekonomi-AC dengan tiket Rp.4500.&lt;br /&gt;
+Perjalanan pergi tidak begitu lama, dari Tambun naik Elf kira-kira 20 menit
+udah nyampe stasiun. Naik kereta dari Bekasi ke stasiun Kampung Bandan
+berangkat jam 14:26 nyampe pas jam 15:15 lebih kurang 49 menit melewati 15
+stasiun (W tau bukan karena ngitung, meski ada rencana untuk menghitungnya,
+tapi pas lihat trayek kereta jadi akhirnya W tau ada segitu jumlah stasiun
+yang dilewati). Keretapun lumayan sepi jadi sempat duduk juga, namun akhirnya
+harus merelakan tempat duduk(^_^), dan bahkan ga ada tukang karcis lewat (wah
+kalo ga beli tiket tadi, lumayan tuh hemat 4500).&lt;/p&gt;
+
+&lt;p&gt;Pas nyampe W jalan lewat bawah jembatan diparkiran WTC Mangga 2, eh pas dah mo
+nyampe taunya jalan yang biasa W lewati itu ternyata udah ditutup dan ketika
+tanya ama petugas katanya jalan ditutup &amp;lsquo;selamanya&amp;rsquo; (wow selamanya cui, kayak
+apaan), mau ga mau harus lewat WTC nyari jalan dan hampir nyasar malah ke
+lantai 2, untung ada bapak2 yang lagi bawa bakso ngasih tau jalan. Capek muter
+nyari jalan di WTC, W balas diparkiran Harco dengan sebotol teh Sosro dan
+angka 234, begitu haus hilang langsung cabut ke Harco menuju toko langganan
+dan seperti biasa tu toko ga ada sepinya, sempat mo beli motherboard tapi ga
+jadi karena masalah waktu, coz belanja ditoko komputer tersebut harus order
+dulu dan tunggu lumayan lama (apalagi kalo rame).&lt;/p&gt;
+
+&lt;p&gt;Akhirnya jalan ke toko cd Games buat beli dvd Atlantika dan poster Point Blank
+(biar lebih ngegame warnet W, coz yang paling banyak main tu PB), satu lagi W
+beli poster Need For Speed, meski ga ada gamenya tapi W suka aja ama mobilnya
+(ini lebih ke personalitas, secara W lebih suka mobil daripada motor, makanya
+naik angkot mulu).&lt;/p&gt;
+
+&lt;p&gt;Saatnya pulang. Karena udah tau kalo jalan harus muter di WTC akhirnya W
+putusin untuk mengikuti jalur kereta untuk sampai ke stasiun, kata petugasnya
+hati-hati aja, ntar kereta dijalur itu dari depan (jangan ditiru berbahayaX),
+W sendiri milih jalan itu karena ingin buru-buru pulang (ga enak sering telat
+jaga warnetnya). Distasiun nanya ama petugas kereta mana yang duluan katanya
+Ekonomi, ya udah beli yang Ekonomi. Dan benar yang duluan keKota KRL Ekonomi,
+baru kemudian Ekonomi-AC. Tapi yang duluan berangkat ke Bekasi justru yang AC,
+karena pengen cepat pulang W putusin ganti karcis untuk ambil yang AC, buru-
+buru W naik dan udah pasti ga dapat tempat duduk, kalo ga dapat tempat duduk
+ya harus berdiri, ya nggak.&lt;/p&gt;
+
+&lt;p&gt;Berdiri di KRL Ekonomi-AC tak separah di KRL Ekonomi, dimana gerbong belakang
+tu udah diisi oleh para penjudi (soalnya mereka gelar koran buat main gaple)
+dengan suara lantang sambil ngobrol ga jelas khas pelawak Indonesia yaitu
+menertawai kejelekan teman sendiri atau malah kejelekan diri sendiri (payah
+banget, kekurangan diri sendiri ditertawain) atau obrolan biasa para lelaki
+(pasti tau kan ). Belum lagi jumlah penumpang yang banyak minta ampun, kalo
+dibandingin ikan di kaleng sarden, masih mendingan tu ikan, mana bau udah
+bercampur total, pokoknya jika anda ga kuat dengan siksaan semacam itu lebih
+baik ngorbanin 3000 Rupiah lagi buat tiket yang AC.&lt;/p&gt;
+
+&lt;p&gt;Kalo anda perempuan sebaiknya atau seharusnya naik yang AC, karena rawan
+pelecehan. Ga usah mikirin kesetaraan gender dah emang mau ditumpuk kiri kanan
+depan belakang ama lelaki yang kita ga tau dia itu berkategori bejat atau
+tidak.&lt;br /&gt;
+Kesetaraan gender itu adalah omong kosong, ga mungkin menyamakan laki-laki
+dengan perempuan. Bilang pada perempuan yang menyuarakan kesetaraan gender
+agar dia nyoba naik kereta Ekonomi pas jam sibuk abis itu dia bakal nyadar
+kalo yang dia suarakan itu adalah kesalahan.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kelebihan laki-laki adalah kekurangan perempuan, kelebihan perempuan adalah kekurangan laki-laki. Intinya mereka berbeda dan saling melengkapi.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perjalanan pulang ga ada masalah pas naik kereta, always on time meski sedikit
+macet (emang kereta ada macetnya????), sampe stasiun Bekasi jam 17 kurang
+sepuluh menit buru-buru naik Elf (lagi), nah ini dia nih yang bikin puyeng
+apalagi udah masuk jam sibuk udah pasti macet sana sini, berikut titik macet
+di jalur Stasiun Bekasi menuju Tambun.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Stasiun itu sendiri (Proyek).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bulan-bulan.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Terminal (lumayan parah).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bulak Kapal ( parah).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Indoporlen (paling parah).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tambun (parah juga).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Jadi ada 6 titik macet yang W temuin dari perjalan ini, total waktu yang W
+hitung dari stasiun ke Tambun lebih kurang 60 menit dengan catatan tidak lewat
+belakang terminal ( mungkin sampe 90 menit kalo lewat belakang).&lt;/p&gt;
+
+&lt;p&gt;Inti dari perjalanan ini adalah waktu orang di Kota seperti Bekasi atau
+Jakarta banyak terbuang di jalanan. Dan masalah utamanya adalah MACET, bahkan
+dari sebuah tulisan yang pernah W baca yaitu tentang Kota Jakarta, lebih
+kurang pertanyaannya begini &amp;ldquo;Apa yang anda ingat ketika mengingat Jakarta&amp;rdquo;.
+Total dari respondennya menjawab MACET sekitar 70%. Salah satu cara biar waktu
+dijalanan ini tetap produktif adalah usahakan agar membawa buku yang
+bermanfaat biar waktu ga terbuang percuma, atau mungkin yang lebih baik adalah
+Alquran atau kitab suci sesuai agama anda sendiri. Ini lebih baik daripada
+bengong ga karuan, atau cuma main hape ga jelas, buang buang waktu secara
+percuma.&lt;/p&gt;
+
+&lt;p&gt;Apa yang kita banggakan dari Kota Ini.?&lt;/p&gt;
 </description>
     </item>
     

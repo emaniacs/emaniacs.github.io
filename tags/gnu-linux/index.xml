@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Gnu Linux on http://blog.aredhi.com </title>
+    <title>Gnu Linux on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/gnu-linux/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Tue, 05 May 2015 11:12:00 WIB</updated>
+    <description>Recent content in Gnu Linux on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 May 2015 11:12:00 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/gnu-linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>VIm autocomplete with YouCompleteMe</title>
       <link>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</link>
-      <pubDate>Tue, 05 May 2015 11:12:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 05 May 2015 11:12:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</guid>
       <description>&lt;p&gt;Finally i use an autocomplete plugin in my vim, my choice is &lt;a href=&#34;https://github.com/Valloric/YouCompleteMe&#34;&gt;YouCompleteMe&lt;/a&gt;.
 This plugin need vim 7.34+ and python support and my vim is still 7.3 so need to recompile it.&lt;/p&gt;
@@ -42,8 +43,8 @@ $ sudo make install
     <item>
       <title>Git command: stash</title>
       <link>http://blog.aredhi.com/post/git-command-stash/</link>
-      <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 07 Apr 2014 00:25:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
       <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
 ketika melakukan perintah ini.&lt;/p&gt;
@@ -111,7 +112,12 @@ git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://git-scm.com/book/en/Git-Tools-Stashing&#34;&gt;http://git-scm.com/book/en/Git-Tools-Stashing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;
+
+&lt;br /&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -119,8 +125,8 @@ git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt
     <item>
       <title>Get site ranking with python and beautifulsoup</title>
       <link>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</link>
-      <pubDate>Wed, 21 Nov 2012 21:21:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 21 Nov 2012 21:21:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</guid>
       <description>&lt;p&gt;To get information about site, we can use &lt;a href=&#34;http://alexa.com/&#34;&gt;alexa.com&lt;/a&gt; but
 sometimes we just need some pieces of information like ranking of site global
@@ -208,8 +214,8 @@ s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;&l
     <item>
       <title>Newbie using gnuchess</title>
       <link>http://blog.aredhi.com/post/newbie-using-gnuchess/</link>
-      <pubDate>Mon, 19 Nov 2012 18:00:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 19 Nov 2012 18:00:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/newbie-using-gnuchess/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-gQLo__fmT9U/UKoLnuS_OfI/AAAAAAAABDI/IDqNtPEl-
 ws/s200/Selection_015.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -292,8 +298,8 @@ komputernya).&lt;/p&gt;
     <item>
       <title>Touchpad Tap Button dengan Debian</title>
       <link>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</link>
-      <pubDate>Fri, 04 Nov 2011 00:00:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 04 Nov 2011 00:00:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/-z-YfCJD9ky0/TrQMSu3KFOI/AAAAAAAAAps/xEd
 OqxEmUTk/s1600/no-image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -318,9 +324,9 @@ settingannya, mulai dari yang paling geek yaitu dengan setting langsung di-
 &lt;p&gt;Awalnya ane tentu pilih yang paling mudah yaitu setting lewat xorg, tapi
 karena malas bikin file xorg.conf nya selain itu jika user lain yang login
 tentu mereka akan mengalami masalah yang sama juga, akhirnya ane coba setting
-lewat file &lt;strong&gt;/etc/X11/xorg.conf.d/00-enable-taps.conf **tapi ane justru ga
+lewat file **/etc/X11/xorg.conf.d/00-enable-taps.conf **tapi ane justru ga
 nemuin file tersebut, dari baca manual perintah synclient akhirnya ane tau
-kalo filenya ada di **/usr/share/X11/50-synaptics.conf&lt;/strong&gt;.&lt;/p&gt;
+kalo filenya ada di &lt;strong&gt;/usr/share/X11/50-synaptics.conf&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Setelah nemu filenya ane tambahin kode berikut (yang dibold), kemudian reload
 konfigurasinya lagi dan semuanya beres&lt;/p&gt;
@@ -338,8 +344,8 @@ EndSection
     <item>
       <title>Shell Scripting: Increment dan Decrement nilai dengan Bash</title>
       <link>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</link>
-      <pubDate>Tue, 01 Nov 2011 21:19:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 01 Nov 2011 21:19:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-hHNti_XJi0A/TqwP40jbm1I/AAAAAAAAApA/9GqFrLF4ckA/
 s1600/increment-decrement.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -348,14 +354,14 @@ s1600/increment-decrement.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 nilai satu variabel satu tingkat dari nilai yang telah diset pada variabel
 tersebut.&lt;br /&gt;
 Misalkan kita mempunya sebuah variabel dengan nama &lt;strong&gt;_var&lt;/strong&gt; yang nilainya
-adalah &lt;strong&gt;3&lt;/strong&gt; jika kita lakukan &lt;em&gt;decrement_ maka nilai variabel tersebut
+adalah &lt;strong&gt;3&lt;/strong&gt; jika kita lakukan _decrement_ maka nilai variabel tersebut
 menjadi &lt;strong&gt;2&lt;/strong&gt; dan akan kembali menjadi **3 **jika kita melakukan proses
-_increment.&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;increment.&lt;/em&gt;&lt;br /&gt;
 _&lt;br /&gt;
 _&lt;br /&gt;
 Seperti kebanyakan bahasa pemrograman melakukan proses ini bisa dilakukan
 dengan mudah yaitu dengan menambahkan dua(2) karakter plus(+) untuk proses
-&lt;em&gt;increment_ dan minus(-) pada proses _decrement&lt;/em&gt;. Misalkan pada bahasa C
+_increment_ dan minus(-) pada proses &lt;em&gt;decrement&lt;/em&gt;. Misalkan pada bahasa C
 seperti kode berikut.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;int main() {  
@@ -397,9 +403,9 @@ _var=$(expr $x + 1)&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Menggunakan perintah &lt;strong&gt;let.&lt;/strong&gt;&lt;br /&gt;
 Meski menggunakan perintah &lt;strong&gt;let&lt;/strong&gt; tapi perintah ini bukanlah suatu program
-melainkan &lt;em&gt;built-in syntax_ dari Bash jadi perintah ini lebih cepat dari
+melainkan _built-in syntax_ dari Bash jadi perintah ini lebih cepat dari
 &lt;strong&gt;expr&lt;/strong&gt;. Perintahnya mirip dengan kebanyakan bahasa programming lainnya dalam
-melakukan operasi _increment.&lt;/em&gt;&lt;/p&gt;
+melakukan operasi &lt;em&gt;increment.&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# deklarasi variabel _var  
 &lt;/code&gt;&lt;/pre&gt;
@@ -440,8 +446,8 @@ Cara yang benar &lt;strong&gt;x=5&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Kenapa harus install ulang</title>
       <link>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</link>
-      <pubDate>Sun, 26 Jun 2011 18:26:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 26 Jun 2011 18:26:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-oF8IQg9FKaM/Tga8KVuIfZI/AAAAAAAAAmI/nubq1EI3aFs/
 s1600/logo-debian.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -537,8 +543,8 @@ saya adalah yang common atau kebanyakan.&lt;/p&gt;
     <item>
       <title>Variabel Variabels dengan Bash / Shell Script</title>
       <link>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</link>
-      <pubDate>Mon, 20 Jun 2011 06:20:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 20 Jun 2011 06:20:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
 s1600/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -636,7 +642,10 @@ bisa juga menggunakan metode ini&lt;br /&gt;
 &lt;p&gt;Referensi&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&#34;&gt;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&#34;&gt;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -644,8 +653,8 @@ bisa juga menggunakan metode ini&lt;br /&gt;
     <item>
       <title>Emacs: Folding kode dengan mouse</title>
       <link>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</link>
-      <pubDate>Mon, 13 Jun 2011 18:13:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 13 Jun 2011 18:13:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
 s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -708,8 +717,8 @@ aktif.&lt;/p&gt;
     <item>
       <title>Emacs - Replace dengan teknik Grouping pada Regex</title>
       <link>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</link>
-      <pubDate>Wed, 18 May 2011 21:09:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 18 May 2011 21:09:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KPIb2o91HNI/TdKq77SjNMI/AAAAAAAAAfs/6LKBnHhd97I/
 s200/regexp.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -811,8 +820,8 @@ expressions.info/modifiers.html&gt;&lt;/p&gt;
     <item>
       <title>Cream - Vim editor yang ramah</title>
       <link>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</link>
-      <pubDate>Sat, 07 May 2011 17:55:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sat, 07 May 2011 17:55:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</guid>
       <description>&lt;p&gt;Mendengar nama Vi(m) kita pasti ingat dengan sebuah editor mini dengan
 kemampuan yang luar biasa, begitu juga dengan Cream, editor ini menggunakan
@@ -842,7 +851,7 @@ dan lebih enak(tapi kalau kopi, saya lebih suka kopi hitam).&lt;br /&gt;
 Salah satu yang paling kelihatan adalah shorcut Cream yang mendukung mode CUA
 (Common User Access), seperti teks editor kebanyakan, dimana Ctrl+c untuk
 copy, Ctrl+x untuk cut dan bebarapa shortcut yang lainnya sesuai dengan CUA.&lt;br /&gt;
-Sesuai dengan motto Cream sendiri, yaitu &amp;ldquo;&lt;em&gt;a modern configuration of the _Vim&lt;/em&gt;
+Sesuai dengan motto Cream sendiri, yaitu &amp;ldquo;_a modern configuration of the &lt;em&gt;Vim&lt;/em&gt;
 text editor_&amp;rdquo; kostumisasi yang dilakukan pada Vim benar-benar memudahkan untuk
 melakukan editing file, selain kecepatan dulu saya tidak menyukai Vim, tapi
 dengan konfigurasi dari Cream, Vim seperti teks editor kebanyakan yang mudah
@@ -862,9 +871,9 @@ Beberapa shortcut dari Cream :&lt;/p&gt;
 Namun karena pernah mencoba Vim, tentu kenal dengan istilah Command Mode, kalo
 di Vim shortcutnya adalah titik dua(:), saya sempat kebingungan bagaimana
 untuk mengaktifkan Command Mode tersebut, setelah mencari-cari di menu saya
-menemukan di &lt;em&gt;Preferences - Behavior_ disitu ada 4(empat) mode yang disediakan
+menemukan di _Preferences - Behavior_ disitu ada 4(empat) mode yang disediakan
 yaitu Cream, Cream Lite, Vim, Vi. Untuk menggunakan command mode saya terpaksa
-menggunakan _behavior&lt;/em&gt; Vi(m) agar bisa menggunakan command mode. Ketika
+menggunakan &lt;em&gt;behavior&lt;/em&gt; Vi(m) agar bisa menggunakan command mode. Ketika
 membaca FAQ dari Cream editor ini saya menemukan ternyata shorcut untuk
 menggunakan command mode adalah &lt;strong&gt;Ctrl+L&lt;/strong&gt;.&lt;br /&gt;
 &lt;strong&gt;Cream Behavior&lt;/strong&gt;&lt;br /&gt;&lt;/li&gt;
@@ -925,8 +934,8 @@ Faq Cream&lt;/p&gt;
     <item>
       <title>ylmf Os, Linux Rasa Windows</title>
       <link>http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/</link>
-      <pubDate>Wed, 06 Apr 2011 21:21:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 06 Apr 2011 21:21:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://www.ylmf.org/static/images/logo.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -1026,8 +1035,8 @@ Cara instalasinya bisa dilihat &lt;a href=&#34;http://www.ylmf.org/en/faq.html&
     <item>
       <title>Python dan Bilangan Prima</title>
       <link>http://blog.aredhi.com/post/python-dan-bilangan-prima/</link>
-      <pubDate>Thu, 24 Mar 2011 05:03:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Thu, 24 Mar 2011 05:03:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/python-dan-bilangan-prima/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://lh6.googleusercontent.com/-GM-
 B6lnAX1s/TYYlBO7jsfI/AAAAAAAAATk/J83gpbzNvQU/s200/python-prime.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1089,8 +1098,8 @@ its&lt;a href=&#34;http://www.igos.web.id/&#34;&gt;OPENSOURCE&lt;/a&gt;&lt;/em&g
     <item>
       <title>Kirim Email GMAIL via Konsole/Terminal (ssmtp dan mail)</title>
       <link>http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</link>
-      <pubDate>Sat, 19 Mar 2011 21:07:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sat, 19 Mar 2011 21:07:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</guid>
       <description>&lt;p&gt;Salah satu menariknya Gnu/Linux (buat saya pribadi) adalah dekatnya jarak
 antara user dengan sistem itu sendiri. Salah satu jalan itu adalah dengan
@@ -1162,7 +1171,12 @@ s320/gmail.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://tombuntu.com/index.php/2008/10/21/sending-email-from-your-system-with-ssmtp/&#34;&gt;http://tombuntu.com/index.php/2008/10/21/sending-email-from-your-system-with-ssmtp/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;$ man ssmtp&lt;/li&gt;
+&lt;li&gt;$ man ssmtp
+
+&lt;br /&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1170,8 +1184,8 @@ s320/gmail.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>Emacs Command Line (X window)</title>
       <link>http://blog.aredhi.com/post/emacs-command-line-x-window/</link>
-      <pubDate>Wed, 16 Mar 2011 16:16:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 16 Mar 2011 16:16:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-command-line-x-window/</guid>
       <description>&lt;p&gt;X window yang dimaksud dalam penjelasan ini yaitu tampilan emacs ketika muncul
 dilayar.&lt;br /&gt;
@@ -1275,7 +1289,9 @@ Mengganti warna cursor&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;Referensi&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;$ emacs &amp;ndash;help&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$ emacs &amp;ndash;help&lt;/strong&gt;
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>

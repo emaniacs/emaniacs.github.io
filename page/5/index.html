@@ -14,7 +14,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title> http://blog.aredhi.com &middot; http://blog.aredhi.com </title>
+        
+            <title> http://blog.aredhi.com &middot; Sample of simple blog </title>
+        
 
         <link rel="stylesheet" href="/css/pure-min.css">
 
@@ -22,7 +24,6 @@
         <link rel="stylesheet" href="/css/blog.css">
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/default.min.css">
-        <link rel="stylesheet" href="/css/style.css">
 
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
         <link rel="shortcut icon" href="/favicon.ico">
@@ -71,94 +72,6 @@
                     <div class="posts">
                         <h1 class="content-subhead">Homepage</h1>
                         
-                        
-                        <section class="post">
-                            <header class="post-header">
-                                <a href="/post/setting-nginx-dan-php/"><h2 class="post-title">Setting Nginx dan PHP</h2></a>
-
-                                <p class="post-meta">
-                                    <i>Monday , 06 Jun 2011 06:06:00</i>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
-                                    
-                                </p>
-                            </header>
-
-                            <div class="post-description">
-                                <p>
-                                    Salah satu webserver yang ringan dan responsif adalah Nginx, selain Lighttpd juga tentunya, kali ini saya mau berbagi pengalaman bagaimana membuat settingan Nginx agar bisa mengeksekusi skrip PHP, saya menggunakan settingan fastcgi untuk menjalankan Php. Hal yang pertama kali dilakukan adalah cek apakah php yang terinstall support untuk cgi atau fastcgi, yaitu dengan cara $php -v atau $php-cgi -v jika output dari perintah tersebut kurang lebih seperti ini ( terdapat kata cgi-fcgi ) maka PHP yang digunakan support dengan fastcgi, jika tidak ada keluar seperti yang digambar anda harus kompile ulang dengan menambahkan opsi --enable- fastcgi saat ./configure atau download php-cgi.
-                                </p>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <header class="post-header">
-                                <a href="/post/install-panada/"><h2 class="post-title">Install Panada</h2></a>
-
-                                <p class="post-meta">
-                                    <i>Friday , 03 Jun 2011 18:03:00</i>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/panada">panada</a>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
-                                    
-                                </p>
-                            </header>
-
-                            <div class="post-description">
-                                <p>
-                                    Seperti instalasi Framework lainnya, cukup mudah untuk melakukan instalasi Framework ini,, Langkah-langkah instalasi Panada Download Panada Framework disini. Extrak dan copy ke direktory server. Dalam hal ini saya menggunakan Apache di Linux, dimana direktorinya adalah /var/www/, saya membuat sebuah direktori lagi yaitu panada, edit file config (/apps/config.php). Sebenarnya langkah ini bisa dilewati, jika hanya ingin melakukan testing pada instalasi. Bagian yang paling penting jika menggunakan database adalah pada database configuration,, isi driver, host, username, password dan database sesuai konfigurasi pada database yang digunakan.
-                                </p>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <header class="post-header">
-                                <a href="/post/variabel-variabels-dengan-php-fungsi-dan-class/"><h2 class="post-title">Variabel Variabels dengan PHP (fungsi dan class)</h2></a>
-
-                                <p class="post-meta">
-                                    <i>Thursday , 02 Jun 2011 06:02:00</i>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
-                                    
-                                </p>
-                            </header>
-
-                            <div class="post-description">
-                                <p>
-                                    Dengan PHP kita bisa mengambil sebuah nilai atau mengisi nilai pada sebuah variabel yang ditandai dengan dollar($), simbol ini merupakan simbol variabel dalam PHP. Selain melakukan 2 hal diatas, kita juga bisa membuat sebuah variabel dari sebuah nilai yang ada pada variabel, artinya jika var bernilai satu, var adalah variabel dan satu adalah nilai, dan jika kita memanggil variabel var maka yang keluar adalah **satu. **Dengan Variabel Variabels nya PHP kita bisa membuat sebuah variabel yang bernama satu dengan nilai yang bisa kita tentukan sendiri.
-                                </p>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <header class="post-header">
-                                <a href="/post/panada-framework-a-php-base-web-framework/"><h2 class="post-title">Panada Framework, A PHP 5 Base Web Framework</h2></a>
-
-                                <p class="post-meta">
-                                    <i>Wednesday , 01 Jun 2011 18:01:00</i>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/panada">panada</a>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
-                                    
-                                </p>
-                            </header>
-
-                            <div class="post-description">
-                                <p>
-                                    Berdasarkan dokumentasi Panada, framework ini adalah framework sederhana dan simple untuk pembuatan website berbasiskan PHP 5. Panada dikembangkan dengan tujuan membantu para pengembang website untuk bekerja lebih cepat, lebih mudah dan lebih alamiah dalam penulisan kode. Framework ini ditulis oleh Iskandar Soesman, seorang Software Engineer yang bekerja di Kompas.com dan detik.com, ini adalah framework pertama yang dirilis asli bikinan Indonesia. Panada merupakan framework opensource yang berlisensi BSD- License, artinya semua orang bebas menggunakannya baik untuk komersil atau non-komersil.
-                                </p>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <header class="post-header">
@@ -303,9 +216,89 @@
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/ylmf-os-linux-rasa-windows/"><h2 class="post-title">ylmf Os, Linux Rasa Windows</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Wednesday , 06 Apr 2011 21:21:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Ylmf Os, merupakan sebuah Linux yang mirip secara tampilan dengan Windows. bahkan persis banget, meski saya sendiri tidak menyukai tampilan windows yang kurang fleksibel tapi os ini sangat bagus untuk pengenalan Linux kepada user baru yang telah terbiasa dengan Windows (mungkin kurang tepat kalau disebut menipu), sistem operasi berbasis kernel Linux 2.6.32-22.33 ini menggunakan xorg 1.7.6 dan sebagai desktop menggunakan gnome 2.30.0. Sistem operasi ini dikembangkan oleh orang China yang bernama Lailinfeng, yang berbasiskan Ubuntu 10, versi terbaru dari sistem ini adalah versi 3.0 http://www.ylmf.org/en/images/snaps/YlmfOS-8.jpg Berikut beberapa fitur dari ylmf Os yang saya kutip dari situs resminya System wine : emulator program windows untuk linux.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/fungsi-showsource-highlight-file-pada-php/"><h2 class="post-title">fungsi showsource / highlight_file pada PHP</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Tuesday , 05 Apr 2011 11:11:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Pada bahasa Php banyak sekali fungsi-fungsi yang telah siap pakai, salah satu fungsi yang jarang dipakai yaitu **showsource, **fungsi ini berguna untuk memberikan highlight pada source code yang ingin kita lihat, kalo dilihat dari manual Php fungsi ini merupakan alias dari fungsi highlight_file. Parameter Fungsi showsource ( string $filename [, bool $return = false ] ) contoh penggunaan : $filename = &quot;info.php&quot;; showsource($filename); ?&gt; fungsi ini sendiri ditambahkan pada versi 4.2.0.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/setting-arsip-blogspot-expand-collapse/"><h2 class="post-title">Setting arsip blogspot ( Expand Collapse )</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Friday , 01 Apr 2011 11:11:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Blog Archive atau arsip blog pada blogspot merupakan salah fitur pada blogspot.com yang sangat bermanfaat, gadget ini adalah indeks postingan kita berdasarkan bulanan, mingguan atau harian. Secara default tampilannya adalah terbuka pada setiap postingannya atau auto expand, hal ini sebenarnya cukup bagus, tapi juga mengganggu tampilan blog ketika pertama dibuka, karena jika postingan telah sangat banyak maka akan sangat banyak link2 yang akan memenuhi halaman blog kita, meskipun sebenarnya bisa diatur berapa jumlah postingan yang akan ditampilkan.
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
+                                <a href="/post/menjebol-password-berbintang-m/"><h2 class="post-title">Menjebol password berbintang, m****</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Monday , 28 Mar 2011 10:10:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/hacking">hacking</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Pernah menemukan kondisi dimana suatu browser udah terbuka pada suatu situs yang memerlukan login, dan asiknya lagi username dan password telah diisi? Jika sering main ke warnet2, hal ini pasti sering ditemui. Enak tinggal klik login maka kita akan masuk ke halaman user yang telah diisi tersebut, selain itu pasti juga pernah berpikiran ini passwordnya apa ya… Ya kita tidak apa sebenarnya password tersebut, karena semua karakter pada password tersebut telah diganti dengan tanda bintang atau karakter lainnya.
+                                </p>
+                            </div>
+                        </section>
+                        
 
                         <div class="pagination">
-                            <span class="info">101 posts</span>
+                            <span class="info">97 posts</span>
 
                             
                                 
@@ -353,11 +346,6 @@
                                     <a href="/page/9" class="pure-button ">9</a>
                                 
                             
-                                
-                                
-                                    <a href="/page/10" class="pure-button ">10</a>
-                                
-                            
                         </div>
                     </div>
 
@@ -375,7 +363,7 @@
                 <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
             
         </ul>
-        <p class="last-update"> Last update 2015-12-03 11:48:30 &#43;0700 WIB</p>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
     </div>
 </div>
 

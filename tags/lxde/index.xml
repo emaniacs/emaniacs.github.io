@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Lxde on http://blog.aredhi.com </title>
+    <title>Lxde on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/lxde/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Tue, 13 Jan 2015 06:13:59 WIB</updated>
+    <description>Recent content in Lxde on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Jan 2015 06:13:59 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/lxde/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Add shortcut with lxde or openbox</title>
       <link>http://blog.aredhi.com/post/add-shortcut-with-openbox/</link>
-      <pubDate>Tue, 13 Jan 2015 06:13:59 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 13 Jan 2015 06:13:59 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/add-shortcut-with-openbox/</guid>
       <description>
 

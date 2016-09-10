@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Gnu Emacs on http://blog.aredhi.com </title>
+    <title>Gnu Emacs on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/gnu-emacs/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Mon, 13 Jun 2011 18:13:00 WIB</updated>
+    <description>Recent content in Gnu Emacs on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jun 2011 18:13:00 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/gnu-emacs/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Emacs: Folding kode dengan mouse</title>
       <link>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</link>
-      <pubDate>Mon, 13 Jun 2011 18:13:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 13 Jun 2011 18:13:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
 s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -75,8 +76,8 @@ aktif.&lt;/p&gt;
     <item>
       <title>Emacs - Replace dengan teknik Grouping pada Regex</title>
       <link>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</link>
-      <pubDate>Wed, 18 May 2011 21:09:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 18 May 2011 21:09:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KPIb2o91HNI/TdKq77SjNMI/AAAAAAAAAfs/6LKBnHhd97I/
 s200/regexp.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -178,8 +179,8 @@ expressions.info/modifiers.html&gt;&lt;/p&gt;
     <item>
       <title>Emacs Color Theme ( new Theme )</title>
       <link>http://blog.aredhi.com/post/emacs-color-theme-new-theme/</link>
-      <pubDate>Mon, 11 Apr 2011 23:09:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 11 Apr 2011 23:09:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-color-theme-new-theme/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-S1AZ7cPt5xA/TaMcWqeeOsI/AAAAAAAAAXo/XgQdIUXq9L0/
 s1600/emacs-logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -284,8 +285,8 @@ dengan menggunakan color-theme generatornya disini &lt;http://alexpogosyan.com
     <item>
       <title>Singkatan Recursive ( Emacs )</title>
       <link>http://blog.aredhi.com/post/singkatan-recursive-emacs/</link>
-      <pubDate>Mon, 21 Mar 2011 06:44:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 21 Mar 2011 06:44:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/singkatan-recursive-emacs/</guid>
       <description>&lt;p&gt;Judul diatas merupakan salah kebiasaan unik dari hacker, yaitu Singkatan
 Rekursif, atau singkatan yang memanggil dirinya sendiri. Tulisan ini saya
@@ -402,8 +403,8 @@ Eight Megabytes And Constantly Swapping**&lt;/p&gt;
     <item>
       <title>Emacs Command Line (X window)</title>
       <link>http://blog.aredhi.com/post/emacs-command-line-x-window/</link>
-      <pubDate>Wed, 16 Mar 2011 16:16:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 16 Mar 2011 16:16:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-command-line-x-window/</guid>
       <description>&lt;p&gt;X window yang dimaksud dalam penjelasan ini yaitu tampilan emacs ketika muncul
 dilayar.&lt;br /&gt;
@@ -507,7 +508,9 @@ Mengganti warna cursor&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;Referensi&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;$ emacs &amp;ndash;help&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$ emacs &amp;ndash;help&lt;/strong&gt;
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
@@ -516,8 +519,8 @@ Mengganti warna cursor&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Emacs Command line – (Lisp Oriented)</title>
       <link>http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/</link>
-      <pubDate>Mon, 14 Mar 2011 14:14:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 14 Mar 2011 14:14:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-eKl6-EdJx5E/TY9qnfG_uJI/AAAAAAAAAWA/ohIyQE790h4/
 s1600/gnu-head-sm.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -538,9 +541,9 @@ mengeksekusinya. Namun bedanya perl atau python adalah program untuk
 menerjemahkan bahasa itu sendiri tanpa adanya editor, kalaupun ada tidak
 selengkap Emacs atau Vi .&lt;/p&gt;
 
-&lt;p&gt;Jika ingin mengeksekusi Lisp &lt;em&gt;function_ dengan menggunakan emacs maka kita
+&lt;p&gt;Jika ingin mengeksekusi Lisp _function_ dengan menggunakan emacs maka kita
 tidak harus menyertakan opsi –batch, jadi _Lisp Oriented_ ini bisa juga
-disebut dengan _Batch mode&lt;/em&gt;.&lt;/p&gt;
+disebut dengan &lt;em&gt;Batch mode&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Opsi dasar untuk Lisp oriented :&lt;/p&gt;
 
@@ -548,7 +551,9 @@ disebut dengan _Batch mode&lt;/em&gt;.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;-f function, –funcall function&lt;/strong&gt; Opsi ini akan memanggil fungsi-fungsi yang terdapat pada Emacs.&lt;br /&gt;
 Misalkan kita ingin bermain game snake ketika emacs pertama kali dijalankan,
 berikut perintah yang diberikan :&lt;br /&gt;
-&lt;strong&gt;_ $emacs -f snake_&lt;/strong&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;strong&gt;_ $emacs -f snake_&lt;/strong&gt;&lt;br /&gt;
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-CDBONlUNL7g/TY9qnL6KdDI/AAAAAAAAAV8/QvpSlcqvvmc/
@@ -586,8 +591,8 @@ awal file.&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Emacs Command line – (Standard Options)</title>
       <link>http://blog.aredhi.com/post/emacs-command-line-standard-options/</link>
-      <pubDate>Sun, 13 Mar 2011 01:13:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 13 Mar 2011 01:13:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-command-line-standard-options/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-H0ynPXoLovY/TY9qm3hwvOI/AAAAAAAAAV4/rBG7Bq6iYCo/
 s320/emacs--help.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -656,8 +661,8 @@ Menampilkan help/bantuan dari emacs dan keluar aplikasi.&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Emacs Command Line</title>
       <link>http://blog.aredhi.com/post/emacs-command-line/</link>
-      <pubDate>Fri, 11 Mar 2011 11:11:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 11 Mar 2011 11:11:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-command-line/</guid>
       <description>
 
@@ -679,7 +684,7 @@ slash&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Untuk melihat apa saja perintah yang dimengerti oleh program bisa dengan
 mengetikan program dengan argument &lt;strong&gt;–help&lt;/strong&gt; atau &lt;strong&gt;-h&lt;/strong&gt;, misalkan: &lt;strong&gt;&lt;code&gt;$emacs
---help&lt;/code&gt;&lt;strong&gt; selain itu bisa juga dengan perintah manual (&lt;/strong&gt;&lt;code&gt;$man emacs&lt;/code&gt;&lt;/strong&gt;) untuk
+--help&lt;/code&gt;&lt;/strong&gt; selain itu bisa juga dengan perintah manual (&lt;strong&gt;&lt;code&gt;$man emacs&lt;/code&gt;&lt;/strong&gt;) untuk
 mesin *nix, sedangkan untuk Windows penulis tidak tahu atau malah tidak ada.&lt;/p&gt;
 
 &lt;h2 id=&#34;emacs-options:781bbcd01c0cf8ab9d544defcd7dcad6&#34;&gt;Emacs Options&lt;/h2&gt;
@@ -774,7 +779,12 @@ digunakan oleh Emacs.&lt;/p&gt;
 &lt;li&gt;–iconic&lt;/li&gt;
 &lt;li&gt;-nbc, –no-blinking-cursor&lt;/li&gt;
 &lt;li&gt;-nw, –no-window-system&lt;/li&gt;
-&lt;li&gt;-D, –basic-display&lt;/li&gt;
+&lt;li&gt;-D, –basic-display
+&lt;br /&gt;
+&lt;br /&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -782,8 +792,8 @@ digunakan oleh Emacs.&lt;/p&gt;
     <item>
       <title>Emacs Shorcuts</title>
       <link>http://blog.aredhi.com/post/emacs-shorcuts/</link>
-      <pubDate>Thu, 10 Mar 2011 10:10:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Thu, 10 Mar 2011 10:10:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-shorcuts/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-epd9Kfm92uw/TY9z9CMYMVI/AAAAAAAAAWU/xSXyE9QbZwM/
 s200/shorcuts.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -826,8 +836,8 @@ kemudian ketikkan nama file yang ingin dibuka, gunakan Tab untuk mempercepat
 pencarian file.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;C-s&lt;br /&gt;
-==&amp;gt; mencari kata atau karakter pada &lt;em&gt;buffer_ (file yang sedang dibuka) kearah
-bawah ( baris berikuynya), C-r untuk mencari dari bawah keatas -_case
+==&amp;gt; mencari kata atau karakter pada _buffer_ (file yang sedang dibuka) kearah
+bawah ( baris berikuynya), C-r untuk mencari dari bawah keatas -&lt;em&gt;case
 sensitive&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;C-x C-s&lt;br /&gt;
@@ -964,8 +974,8 @@ Undo&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Calculator – Emacs</title>
       <link>http://blog.aredhi.com/post/calculator-emacs/</link>
-      <pubDate>Wed, 09 Mar 2011 09:09:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 09 Mar 2011 09:09:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/calculator-emacs/</guid>
       <description>
 
@@ -987,8 +997,8 @@ server&lt;em&gt;irc.freenode.net&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;simple-calculator:3e4ddc22b07d7158f91e0a0e0ac4aa17&#34;&gt;Simple Calculator.&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;Simple calculator_ dapat dipanggil dengan mengklik pada &lt;strong&gt;&lt;code&gt;Tools -&amp;gt; Simple
-Calculator&lt;/code&gt;&lt;strong&gt;, atau dengan &lt;/strong&gt;&lt;code&gt;M-x calculator&lt;/code&gt;&lt;/strong&gt;. Akan muncul sebuah _buffer&lt;/em&gt;
+&lt;p&gt;_Simple calculator_ dapat dipanggil dengan mengklik pada &lt;strong&gt;&lt;code&gt;Tools -&amp;gt; Simple
+Calculator&lt;/code&gt;&lt;/strong&gt;, atau dengan &lt;strong&gt;&lt;code&gt;M-x calculator&lt;/code&gt;&lt;/strong&gt;. Akan muncul sebuah &lt;em&gt;buffer&lt;/em&gt;
 kecil diatas &lt;em&gt;minibuffer&lt;/em&gt;, disini kita bisa mengetikkan perintah matematika.
 Selain itu juga bisa menggunakan tanda kurung untuk mengelompokan sebuah
 operasi matematika.&lt;/p&gt;
@@ -1006,8 +1016,8 @@ temui secara fisik. Banyak sekali fungsi-fungsi matematika yang bisa dilakukan
 dengan kalkulator ini. Mulai dari fungsi &lt;em&gt;aritmethic&lt;/em&gt;, &lt;em&gt;scientific&lt;/em&gt;,
 &lt;em&gt;algebra&lt;/em&gt;, &lt;em&gt;graphic&lt;/em&gt;, bahkan &lt;em&gt;vector&lt;/em&gt;. Fitur ini bisa dilihat di menu calc
 ketika makro ini telah dipanggil. Pemanggilan makro ini bisa dengan mengklik
-menu &lt;strong&gt;&lt;code&gt;Tool -&amp;gt; Programmable Calculato&lt;/code&gt;r&lt;strong&gt;, atau bisa juga dengan &lt;/strong&gt;&lt;code&gt;M-x
-calc&lt;/code&gt;&lt;strong&gt; atau dengan shorcut &lt;/strong&gt;&lt;code&gt;C-x *&lt;/code&gt;&lt;/strong&gt; diikuti dengan satu karakter. Berikut
+menu &lt;strong&gt;&lt;code&gt;Tool -&amp;gt; Programmable Calculato&lt;/code&gt;r&lt;/strong&gt;, atau bisa juga dengan &lt;strong&gt;&lt;code&gt;M-x
+calc&lt;/code&gt;&lt;/strong&gt; atau dengan shorcut &lt;strong&gt;&lt;code&gt;C-x *&lt;/code&gt;&lt;/strong&gt; diikuti dengan satu karakter. Berikut
 karakter yang bisa diterima :&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1023,12 +1033,12 @@ Start kalkulator tapi tetap pada _buffer_ yang aktif.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;C-x * B&lt;br /&gt;
 &lt;em&gt;Fullscreen mode.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;em&gt;C-x * Q&lt;br /&gt;
-_Quick mode&lt;/em&gt;, &lt;em&gt;minibuffer_ akan aktif dan masukkan operasi matematika misalkan
+&lt;li&gt;&lt;p&gt;_C-x * Q&lt;br /&gt;
+&lt;em&gt;Quick mode&lt;/em&gt;, _minibuffer&lt;em&gt; akan aktif dan masukkan operasi matematika misalkan
 “sin(90)” outputnya 1.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;em&gt;C-x * K&lt;br /&gt;
-Menggunakan _keypad mode_ seperti pada gambar, persis seperti kalkulator GUI
+&lt;li&gt;&lt;p&gt;_C-x * K&lt;br /&gt;
+Menggunakan _keypad mode&lt;em&gt; seperti pada gambar, persis seperti kalkulator GUI
 mode tapi menggunakan teks sebagai tombol-tombol angkanya, klik kiri untuk
 mengklik tombol dan klik kanan untuk mengganti fungsi yang ada.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1038,7 +1048,7 @@ s320/emacs-calc-keypad.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;C-x * E&lt;br /&gt;
-Menggunakan &lt;em&gt;calculator_ dengan _embedded mode&lt;/em&gt;, yaitu fungsi kalkulator aktif
+Menggunakan _calculator_ dengan &lt;em&gt;embedded mode&lt;/em&gt;, yaitu fungsi kalkulator aktif
 di _buffer_ yang sedang diedit, bisa juga langsung menggunakannya dengan
 menyeleksi kata terlebih dahulu,misalkan kalimat 2 + 5 terseleksi, kemudian
 ketikkan shorcut ini, maka kalimat ini akan langsung diganti dengan angka 7.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
@@ -1078,8 +1088,8 @@ tanda petik tunggal (‘) kemudian diikuti dengan operasi matematika.&lt;/p&gt;
     <item>
       <title>Perintah Perintah Emacs untuk pengeditan file</title>
       <link>http://blog.aredhi.com/post/perintah-perintah-emacs-untuk-pengeditan-file/</link>
-      <pubDate>Tue, 08 Mar 2011 08:08:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 08 Mar 2011 08:08:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/perintah-perintah-emacs-untuk-pengeditan-file/</guid>
       <description>&lt;p&gt;Berikut ini ada beberapa perintah Emacs yang saya ketahui, yang cukup berguna
 ketika melakukan pengeditan pada file.&lt;/p&gt;
@@ -1161,8 +1171,8 @@ shorcuts.html&#34;&gt;disini&lt;/a&gt;&lt;/p&gt;
     <item>
       <title>Copy Paste di Emacs (CUA mode)</title>
       <link>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</link>
-      <pubDate>Mon, 07 Mar 2011 07:07:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 07 Mar 2011 07:07:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</guid>
       <description>&lt;p&gt;Dalam kebanyakan editor saat ini, untuk melakukan copy paste digunakan shorcut
 Control-c untuk copy, C-v untuk paste dan C-x untuk cut. Sedangkan Emacs yang
@@ -1192,16 +1202,16 @@ file ~/.emacs dan menambahkan baris berikut :&lt;/p&gt;
 yang kita copy tetap terseleksi, seperti halnya banyak teks editor.&lt;/p&gt;
 
 &lt;p&gt;Selain itu cua-mode masih mendukung penyimpanan ke register, yaitu dengan
-menggunakan shorcut &lt;strong&gt;&lt;code&gt;C-1 C-c&lt;/code&gt;** untuk menyimpan ke register 1, kemudian
-**&lt;code&gt;C-1 C-v&lt;/code&gt;&lt;/strong&gt; untuk paste teks yang ada di register 2.&lt;/p&gt;
+menggunakan shorcut &lt;strong&gt;&lt;code&gt;C-1 C-c&lt;/code&gt;&lt;/strong&gt; untuk menyimpan ke register 1, kemudian
+&lt;strong&gt;&lt;code&gt;C-1 C-v&lt;/code&gt;&lt;/strong&gt; untuk paste teks yang ada di register 2.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Emacs Chatting dengan ERC</title>
       <link>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</link>
-      <pubDate>Sun, 06 Mar 2011 06:06:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 06 Mar 2011 06:06:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</guid>
       <description>&lt;p&gt;Sekali lagi Emacs bukan teks editor biasa, bahkan kadang disebut sebagai
 sistem operasi, karna saking lengkapnnya aplikasi dan plugin2 emacs. Salah
@@ -1213,10 +1223,10 @@ merupakan bagian dari GNU Project, dan alamat home projectnya
 &lt;a href=&#34;http://savannah.gnu.org/projects/erc/&#34;&gt;disini&lt;/a&gt;. Versi terbaru saat tulisan
 ini dibuat adalah versi 5.3.&lt;/p&gt;
 
-&lt;p&gt;Untuk menjalankan Erc bisa dengan &lt;strong&gt;&lt;code&gt;M-x erc RET&lt;/code&gt;&lt;strong&gt;, maka minibuffer akan
+&lt;p&gt;Untuk menjalankan Erc bisa dengan &lt;strong&gt;&lt;code&gt;M-x erc RET&lt;/code&gt;&lt;/strong&gt;, maka minibuffer akan
 aktif dan menanyakan beberapa hal diantaranya server yang akan digunakan port,
 username dan password. Seperti halnya Emacs yang customizable begitu juga
-dengan Erc ini yang datang dengan berbagai module yang diambil dari &lt;/strong&gt;&lt;code&gt;M-x
+dengan Erc ini yang datang dengan berbagai module yang diambil dari &lt;strong&gt;&lt;code&gt;M-x
 customize-variable Ret erc-modules&lt;/code&gt;&lt;/strong&gt;, diantaranya :&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1267,8 +1277,8 @@ s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>Menggunakan Mouse (Emacs)</title>
       <link>http://blog.aredhi.com/post/menggunakan-mouse-emacs/</link>
-      <pubDate>Sat, 05 Mar 2011 05:05:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sat, 05 Mar 2011 05:05:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/menggunakan-mouse-emacs/</guid>
       <description>
 
@@ -1302,7 +1312,9 @@ dilakukan.&lt;/p&gt;
 &lt;li&gt;mouse 2&lt;/li&gt;
 &lt;li&gt; mouse 3&lt;/li&gt;
 &lt;li&gt;mouse 4&lt;/li&gt;
-&lt;li&gt;mouse 5&lt;/li&gt;
+&lt;li&gt;mouse 5
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&#34;mouse-1-klik-kiri:111eb7ab6d40e41c347acf46bbe0a097&#34;&gt;Mouse 1 (Klik Kiri)&lt;/h2&gt;
@@ -1371,8 +1383,8 @@ pada keyboard seperti Alt atau Control.&lt;/em&gt;&lt;/p&gt;
     <item>
       <title>Mode Line (Emacs)</title>
       <link>http://blog.aredhi.com/post/mode-line-emacs/</link>
-      <pubDate>Fri, 04 Mar 2011 04:44:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 04 Mar 2011 04:44:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/mode-line-emacs/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-n5yHVAqmYj8/TY9z82yNdjI/AAAAAAAAAWQ/Ni8ipLLmeRY/
 s1600/emacs-modeline.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1401,22 +1413,22 @@ completion code.Format mode line adalah seperti ini :&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;-  
 karakter dash(-). tidak berarti.&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;`CS&lt;br /&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;CS  
 Coding System, satu karakter penanda, jika karakternya dash (-) berarti
-menggunakan karakter ascii standar. Kode karakter Untuk coding system:&lt;br /&gt;
-**U — utf-8 (alias: mule-utf-8)&lt;/strong&gt;&lt;br /&gt;
-UTF-8 (no signature (BOM))&lt;br /&gt;
-&lt;strong&gt;c — chinese-iso-8bit (alias: cn-gb-2312 euc-china euc-cn cn-gb gb2312)&lt;/strong&gt;&lt;br /&gt;
-ISO 2022 based EUC encoding for Chinese GB2312 (MIME:GB2312).&lt;br /&gt;
-&lt;strong&gt;1 — iso-latin-1 (alias: iso-8859-1 latin-1)&lt;/strong&gt;&lt;br /&gt;
-ISO 2022 based 8-bit encoding for Latin-1 (MIME:ISO-8859-1).&lt;br /&gt;
-&lt;strong&gt;B — chinese-big5 (alias: big5 cn-big5 cp950)&lt;/strong&gt;BIG5 8-bit encoding for Chinese (MIME:Big5)&lt;br /&gt;
-&lt;strong&gt;J — iso-2022-jp (alias: junet)&lt;/strong&gt;ISO 2022 based 7bit encoding for Japanese (MIME:ISO-2022-JP).&lt;br /&gt;
-&lt;strong&gt;S — japanese-shift-jis (alias: shift_jis sjis)&lt;/strong&gt;Shift-JIS 8-bit encoding for Japanese (MIME:SHIFT_JIS)&lt;br /&gt;
-&lt;strong&gt;Z — euc-tw (alias: euc-taiwan)&lt;/strong&gt;ISO 2022 based EUC encoding for Chinese CNS11643.&lt;br /&gt;
+menggunakan karakter ascii standar. Kode karakter Untuk coding system:  
+**U — utf-8 (alias: mule-utf-8)**  
+UTF-8 (no signature (BOM))  
+**c — chinese-iso-8bit (alias: cn-gb-2312 euc-china euc-cn cn-gb gb2312)**  
+ISO 2022 based EUC encoding for Chinese GB2312 (MIME:GB2312).  
+**1 — iso-latin-1 (alias: iso-8859-1 latin-1)**  
+ISO 2022 based 8-bit encoding for Latin-1 (MIME:ISO-8859-1).  
+**B — chinese-big5 (alias: big5 cn-big5 cp950)**BIG5 8-bit encoding for Chinese (MIME:Big5)  
+**J — iso-2022-jp (alias: junet)**ISO 2022 based 7bit encoding for Japanese (MIME:ISO-2022-JP).  
+**S — japanese-shift-jis (alias: shift_jis sjis)**Shift-JIS 8-bit encoding for Japanese (MIME:SHIFT_JIS)  
+**Z — euc-tw (alias: euc-taiwan)**ISO 2022 based EUC encoding for Chinese CNS11643.  
 Daftar diatas hanyalah sebagian kecil dari coding-system yang didukung oleh
-Emacs, untuk lebih lengkapnya bisa dilihat dengan menggunakan perintah &lt;code&gt;**M-x
-RET list-coding-system**&lt;/code&gt;.`**&lt;/p&gt;&lt;/li&gt;
+Emacs, untuk lebih lengkapnya bisa dilihat dengan menggunakan perintah &lt;/code&gt;&lt;/strong&gt;M-x
+RET list-coding-system&lt;strong&gt;&lt;code&gt;.&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;:  
 Sebagai pembatas.&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
@@ -1452,14 +1464,14 @@ BUF adalah nama buffer atau file yang sedang diedit.&lt;/code&gt;&lt;/strong&gt;
 Posisi cursor sedang aktif, “ALL” berarti semua file terlihat di monitor,
 “TOP” untuk posisi awal file, “BOT” posisi akhir file, dan untuk posisi
 lainnya ditulis dengan persen. Untuk mengetahui dimana posisi file atau
-karakter bisa dengan menggunakan &lt;/code&gt;&lt;strong&gt;M-x what-page RET&lt;/strong&gt;` untuk melihat status
-halaman dan &lt;/strong&gt;&lt;code&gt;M-x what-line RET&lt;/code&gt;&lt;strong&gt; untuk status baris.`&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+karakter bisa dengan menggunakan &lt;/code&gt;&lt;/strong&gt;M-x what-page RET&lt;strong&gt;&lt;code&gt; untuk melihat status
+halaman dan **&lt;/code&gt;M-x what-line RET&lt;code&gt;** untuk status baris.&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;`LINE&lt;br /&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;LINE  
 Posisi baris aktif, ditulis dengan format L. Jadi jika L5 berarti cursor di
-baris kelima.&lt;br /&gt;
-Jika mengaktifkan column-mode (&lt;/strong&gt;&lt;code&gt;M-x column-mode RET&lt;/code&gt;&lt;strong&gt;), maka formatnya
-adalah “(baris,kolom)”`&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+baris kelima.  
+Jika mengaktifkan column-mode (**&lt;/code&gt;M-x column-mode RET&lt;code&gt;**), maka formatnya
+adalah “(baris,kolom)”&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;(MAJOR MINOR)  
 Untuk minor-mode kadang diisi dengan banyak kata sebagai tanda aktif dari
@@ -1471,7 +1483,7 @@ Akhir dari mode line&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;Misalkan mode line dari sebuah seperti ini&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;`&lt;/strong&gt;&lt;code&gt;\--:**-    thisIsC.c    Top    L4    (C/1  yas  Abbrev) ----------------&lt;/code&gt;&lt;strong&gt;Berarti nama buffer adalah “thisIsC” menggunakan coding-system standar, telah dilakukan pengeditan buffer, berada di posisi awal file tepatnya dibaris ke 4, dengan c-mode, abbreviations dan yas aktif sebagai minor mode.`&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;**&lt;/code&gt;--:&lt;/strong&gt;-    thisIsC.c    Top    L4    (C/1  yas  Abbrev) &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;code&gt;**Berarti nama buffer adalah “thisIsC” menggunakan coding-system standar, telah dilakukan pengeditan buffer, berada di posisi awal file tepatnya dibaris ke 4, dengan c-mode, abbreviations dan yas aktif sebagai minor mode.&lt;/code&gt;**&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;Contoh contoh lainnya, anda bisa mengartikan sendiri.&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -1488,13 +1500,13 @@ line-r-dos.png)&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;M-x shell RET  –&amp;gt; berarti menekan tombol ALT/META dan x kemudian mengetik
 “shell” di minibuffer dan RET berarti penekanan Enter.  
-&lt;/code&gt;&lt;strong&gt;C-x RET f&lt;/strong&gt;&lt;code&gt; –&amp;gt; melihat daftar coding system (_set-buffer-file-coding-
+&lt;/code&gt;&lt;/strong&gt;C-x RET f&lt;strong&gt;&lt;code&gt; –&amp;gt; melihat daftar coding system (_set-buffer-file-coding-
 system_)  
-**&lt;/code&gt;C-x C-q`&lt;/strong&gt; –&amp;gt; mengubah status buffer dari read-only menjadi read-write atau sebaliknya&lt;br /&gt;
-&lt;strong&gt;&lt;code&gt;M-x what-domain RET id RET&lt;/code&gt;**–&amp;gt; berarti melihat domain “id” terdaftar untuk negara mana. (Fitur Unik nih, sebelumnya saya selalu nanya Google untuk mencari suatu domain name).&lt;br /&gt;
-Sekali lagi, gunakan TAB untuk pelengkap kata yang ingin dicari.&lt;br /&gt;
+**&lt;/code&gt;C-x C-q&lt;code&gt;** –&amp;gt; mengubah status buffer dari read-only menjadi read-write atau sebaliknya  
+**&lt;/code&gt;M-x what-domain RET id RET&lt;code&gt;**–&amp;gt; berarti melihat domain “id” terdaftar untuk negara mana. (Fitur Unik nih, sebelumnya saya selalu nanya Google untuk mencari suatu domain name).  
+Sekali lagi, gunakan TAB untuk pelengkap kata yang ingin dicari.  
 Jika ingin mencari perintah yang terdapat kata “system” ditengah makro bisa
-dengan mengetikkan “-system” kemudian menekan TAB.`&lt;/strong&gt;&lt;/p&gt;
+dengan mengetikkan “-system” kemudian menekan TAB.&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
     </item>

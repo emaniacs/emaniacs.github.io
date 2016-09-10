@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Panada on http://blog.aredhi.com </title>
+    <title>Panada on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/panada/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Sun, 15 Jan 2012 23:59:00 WIB</updated>
+    <description>Recent content in Panada on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Jan 2012 23:59:00 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/panada/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Panada: Membuat Halaman Login Dengan Session</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</link>
-      <pubDate>Sun, 15 Jan 2012 23:59:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 15 Jan 2012 23:59:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</guid>
       <description>
 
@@ -129,13 +130,13 @@ File ini adalah controller untuk penanganan login dan input user&lt;/p&gt;
 &lt;p&gt;Penjelasan Kode&lt;br /&gt;
 ** baris 6:** meload library request untuk mengambil hasil post dari form .&lt;br /&gt;
 ** baris 8:** data yang akan dikirim ke view.&lt;br /&gt;
-** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses&lt;em&gt;login() jika tidak tampilkan view.&lt;br /&gt;
+** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses_login() jika tidak tampilkan view.&lt;br /&gt;
 ** baris 25:** meload library database.&lt;br /&gt;
 ** baris 27-28:** mengambil nilai post &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo;.&lt;br /&gt;
 Nilai post ini difilter dengan FILTER_SANITAZE_MAGIC_QUOTES&lt;br /&gt;
 untuk username dan password, filter ini untuk melakukan escape pada karakter-
 karakter tertentu.
-&lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;http://php.net/manual/en/filter.filters.sanitize.php&lt;/a&gt;)&lt;br /&gt;
+_&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;INFO_&lt;/a&gt;&lt;br /&gt;
 ** baris 30-31:** set nilai untuk view.&lt;br /&gt;
 ** baris 33:** cek apakah nilai submit &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo; tidak sama dengan kosong.&lt;br /&gt;
 ** baris 34:** melakukan query ke database, $this-&amp;gt;db-&amp;gt;find_one() ini&lt;br /&gt;
@@ -144,11 +145,11 @@ diberikan, nilai kembaliannya adalah object dari hasil&lt;br /&gt;
 query jika data yang dicari ada, atau false jika data&lt;br /&gt;
 tidak ada. Info tentang perintah disini.&lt;br /&gt;
 ** baris 37:** jika data yang dicari tidak ada set nilai &amp;lsquo;error_info&amp;rsquo;.&lt;br /&gt;
-** baris 39-40: &lt;strong&gt;Login sukses.&lt;br /&gt;
+** baris 39-40: **Login sukses.&lt;br /&gt;
 ** baris 44: **baris ini dieksekusi jika, data post tidak lengkap, misalkan password atau usernamenya kosong.&lt;br /&gt;
-** baris 50-52:&lt;/strong&gt; adalah fungsi untuk logout()&lt;br /&gt;
+** baris 50-52:** adalah fungsi untuk logout()&lt;br /&gt;
 fungsi $this-&amp;gt;location() adalah fungsi untuk menampilkan url yang&lt;br /&gt;
-ingin ditampilkan. _[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
+ingin ditampilkan. &lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
 ferences/global_method.html)&lt;/p&gt;
 
 &lt;ul&gt;
@@ -158,7 +159,6 @@ Kode&lt;/p&gt;
 &lt;h2 id=&#34;selamat-datang:8121fbc2dacbc01c3f9c0ee5b301caaf&#34;&gt;Selamat Datang __&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;      [Logout](login/logout)  
-
 
                action=&amp;quot;#&amp;quot;&amp;gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -183,8 +183,8 @@ maka di file &amp;lsquo;view&amp;rsquo;, kita bisa menggunakan variabel $login y
 &amp;lsquo;key&amp;rsquo; dari $data, dimana nilainya adalah true.&lt;br /&gt;
 Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
-&lt;p&gt;** baris 8-10: &lt;strong&gt;adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
-** baris 15-29:&lt;/strong&gt; sebaliknya jika belum atau login gagal.&lt;/p&gt;
+&lt;p&gt;** baris 8-10: **adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
+** baris 15-29:** sebaliknya jika belum atau login gagal.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;&lt;br /&gt;
   adalah tempat instalasi Panada&lt;/p&gt;
@@ -193,7 +193,10 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -201,8 +204,8 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     <item>
       <title>Panada: Membuat Halaman Login</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login/</link>
-      <pubDate>Sun, 19 Jun 2011 06:19:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 19 Jun 2011 06:19:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login/</guid>
       <description>
 
@@ -319,13 +322,13 @@ File ini adalah controller untuk penanganan login dan input user&lt;/p&gt;
 &lt;p&gt;Penjelasan Kode&lt;br /&gt;
 ** baris 6:** meload library request untuk mengambil hasil post dari form .&lt;br /&gt;
 ** baris 8:** data yang akan dikirim ke view.&lt;br /&gt;
-** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses&lt;em&gt;login() jika tidak tampilkan view.&lt;br /&gt;
+** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses_login() jika tidak tampilkan view.&lt;br /&gt;
 ** baris 25:** meload library database.&lt;br /&gt;
 ** baris 27-28:** mengambil nilai post &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo;.&lt;br /&gt;
 Nilai post ini difilter dengan FILTER_SANITAZE_MAGIC_QUOTES&lt;br /&gt;
 untuk username dan password, filter ini untuk melakukan escape pada karakter-
 karakter tertentu.
-&lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;http://php.net/manual/en/filter.filters.sanitize.php&lt;/a&gt;)&lt;br /&gt;
+_&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;INFO_&lt;/a&gt;&lt;br /&gt;
 ** baris 30-31:** set nilai untuk view.&lt;br /&gt;
 ** baris 33:** cek apakah nilai submit &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo; tidak sama dengan kosong.&lt;br /&gt;
 ** baris 34:** melakukan query ke database, $this-&amp;gt;db-&amp;gt;find_one() ini&lt;br /&gt;
@@ -334,11 +337,11 @@ diberikan, nilai kembaliannya adalah object dari hasil&lt;br /&gt;
 query jika data yang dicari ada, atau false jika data&lt;br /&gt;
 tidak ada. Info tentang perintah disini.&lt;br /&gt;
 ** baris 37:** jika data yang dicari tidak ada set nilai &amp;lsquo;error_info&amp;rsquo;.&lt;br /&gt;
-** baris 39-40: &lt;strong&gt;Login sukses.&lt;br /&gt;
+** baris 39-40: **Login sukses.&lt;br /&gt;
 ** baris 44: **baris ini dieksekusi jika, data post tidak lengkap, misalkan password atau usernamenya kosong.&lt;br /&gt;
-** baris 50-52:&lt;/strong&gt; adalah fungsi untuk logout()&lt;br /&gt;
+** baris 50-52:** adalah fungsi untuk logout()&lt;br /&gt;
 fungsi $this-&amp;gt;location() adalah fungsi untuk menampilkan url yang&lt;br /&gt;
-ingin ditampilkan. _[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
+ingin ditampilkan. &lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
 ferences/global_method.html)&lt;/p&gt;
 
 &lt;ul&gt;
@@ -348,7 +351,6 @@ Kode&lt;/p&gt;
 &lt;h2 id=&#34;selamat-datang:0423ef0fcf049d52184a87db4c54110a&#34;&gt;Selamat Datang __&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;      [Logout](login/logout)  
-
 
                action=&amp;quot;#&amp;quot;&amp;gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -373,8 +375,8 @@ maka di file &amp;lsquo;view&amp;rsquo;, kita bisa menggunakan variabel $login y
 &amp;lsquo;key&amp;rsquo; dari $data, dimana nilainya adalah true.&lt;br /&gt;
 Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
-&lt;p&gt;** baris 8-10: &lt;strong&gt;adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
-** baris 15-29:&lt;/strong&gt; sebaliknya jika belum atau login gagal.&lt;/p&gt;
+&lt;p&gt;** baris 8-10: **adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
+** baris 15-29:** sebaliknya jika belum atau login gagal.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;&lt;br /&gt;
   adalah tempat instalasi Panada&lt;/p&gt;
@@ -383,7 +385,10 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -391,8 +396,8 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     <item>
       <title>Format penulisan file pada Panada</title>
       <link>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</link>
-      <pubDate>Sat, 11 Jun 2011 18:11:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sat, 11 Jun 2011 18:11:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ZRenRr8ZCuc/TfZI5My8iZI/AAAAAAAAAlg/gO5PC8tMvIk/
 s320/panada-format-file.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -415,8 +420,8 @@ Untuk lebih jelas perhatikan tulisan berikut ini&lt;/p&gt;
 Harus huruf kecil semua, jika menggunakan pemisah gunakan underscore (_)&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Nama class&lt;br /&gt;
-Sama dengan nama file, dan ditambahi kata &amp;ldquo;Controller&lt;em&gt;&amp;rdquo; diawal nama class, dan
-di _extends&lt;/em&gt; ke Panada&lt;/p&gt;&lt;/li&gt;
+Sama dengan nama file, dan ditambahi kata &amp;ldquo;Controller_&amp;rdquo; diawal nama class, dan
+di &lt;em&gt;extends&lt;/em&gt; ke Panada&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Constructor function&lt;br /&gt;
 Pada constructor / &lt;strong&gt;construct() fungsi tambahkan kode berikut.&lt;br /&gt;
@@ -452,8 +457,8 @@ Misalkan nama file adalah &lt;strong&gt;&lt;em&gt;home.php&lt;/em&gt;&lt;/strong
 Harus huruf kecil semua.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Nama class&lt;br /&gt;
-Sama dengan nama file tapi ditambahi kata &amp;ldquo;Model&lt;em&gt;&amp;rdquo; diawal nama class, dan tak
-perlu di _extends&lt;/em&gt; ke class Panada.&lt;/p&gt;&lt;/li&gt;
+Sama dengan nama file tapi ditambahi kata &amp;ldquo;Model_&amp;rdquo; diawal nama class, dan tak
+perlu di &lt;em&gt;extends&lt;/em&gt; ke class Panada.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Tak ada  &lt;em&gt;default action&lt;/em&gt; didalam file model.&lt;/p&gt;
@@ -473,7 +478,7 @@ perlu di _extends&lt;/em&gt; ke class Panada.&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;&lt;em&gt;Format Pemanggilan File&lt;/em&gt;&lt;br /&gt;
 Jika mengikuti nama file yang diatas maka model tersebut dipanggil dari
 Controller dengan cara berikut&lt;br /&gt;
-&lt;strong&gt;&lt;em&gt;$this-&amp;gt;testmodel = new Model_testmodel();&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;strong&gt;_$this-&amp;gt;testmodel = new Model&lt;em&gt;testmodel();&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;View&lt;/strong&gt;&lt;br /&gt;
 Pada file tak ada aturan khusus terhadap Panada, sama seperti syntax php
@@ -489,12 +494,15 @@ _&lt;/p&gt;
 &lt;p&gt;dimana &lt;strong&gt;&lt;em&gt;namaview&lt;/em&gt;&lt;/strong&gt; diatas adalah nama file yang akan dipanggil didirektori
 view, namaview ini harus sama dengan nama file yang disimpan, jika filenya
 adalah &lt;strong&gt;&lt;em&gt;namaView&lt;/em&gt;&lt;/strong&gt; maka skrip tersebut dipanggil dengan
-&lt;strong&gt;&lt;em&gt;$this-&amp;gt;view_namaView()&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;strong&gt;_$this-&amp;gt;view&lt;em&gt;namaView()&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Referensi&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id/&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id/&#34;&gt;Panada Documentation&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -502,8 +510,8 @@ adalah &lt;strong&gt;&lt;em&gt;namaView&lt;/em&gt;&lt;/strong&gt; maka skrip ter
     <item>
       <title>Panada: Hello World</title>
       <link>http://blog.aredhi.com/post/panada-hello-world/</link>
-      <pubDate>Thu, 09 Jun 2011 06:09:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Thu, 09 Jun 2011 06:09:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-hello-world/</guid>
       <description>&lt;p&gt;Setelah sukses melakukan &lt;a href=&#34;http://chars19.blogspot.com/2011/06/install-panada.html&#34;&gt;instalasi
 Panada&lt;/a&gt; sekarang saya
@@ -551,8 +559,8 @@ kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;
     <item>
       <title>Install Panada</title>
       <link>http://blog.aredhi.com/post/install-panada/</link>
-      <pubDate>Fri, 03 Jun 2011 18:03:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 03 Jun 2011 18:03:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/install-panada/</guid>
       <description>&lt;p&gt;Seperti instalasi Framework lainnya, cukup mudah untuk melakukan instalasi
 Framework ini,,&lt;/p&gt;
@@ -595,8 +603,8 @@ Panada.&lt;/p&gt;
     <item>
       <title>Panada Framework, A PHP 5 Base Web Framework</title>
       <link>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</link>
-      <pubDate>Wed, 01 Jun 2011 18:01:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 01 Jun 2011 18:01:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</guid>
       <description>&lt;p&gt;Berdasarkan&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt; dokumentasi
 Panada&lt;/a&gt;, framework ini adalah
@@ -659,7 +667,7 @@ dengan domain utama yang sama ataupun berbeda.&lt;/p&gt;&lt;/li&gt;
 library Panada tersebut, yaitu dengan cara alami ketika memanggil sebuah class
 dalam bahasa PHP, hal ini menurut saya pribadi membuat kita tidak lupa dengan
 bahasa PHP itu sendiri, tidak seperti di CodeIgniter ketika memanggil suatu
-library atau model maka digunakan &lt;em&gt;$this-&amp;gt;load-&amp;gt;model(&amp;lsquo;nama_model&amp;rsquo;)&lt;/em&gt;.&lt;/p&gt;
+library atau model maka digunakan _$this-&amp;gt;load-&amp;gt;model(&amp;lsquo;nama&lt;em&gt;model&amp;rsquo;)&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     

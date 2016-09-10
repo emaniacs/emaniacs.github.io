@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Git on http://blog.aredhi.com </title>
+    <title>Git on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/git/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Mon, 07 Apr 2014 00:25:00 WIB</updated>
+    <description>Recent content in Git on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Apr 2014 00:25:00 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Git command: stash</title>
       <link>http://blog.aredhi.com/post/git-command-stash/</link>
-      <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 07 Apr 2014 00:25:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
       <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
 ketika melakukan perintah ini.&lt;/p&gt;
@@ -80,7 +81,12 @@ git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://git-scm.com/book/en/Git-Tools-Stashing&#34;&gt;http://git-scm.com/book/en/Git-Tools-Stashing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;
+
+&lt;br /&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

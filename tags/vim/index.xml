@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Vim on http://blog.aredhi.com </title>
+    <title>Vim on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/vim/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Tue, 05 May 2015 11:12:00 WIB</updated>
+    <description>Recent content in Vim on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 May 2015 11:12:00 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>VIm autocomplete with YouCompleteMe</title>
       <link>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</link>
-      <pubDate>Tue, 05 May 2015 11:12:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 05 May 2015 11:12:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</guid>
       <description>&lt;p&gt;Finally i use an autocomplete plugin in my vim, my choice is &lt;a href=&#34;https://github.com/Valloric/YouCompleteMe&#34;&gt;YouCompleteMe&lt;/a&gt;.
 This plugin need vim 7.34+ and python support and my vim is still 7.3 so need to recompile it.&lt;/p&gt;

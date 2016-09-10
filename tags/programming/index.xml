@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Programming on http://blog.aredhi.com </title>
+    <title>Programming on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/programming/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Mon, 07 Apr 2014 00:25:00 WIB</updated>
+    <description>Recent content in Programming on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Apr 2014 00:25:00 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Git command: stash</title>
       <link>http://blog.aredhi.com/post/git-command-stash/</link>
-      <pubDate>Mon, 07 Apr 2014 00:25:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 07 Apr 2014 00:25:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
       <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
 ketika melakukan perintah ini.&lt;/p&gt;
@@ -80,7 +81,12 @@ git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://git-scm.com/book/en/Git-Tools-Stashing&#34;&gt;http://git-scm.com/book/en/Git-Tools-Stashing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;
+
+&lt;br /&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -88,8 +94,8 @@ git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt
     <item>
       <title>CTF Online EAsy Crypto 1 (EASY)</title>
       <link>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</link>
-      <pubDate>Mon, 20 May 2013 19:30:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 20 May 2013 19:30:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</guid>
       <description>&lt;p&gt;Text yang akan diencrypt adalah seperti ini&lt;/p&gt;
 
@@ -154,8 +160,8 @@ Jadi tokoh yang dimaksud adalah WS Rendra (rendra)&lt;/p&gt;
     <item>
       <title>Get site ranking with python and beautifulsoup</title>
       <link>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</link>
-      <pubDate>Wed, 21 Nov 2012 21:21:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 21 Nov 2012 21:21:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</guid>
       <description>&lt;p&gt;To get information about site, we can use &lt;a href=&#34;http://alexa.com/&#34;&gt;alexa.com&lt;/a&gt; but
 sometimes we just need some pieces of information like ranking of site global
@@ -243,14 +249,14 @@ s640/Terminal+-+oi@gnu:+~-git-simple-script_016.jpeg&#34; alt=&#34;&#34; /&gt;&l
     <item>
       <title>php: array_key_exists or isset</title>
       <link>http://blog.aredhi.com/post/php-array-key-exists-or-isset/</link>
-      <pubDate>Wed, 18 Apr 2012 06:18:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 18 Apr 2012 06:18:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/php-array-key-exists-or-isset/</guid>
-      <description>&lt;p&gt;I know &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.array-key-
-exists.php&#34;&gt;array_key_exists&lt;/a&gt;&lt;/em&gt; is a function and
-&lt;em&gt;[isset&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;) is a keyword, later, i
+      <description>&lt;p&gt;I know _&lt;a href=&#34;http://php.net/manual/en/function.array-key-
+exists.php&#34;&gt;array_key_exists&lt;/a&gt;_ is a function and
+_&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;isset_&lt;/a&gt; is a keyword, later, i
 think&lt;a href=&#34;http://php.net/manual/en/function.array-key-
-exists.php&#34;&gt; &lt;em&gt;array_key_exists&lt;/em&gt;&lt;/a&gt; and &lt;em&gt;[isset&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;) in PHP
+exists.php&#34;&gt; _array_key&lt;em&gt;exists&lt;/em&gt;&lt;/a&gt; and &lt;em&gt;[isset&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;) in PHP
 is a same or array_key_exists is shortcut for isset. But when i read  on php
 manual, there is no document that explains that it is the same or related, so
 i try to look in php source code, and i got the same answers.&lt;/p&gt;
@@ -329,7 +335,12 @@ $ php -r &amp;lsquo;$var=array(&amp;ldquo;php&amp;rdquo;=&amp;gt;null); var_dump
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://php.net/manual/en/function.array-key-exists.php&#34;&gt;http://php.net/manual/en/function.array-key-exists.php&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -337,8 +348,8 @@ $ php -r &amp;lsquo;$var=array(&amp;ldquo;php&amp;rdquo;=&amp;gt;null); var_dump
     <item>
       <title>Default value for return</title>
       <link>http://blog.aredhi.com/post/default-value-for-return/</link>
-      <pubDate>Mon, 09 Apr 2012 16:31:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 09 Apr 2012 16:31:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/default-value-for-return/</guid>
       <description>&lt;p&gt;A few days ago, i try to create a code with PHP, with a function i do a return
 in function with some values and then i got a mystery about default value for
@@ -410,8 +421,8 @@ NilClass&lt;/p&gt;
     <item>
       <title>Using keyword as method in PHP</title>
       <link>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</link>
-      <pubDate>Mon, 19 Mar 2012 20:08:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 19 Mar 2012 20:08:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</guid>
       <description>&lt;p&gt;As we know, we can&amp;rsquo;t use keyword like if, while in common language programming
 as function, method or variables, neither does in PHP Programming. Last time,
@@ -495,8 +506,8 @@ KeyWord::unknownStaticMethod(1,2,3);
     <item>
       <title>PHP: Menghitung lama eksekusi sebuah skrip</title>
       <link>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</link>
-      <pubDate>Sat, 25 Feb 2012 00:00:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sat, 25 Feb 2012 00:00:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-JLzChwOBXv4/T0d_Jj8_HYI/AAAAAAAAArA/BGcIwYJeqeQ/
 s1600/time.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -632,8 +643,8 @@ s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>How to fill constant with array in PHP</title>
       <link>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</link>
-      <pubDate>Mon, 20 Feb 2012 20:12:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 20 Feb 2012 20:12:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</guid>
       <description>&lt;p&gt;Create a constant variable in PHP so easy, we can use keyword
 &lt;a href=&#34;http://www.php.net/manual/en/function.define.php&#34;&gt;define&lt;/a&gt;, followed by name
@@ -675,8 +686,8 @@ foreach (unserialize(EN2ID) as $key =&amp;gt; $val) {
     <item>
       <title>Panada: Membuat Halaman Login Dengan Session</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</link>
-      <pubDate>Sun, 15 Jan 2012 23:59:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 15 Jan 2012 23:59:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</guid>
       <description>
 
@@ -793,13 +804,13 @@ File ini adalah controller untuk penanganan login dan input user&lt;/p&gt;
 &lt;p&gt;Penjelasan Kode&lt;br /&gt;
 ** baris 6:** meload library request untuk mengambil hasil post dari form .&lt;br /&gt;
 ** baris 8:** data yang akan dikirim ke view.&lt;br /&gt;
-** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses&lt;em&gt;login() jika tidak tampilkan view.&lt;br /&gt;
+** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses_login() jika tidak tampilkan view.&lt;br /&gt;
 ** baris 25:** meload library database.&lt;br /&gt;
 ** baris 27-28:** mengambil nilai post &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo;.&lt;br /&gt;
 Nilai post ini difilter dengan FILTER_SANITAZE_MAGIC_QUOTES&lt;br /&gt;
 untuk username dan password, filter ini untuk melakukan escape pada karakter-
 karakter tertentu.
-&lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;http://php.net/manual/en/filter.filters.sanitize.php&lt;/a&gt;)&lt;br /&gt;
+_&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;INFO_&lt;/a&gt;&lt;br /&gt;
 ** baris 30-31:** set nilai untuk view.&lt;br /&gt;
 ** baris 33:** cek apakah nilai submit &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo; tidak sama dengan kosong.&lt;br /&gt;
 ** baris 34:** melakukan query ke database, $this-&amp;gt;db-&amp;gt;find_one() ini&lt;br /&gt;
@@ -808,11 +819,11 @@ diberikan, nilai kembaliannya adalah object dari hasil&lt;br /&gt;
 query jika data yang dicari ada, atau false jika data&lt;br /&gt;
 tidak ada. Info tentang perintah disini.&lt;br /&gt;
 ** baris 37:** jika data yang dicari tidak ada set nilai &amp;lsquo;error_info&amp;rsquo;.&lt;br /&gt;
-** baris 39-40: &lt;strong&gt;Login sukses.&lt;br /&gt;
+** baris 39-40: **Login sukses.&lt;br /&gt;
 ** baris 44: **baris ini dieksekusi jika, data post tidak lengkap, misalkan password atau usernamenya kosong.&lt;br /&gt;
-** baris 50-52:&lt;/strong&gt; adalah fungsi untuk logout()&lt;br /&gt;
+** baris 50-52:** adalah fungsi untuk logout()&lt;br /&gt;
 fungsi $this-&amp;gt;location() adalah fungsi untuk menampilkan url yang&lt;br /&gt;
-ingin ditampilkan. _[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
+ingin ditampilkan. &lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
 ferences/global_method.html)&lt;/p&gt;
 
 &lt;ul&gt;
@@ -822,7 +833,6 @@ Kode&lt;/p&gt;
 &lt;h2 id=&#34;selamat-datang:8121fbc2dacbc01c3f9c0ee5b301caaf&#34;&gt;Selamat Datang __&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;      [Logout](login/logout)  
-
 
                action=&amp;quot;#&amp;quot;&amp;gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -847,8 +857,8 @@ maka di file &amp;lsquo;view&amp;rsquo;, kita bisa menggunakan variabel $login y
 &amp;lsquo;key&amp;rsquo; dari $data, dimana nilainya adalah true.&lt;br /&gt;
 Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
-&lt;p&gt;** baris 8-10: &lt;strong&gt;adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
-** baris 15-29:&lt;/strong&gt; sebaliknya jika belum atau login gagal.&lt;/p&gt;
+&lt;p&gt;** baris 8-10: **adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
+** baris 15-29:** sebaliknya jika belum atau login gagal.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;&lt;br /&gt;
   adalah tempat instalasi Panada&lt;/p&gt;
@@ -857,7 +867,10 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -865,8 +878,8 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     <item>
       <title>Shell Scripting: Increment dan Decrement nilai dengan Bash</title>
       <link>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</link>
-      <pubDate>Tue, 01 Nov 2011 21:19:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 01 Nov 2011 21:19:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-hHNti_XJi0A/TqwP40jbm1I/AAAAAAAAApA/9GqFrLF4ckA/
 s1600/increment-decrement.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -875,14 +888,14 @@ s1600/increment-decrement.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 nilai satu variabel satu tingkat dari nilai yang telah diset pada variabel
 tersebut.&lt;br /&gt;
 Misalkan kita mempunya sebuah variabel dengan nama &lt;strong&gt;_var&lt;/strong&gt; yang nilainya
-adalah &lt;strong&gt;3&lt;/strong&gt; jika kita lakukan &lt;em&gt;decrement_ maka nilai variabel tersebut
+adalah &lt;strong&gt;3&lt;/strong&gt; jika kita lakukan _decrement_ maka nilai variabel tersebut
 menjadi &lt;strong&gt;2&lt;/strong&gt; dan akan kembali menjadi **3 **jika kita melakukan proses
-_increment.&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;increment.&lt;/em&gt;&lt;br /&gt;
 _&lt;br /&gt;
 _&lt;br /&gt;
 Seperti kebanyakan bahasa pemrograman melakukan proses ini bisa dilakukan
 dengan mudah yaitu dengan menambahkan dua(2) karakter plus(+) untuk proses
-&lt;em&gt;increment_ dan minus(-) pada proses _decrement&lt;/em&gt;. Misalkan pada bahasa C
+_increment_ dan minus(-) pada proses &lt;em&gt;decrement&lt;/em&gt;. Misalkan pada bahasa C
 seperti kode berikut.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;int main() {  
@@ -924,9 +937,9 @@ _var=$(expr $x + 1)&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Menggunakan perintah &lt;strong&gt;let.&lt;/strong&gt;&lt;br /&gt;
 Meski menggunakan perintah &lt;strong&gt;let&lt;/strong&gt; tapi perintah ini bukanlah suatu program
-melainkan &lt;em&gt;built-in syntax_ dari Bash jadi perintah ini lebih cepat dari
+melainkan _built-in syntax_ dari Bash jadi perintah ini lebih cepat dari
 &lt;strong&gt;expr&lt;/strong&gt;. Perintahnya mirip dengan kebanyakan bahasa programming lainnya dalam
-melakukan operasi _increment.&lt;/em&gt;&lt;/p&gt;
+melakukan operasi &lt;em&gt;increment.&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# deklarasi variabel _var  
 &lt;/code&gt;&lt;/pre&gt;
@@ -967,8 +980,8 @@ Cara yang benar &lt;strong&gt;x=5&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Test Speed: Penggabungan string (concat dan implode)</title>
       <link>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</link>
-      <pubDate>Mon, 08 Aug 2011 20:08:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 08 Aug 2011 20:08:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</guid>
       <description>&lt;p&gt;Pada PHP kita bisa menggunakan 2 cara untuk menggabung string yaitu dengan
 operator
@@ -1046,8 +1059,8 @@ mencolok.&lt;/p&gt;
     <item>
       <title>HTML: Mencegah teks otomatis pada input (autocomplete)</title>
       <link>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</link>
-      <pubDate>Sun, 07 Aug 2011 20:07:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 07 Aug 2011 20:07:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KbhobXi1PcA/TgbqURRNFKI/AAAAAAAAAmU/zO-
 3dd6Qz-k/s1600/autocomplete.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1083,8 +1096,8 @@ digunakan pada textarea, hal ini tidak akan berfungsi.&lt;/p&gt;
     <item>
       <title>Javascript: onclick, tag didalam tag (parent and child)</title>
       <link>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</link>
-      <pubDate>Mon, 27 Jun 2011 06:27:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 27 Jun 2011 06:27:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</guid>
       <description>&lt;p&gt;Masalah ini berawal dari sebuah &lt;em&gt;thread&lt;/em&gt; yang ada di
 &lt;a href=&#34;http://kaskus.us/&#34;&gt;Kaskus&lt;/a&gt; disitu ada pertanyaan bagaimana mengatasi &lt;em&gt;event
@@ -1105,14 +1118,15 @@ function child_click(){
 }  
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Maka ketika diklik pada bagian child, akan terjadi 2 kali pemanggilan _&lt;strong&gt;event
-**_klik, yang pertama _&lt;/strong&gt;event **_untuk child dan yang kedua pada parent.
+&lt;p&gt;Maka ketika diklik pada bagian child, akan terjadi 2 kali pemanggilan _**event
+&lt;strong&gt;_klik, yang pertama _&lt;/strong&gt;event **_untuk child dan yang kedua pada parent.
 Tentu hal in agak sedikit menggangu, untuk mengatasinya bisa dengan 2 cara
 yaitu&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Menggunakan logika pemrograman pada Javascript.&lt;/li&gt;
-&lt;li&gt;Menggunakan CSS style.&lt;/li&gt;
+&lt;li&gt;Menggunakan CSS style.
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Menggunakan logika pemrograman pada Javascript&lt;/p&gt;
@@ -1137,13 +1151,13 @@ function child_click(){
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Diatas saya buat sebuah variabel yaitu &lt;em&gt;&lt;strong&gt;childOnClick&lt;/strong&gt;&lt;/em&gt; yang akan digunakan
-ketika fungsi &lt;em&gt;&lt;strong&gt;parent_click&lt;/strong&gt;&lt;/em&gt; dipanggil, jika dia true berarti _**event
+ketika fungsi _&lt;strong&gt;parent_click&lt;/strong&gt;_ dipanggil, jika dia true berarti _**event
 **_berasal dari **div **pada child yang diklik, dan hal ini diabaikan.&lt;/p&gt;
 
 &lt;p&gt;Menggunakan CSS style&lt;/p&gt;
 
 &lt;p&gt;Penggunaan ini lebih gampang, yaitu dengan menambahkan kode css yaitu
-&lt;em&gt;&lt;strong&gt;z-index&lt;/strong&gt;&lt;/em&gt; pada tag &lt;strong&gt;div **tersebut, misalkan tag parentnya adalah **&lt;/strong&gt;
+&lt;em&gt;&lt;strong&gt;z-index&lt;/strong&gt;&lt;/em&gt; pada tag **div **tersebut, misalkan tag parentnya adalah ****
 dan tag childnya ****, jadi pada tag child ditambah menjadi seperti ini.&lt;/p&gt;
 
 &lt;p&gt;Nilai &lt;em&gt;&lt;strong&gt;z-index&lt;/strong&gt;&lt;/em&gt; dari child harus lebih besar dari nilai &lt;em&gt;&lt;strong&gt;z-index&lt;/strong&gt;&lt;/em&gt;
@@ -1156,8 +1170,8 @@ untuk parent.&lt;/p&gt;
     <item>
       <title>Variabel Variabels dengan Bash / Shell Script</title>
       <link>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</link>
-      <pubDate>Mon, 20 Jun 2011 06:20:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 20 Jun 2011 06:20:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
 s1600/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1255,7 +1269,10 @@ bisa juga menggunakan metode ini&lt;br /&gt;
 &lt;p&gt;Referensi&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&#34;&gt;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&#34;&gt;http://pgl.yoyo.org/bits/tech/bash-variable-variables/100:2008-12-05/&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1263,8 +1280,8 @@ bisa juga menggunakan metode ini&lt;br /&gt;
     <item>
       <title>Panada: Membuat Halaman Login</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login/</link>
-      <pubDate>Sun, 19 Jun 2011 06:19:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 19 Jun 2011 06:19:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login/</guid>
       <description>
 
@@ -1381,13 +1398,13 @@ File ini adalah controller untuk penanganan login dan input user&lt;/p&gt;
 &lt;p&gt;Penjelasan Kode&lt;br /&gt;
 ** baris 6:** meload library request untuk mengambil hasil post dari form .&lt;br /&gt;
 ** baris 8:** data yang akan dikirim ke view.&lt;br /&gt;
-** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses&lt;em&gt;login() jika tidak tampilkan view.&lt;br /&gt;
+** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses_login() jika tidak tampilkan view.&lt;br /&gt;
 ** baris 25:** meload library database.&lt;br /&gt;
 ** baris 27-28:** mengambil nilai post &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo;.&lt;br /&gt;
 Nilai post ini difilter dengan FILTER_SANITAZE_MAGIC_QUOTES&lt;br /&gt;
 untuk username dan password, filter ini untuk melakukan escape pada karakter-
 karakter tertentu.
-&lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;http://php.net/manual/en/filter.filters.sanitize.php&lt;/a&gt;)&lt;br /&gt;
+_&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;INFO_&lt;/a&gt;&lt;br /&gt;
 ** baris 30-31:** set nilai untuk view.&lt;br /&gt;
 ** baris 33:** cek apakah nilai submit &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo; tidak sama dengan kosong.&lt;br /&gt;
 ** baris 34:** melakukan query ke database, $this-&amp;gt;db-&amp;gt;find_one() ini&lt;br /&gt;
@@ -1396,11 +1413,11 @@ diberikan, nilai kembaliannya adalah object dari hasil&lt;br /&gt;
 query jika data yang dicari ada, atau false jika data&lt;br /&gt;
 tidak ada. Info tentang perintah disini.&lt;br /&gt;
 ** baris 37:** jika data yang dicari tidak ada set nilai &amp;lsquo;error_info&amp;rsquo;.&lt;br /&gt;
-** baris 39-40: &lt;strong&gt;Login sukses.&lt;br /&gt;
+** baris 39-40: **Login sukses.&lt;br /&gt;
 ** baris 44: **baris ini dieksekusi jika, data post tidak lengkap, misalkan password atau usernamenya kosong.&lt;br /&gt;
-** baris 50-52:&lt;/strong&gt; adalah fungsi untuk logout()&lt;br /&gt;
+** baris 50-52:** adalah fungsi untuk logout()&lt;br /&gt;
 fungsi $this-&amp;gt;location() adalah fungsi untuk menampilkan url yang&lt;br /&gt;
-ingin ditampilkan. _[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
+ingin ditampilkan. &lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
 ferences/global_method.html)&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1410,7 +1427,6 @@ Kode&lt;/p&gt;
 &lt;h2 id=&#34;selamat-datang:0423ef0fcf049d52184a87db4c54110a&#34;&gt;Selamat Datang __&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;      [Logout](login/logout)  
-
 
                action=&amp;quot;#&amp;quot;&amp;gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -1435,8 +1451,8 @@ maka di file &amp;lsquo;view&amp;rsquo;, kita bisa menggunakan variabel $login y
 &amp;lsquo;key&amp;rsquo; dari $data, dimana nilainya adalah true.&lt;br /&gt;
 Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
-&lt;p&gt;** baris 8-10: &lt;strong&gt;adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
-** baris 15-29:&lt;/strong&gt; sebaliknya jika belum atau login gagal.&lt;/p&gt;
+&lt;p&gt;** baris 8-10: **adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
+** baris 15-29:** sebaliknya jika belum atau login gagal.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;&lt;br /&gt;
   adalah tempat instalasi Panada&lt;/p&gt;
@@ -1445,7 +1461,10 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

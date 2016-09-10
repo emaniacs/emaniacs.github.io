@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Programming Php on http://blog.aredhi.com </title>
+    <title>Programming Php on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/programming-php/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Wed, 18 Apr 2012 06:18:00 WIB</updated>
+    <description>Recent content in Programming Php on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Apr 2012 06:18:00 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/programming-php/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>php: array_key_exists or isset</title>
       <link>http://blog.aredhi.com/post/php-array-key-exists-or-isset/</link>
-      <pubDate>Wed, 18 Apr 2012 06:18:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 18 Apr 2012 06:18:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/php-array-key-exists-or-isset/</guid>
-      <description>&lt;p&gt;I know &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.array-key-
-exists.php&#34;&gt;array_key_exists&lt;/a&gt;&lt;/em&gt; is a function and
-&lt;em&gt;[isset&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;) is a keyword, later, i
+      <description>&lt;p&gt;I know _&lt;a href=&#34;http://php.net/manual/en/function.array-key-
+exists.php&#34;&gt;array_key_exists&lt;/a&gt;_ is a function and
+_&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;isset_&lt;/a&gt; is a keyword, later, i
 think&lt;a href=&#34;http://php.net/manual/en/function.array-key-
-exists.php&#34;&gt; &lt;em&gt;array_key_exists&lt;/em&gt;&lt;/a&gt; and &lt;em&gt;[isset&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;) in PHP
+exists.php&#34;&gt; _array_key&lt;em&gt;exists&lt;/em&gt;&lt;/a&gt; and &lt;em&gt;[isset&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;) in PHP
 is a same or array_key_exists is shortcut for isset. But when i read  on php
 manual, there is no document that explains that it is the same or related, so
 i try to look in php source code, and i got the same answers.&lt;/p&gt;
@@ -97,7 +98,12 @@ $ php -r &amp;lsquo;$var=array(&amp;ldquo;php&amp;rdquo;=&amp;gt;null); var_dump
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://php.net/manual/en/function.array-key-exists.php&#34;&gt;http://php.net/manual/en/function.array-key-exists.php&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual/en/function.isset.php&#34;&gt;http://php.net/manual/en/function.isset.php&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -105,8 +111,8 @@ $ php -r &amp;lsquo;$var=array(&amp;ldquo;php&amp;rdquo;=&amp;gt;null); var_dump
     <item>
       <title>Using keyword as method in PHP</title>
       <link>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</link>
-      <pubDate>Mon, 19 Mar 2012 20:08:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 19 Mar 2012 20:08:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</guid>
       <description>&lt;p&gt;As we know, we can&amp;rsquo;t use keyword like if, while in common language programming
 as function, method or variables, neither does in PHP Programming. Last time,
@@ -190,8 +196,8 @@ KeyWord::unknownStaticMethod(1,2,3);
     <item>
       <title>PHP: Menghitung lama eksekusi sebuah skrip</title>
       <link>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</link>
-      <pubDate>Sat, 25 Feb 2012 00:00:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sat, 25 Feb 2012 00:00:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-JLzChwOBXv4/T0d_Jj8_HYI/AAAAAAAAArA/BGcIwYJeqeQ/
 s1600/time.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -327,8 +333,8 @@ s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>How to fill constant with array in PHP</title>
       <link>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</link>
-      <pubDate>Mon, 20 Feb 2012 20:12:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 20 Feb 2012 20:12:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</guid>
       <description>&lt;p&gt;Create a constant variable in PHP so easy, we can use keyword
 &lt;a href=&#34;http://www.php.net/manual/en/function.define.php&#34;&gt;define&lt;/a&gt;, followed by name
@@ -370,8 +376,8 @@ foreach (unserialize(EN2ID) as $key =&amp;gt; $val) {
     <item>
       <title>Panada: Membuat Halaman Login Dengan Session</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</link>
-      <pubDate>Sun, 15 Jan 2012 23:59:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 15 Jan 2012 23:59:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</guid>
       <description>
 
@@ -488,13 +494,13 @@ File ini adalah controller untuk penanganan login dan input user&lt;/p&gt;
 &lt;p&gt;Penjelasan Kode&lt;br /&gt;
 ** baris 6:** meload library request untuk mengambil hasil post dari form .&lt;br /&gt;
 ** baris 8:** data yang akan dikirim ke view.&lt;br /&gt;
-** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses&lt;em&gt;login() jika tidak tampilkan view.&lt;br /&gt;
+** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses_login() jika tidak tampilkan view.&lt;br /&gt;
 ** baris 25:** meload library database.&lt;br /&gt;
 ** baris 27-28:** mengambil nilai post &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo;.&lt;br /&gt;
 Nilai post ini difilter dengan FILTER_SANITAZE_MAGIC_QUOTES&lt;br /&gt;
 untuk username dan password, filter ini untuk melakukan escape pada karakter-
 karakter tertentu.
-&lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;http://php.net/manual/en/filter.filters.sanitize.php&lt;/a&gt;)&lt;br /&gt;
+_&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;INFO_&lt;/a&gt;&lt;br /&gt;
 ** baris 30-31:** set nilai untuk view.&lt;br /&gt;
 ** baris 33:** cek apakah nilai submit &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo; tidak sama dengan kosong.&lt;br /&gt;
 ** baris 34:** melakukan query ke database, $this-&amp;gt;db-&amp;gt;find_one() ini&lt;br /&gt;
@@ -503,11 +509,11 @@ diberikan, nilai kembaliannya adalah object dari hasil&lt;br /&gt;
 query jika data yang dicari ada, atau false jika data&lt;br /&gt;
 tidak ada. Info tentang perintah disini.&lt;br /&gt;
 ** baris 37:** jika data yang dicari tidak ada set nilai &amp;lsquo;error_info&amp;rsquo;.&lt;br /&gt;
-** baris 39-40: &lt;strong&gt;Login sukses.&lt;br /&gt;
+** baris 39-40: **Login sukses.&lt;br /&gt;
 ** baris 44: **baris ini dieksekusi jika, data post tidak lengkap, misalkan password atau usernamenya kosong.&lt;br /&gt;
-** baris 50-52:&lt;/strong&gt; adalah fungsi untuk logout()&lt;br /&gt;
+** baris 50-52:** adalah fungsi untuk logout()&lt;br /&gt;
 fungsi $this-&amp;gt;location() adalah fungsi untuk menampilkan url yang&lt;br /&gt;
-ingin ditampilkan. _[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
+ingin ditampilkan. &lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
 ferences/global_method.html)&lt;/p&gt;
 
 &lt;ul&gt;
@@ -517,7 +523,6 @@ Kode&lt;/p&gt;
 &lt;h2 id=&#34;selamat-datang:8121fbc2dacbc01c3f9c0ee5b301caaf&#34;&gt;Selamat Datang __&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;      [Logout](login/logout)  
-
 
                action=&amp;quot;#&amp;quot;&amp;gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -542,8 +547,8 @@ maka di file &amp;lsquo;view&amp;rsquo;, kita bisa menggunakan variabel $login y
 &amp;lsquo;key&amp;rsquo; dari $data, dimana nilainya adalah true.&lt;br /&gt;
 Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
-&lt;p&gt;** baris 8-10: &lt;strong&gt;adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
-** baris 15-29:&lt;/strong&gt; sebaliknya jika belum atau login gagal.&lt;/p&gt;
+&lt;p&gt;** baris 8-10: **adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
+** baris 15-29:** sebaliknya jika belum atau login gagal.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;&lt;br /&gt;
   adalah tempat instalasi Panada&lt;/p&gt;
@@ -552,7 +557,10 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -560,8 +568,8 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     <item>
       <title>Test Speed: Penggabungan string (concat dan implode)</title>
       <link>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</link>
-      <pubDate>Mon, 08 Aug 2011 20:08:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 08 Aug 2011 20:08:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</guid>
       <description>&lt;p&gt;Pada PHP kita bisa menggunakan 2 cara untuk menggabung string yaitu dengan
 operator
@@ -639,8 +647,8 @@ mencolok.&lt;/p&gt;
     <item>
       <title>Panada: Membuat Halaman Login</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login/</link>
-      <pubDate>Sun, 19 Jun 2011 06:19:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 19 Jun 2011 06:19:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login/</guid>
       <description>
 
@@ -757,13 +765,13 @@ File ini adalah controller untuk penanganan login dan input user&lt;/p&gt;
 &lt;p&gt;Penjelasan Kode&lt;br /&gt;
 ** baris 6:** meload library request untuk mengambil hasil post dari form .&lt;br /&gt;
 ** baris 8:** data yang akan dikirim ke view.&lt;br /&gt;
-** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses&lt;em&gt;login() jika tidak tampilkan view.&lt;br /&gt;
+** baris 18-21:** mengecek apakah nilai post &amp;lsquo;submit&amp;rsquo; ada, jika ada lakukan proses_login() jika tidak tampilkan view.&lt;br /&gt;
 ** baris 25:** meload library database.&lt;br /&gt;
 ** baris 27-28:** mengambil nilai post &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo;.&lt;br /&gt;
 Nilai post ini difilter dengan FILTER_SANITAZE_MAGIC_QUOTES&lt;br /&gt;
 untuk username dan password, filter ini untuk melakukan escape pada karakter-
 karakter tertentu.
-&lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;http://php.net/manual/en/filter.filters.sanitize.php&lt;/a&gt;)&lt;br /&gt;
+_&lt;a href=&#34;http://php.net/manual/en/filter.filters.sanitize.php&#34;&gt;INFO_&lt;/a&gt;&lt;br /&gt;
 ** baris 30-31:** set nilai untuk view.&lt;br /&gt;
 ** baris 33:** cek apakah nilai submit &amp;lsquo;username&amp;rsquo; dan &amp;lsquo;password&amp;rsquo; tidak sama dengan kosong.&lt;br /&gt;
 ** baris 34:** melakukan query ke database, $this-&amp;gt;db-&amp;gt;find_one() ini&lt;br /&gt;
@@ -772,11 +780,11 @@ diberikan, nilai kembaliannya adalah object dari hasil&lt;br /&gt;
 query jika data yang dicari ada, atau false jika data&lt;br /&gt;
 tidak ada. Info tentang perintah disini.&lt;br /&gt;
 ** baris 37:** jika data yang dicari tidak ada set nilai &amp;lsquo;error_info&amp;rsquo;.&lt;br /&gt;
-** baris 39-40: &lt;strong&gt;Login sukses.&lt;br /&gt;
+** baris 39-40: **Login sukses.&lt;br /&gt;
 ** baris 44: **baris ini dieksekusi jika, data post tidak lengkap, misalkan password atau usernamenya kosong.&lt;br /&gt;
-** baris 50-52:&lt;/strong&gt; adalah fungsi untuk logout()&lt;br /&gt;
+** baris 50-52:** adalah fungsi untuk logout()&lt;br /&gt;
 fungsi $this-&amp;gt;location() adalah fungsi untuk menampilkan url yang&lt;br /&gt;
-ingin ditampilkan. _[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
+ingin ditampilkan. &lt;em&gt;[INFO&lt;/em&gt;](&lt;a href=&#34;http://www.panadaframework.com/documentation/id/re&#34;&gt;http://www.panadaframework.com/documentation/id/re&lt;/a&gt;
 ferences/global_method.html)&lt;/p&gt;
 
 &lt;ul&gt;
@@ -786,7 +794,6 @@ Kode&lt;/p&gt;
 &lt;h2 id=&#34;selamat-datang:0423ef0fcf049d52184a87db4c54110a&#34;&gt;Selamat Datang __&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;      [Logout](login/logout)  
-
 
                action=&amp;quot;#&amp;quot;&amp;gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -811,8 +818,8 @@ maka di file &amp;lsquo;view&amp;rsquo;, kita bisa menggunakan variabel $login y
 &amp;lsquo;key&amp;rsquo; dari $data, dimana nilainya adalah true.&lt;br /&gt;
 Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
-&lt;p&gt;** baris 8-10: &lt;strong&gt;adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
-** baris 15-29:&lt;/strong&gt; sebaliknya jika belum atau login gagal.&lt;/p&gt;
+&lt;p&gt;** baris 8-10: **adalah yang akan ditampilkan jika telah login atau loginnya sukses.&lt;br /&gt;
+** baris 15-29:** sebaliknya jika belum atau login gagal.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;&lt;br /&gt;
   adalah tempat instalasi Panada&lt;/p&gt;
@@ -821,7 +828,10 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual&#34;&gt;php.net&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -829,8 +839,8 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     <item>
       <title>Format penulisan file pada Panada</title>
       <link>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</link>
-      <pubDate>Sat, 11 Jun 2011 18:11:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sat, 11 Jun 2011 18:11:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ZRenRr8ZCuc/TfZI5My8iZI/AAAAAAAAAlg/gO5PC8tMvIk/
 s320/panada-format-file.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -853,8 +863,8 @@ Untuk lebih jelas perhatikan tulisan berikut ini&lt;/p&gt;
 Harus huruf kecil semua, jika menggunakan pemisah gunakan underscore (_)&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Nama class&lt;br /&gt;
-Sama dengan nama file, dan ditambahi kata &amp;ldquo;Controller&lt;em&gt;&amp;rdquo; diawal nama class, dan
-di _extends&lt;/em&gt; ke Panada&lt;/p&gt;&lt;/li&gt;
+Sama dengan nama file, dan ditambahi kata &amp;ldquo;Controller_&amp;rdquo; diawal nama class, dan
+di &lt;em&gt;extends&lt;/em&gt; ke Panada&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Constructor function&lt;br /&gt;
 Pada constructor / &lt;strong&gt;construct() fungsi tambahkan kode berikut.&lt;br /&gt;
@@ -890,8 +900,8 @@ Misalkan nama file adalah &lt;strong&gt;&lt;em&gt;home.php&lt;/em&gt;&lt;/strong
 Harus huruf kecil semua.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Nama class&lt;br /&gt;
-Sama dengan nama file tapi ditambahi kata &amp;ldquo;Model&lt;em&gt;&amp;rdquo; diawal nama class, dan tak
-perlu di _extends&lt;/em&gt; ke class Panada.&lt;/p&gt;&lt;/li&gt;
+Sama dengan nama file tapi ditambahi kata &amp;ldquo;Model_&amp;rdquo; diawal nama class, dan tak
+perlu di &lt;em&gt;extends&lt;/em&gt; ke class Panada.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Tak ada  &lt;em&gt;default action&lt;/em&gt; didalam file model.&lt;/p&gt;
@@ -911,7 +921,7 @@ perlu di _extends&lt;/em&gt; ke class Panada.&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;&lt;em&gt;Format Pemanggilan File&lt;/em&gt;&lt;br /&gt;
 Jika mengikuti nama file yang diatas maka model tersebut dipanggil dari
 Controller dengan cara berikut&lt;br /&gt;
-&lt;strong&gt;&lt;em&gt;$this-&amp;gt;testmodel = new Model_testmodel();&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;strong&gt;_$this-&amp;gt;testmodel = new Model&lt;em&gt;testmodel();&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;View&lt;/strong&gt;&lt;br /&gt;
 Pada file tak ada aturan khusus terhadap Panada, sama seperti syntax php
@@ -927,12 +937,15 @@ _&lt;/p&gt;
 &lt;p&gt;dimana &lt;strong&gt;&lt;em&gt;namaview&lt;/em&gt;&lt;/strong&gt; diatas adalah nama file yang akan dipanggil didirektori
 view, namaview ini harus sama dengan nama file yang disimpan, jika filenya
 adalah &lt;strong&gt;&lt;em&gt;namaView&lt;/em&gt;&lt;/strong&gt; maka skrip tersebut dipanggil dengan
-&lt;strong&gt;&lt;em&gt;$this-&amp;gt;view_namaView()&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;strong&gt;_$this-&amp;gt;view&lt;em&gt;namaView()&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Referensi&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id/&#34;&gt;Panada Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.panadaframework.com/documentation/id/&#34;&gt;Panada Documentation&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -940,8 +953,8 @@ adalah &lt;strong&gt;&lt;em&gt;namaView&lt;/em&gt;&lt;/strong&gt; maka skrip ter
     <item>
       <title>Panada: Hello World</title>
       <link>http://blog.aredhi.com/post/panada-hello-world/</link>
-      <pubDate>Thu, 09 Jun 2011 06:09:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Thu, 09 Jun 2011 06:09:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-hello-world/</guid>
       <description>&lt;p&gt;Setelah sukses melakukan &lt;a href=&#34;http://chars19.blogspot.com/2011/06/install-panada.html&#34;&gt;instalasi
 Panada&lt;/a&gt; sekarang saya
@@ -989,8 +1002,8 @@ kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;
     <item>
       <title>Setting Nginx dan PHP</title>
       <link>http://blog.aredhi.com/post/setting-nginx-dan-php/</link>
-      <pubDate>Mon, 06 Jun 2011 06:06:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 06 Jun 2011 06:06:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/setting-nginx-dan-php/</guid>
       <description>
 
@@ -1137,8 +1150,8 @@ perintah untuk menghentikan nginx&lt;br /&gt;
     <item>
       <title>Install Panada</title>
       <link>http://blog.aredhi.com/post/install-panada/</link>
-      <pubDate>Fri, 03 Jun 2011 18:03:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 03 Jun 2011 18:03:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/install-panada/</guid>
       <description>&lt;p&gt;Seperti instalasi Framework lainnya, cukup mudah untuk melakukan instalasi
 Framework ini,,&lt;/p&gt;
@@ -1181,8 +1194,8 @@ Panada.&lt;/p&gt;
     <item>
       <title>Variabel Variabels dengan PHP (fungsi dan class)</title>
       <link>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</link>
-      <pubDate>Thu, 02 Jun 2011 06:02:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Thu, 02 Jun 2011 06:02:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
 s200/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1264,8 +1277,8 @@ membuat variable dari nilai sebuah variable.&lt;/p&gt;
     <item>
       <title>Panada Framework, A PHP 5 Base Web Framework</title>
       <link>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</link>
-      <pubDate>Wed, 01 Jun 2011 18:01:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 01 Jun 2011 18:01:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</guid>
       <description>&lt;p&gt;Berdasarkan&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt; dokumentasi
 Panada&lt;/a&gt;, framework ini adalah
@@ -1328,15 +1341,15 @@ dengan domain utama yang sama ataupun berbeda.&lt;/p&gt;&lt;/li&gt;
 library Panada tersebut, yaitu dengan cara alami ketika memanggil sebuah class
 dalam bahasa PHP, hal ini menurut saya pribadi membuat kita tidak lupa dengan
 bahasa PHP itu sendiri, tidak seperti di CodeIgniter ketika memanggil suatu
-library atau model maka digunakan &lt;em&gt;$this-&amp;gt;load-&amp;gt;model(&amp;lsquo;nama_model&amp;rsquo;)&lt;/em&gt;.&lt;/p&gt;
+library atau model maka digunakan _$this-&amp;gt;load-&amp;gt;model(&amp;lsquo;nama&lt;em&gt;model&amp;rsquo;)&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Trik / Rahasia PHP yang jarang diketahui</title>
       <link>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</link>
-      <pubDate>Tue, 31 May 2011 14:22:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 31 May 2011 14:22:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://www.php.net/images/logos/php-med-trans.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -1475,7 +1488,7 @@ $var();&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;Perintah terakhir diatas adalah memanggil fungsi test().&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Selain dengan &lt;strong&gt;function&lt;/strong&gt;, untuk membuat fungsi bisa dengan &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.create-function.php&#34;&gt;create_function()&lt;/a&gt;&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Selain dengan &lt;strong&gt;function&lt;/strong&gt;, untuk membuat fungsi bisa dengan _&lt;a href=&#34;http://php.net/manual/en/function.create-function.php&#34;&gt;create_function()&lt;/a&gt;_.&lt;/li&gt;
 &lt;li&gt;Didalam double-quote nilai variabel yang ingin diambil bisa dipisahkan dengan {}.&lt;/li&gt;
 &lt;li&gt;Jika escape karakter tidak diketahui, maka akan diignore atau diabaikan.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.echo.php&#34;&gt;echo&lt;/a&gt;&lt;/em&gt; bukanlah fungsi, karena itu echo lebih cepat dari &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.print.php&#34;&gt;print&lt;/a&gt;.&lt;/em&gt;&lt;/li&gt;
@@ -1530,13 +1543,13 @@ $var();&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;Kode diatas akan mencetak &amp;ldquo;satuX&amp;rdquo;;&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.substr-replace.php&#34;&gt;substr_replace()&lt;/a&gt;&lt;/em&gt; bisa digunakan untuk insert atau delete karakter.&lt;/li&gt;
+&lt;li&gt;_&lt;a href=&#34;http://php.net/manual/en/function.substr-replace.php&#34;&gt;substr_replace()&lt;/a&gt;_ bisa digunakan untuk insert atau delete karakter.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.join.php&#34;&gt;join()&lt;/a&gt;&lt;/em&gt; adalah alias dari &lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.implode.php&#34;&gt;implode()&lt;/a&gt;, &lt;a href=&#34;http://php.net/manual/en/function.sizeof.php&#34;&gt;sizeof()&lt;/a&gt; juga alias dari &lt;a href=&#34;http://php.net/manual/en/function.count.php&#34;&gt;count()&lt;/a&gt;.&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strike&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.preg-match.php&#34;&gt;preg_match()&lt;/a&gt;&lt;/em&gt; bisa untuk mengcapture teks, tapi tak lebih dari 99 karakter&lt;/strike&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strike&gt;_&lt;a href=&#34;http://php.net/manual/en/function.preg-match.php&#34;&gt;preg_match()&lt;/a&gt;_ bisa untuk mengcapture teks, tapi tak lebih dari 99 karakter&lt;/strike&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;$variabel[3]&lt;/strong&gt; sama dengan &lt;strong&gt;$variabel[&amp;lsquo;3&amp;rsquo;]&lt;/strong&gt; tapi tidak dengan** $variabel[&amp;lsquo;03&amp;rsquo;]**&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;$variabel[index]&lt;/strong&gt; sama dengan** $variabel[&amp;lsquo;index&amp;rsquo;]**, tapi yang pertama lebih lambat karena PHP akan melakukan cek terhadap nilai constant terlebih dahulu.&lt;/li&gt;
 &lt;li&gt;Jika perintah pada opsi diatas dilakukan pada string atau diapit double-quote maka cara yang benar adalah cara pertama ($variabel[index]).&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;a href=&#34;http://php.net/manual/en/function.array-push.php&#34;&gt;array_push&lt;/a&gt;&lt;/em&gt;($array, 1) sama dengan $array[] = 1&lt;/li&gt;
+&lt;li&gt;_&lt;a href=&#34;http://php.net/manual/en/function.array-push.php&#34;&gt;array_push&lt;/a&gt;_($array, 1) sama dengan $array[] = 1&lt;/li&gt;
 &lt;li&gt;Kecuali &lt;a href=&#34;http://php.net/manual/en/function.natsort.php&#34;&gt;natsort()&lt;/a&gt;_ dan _&lt;a href=&#34;http://php.net/manual/en/function.natcasesort.php&#34;&gt;natcasesort()&lt;/a&gt;, fungsi sort yang lainnya melakukan sorting berdasarkan ascii value.&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -1562,8 +1575,8 @@ $var();&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Konversi Bilangan (Ip Address) dengan PHP</title>
       <link>http://blog.aredhi.com/post/konversi-bilangan-ip-address-dengan-php/</link>
-      <pubDate>Fri, 22 Apr 2011 18:06:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Fri, 22 Apr 2011 18:06:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/konversi-bilangan-ip-address-dengan-php/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-K4BWMl0w6WQ/TbFjwX_7E3I/AAAAAAAAAX8/sgrCvDnZ09g/
 s320/0xphp.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1576,8 +1589,8 @@ Dari kedua kode ini, hanya untuk konversi bilangan dari binary ke desimal atau
 sebaliknya dengan format bilangan seperti ip address, meski tak tertutup untuk
 format bilangan lain tapi ane sendiri belum nyoba untuk melakukannya.&lt;br /&gt;
 Format bilangannya adalah seperti ini :&lt;br /&gt;
-&lt;strong&gt;$a = &amp;ldquo;192.168.255.254&amp;rdquo; **untuk konversi bilangan dari desimal ke biner.&lt;br /&gt;
-**$b = &amp;ldquo;11001010&amp;rdquo;&lt;/strong&gt; untuk konversi bilangan dari biner ke desimal.&lt;br /&gt;
+**$a = &amp;ldquo;192.168.255.254&amp;rdquo; **untuk konversi bilangan dari desimal ke biner.&lt;br /&gt;
+&lt;strong&gt;$b = &amp;ldquo;11001010&amp;rdquo;&lt;/strong&gt; untuk konversi bilangan dari biner ke desimal.&lt;br /&gt;
 berikut Fungsi untuk konversi desimal ke biner&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;function dectobin($dec){  
@@ -1691,7 +1704,10 @@ echo &amp;quot;Konversi &#39;787&#39; ke hexadesimal =&amp;gt; &amp;quot; .base_
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://php.net/manual/en/function.base-convert.php&#34;&gt;function.base-convert&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://php.net/manual/en/function.decbin.php&#34;&gt;function decbin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://php.net/manual/en/function.decbin.php&#34;&gt;function decbin&lt;/a&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

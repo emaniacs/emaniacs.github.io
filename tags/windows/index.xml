@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Windows on http://blog.aredhi.com </title>
+    <title>Windows on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/windows/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Mon, 13 Jun 2011 18:13:00 WIB</updated>
+    <description>Recent content in Windows on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jun 2011 18:13:00 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Emacs: Folding kode dengan mouse</title>
       <link>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</link>
-      <pubDate>Mon, 13 Jun 2011 18:13:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 13 Jun 2011 18:13:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
 s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -75,8 +76,8 @@ aktif.&lt;/p&gt;
     <item>
       <title>Cream - Vim editor yang ramah</title>
       <link>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</link>
-      <pubDate>Sat, 07 May 2011 17:55:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sat, 07 May 2011 17:55:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</guid>
       <description>&lt;p&gt;Mendengar nama Vi(m) kita pasti ingat dengan sebuah editor mini dengan
 kemampuan yang luar biasa, begitu juga dengan Cream, editor ini menggunakan
@@ -106,7 +107,7 @@ dan lebih enak(tapi kalau kopi, saya lebih suka kopi hitam).&lt;br /&gt;
 Salah satu yang paling kelihatan adalah shorcut Cream yang mendukung mode CUA
 (Common User Access), seperti teks editor kebanyakan, dimana Ctrl+c untuk
 copy, Ctrl+x untuk cut dan bebarapa shortcut yang lainnya sesuai dengan CUA.&lt;br /&gt;
-Sesuai dengan motto Cream sendiri, yaitu &amp;ldquo;&lt;em&gt;a modern configuration of the _Vim&lt;/em&gt;
+Sesuai dengan motto Cream sendiri, yaitu &amp;ldquo;_a modern configuration of the &lt;em&gt;Vim&lt;/em&gt;
 text editor_&amp;rdquo; kostumisasi yang dilakukan pada Vim benar-benar memudahkan untuk
 melakukan editing file, selain kecepatan dulu saya tidak menyukai Vim, tapi
 dengan konfigurasi dari Cream, Vim seperti teks editor kebanyakan yang mudah
@@ -126,9 +127,9 @@ Beberapa shortcut dari Cream :&lt;/p&gt;
 Namun karena pernah mencoba Vim, tentu kenal dengan istilah Command Mode, kalo
 di Vim shortcutnya adalah titik dua(:), saya sempat kebingungan bagaimana
 untuk mengaktifkan Command Mode tersebut, setelah mencari-cari di menu saya
-menemukan di &lt;em&gt;Preferences - Behavior_ disitu ada 4(empat) mode yang disediakan
+menemukan di _Preferences - Behavior_ disitu ada 4(empat) mode yang disediakan
 yaitu Cream, Cream Lite, Vim, Vi. Untuk menggunakan command mode saya terpaksa
-menggunakan _behavior&lt;/em&gt; Vi(m) agar bisa menggunakan command mode. Ketika
+menggunakan &lt;em&gt;behavior&lt;/em&gt; Vi(m) agar bisa menggunakan command mode. Ketika
 membaca FAQ dari Cream editor ini saya menemukan ternyata shorcut untuk
 menggunakan command mode adalah &lt;strong&gt;Ctrl+L&lt;/strong&gt;.&lt;br /&gt;
 &lt;strong&gt;Cream Behavior&lt;/strong&gt;&lt;br /&gt;&lt;/li&gt;
@@ -189,8 +190,8 @@ Faq Cream&lt;/p&gt;
     <item>
       <title>Singkatan Recursive ( Emacs )</title>
       <link>http://blog.aredhi.com/post/singkatan-recursive-emacs/</link>
-      <pubDate>Mon, 21 Mar 2011 06:44:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 21 Mar 2011 06:44:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/singkatan-recursive-emacs/</guid>
       <description>&lt;p&gt;Judul diatas merupakan salah kebiasaan unik dari hacker, yaitu Singkatan
 Rekursif, atau singkatan yang memanggil dirinya sendiri. Tulisan ini saya
@@ -307,8 +308,8 @@ Eight Megabytes And Constantly Swapping**&lt;/p&gt;
     <item>
       <title>Copy Paste di Emacs (CUA mode)</title>
       <link>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</link>
-      <pubDate>Mon, 07 Mar 2011 07:07:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 07 Mar 2011 07:07:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</guid>
       <description>&lt;p&gt;Dalam kebanyakan editor saat ini, untuk melakukan copy paste digunakan shorcut
 Control-c untuk copy, C-v untuk paste dan C-x untuk cut. Sedangkan Emacs yang
@@ -338,16 +339,16 @@ file ~/.emacs dan menambahkan baris berikut :&lt;/p&gt;
 yang kita copy tetap terseleksi, seperti halnya banyak teks editor.&lt;/p&gt;
 
 &lt;p&gt;Selain itu cua-mode masih mendukung penyimpanan ke register, yaitu dengan
-menggunakan shorcut &lt;strong&gt;&lt;code&gt;C-1 C-c&lt;/code&gt;** untuk menyimpan ke register 1, kemudian
-**&lt;code&gt;C-1 C-v&lt;/code&gt;&lt;/strong&gt; untuk paste teks yang ada di register 2.&lt;/p&gt;
+menggunakan shorcut &lt;strong&gt;&lt;code&gt;C-1 C-c&lt;/code&gt;&lt;/strong&gt; untuk menyimpan ke register 1, kemudian
+&lt;strong&gt;&lt;code&gt;C-1 C-v&lt;/code&gt;&lt;/strong&gt; untuk paste teks yang ada di register 2.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Emacs Chatting dengan ERC</title>
       <link>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</link>
-      <pubDate>Sun, 06 Mar 2011 06:06:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 06 Mar 2011 06:06:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</guid>
       <description>&lt;p&gt;Sekali lagi Emacs bukan teks editor biasa, bahkan kadang disebut sebagai
 sistem operasi, karna saking lengkapnnya aplikasi dan plugin2 emacs. Salah
@@ -359,10 +360,10 @@ merupakan bagian dari GNU Project, dan alamat home projectnya
 &lt;a href=&#34;http://savannah.gnu.org/projects/erc/&#34;&gt;disini&lt;/a&gt;. Versi terbaru saat tulisan
 ini dibuat adalah versi 5.3.&lt;/p&gt;
 
-&lt;p&gt;Untuk menjalankan Erc bisa dengan &lt;strong&gt;&lt;code&gt;M-x erc RET&lt;/code&gt;&lt;strong&gt;, maka minibuffer akan
+&lt;p&gt;Untuk menjalankan Erc bisa dengan &lt;strong&gt;&lt;code&gt;M-x erc RET&lt;/code&gt;&lt;/strong&gt;, maka minibuffer akan
 aktif dan menanyakan beberapa hal diantaranya server yang akan digunakan port,
 username dan password. Seperti halnya Emacs yang customizable begitu juga
-dengan Erc ini yang datang dengan berbagai module yang diambil dari &lt;/strong&gt;&lt;code&gt;M-x
+dengan Erc ini yang datang dengan berbagai module yang diambil dari &lt;strong&gt;&lt;code&gt;M-x
 customize-variable Ret erc-modules&lt;/code&gt;&lt;/strong&gt;, diantaranya :&lt;/p&gt;
 
 &lt;ul&gt;
@@ -413,8 +414,8 @@ s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>GNU Emacs</title>
       <link>http://blog.aredhi.com/post/gnu-emacs/</link>
-      <pubDate>Sun, 04 Jul 2010 19:41:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 04 Jul 2010 19:41:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/gnu-emacs/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://i919.photobucket.com/albums/ad35/chars19/blogMe/emacs23.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
 GNU Emacs merupakan editor yang sangat powerfull, aplikasi ini bahkan jauh
@@ -459,7 +460,12 @@ Control atau Shift.&lt;/p&gt;
 &lt;li&gt;Escape -&amp;gt; Tombol Esc.&lt;/li&gt;
 &lt;li&gt;Meta -&amp;gt; tombol Alt.&lt;/li&gt;
 &lt;li&gt;Shift -&amp;gt; tombol Shift.&lt;/li&gt;
-&lt;li&gt;Ctrl -&amp;gt; tombol Control.&lt;/li&gt;
+&lt;li&gt;Ctrl -&amp;gt; tombol Control.
+
+&lt;br /&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -467,8 +473,8 @@ Control atau Shift.&lt;/p&gt;
     <item>
       <title>Google translate - Perl</title>
       <link>http://blog.aredhi.com/post/google-translate-perl/</link>
-      <pubDate>Wed, 23 Jun 2010 19:56:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 23 Jun 2010 19:56:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/google-translate-perl/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/_ypU0iaR-LmM/TDITz-
 BFVYI/AAAAAAAAAQs/umysQJAVTdk/s320/google-perl.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
@@ -618,8 +624,8 @@ sed &#39;s/.*{&amp;quot;translatedText&amp;quot;:&amp;quot;\\([^&amp;quot;]*\\)&
     <item>
       <title>Mencari bilangan prima dengan Python</title>
       <link>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</link>
-      <pubDate>Tue, 18 May 2010 23:45:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 18 May 2010 23:45:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/_ypU0iaR-
 LmM/TDIhx5nD31I/AAAAAAAAARE/7HegaxuEUG8/s320/python-prime.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Matematika on http://blog.aredhi.com </title>
+    <title>Matematika on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/tags/matematika/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Tue, 28 May 2013 17:51:00 WIB</updated>
+    <description>Recent content in Matematika on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2013 17:51:00 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/tags/matematika/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Mendeteksi keanehan/kegilaan menggunakan matematika</title>
       <link>http://blog.aredhi.com/post/mendeteksi-keanehan-kegilaan-menggunakan-matematika/</link>
-      <pubDate>Tue, 28 May 2013 17:51:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 28 May 2013 17:51:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/mendeteksi-keanehan-kegilaan-menggunakan-matematika/</guid>
       <description>
 
@@ -31,7 +32,9 @@ tidak.&lt;/p&gt;
 &lt;li&gt;Bilangan ganjil + bilangan ganjil hasilnya bilangan genap.&lt;/li&gt;
 &lt;li&gt;Bilangan ganjil + bilangan genap hasilnya bilangan ganjil.&lt;/li&gt;
 &lt;li&gt;Bilangan genap + bilangan ganjil hasilnya bilangan ganjil.&lt;/li&gt;
-&lt;li&gt;Bilangan genap + bilangan genap hasilnya bilangan genap.&lt;/li&gt;
+&lt;li&gt;Bilangan genap + bilangan genap hasilnya bilangan genap.
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Misalkan seorang yang gila berdiskusi dengan seorang yang normal, tentu saja
@@ -47,7 +50,9 @@ digabung dengan sesuatu yang tidak sama dengannya.&lt;/em&gt;&lt;/p&gt;
 &lt;li&gt;Bilangan ganjil * bilangan ganjil hasilnya bilangan ganjil.&lt;/li&gt;
 &lt;li&gt;Bilangan ganjil * bilangan genap hasilnya bilangan genap.&lt;/li&gt;
 &lt;li&gt;Bilangan genap * bilangan ganjil hasilnya bilangan genap.&lt;/li&gt;
-&lt;li&gt;Bilangan genap * bilangan genap hasilnya bilangan genap.&lt;/li&gt;
+&lt;li&gt;Bilangan genap * bilangan genap hasilnya bilangan genap.
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Kesimpulannya: &lt;em&gt;sesuatu yang aneh itu adalah jika sesuatu yang aneh
@@ -63,7 +68,9 @@ dikatakan gila, sehingga berlipat gandalah kegilaan tersebut,,,&lt;/p&gt;
 &lt;li&gt;Bilangan ganjil - bilangan ganjil hasilnya bilangan genap.&lt;/li&gt;
 &lt;li&gt;Bilangan ganjil - bilangan genap hasilnya bilangan ganjil.&lt;/li&gt;
 &lt;li&gt;Bilangan genap - bilangan ganjil hasilnya bilangan ganjil.&lt;/li&gt;
-&lt;li&gt;Bilangan genap - bilangan genap hasilnya bilangan genap.&lt;/li&gt;
+&lt;li&gt;Bilangan genap - bilangan genap hasilnya bilangan genap.
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Kesimpulannya, &lt;em&gt;sesuatu itu akan aneh apabila dibuang bagian yang tidak sama
@@ -80,7 +87,9 @@ gila, begitu juga orang yang normal jika dibuang bagian gila-nya&lt;/p&gt;
 &lt;li&gt;Bilangan ganjil / bilangan ganjil hasilnya bilangan ganjil atau bilangan berkoma.&lt;/li&gt;
 &lt;li&gt;Bilangan ganjil / bilangan genap hasilnya bilangan berkoma.&lt;/li&gt;
 &lt;li&gt;Bilangan genap / bilangan ganjil hasilnya bilangan berkoma.&lt;/li&gt;
-&lt;li&gt;Bilangan genap / bilangan genap hasilnya bilangan genap / bilangan berkoma.&lt;/li&gt;
+&lt;li&gt;Bilangan genap / bilangan genap hasilnya bilangan genap / bilangan berkoma.
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Sekarang ada jenis bilangan baru yaitu bilangan berkoma dan menurut seseorang
@@ -92,7 +101,7 @@ kelipatan dari 2.&lt;br /&gt;
 Kesimpulannya: &lt;em&gt;didalam pembagian, sesuatu itu tidak aneh hanya jika pembilang
 adalah kelipatan dari penyebut.&lt;/em&gt;&lt;br /&gt;
 _&lt;br /&gt;
-&lt;em&gt;Ini lumayan susah dibuat analoginya, silahkan anda berkreasi sendiri. _alasan
+_Ini lumayan susah dibuat analoginya, silahkan anda berkreasi sendiri. &lt;em&gt;alasan
 klasik kalo gak bisa ngejelasin sesuatu, :))&lt;/em&gt;&lt;br /&gt;
 Tapi satu yang pasti jangan mau dibagi-bagi (dipecah) karena peluang menjadi
 gila sangat besar disini.&lt;/p&gt;

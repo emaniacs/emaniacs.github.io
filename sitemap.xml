@@ -1,701 +1,498 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>http://blog.aredhi.com/tags</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://blog.aredhi.com/page</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://blog.aredhi.com/post</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/blog</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/celery</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/celery-beat</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/command-line</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/cron</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/ctf</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/fabric</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/fun</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/git</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/github</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/gnu-emacs</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/gnu-linux</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/golang</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/hacking</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/hugo</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/linux</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/lxde</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/matematika</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/nginx</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/openbox</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/opini</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/panada</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/programming</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/programming-go</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/programming-php</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/programming-python</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/programming-web</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/python</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/rinjani</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/timeline</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/unix</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/vim</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/tags/windows</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-
-    
-    <url>
-        <loc>http://blog.aredhi.com/</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/belum-ada-judul/</loc>
-        <lastmod>2015-12-03T11:48:30+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/cara-baru-minum-kopi-gayo/</loc>
-        <lastmod>2015-11-26T17:20:15+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/celery-beat-cron/</loc>
-        <lastmod>2015-11-26T15:11:18+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/cerpen-suara-musik-menjelang-tidur/</loc>
-        <lastmod>2015-11-24T21:02:21+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/today-is-a-grey-day/</loc>
-        <lastmod>2015-05-12T11:19:22+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</loc>
-        <lastmod>2015-05-05T11:12:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/rip-my-kaktus/</loc>
-        <lastmod>2015-05-04T11:47:59+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</loc>
-        <lastmod>2015-05-04T11:19:22+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/kentut-dalam-botol/</loc>
-        <lastmod>2015-03-31T22:11:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/nginx-go-fab/</loc>
-        <lastmod>2015-03-14T17:23:22+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/get-absolute-link-on-unix/</loc>
-        <lastmod>2015-03-04T09:10:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/sakit-pertama/</loc>
-        <lastmod>2015-03-03T15:12:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</loc>
-        <lastmod>2015-01-13T06:20:10+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</loc>
-        <lastmod>2015-01-13T06:20:10+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/add-shortcut-with-openbox/</loc>
-        <lastmod>2015-01-13T06:13:59+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/page/about/</loc>
-        <lastmod>2015-01-11T12:23:38+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/arsenalisme/</loc>
-        <lastmod>2014-05-31T00:46:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/git-command-stash/</loc>
-        <lastmod>2014-04-07T00:25:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/alam-semesta-berkabut/</loc>
-        <lastmod>2014-01-06T17:10:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/jingga-dilangit-jakarta/</loc>
-        <lastmod>2013-11-19T19:10:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/mendeteksi-keanehan-kegilaan-menggunakan-matematika/</loc>
-        <lastmod>2013-05-28T17:51:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</loc>
-        <lastmod>2013-05-20T19:30:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</loc>
-        <lastmod>2012-11-21T21:21:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/newbie-using-gnuchess/</loc>
-        <lastmod>2012-11-19T18:00:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/php-array-key-exists-or-isset/</loc>
-        <lastmod>2012-04-18T06:18:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/default-value-for-return/</loc>
-        <lastmod>2012-04-09T16:31:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</loc>
-        <lastmod>2012-03-19T20:08:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</loc>
-        <lastmod>2012-02-25T00:00:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</loc>
-        <lastmod>2012-02-20T20:12:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/no-woman-no-cry-bobmarley-lyric/</loc>
-        <lastmod>2012-01-27T00:00:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/localstorage-dengan-html/</loc>
-        <lastmod>2012-01-17T17:17:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</loc>
-        <lastmod>2012-01-15T23:59:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/tombol-shortcut-pada-twitter/</loc>
-        <lastmod>2012-01-10T00:00:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</loc>
-        <lastmod>2011-11-04T00:00:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</loc>
-        <lastmod>2011-11-01T21:19:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/let-s-go-programming-language/</loc>
-        <lastmod>2011-10-30T12:00:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</loc>
-        <lastmod>2011-08-08T20:08:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</loc>
-        <lastmod>2011-08-07T20:07:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</loc>
-        <lastmod>2011-06-27T06:27:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</loc>
-        <lastmod>2011-06-26T18:26:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</loc>
-        <lastmod>2011-06-20T06:20:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/panada-membuat-halaman-login/</loc>
-        <lastmod>2011-06-19T06:19:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</loc>
-        <lastmod>2011-06-13T18:13:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</loc>
-        <lastmod>2011-06-11T18:11:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/panada-hello-world/</loc>
-        <lastmod>2011-06-09T06:09:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/setting-nginx-dan-php/</loc>
-        <lastmod>2011-06-06T06:06:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/install-panada/</loc>
-        <lastmod>2011-06-03T18:03:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</loc>
-        <lastmod>2011-06-02T06:02:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</loc>
-        <lastmod>2011-06-01T18:01:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</loc>
-        <lastmod>2011-05-31T14:22:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/menang-iwanfals/</loc>
-        <lastmod>2011-05-19T09:19:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</loc>
-        <lastmod>2011-05-18T21:09:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/html-membuat-table-dengan-span-tableless-design/</loc>
-        <lastmod>2011-05-17T21:19:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</loc>
-        <lastmod>2011-05-07T17:55:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/konversi-bilangan-ip-address-dengan-php/</loc>
-        <lastmod>2011-04-22T18:06:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-color-theme-new-theme/</loc>
-        <lastmod>2011-04-11T23:09:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/</loc>
-        <lastmod>2011-04-06T21:21:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/fungsi-showsource-highlight-file-pada-php/</loc>
-        <lastmod>2011-04-05T11:11:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/setting-arsip-blogspot-expand-collapse/</loc>
-        <lastmod>2011-04-01T11:11:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/menjebol-password-berbintang-m/</loc>
-        <lastmod>2011-03-28T10:10:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/belajar-programming-secara-online/</loc>
-        <lastmod>2011-03-25T15:12:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/python-dan-bilangan-prima/</loc>
-        <lastmod>2011-03-24T05:03:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/javascript-document-get-error-atau-menghasilkan-null/</loc>
-        <lastmod>2011-03-23T15:33:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</loc>
-        <lastmod>2011-03-22T23:22:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/singkatan-recursive-emacs/</loc>
-        <lastmod>2011-03-21T06:44:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/kamus-on-terminal-c-version/</loc>
-        <lastmod>2011-03-20T22:00:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</loc>
-        <lastmod>2011-03-19T21:07:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/jangan-ngaku-orang-minang-kalau-tidak-sholat/</loc>
-        <lastmod>2011-03-17T05:17:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-command-line-x-window/</loc>
-        <lastmod>2011-03-16T16:16:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/bactrace-aplikasi-di-linux/</loc>
-        <lastmod>2011-03-16T04:44:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/linux-redirection/</loc>
-        <lastmod>2011-03-15T03:15:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/</loc>
-        <lastmod>2011-03-14T14:14:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-command-line-standard-options/</loc>
-        <lastmod>2011-03-13T01:13:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-command-line/</loc>
-        <lastmod>2011-03-11T11:11:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-shorcuts/</loc>
-        <lastmod>2011-03-10T10:10:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/calculator-emacs/</loc>
-        <lastmod>2011-03-09T09:09:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/perintah-perintah-emacs-untuk-pengeditan-file/</loc>
-        <lastmod>2011-03-08T08:08:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</loc>
-        <lastmod>2011-03-07T07:07:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</loc>
-        <lastmod>2011-03-06T06:06:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/menggunakan-mouse-emacs/</loc>
-        <lastmod>2011-03-05T05:05:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/mode-line-emacs/</loc>
-        <lastmod>2011-03-04T04:44:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/mengubah-gedit-menjadi-web-editor-powerfull/</loc>
-        <lastmod>2011-01-30T01:17:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/syntax-highlighter-pada-blogspot-com/</loc>
-        <lastmod>2011-01-28T21:32:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/compiled-atau-interpreted/</loc>
-        <lastmod>2011-01-27T22:33:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/kenikmatan-berbuka/</loc>
-        <lastmod>2010-08-20T22:08:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/gnu-emacs/</loc>
-        <lastmod>2010-07-04T19:41:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/tambun-harco/</loc>
-        <lastmod>2010-07-03T02:41:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/google-recursive/</loc>
-        <lastmod>2010-06-25T23:52:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/google-translate-perl-update/</loc>
-        <lastmod>2010-06-25T00:15:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/google-translate-perl/</loc>
-        <lastmod>2010-06-23T19:56:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/opera-on-zencafe/</loc>
-        <lastmod>2010-06-10T02:21:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/defacement-rasa-palestine/</loc>
-        <lastmod>2010-06-04T01:13:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/perintah-perintah-crontab/</loc>
-        <lastmod>2010-05-19T23:50:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/my-favorite-applications/</loc>
-        <lastmod>2010-05-19T18:36:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</loc>
-        <lastmod>2010-05-18T23:45:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/kostumisasi-shorcut-ubuntu/</loc>
-        <lastmod>2010-04-25T04:53:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/perintah-linux/</loc>
-        <lastmod>2010-04-25T04:52:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/emacs-make-all-computing-simple/</loc>
-        <lastmod>2010-04-25T04:49:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/teknik-menyembunyikan-gambar-gimp/</loc>
-        <lastmod>2010-04-25T04:49:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/was-born-enternet/</loc>
-        <lastmod>2010-04-25T04:47:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/gedit-programming-edition/</loc>
-        <lastmod>2010-01-23T19:29:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://blog.aredhi.com/post/kaktus-ku-mati/</loc>
-        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  
+  <url>
+    <loc>http://blog.aredhi.com/</loc>
+    <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/today-is-a-grey-day/</loc>
+    <lastmod>2015-05-12T11:19:22+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</loc>
+    <lastmod>2015-05-05T11:12:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/rip-my-kaktus/</loc>
+    <lastmod>2015-05-04T11:47:59+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</loc>
+    <lastmod>2015-05-04T11:19:22+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/kentut-dalam-botol/</loc>
+    <lastmod>2015-03-31T22:11:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/nginx-go-fab/</loc>
+    <lastmod>2015-03-14T17:23:22+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/get-absolute-link-on-unix/</loc>
+    <lastmod>2015-03-04T09:10:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/sakit-pertama/</loc>
+    <lastmod>2015-03-03T15:12:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</loc>
+    <lastmod>2015-01-13T06:20:10+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</loc>
+    <lastmod>2015-01-13T06:20:10+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/add-shortcut-with-openbox/</loc>
+    <lastmod>2015-01-13T06:13:59+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/page/about/</loc>
+    <lastmod>2015-01-11T12:23:38+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/arsenalisme/</loc>
+    <lastmod>2014-05-31T00:46:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/git-command-stash/</loc>
+    <lastmod>2014-04-07T00:25:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/alam-semesta-berkabut/</loc>
+    <lastmod>2014-01-06T17:10:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/jingga-dilangit-jakarta/</loc>
+    <lastmod>2013-11-19T19:10:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/mendeteksi-keanehan-kegilaan-menggunakan-matematika/</loc>
+    <lastmod>2013-05-28T17:51:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</loc>
+    <lastmod>2013-05-20T19:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</loc>
+    <lastmod>2012-11-21T21:21:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/newbie-using-gnuchess/</loc>
+    <lastmod>2012-11-19T18:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/php-array-key-exists-or-isset/</loc>
+    <lastmod>2012-04-18T06:18:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/default-value-for-return/</loc>
+    <lastmod>2012-04-09T16:31:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</loc>
+    <lastmod>2012-03-19T20:08:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</loc>
+    <lastmod>2012-02-25T00:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/how-to-fill-constant-with-array-in-php/</loc>
+    <lastmod>2012-02-20T20:12:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/no-woman-no-cry-bobmarley-lyric/</loc>
+    <lastmod>2012-01-27T00:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/localstorage-dengan-html/</loc>
+    <lastmod>2012-01-17T17:17:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</loc>
+    <lastmod>2012-01-15T23:59:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/tombol-shortcut-pada-twitter/</loc>
+    <lastmod>2012-01-10T00:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/</loc>
+    <lastmod>2011-11-04T00:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/</loc>
+    <lastmod>2011-11-01T21:19:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/let-s-go-programming-language/</loc>
+    <lastmod>2011-10-30T12:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</loc>
+    <lastmod>2011-08-08T20:08:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</loc>
+    <lastmod>2011-08-07T20:07:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</loc>
+    <lastmod>2011-06-27T06:27:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/kenapa-harus-install-ulang/</loc>
+    <lastmod>2011-06-26T18:26:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/variabel-variabels-dengan-bash-shell-script/</loc>
+    <lastmod>2011-06-20T06:20:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/panada-membuat-halaman-login/</loc>
+    <lastmod>2011-06-19T06:19:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</loc>
+    <lastmod>2011-06-13T18:13:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</loc>
+    <lastmod>2011-06-11T18:11:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/panada-hello-world/</loc>
+    <lastmod>2011-06-09T06:09:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/setting-nginx-dan-php/</loc>
+    <lastmod>2011-06-06T06:06:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/install-panada/</loc>
+    <lastmod>2011-06-03T18:03:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</loc>
+    <lastmod>2011-06-02T06:02:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</loc>
+    <lastmod>2011-06-01T18:01:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</loc>
+    <lastmod>2011-05-31T14:22:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/menang-iwanfals/</loc>
+    <lastmod>2011-05-19T09:19:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</loc>
+    <lastmod>2011-05-18T21:09:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/html-membuat-table-dengan-span-tableless-design/</loc>
+    <lastmod>2011-05-17T21:19:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</loc>
+    <lastmod>2011-05-07T17:55:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/konversi-bilangan-ip-address-dengan-php/</loc>
+    <lastmod>2011-04-22T18:06:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-color-theme-new-theme/</loc>
+    <lastmod>2011-04-11T23:09:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/</loc>
+    <lastmod>2011-04-06T21:21:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/fungsi-showsource-highlight-file-pada-php/</loc>
+    <lastmod>2011-04-05T11:11:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/setting-arsip-blogspot-expand-collapse/</loc>
+    <lastmod>2011-04-01T11:11:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/menjebol-password-berbintang-m/</loc>
+    <lastmod>2011-03-28T10:10:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/belajar-programming-secara-online/</loc>
+    <lastmod>2011-03-25T15:12:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/python-dan-bilangan-prima/</loc>
+    <lastmod>2011-03-24T05:03:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/javascript-document-get-error-atau-menghasilkan-null/</loc>
+    <lastmod>2011-03-23T15:33:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/hacker-pencuri-chip-virtual-zynga-di-penjara-tahun/</loc>
+    <lastmod>2011-03-22T23:22:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/singkatan-recursive-emacs/</loc>
+    <lastmod>2011-03-21T06:44:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/kamus-on-terminal-c-version/</loc>
+    <lastmod>2011-03-20T22:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/kirim-email-gmail-via-konsole-terminal-ssmtp-dan-mail/</loc>
+    <lastmod>2011-03-19T21:07:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/jangan-ngaku-orang-minang-kalau-tidak-sholat/</loc>
+    <lastmod>2011-03-17T05:17:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-command-line-x-window/</loc>
+    <lastmod>2011-03-16T16:16:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/bactrace-aplikasi-di-linux/</loc>
+    <lastmod>2011-03-16T04:44:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/linux-redirection/</loc>
+    <lastmod>2011-03-15T03:15:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/</loc>
+    <lastmod>2011-03-14T14:14:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-command-line-standard-options/</loc>
+    <lastmod>2011-03-13T01:13:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-command-line/</loc>
+    <lastmod>2011-03-11T11:11:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-shorcuts/</loc>
+    <lastmod>2011-03-10T10:10:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/calculator-emacs/</loc>
+    <lastmod>2011-03-09T09:09:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/perintah-perintah-emacs-untuk-pengeditan-file/</loc>
+    <lastmod>2011-03-08T08:08:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</loc>
+    <lastmod>2011-03-07T07:07:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</loc>
+    <lastmod>2011-03-06T06:06:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/menggunakan-mouse-emacs/</loc>
+    <lastmod>2011-03-05T05:05:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/mode-line-emacs/</loc>
+    <lastmod>2011-03-04T04:44:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/mengubah-gedit-menjadi-web-editor-powerfull/</loc>
+    <lastmod>2011-01-30T01:17:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/syntax-highlighter-pada-blogspot-com/</loc>
+    <lastmod>2011-01-28T21:32:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/compiled-atau-interpreted/</loc>
+    <lastmod>2011-01-27T22:33:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/kenikmatan-berbuka/</loc>
+    <lastmod>2010-08-20T22:08:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/gnu-emacs/</loc>
+    <lastmod>2010-07-04T19:41:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/tambun-harco/</loc>
+    <lastmod>2010-07-03T02:41:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/google-recursive/</loc>
+    <lastmod>2010-06-25T23:52:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/google-translate-perl-update/</loc>
+    <lastmod>2010-06-25T00:15:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/google-translate-perl/</loc>
+    <lastmod>2010-06-23T19:56:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/opera-on-zencafe/</loc>
+    <lastmod>2010-06-10T02:21:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/defacement-rasa-palestine/</loc>
+    <lastmod>2010-06-04T01:13:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/perintah-perintah-crontab/</loc>
+    <lastmod>2010-05-19T23:50:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/my-favorite-applications/</loc>
+    <lastmod>2010-05-19T18:36:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</loc>
+    <lastmod>2010-05-18T23:45:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/kostumisasi-shorcut-ubuntu/</loc>
+    <lastmod>2010-04-25T04:53:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/perintah-linux/</loc>
+    <lastmod>2010-04-25T04:52:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/emacs-make-all-computing-simple/</loc>
+    <lastmod>2010-04-25T04:49:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/teknik-menyembunyikan-gambar-gimp/</loc>
+    <lastmod>2010-04-25T04:49:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/was-born-enternet/</loc>
+    <lastmod>2010-04-25T04:47:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/gedit-programming-edition/</loc>
+    <lastmod>2010-01-23T19:29:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.aredhi.com/post/kaktus-ku-mati/</loc>
+  </url>
+  
 </urlset>

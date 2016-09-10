@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Pages on http://blog.aredhi.com </title>
+    <title>Pages on http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/page/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Sun, 11 Jan 2015 12:23:38 WIB</updated>
+    <description>Recent content in Pages on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Jan 2015 12:23:38 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About me</title>
       <link>http://blog.aredhi.com/page/about/</link>
-      <pubDate>Sun, 11 Jan 2015 12:23:38 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sun, 11 Jan 2015 12:23:38 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/page/about/</guid>
       <description>&lt;p&gt;Not finish yet,&lt;/p&gt;
 </description>

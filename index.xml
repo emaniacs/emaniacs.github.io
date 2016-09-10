@@ -1,94 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title> on http://blog.aredhi.com </title>
+    <title>http://blog.aredhi.com</title>
     <link>http://blog.aredhi.com/</link>
-    <language>en-US</language>
-    <author>Novi Ardi</author>
-    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Thu, 03 Dec 2015 11:48:30 WIB</updated>
-    
-    <item>
-      <title>belum ada judul</title>
-      <link>http://blog.aredhi.com/post/belum-ada-judul/</link>
-      <pubDate>Thu, 03 Dec 2015 11:48:30 WIB</pubDate>
-      <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/belum-ada-judul/</guid>
-      <description>
-
-&lt;h1 id=&#34;belum-ada-judul:5bcc970bfcf12bcc8362a3710255d18a&#34;&gt;Belum Ada Judul&lt;/h1&gt;
-
-&lt;p&gt;Pengen ngeblog tapi belum ada ide, makanya nulis seperti ini.&lt;/p&gt;
-
-&lt;p&gt;??&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>cara baru minum kopi gayo</title>
-      <link>http://blog.aredhi.com/post/cara-baru-minum-kopi-gayo/</link>
-      <pubDate>Thu, 26 Nov 2015 17:20:15 WIB</pubDate>
-      <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/cara-baru-minum-kopi-gayo/</guid>
-      <description>&lt;p&gt;Kebiasaan habis makan siang selalu minum kopi, karena stok kopi gayo &lt;code&gt;peaberry&lt;/code&gt;
-dan &lt;code&gt;wine&lt;/code&gt; masih banyak akhirnya saya mencoba untuk mencampur kedua jenis
-tersebut tapi dengan cara yang berbeda.&lt;/p&gt;
-
-&lt;p&gt;Biasa penggabungan kopi itu dilakukan sebelum dihaluskan, tapi kali ini saya
-melakukan dengan cara yang agak sedikit berbeda, yaitu mencampur biji kopi yang
-sudah digrind dengan yang belum.&lt;/p&gt;
-
-&lt;p&gt;Komposisinya adalah 39 biji wine yang belum digrind dicampur dengan sekitar 80
-biji &lt;code&gt;peaberry&lt;/code&gt; yang sudah digrind.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;cara baru minum kopi&#34; class=&#34;img-center&#34; src=&#34;https://lh3.googleusercontent.com/wV9Cswtr24aS8yjBq5C3KR1VM2im7SjJQUK8dhpEtigFTDE-Pw8mEShfiX1QUyWj0uH_yWPvufLh_M7g0w-YrUrqtnwHBIzaduyep8cAAvkhXXroOWHSW2gMbo_y24wNtJ2cYewp00gjh3gqTr6RPE3do7zKnHy4TCZR-2qPgw-A8VobNdyXED5zBErfPwPbdSGti6ypbEYomufDT30tNZFUIVme0xonPNGEYDa9iI-VPaVgLD_VRl6O5rHQBw6IfnQ3ntZNXtzw4l6RD4PiPaVBs-xAAq33_t0xLOaPi2bwreJTyU2WO_tdA2FHpZbPsYQjKVVzaNXd_mRiLZ04j_5Hs98gS5wtleYghfJQ9-F42wirT7D8uhbDqn7c53gZc_PoEwIhybcCDNue0CzB-cvKIYpvqbzpH5He1_jdoYtHE57Z70O5QYk479-mHUBBeVhR7MPmX8mqQaW7uZZM_Qnk-1E-_o6CKYh6yp43C6Z5Sv7hdJM3F4XeG5kDO3W5-DnaDvoryLRCz6Z7aTC8HM8iZZFUFPiQxnAH6EMkNGY=w496-h661-no&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Metode yang digunakan untuk penyajian kopi ini saya pakai &lt;code&gt;plunger&lt;/code&gt; atau yang
-lebih dikenal &lt;code&gt;french press&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Karena gayo &lt;code&gt;wine&lt;/code&gt; tipikal rasanya asem jadi rasa kopi ini ada rasa asamnya tapi
-tidak begitu terasa karena hampir kalah oleh rasa &lt;code&gt;peaberry&lt;/code&gt; yang agak pahit.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>celery beat cron</title>
-      <link>http://blog.aredhi.com/post/celery-beat-cron/</link>
-      <pubDate>Thu, 26 Nov 2015 15:11:18 WIB</pubDate>
-      <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/celery-beat-cron/</guid>
-      <description>
-
-&lt;h1 id=&#34;intro:7bfc44e2bfcda5150cab0369368c7159&#34;&gt;Intro&lt;/h1&gt;
-
-&lt;p&gt;Not really finish yet..
-&lt;a href=&#34;https://github.com/emaniacs/celery-beat-cron&#34;&gt;https://github.com/emaniacs/celery-beat-cron&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>cerpen - suara musik menjelang tidur</title>
-      <link>http://blog.aredhi.com/post/cerpen-suara-musik-menjelang-tidur/</link>
-      <pubDate>Tue, 24 Nov 2015 21:02:21 WIB</pubDate>
-      <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/cerpen-suara-musik-menjelang-tidur/</guid>
-      <description>
-
-&lt;h1 id=&#34;cerpen:1b160b2d4da4a7a1ec0fc90db6d1772a&#34;&gt;Cerpen&lt;/h1&gt;
-
-&lt;p&gt;Disebuah malam ketika sedang bersiap mau tidur, semua lampu telah dimatikan
-dengan sebuah doa aku mencoba tidur.
-Perlahan terdengar suara musik sangat sendu yang sangat pelan, suara ini
-lama-lama makin keras, seketika aku buka mata ternyata suara itu berasal dari
-handphone. :)&lt;/p&gt;
-</description>
-    </item>
+    <description>Recent content on http://blog.aredhi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 May 2015 11:19:22 +0700</lastBuildDate>
+    <atom:link href="http://blog.aredhi.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Today is a grey day</title>
       <link>http://blog.aredhi.com/post/today-is-a-grey-day/</link>
-      <pubDate>Tue, 12 May 2015 11:19:22 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 12 May 2015 11:19:22 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/today-is-a-grey-day/</guid>
       <description>&lt;p&gt;Belum genap seminggu saya pulang dari Lombok, habis mendaki Rinjani lanjut nenda di Gili Trawangan, tapi semua rongga tubuhku udah kembali terasa sesak, oleh masalah dan teman-temannya.&lt;/p&gt;
 
@@ -101,8 +26,8 @@ handphone. :)&lt;/p&gt;
     <item>
       <title>VIm autocomplete with YouCompleteMe</title>
       <link>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</link>
-      <pubDate>Tue, 05 May 2015 11:12:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 05 May 2015 11:12:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/vim-autocomplete-with-youcompleteme/</guid>
       <description>&lt;p&gt;Finally i use an autocomplete plugin in my vim, my choice is &lt;a href=&#34;https://github.com/Valloric/YouCompleteMe&#34;&gt;YouCompleteMe&lt;/a&gt;.
 This plugin need vim 7.34+ and python support and my vim is still 7.3 so need to recompile it.&lt;/p&gt;
@@ -132,8 +57,8 @@ $ sudo make install
     <item>
       <title>RIP my kaktus</title>
       <link>http://blog.aredhi.com/post/rip-my-kaktus/</link>
-      <pubDate>Mon, 04 May 2015 11:47:59 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 04 May 2015 11:47:59 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/rip-my-kaktus/</guid>
       <description>&lt;p&gt;Kemarin, Minggu 4 Mei 2015 salah satu kaktus saya mati. Bagian batang membusuk sehingga menjadi patah, sebagai pemula di bidang ini saya tidak tahu penyebab pastinya.&lt;/p&gt;
 
@@ -148,8 +73,8 @@ $ sudo make install
     <item>
       <title>Bloging with github, hugo and gitbook</title>
       <link>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</link>
-      <pubDate>Mon, 04 May 2015 11:19:22 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Mon, 04 May 2015 11:19:22 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/bloging-with-hugo-and-gitbook/</guid>
       <description>&lt;p&gt;Today i use &lt;a href=&#34;https://www.gitbook.com&#34;&gt;GitBook&lt;/a&gt; and &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as my blogging platform.&lt;/p&gt;
 
@@ -164,8 +89,8 @@ $ sudo make install
     <item>
       <title>Kentut Dalam Botol</title>
       <link>http://blog.aredhi.com/post/kentut-dalam-botol/</link>
-      <pubDate>Tue, 31 Mar 2015 22:11:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 31 Mar 2015 22:11:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/kentut-dalam-botol/</guid>
       <description>
 
@@ -245,8 +170,8 @@ Dan seketika abang saya tertawa sangat puas..&lt;/p&gt;
     <item>
       <title>Membangun website sederhana menggunakan golang nginx dan fabric</title>
       <link>http://blog.aredhi.com/post/nginx-go-fab/</link>
-      <pubDate>Sat, 14 Mar 2015 17:23:22 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Sat, 14 Mar 2015 17:23:22 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/nginx-go-fab/</guid>
       <description>
 
@@ -420,8 +345,8 @@ digunakan saat deploy dengan fabric.&lt;/p&gt;
     <item>
       <title>Get absolute link on nix/linux</title>
       <link>http://blog.aredhi.com/post/get-absolute-link-on-unix/</link>
-      <pubDate>Wed, 04 Mar 2015 09:10:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Wed, 04 Mar 2015 09:10:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/get-absolute-link-on-unix/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cat script.sh
 #!/usr/bin/env bash
@@ -439,8 +364,8 @@ echo $THIS_DIR
     <item>
       <title>Sakit pertama</title>
       <link>http://blog.aredhi.com/post/sakit-pertama/</link>
-      <pubDate>Tue, 03 Mar 2015 15:12:00 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 03 Mar 2015 15:12:00 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/sakit-pertama/</guid>
       <description>&lt;p&gt;Akhirnya sakit lagi, hari ini sedikit flu dan ini merupakan sakit pertama di 2015.
 Dan karena sakit ini juga gw mereview kembali hapalan-hapalan surat pendek gw,
@@ -457,8 +382,8 @@ membanggakan.&lt;/p&gt;
     <item>
       <title>Kill defunct process on nix/linux</title>
       <link>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</link>
-      <pubDate>Tue, 13 Jan 2015 06:20:10 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 13 Jan 2015 06:20:10 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/kill-defunct-proses-on-linux/</guid>
       <description>&lt;p&gt;$ ps aux | grep name&lt;/p&gt;
 
@@ -473,8 +398,8 @@ membanggakan.&lt;/p&gt;
     <item>
       <title>Paksa user untuk logout (GNU/Linux)</title>
       <link>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</link>
-      <pubDate>Tue, 13 Jan 2015 06:20:10 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 13 Jan 2015 06:20:10 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/paksa-user-logout-di-gnulinux/</guid>
       <description>&lt;p&gt;Untuk memaksa user yang sedang logout di mesin Unix atau Gnu/Linux bisa
 menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt;
@@ -494,8 +419,8 @@ menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt
     <item>
       <title>Add shortcut with lxde or openbox</title>
       <link>http://blog.aredhi.com/post/add-shortcut-with-openbox/</link>
-      <pubDate>Tue, 13 Jan 2015 06:13:59 WIB</pubDate>
-      <author>Novi Ardi</author>
+      <pubDate>Tue, 13 Jan 2015 06:13:59 +0700</pubDate>
+      
       <guid>http://blog.aredhi.com/post/add-shortcut-with-openbox/</guid>
       <description>
 
@@ -511,6 +436,139 @@ menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt
     &amp;lt;/action&amp;gt;
 &amp;lt;/keybind&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>http://blog.aredhi.com/page/about/</link>
+      <pubDate>Sun, 11 Jan 2015 12:23:38 +0700</pubDate>
+      
+      <guid>http://blog.aredhi.com/page/about/</guid>
+      <description>&lt;p&gt;Not finish yet,&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arsenalisme</title>
+      <link>http://blog.aredhi.com/post/arsenalisme/</link>
+      <pubDate>Sat, 31 May 2014 00:46:00 +0700</pubDate>
+      
+      <guid>http://blog.aredhi.com/post/arsenalisme/</guid>
+      <description>&lt;p&gt;Arsenalisme adalah sebuah paham tentang kesetiaan terhadap sesuatu yang sangat
+potensial.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Git command: stash</title>
+      <link>http://blog.aredhi.com/post/git-command-stash/</link>
+      <pubDate>Mon, 07 Apr 2014 00:25:00 +0700</pubDate>
+      
+      <guid>http://blog.aredhi.com/post/git-command-stash/</guid>
+      <description>&lt;p&gt;Secara bahasa _stash_ artinya menyimpan, ini juga yang dilakukan oleh &lt;strong&gt;git&lt;/strong&gt;
+ketika melakukan perintah ini.&lt;/p&gt;
+
+&lt;p&gt;Ketika melakukan aktifitas editing pada source-code yang belum selesai, tapi
+belum ingin di_commit_ dan harus pindah ke branch lain, maka perintah stash
+bisa digunakan.&lt;/p&gt;
+
+&lt;p&gt;Beberapa perintah sederhana git stash.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan menyimpan semua perubahan pada file yang kita edit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash save namaStash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini sama dengan perintah sebelumnya namun kita menentukan sendiri
+namanya.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash list&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan menampilkan daftar dari perintah stash yang pernah kita
+lakukan.&lt;/p&gt;
+
+&lt;p&gt;Contoh output:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $ git stash list&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{0}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{1}: WIP on master: e94b03b Setelah stash&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{2}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{3}: WIP on wew: 62d7aa1 Update from wew&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;stash@{4}: On master: satu sampe lime&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ardi@dtk:~/ $&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;_&lt;br /&gt;
+_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash apply&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini akan mengembalikan kondisi file yang sebelumnya kita simpan,
+kondisi yang diambil adalah kondisi yang paling atas atau &lt;strong&gt;&lt;em&gt;stash@{0}&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$ git stash apply namaStash&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Perintah ini sama dengan perintah &lt;strong&gt;git stash apply&lt;/strong&gt;, bedanya kita menentukan
+sendiri kondisi mana yang akan diaplikasikan ke repository kode kita.&lt;/p&gt;
+
+&lt;p&gt;Berikut diatas adalah beberapa perintah &lt;strong&gt;stash&lt;/strong&gt; yang sering saya gunakan,
+untuk penggunaan lebih lanjut bisa dilihat di manual dari git tentang stash
+&lt;strong&gt;$ git help stash&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;NB: Perintah stash hanya berpengaruh terhadap file yang telah ditrack oleh
+git, termasuk file yang telah di &lt;strong&gt;git add&lt;/strong&gt;&lt;br /&gt;
+**&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;**Source:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/book/en/Git-Tools-Stashing&#34;&gt;http://git-scm.com/book/en/Git-Tools-Stashing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$ git help stash&lt;/strong&gt;
+
+&lt;br /&gt;
+
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alam semesta berkabut</title>
+      <link>http://blog.aredhi.com/post/alam-semesta-berkabut/</link>
+      <pubDate>Mon, 06 Jan 2014 17:10:00 +0700</pubDate>
+      
+      <guid>http://blog.aredhi.com/post/alam-semesta-berkabut/</guid>
+      <description>&lt;p&gt;Dalam perjalanan turun dari gunung ciremai&lt;br /&gt;
+diantara pos arban dan cigowong&lt;br /&gt;
+aku berpisah tidak begitu jauh&lt;br /&gt;
+dan berjalan sendiri ditengah hutan.&lt;br /&gt;
+Ketika suara binatang cukup jelas,aku merentangkan kedua tanganku,&lt;br /&gt;
+kututup mata ini, kuresapi suara hutan, suara alam&lt;br /&gt;
+dan tiba-tiba, aku merasakan jiwaku seperti terangkat dari tubuhku&lt;br /&gt;
+aku bisa melihat dengan jelas tubuhku sedang merentangkan kedua tangan,&lt;br /&gt;
+disebelah sebuah pohon.&lt;br /&gt;
+Seketika dengan kecepatan yang hebat aku terangkat semakin tinggi,&lt;br /&gt;
+sehingga aku melihat bumi semakin lama semakin kecil,&lt;br /&gt;
+dan aku melihat benua afrika hanya sebesar telapak tangan.&lt;br /&gt;
+Dan semakin cepat aku semakin terangkat semakin tinggi&lt;br /&gt;
+bumi semakin kecil dan bercahaya,&lt;br /&gt;
+banyak sekali cahaya yang bertebaran dimana-mana yang lebih kecil atau lebih
+besar&lt;br /&gt;
+dengan mata aku melihat alam semesta berkabut&lt;br /&gt;
+seperti melihat malam dari sebuah kaca yang berembun.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-npXgy5RulMM/UsqA-L-dnkI/AAAAAAAACKg/4enwVmPUQac/
+s1600/IMG_20140105_103642_297.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
