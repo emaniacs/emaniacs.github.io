@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/mode-line-emacs/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Mode Line (Emacs) &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/mode-line-emacs/"><h2 class="post-title">Mode Line (Emacs)</h2></a>
+
+                    <p class="post-meta">
+                        <i>Friday , 04 Mar 2011 04:44:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://1.bp.blogspot.com/-n5yHVAqmYj8/TY9z82yNdjI/AAAAAAAAAWQ/Ni8ipLLmeRY/
+s1600/emacs-modeline.png" alt="" /></p>
+
+<p>Mode Line dalam editor sekarang ini sering disebut dengan status bar, disini
+biasanya ditempatkan info tentang file yang sedang diedit, bisa dengan
+gambar/icon bisa juga dengan teks atau angka, Emacs sendiri menggunakan teks
+dan angka sebagai penanda di mode line ini.</p>
+
+<p>Dalam Emacs info tentang file yang diberikan sangat kompleks, dari coding-
+system yang digunakan, status buffer (buffer didalam Emacs adalah file yang
+kita edit), nama file, ukuran file, posisi cursor, hingga mayor dan minor
+mode.Mayor mode secara bebas bisa diartikan sebagai status mode file yang kita
+buka, misalkan kita membuka file C source maka Emacs akan langsung mendeteksi
+kita menggunakan mode C (c-mode), sedangkan minor mode saya sendiri belum
+begitu memahami tapi mungkin bisa diartikan sebagai mode pendukung dari major
+mode. Misalkan mengaktifkan
+<a href="http://code.google.com/p/yasnippet/">“yassnippet”</a> untuk automatisasi
+completion code.Format mode line adalah seperti ini :</p>
+
+<p><strong><code>-CS:CH-FR    BUF    POS    LINE    (MAJOR MINOR)</code></strong></p>
+
+<p><strong>``</strong></p>
+
+<ul>
+<li><p><strong><code>-  
+karakter dash(-). tidak berarti.</code></strong></p></li>
+
+<li><p><strong><code>CS  
+Coding System, satu karakter penanda, jika karakternya dash (-) berarti
+menggunakan karakter ascii standar. Kode karakter Untuk coding system:  
+**U — utf-8 (alias: mule-utf-8)**  
+UTF-8 (no signature (BOM))  
+**c — chinese-iso-8bit (alias: cn-gb-2312 euc-china euc-cn cn-gb gb2312)**  
+ISO 2022 based EUC encoding for Chinese GB2312 (MIME:GB2312).  
+**1 — iso-latin-1 (alias: iso-8859-1 latin-1)**  
+ISO 2022 based 8-bit encoding for Latin-1 (MIME:ISO-8859-1).  
+**B — chinese-big5 (alias: big5 cn-big5 cp950)**BIG5 8-bit encoding for Chinese (MIME:Big5)  
+**J — iso-2022-jp (alias: junet)**ISO 2022 based 7bit encoding for Japanese (MIME:ISO-2022-JP).  
+**S — japanese-shift-jis (alias: shift_jis sjis)**Shift-JIS 8-bit encoding for Japanese (MIME:SHIFT_JIS)  
+**Z — euc-tw (alias: euc-taiwan)**ISO 2022 based EUC encoding for Chinese CNS11643.  
+Daftar diatas hanyalah sebagian kecil dari coding-system yang didukung oleh
+Emacs, untuk lebih lengkapnya bisa dilihat dengan menggunakan perintah </code></strong>M-x
+RET list-coding-system<strong><code>.</code></strong></p></li>
+
+<li><p><strong><code>:  
+Sebagai pembatas.</code></strong></p></li>
+
+<li><p>**`CH-<br />
+Untuk indikasi status buffer, ditulis dengan 2 karakter</p>
+
+<ul>
+<li><p>Karakter pertama untuk status pembacaan file read write<br />
+(*) berarti file bisa untuk ditulis atau diedit<br />
+(%) berarti file hanya bisa dibaca, read only biasanya ditulis dengan 2
+karakter “%”.</p></li>
+
+<li><p>Karakter kedua untuk status perubahan file<br />
+(*) berarti file telah diedit.<br />
+(-) berarti file tidak mengalami perubahan atau telah disimpan.</p></li>
+</ul></li>
+</ul>
+
+<p>`**</p>
+
+<ul>
+<li><p><strong><code>FR  
+Nama frame yang digunakan. Jika tandanya adalah dash(-) berarti normal atau
+default. Jika menggunakan terminal (emacs -nw) maka karakternya adalah F1,
+sedangkan tanda “@” berarti file yang diedit adalah file remote atau bukan
+file local.</code></strong></p></li>
+
+<li><p><strong><code>BUF  
+BUF adalah nama buffer atau file yang sedang diedit.</code></strong></p></li>
+
+<li><p><strong><code>POS  
+Posisi cursor sedang aktif, “ALL” berarti semua file terlihat di monitor,
+“TOP” untuk posisi awal file, “BOT” posisi akhir file, dan untuk posisi
+lainnya ditulis dengan persen. Untuk mengetahui dimana posisi file atau
+karakter bisa dengan menggunakan </code></strong>M-x what-page RET<strong><code> untuk melihat status
+halaman dan **</code>M-x what-line RET<code>** untuk status baris.</code></strong></p></li>
+
+<li><p><strong><code>LINE  
+Posisi baris aktif, ditulis dengan format L. Jadi jika L5 berarti cursor di
+baris kelima.  
+Jika mengaktifkan column-mode (**</code>M-x column-mode RET<code>**), maka formatnya
+adalah “(baris,kolom)”</code></strong></p></li>
+
+<li><p><strong><code>(MAJOR MINOR)  
+Untuk minor-mode kadang diisi dengan banyak kata sebagai tanda aktif dari
+minor-mode, misalkan “yas” untuk yassnippet, abbrev untuk abbreviations</code></strong></p></li>
+
+<li><p><strong><code>——–  
+Akhir dari mode line</code></strong></p></li>
+</ul>
+
+<p><strong><code>Misalkan mode line dari sebuah seperti ini</code></strong></p>
+
+<p><strong><code>**</code>--:</strong>-    thisIsC.c    Top    L4    (C/1  yas  Abbrev) &mdash;&mdash;&mdash;&mdash;&mdash;-<code>**Berarti nama buffer adalah “thisIsC” menggunakan coding-system standar, telah dilakukan pengeditan buffer, berada di posisi awal file tepatnya dibaris ke 4, dengan c-mode, abbreviations dan yas aktif sebagai minor mode.</code>**</p>
+
+<p><strong><code>Contoh contoh lainnya, anda bisa mengartikan sendiri.</code></strong></p>
+
+<p><strong><code>![undefined](http://i842.photobucket.com/albums/zz345/iamlinux/emacs-mode-line-rw.png)  
+![undefined](http://i842.photobucket.com/albums/zz345/iamlinux/emacs-mode-
+line-root.png)  
+![undefined](http://i842.photobucket.com/albums/zz345/iamlinux/emacs-mode-
+line-ro.png)  
+![undefined](http://i842.photobucket.com/albums/zz345/iamlinux/emacs-mode-
+line-r-dos.png)</code></strong></p>
+
+<p><strong><code>Selain itu juga ada status di modeline untuk indikasi ukuran file/buffer yang sedang diedit, status battery, waktu, dan status inbox email yang kita punya. Bisa diaktifkan dengan mengklik (Options -&gt; Show/Hide) pada menu bar Emacs.</code></strong></p>
+
+<blockquote>
+<p><strong><code>M-x shell RET  –&gt; berarti menekan tombol ALT/META dan x kemudian mengetik
+“shell” di minibuffer dan RET berarti penekanan Enter.  
+</code></strong>C-x RET f<strong><code> –&gt; melihat daftar coding system (_set-buffer-file-coding-
+system_)  
+**</code>C-x C-q<code>** –&gt; mengubah status buffer dari read-only menjadi read-write atau sebaliknya  
+**</code>M-x what-domain RET id RET<code>**–&gt; berarti melihat domain “id” terdaftar untuk negara mana. (Fitur Unik nih, sebelumnya saya selalu nanya Google untuk mencari suatu domain name).  
+Sekali lagi, gunakan TAB untuk pelengkap kata yang ingin dicari.  
+Jika ingin mencari perintah yang terdapat kata “system” ditengah makro bisa
+dengan mengetikkan “-system” kemudian menekan TAB.</code></strong></p>
+</blockquote>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/menggunakan-mouse-emacs/">Menggunakan Mouse (Emacs)</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/mengubah-gedit-menjadi-web-editor-powerfull/">Mengubah Gedit menjadi Web Editor Powerfull</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

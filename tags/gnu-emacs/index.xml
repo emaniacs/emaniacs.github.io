@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gnu Emacs on http://blog.aredhi.com</title>
+      <title>Gnu Emacs on http://blog.aredhi.com </title>
     <link>http://blog.aredhi.com/tags/gnu-emacs/</link>
-    <description>Recent content in Gnu Emacs on http://blog.aredhi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jun 2011 18:13:00 +0700</lastBuildDate>
-    <atom:link href="http://blog.aredhi.com/tags/gnu-emacs/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Mon, 13 Jun 2011 18:13:00 WIB</updated>
     
     <item>
       <title>Emacs: Folding kode dengan mouse</title>
       <link>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</link>
-      <pubDate>Mon, 13 Jun 2011 18:13:00 +0700</pubDate>
-      
+      <pubDate>Mon, 13 Jun 2011 18:13:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
 s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -76,8 +75,8 @@ aktif.&lt;/p&gt;
     <item>
       <title>Emacs - Replace dengan teknik Grouping pada Regex</title>
       <link>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</link>
-      <pubDate>Wed, 18 May 2011 21:09:00 +0700</pubDate>
-      
+      <pubDate>Wed, 18 May 2011 21:09:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-replace-dengan-teknik-grouping-pada-regex/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KPIb2o91HNI/TdKq77SjNMI/AAAAAAAAAfs/6LKBnHhd97I/
 s200/regexp.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -179,8 +178,8 @@ expressions.info/modifiers.html&gt;&lt;/p&gt;
     <item>
       <title>Emacs Color Theme ( new Theme )</title>
       <link>http://blog.aredhi.com/post/emacs-color-theme-new-theme/</link>
-      <pubDate>Mon, 11 Apr 2011 23:09:00 +0700</pubDate>
-      
+      <pubDate>Mon, 11 Apr 2011 23:09:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-color-theme-new-theme/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-S1AZ7cPt5xA/TaMcWqeeOsI/AAAAAAAAAXo/XgQdIUXq9L0/
 s1600/emacs-logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -285,8 +284,8 @@ dengan menggunakan color-theme generatornya disini &lt;http://alexpogosyan.com
     <item>
       <title>Singkatan Recursive ( Emacs )</title>
       <link>http://blog.aredhi.com/post/singkatan-recursive-emacs/</link>
-      <pubDate>Mon, 21 Mar 2011 06:44:00 +0700</pubDate>
-      
+      <pubDate>Mon, 21 Mar 2011 06:44:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/singkatan-recursive-emacs/</guid>
       <description>&lt;p&gt;Judul diatas merupakan salah kebiasaan unik dari hacker, yaitu Singkatan
 Rekursif, atau singkatan yang memanggil dirinya sendiri. Tulisan ini saya
@@ -403,8 +402,8 @@ Eight Megabytes And Constantly Swapping**&lt;/p&gt;
     <item>
       <title>Emacs Command Line (X window)</title>
       <link>http://blog.aredhi.com/post/emacs-command-line-x-window/</link>
-      <pubDate>Wed, 16 Mar 2011 16:16:00 +0700</pubDate>
-      
+      <pubDate>Wed, 16 Mar 2011 16:16:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-command-line-x-window/</guid>
       <description>&lt;p&gt;X window yang dimaksud dalam penjelasan ini yaitu tampilan emacs ketika muncul
 dilayar.&lt;br /&gt;
@@ -519,8 +518,8 @@ Mengganti warna cursor&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Emacs Command line – (Lisp Oriented)</title>
       <link>http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/</link>
-      <pubDate>Mon, 14 Mar 2011 14:14:00 +0700</pubDate>
-      
+      <pubDate>Mon, 14 Mar 2011 14:14:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-eKl6-EdJx5E/TY9qnfG_uJI/AAAAAAAAAWA/ohIyQE790h4/
 s1600/gnu-head-sm.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -591,8 +590,8 @@ awal file.&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Emacs Command line – (Standard Options)</title>
       <link>http://blog.aredhi.com/post/emacs-command-line-standard-options/</link>
-      <pubDate>Sun, 13 Mar 2011 01:13:00 +0700</pubDate>
-      
+      <pubDate>Sun, 13 Mar 2011 01:13:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-command-line-standard-options/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-H0ynPXoLovY/TY9qm3hwvOI/AAAAAAAAAV4/rBG7Bq6iYCo/
 s320/emacs--help.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -661,8 +660,8 @@ Menampilkan help/bantuan dari emacs dan keluar aplikasi.&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Emacs Command Line</title>
       <link>http://blog.aredhi.com/post/emacs-command-line/</link>
-      <pubDate>Fri, 11 Mar 2011 11:11:00 +0700</pubDate>
-      
+      <pubDate>Fri, 11 Mar 2011 11:11:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-command-line/</guid>
       <description>
 
@@ -792,8 +791,8 @@ digunakan oleh Emacs.&lt;/p&gt;
     <item>
       <title>Emacs Shorcuts</title>
       <link>http://blog.aredhi.com/post/emacs-shorcuts/</link>
-      <pubDate>Thu, 10 Mar 2011 10:10:00 +0700</pubDate>
-      
+      <pubDate>Thu, 10 Mar 2011 10:10:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-shorcuts/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-epd9Kfm92uw/TY9z9CMYMVI/AAAAAAAAAWU/xSXyE9QbZwM/
 s200/shorcuts.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -974,8 +973,8 @@ Undo&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>Calculator – Emacs</title>
       <link>http://blog.aredhi.com/post/calculator-emacs/</link>
-      <pubDate>Wed, 09 Mar 2011 09:09:00 +0700</pubDate>
-      
+      <pubDate>Wed, 09 Mar 2011 09:09:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/calculator-emacs/</guid>
       <description>
 
@@ -1088,8 +1087,8 @@ tanda petik tunggal (‘) kemudian diikuti dengan operasi matematika.&lt;/p&gt;
     <item>
       <title>Perintah Perintah Emacs untuk pengeditan file</title>
       <link>http://blog.aredhi.com/post/perintah-perintah-emacs-untuk-pengeditan-file/</link>
-      <pubDate>Tue, 08 Mar 2011 08:08:00 +0700</pubDate>
-      
+      <pubDate>Tue, 08 Mar 2011 08:08:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/perintah-perintah-emacs-untuk-pengeditan-file/</guid>
       <description>&lt;p&gt;Berikut ini ada beberapa perintah Emacs yang saya ketahui, yang cukup berguna
 ketika melakukan pengeditan pada file.&lt;/p&gt;
@@ -1171,8 +1170,8 @@ shorcuts.html&#34;&gt;disini&lt;/a&gt;&lt;/p&gt;
     <item>
       <title>Copy Paste di Emacs (CUA mode)</title>
       <link>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</link>
-      <pubDate>Mon, 07 Mar 2011 07:07:00 +0700</pubDate>
-      
+      <pubDate>Mon, 07 Mar 2011 07:07:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</guid>
       <description>&lt;p&gt;Dalam kebanyakan editor saat ini, untuk melakukan copy paste digunakan shorcut
 Control-c untuk copy, C-v untuk paste dan C-x untuk cut. Sedangkan Emacs yang
@@ -1210,8 +1209,8 @@ menggunakan shorcut &lt;strong&gt;&lt;code&gt;C-1 C-c&lt;/code&gt;&lt;/strong&g
     <item>
       <title>Emacs Chatting dengan ERC</title>
       <link>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</link>
-      <pubDate>Sun, 06 Mar 2011 06:06:00 +0700</pubDate>
-      
+      <pubDate>Sun, 06 Mar 2011 06:06:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</guid>
       <description>&lt;p&gt;Sekali lagi Emacs bukan teks editor biasa, bahkan kadang disebut sebagai
 sistem operasi, karna saking lengkapnnya aplikasi dan plugin2 emacs. Salah
@@ -1277,8 +1276,8 @@ s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>Menggunakan Mouse (Emacs)</title>
       <link>http://blog.aredhi.com/post/menggunakan-mouse-emacs/</link>
-      <pubDate>Sat, 05 Mar 2011 05:05:00 +0700</pubDate>
-      
+      <pubDate>Sat, 05 Mar 2011 05:05:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/menggunakan-mouse-emacs/</guid>
       <description>
 
@@ -1383,8 +1382,8 @@ pada keyboard seperti Alt atau Control.&lt;/em&gt;&lt;/p&gt;
     <item>
       <title>Mode Line (Emacs)</title>
       <link>http://blog.aredhi.com/post/mode-line-emacs/</link>
-      <pubDate>Fri, 04 Mar 2011 04:44:00 +0700</pubDate>
-      
+      <pubDate>Fri, 04 Mar 2011 04:44:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/mode-line-emacs/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/-n5yHVAqmYj8/TY9z82yNdjI/AAAAAAAAAWQ/Ni8ipLLmeRY/
 s1600/emacs-modeline.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/format-penulisan-file-pada-panada/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Format penulisan file pada Panada &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/format-penulisan-file-pada-panada/"><h2 class="post-title">Format penulisan file pada Panada</h2></a>
+
+                    <p class="post-meta">
+                        <i>Saturday , 11 Jun 2011 18:11:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/panada">panada</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://4.bp.blogspot.com/-ZRenRr8ZCuc/TfZI5My8iZI/AAAAAAAAAlg/gO5PC8tMvIk/
+s320/panada-format-file.png" alt="" /></p>
+
+<p>Seperti framework lainnya, Panada juga memiliki aturan/format tersendiri dalam
+penulisan file, baik untuk <em>Controller</em>, <em>Model</em> dan <em>View</em>.<br />
+Jika dengan <a href="http://codeigniter.com/">CodeIgniter</a> aturan penulisan
+<a href="http://codeigniter.com/user_guide/general/controllers.html">Controller</a>
+adalah, nama file harus huruf kecil, dan nama class sama dengan nama file
+tetapi harus diawali dengan huruf besar. Sedangkan dengan Panada format
+penulisan untuk Controller adalah nama file juga harus huruf kecil, dan nama
+class adalah nama file ditambah prefix &ldquo;Controller_&rdquo; (seperti pada gambar).<br />
+Untuk lebih jelas perhatikan tulisan berikut ini</p>
+
+<p><strong>Controller</strong><br />
+<em>Format Penulisan File</em></p>
+
+<ul>
+<li><p>Nama file<br />
+Harus huruf kecil semua, jika menggunakan pemisah gunakan underscore (_)</p></li>
+
+<li><p>Nama class<br />
+Sama dengan nama file, dan ditambahi kata &ldquo;Controller_&rdquo; diawal nama class, dan
+di <em>extends</em> ke Panada</p></li>
+
+<li><p>Constructor function<br />
+Pada constructor / <strong>construct() fungsi tambahkan kode berikut.<br />
+**_parent::</strong>construct()_**</p></li>
+
+<li><p>Default Action<br />
+Default action adalah fungsi yang akan dipanggil jika tidak ada fungsi yang
+diminta oleh browser.<br />
+Misalkan nama file adalah <strong><em>home.php</em></strong> dan alamat browser adalah
+<strong><em>localhost/panada/home</em></strong> maka yang akan dipanggil adalah fungsi
+<strong><em>index.</em></strong></p></li>
+</ul>
+
+<p>Contoh :</p>
+
+<p><em>nama file = home.php</em></p>
+
+<pre><code>class Controller_home extends Panada {  
+    public function __construct(){  
+        parent::__construct();  
+    }  
+    public function index(){  
+        echo &quot;Hello world&quot;;  
+    }  
+}  
+</code></pre>
+
+<p><strong>Model</strong><br />
+<em>Format Penulisan File</em></p>
+
+<ul>
+<li><p>Nama file<br />
+Harus huruf kecil semua.</p></li>
+
+<li><p>Nama class<br />
+Sama dengan nama file tapi ditambahi kata &ldquo;Model_&rdquo; diawal nama class, dan tak
+perlu di <em>extends</em> ke class Panada.</p></li>
+</ul>
+
+<p>Tak ada  <em>default action</em> didalam file model.</p>
+
+<p>Contoh :</p>
+
+<p>nama file =Modeltest</p>
+
+<pre><code>class Model_Modeltest {  
+    function show_hello() {  
+        echo &quot;Hello from model&quot;;  
+    }  
+}  
+?&gt;  
+</code></pre>
+
+<p><em>Format Pemanggilan File</em><br />
+Jika mengikuti nama file yang diatas maka model tersebut dipanggil dari
+Controller dengan cara berikut<br />
+<strong>_$this-&gt;testmodel = new Model<em>testmodel();</em></strong></p>
+
+<p><strong>View</strong><br />
+Pada file tak ada aturan khusus terhadap Panada, sama seperti syntax php
+lainnya.</p>
+
+<p><em>Format Pemanggilan File</em><br />
+_<br />
+_</p>
+
+<pre><code>$this-&gt;view_namaview()  
+</code></pre>
+
+<p>dimana <strong><em>namaview</em></strong> diatas adalah nama file yang akan dipanggil didirektori
+view, namaview ini harus sama dengan nama file yang disimpan, jika filenya
+adalah <strong><em>namaView</em></strong> maka skrip tersebut dipanggil dengan
+<strong>_$this-&gt;view<em>namaView()</em></strong>.</p>
+
+<p>Referensi</p>
+
+<ul>
+<li><a href="http://www.panadaframework.com/documentation/id/">Panada Documentation</a>
+
+
+<br /></li>
+</ul>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/">Emacs: Folding kode dengan mouse</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/panada-hello-world/">Panada: Hello World</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/using-keyword-as-method-in-php/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Using keyword as method in PHP &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/using-keyword-as-method-in-php/"><h2 class="post-title">Using keyword as method in PHP</h2></a>
+
+                    <p class="post-meta">
+                        <i>Monday , 19 Mar 2012 20:08:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p>As we know, we can&rsquo;t use keyword like if, while in common language programming
+as function, method or variables, neither does in PHP Programming. Last time,
+i agree with this condition, but when i learn about Object Oriented
+Programming i found a way how to make this is possible, i&rsquo;ve got a trick how
+to make keyword as a method or function (as a variable we can do that easily)
+in PHP Programming.</p>
+
+<p><em><strong>How to do that?</strong></em></p>
+
+<p>In PHP Programming there a feature in OOP, as known as with <a href="http://php.net/manual/en/language.oop5.magic.php">magic
+method</a>, with this feature
+we can do a &ldquo;magic&rdquo; in PHP. For completed information about it you can click
+that link.</p>
+
+<p><em><strong>Keyword as Function.</strong></em></p>
+
+<p>Based on Php Manual about
+<a href="http://www.blogger.com/php.net/manual/en/reserved.keywords.php">keyword</a>, we
+can&rsquo;t use keyword as function, so if we coding like this, Php will show an
+error like this.</p>
+
+<p><img src="http://4.bp.blogspot.com/-ljAkUiIgeUw/T2cdrmIkc9I/AAAAAAAAAsA/Deb6r4ipVz4/
+s640/Screenshot+at+2012-03-19+18:49:58.png" alt="" /></p>
+
+<p>while as a function.</p>
+
+<p>And, how to use it (or other keywords) as function? We can&rsquo;t do that but, we
+can use it as a string in a variable with function create_function(). This is
+sample.</p>
+
+<pre><code>$if = '';  
+$if = create_function ('$var', 'return (bool)$var;');  
+
+var_dump ( $if(true));  
+</code></pre>
+
+<p><em><strong>Keyword as Method.</strong></em><br />
+Using keyword in method will give an error like above sample, we can use a
+trik like above, or we can use magic call with <a href="http://id.php.net/manu
+al/en/language.oop5.overloading.php#object.call">__call</a> or <a href="http://id.p
+hp.net/manual/en/language.oop5.overloading.php#object.callStatic">__callStatic</a>. First time
+this is failure example.</p>
+
+<pre><code>class Keyword {  
+    public function if ($var) {  
+        return (bool)$var;  
+    }  
+}  
+
+$key = new KeyWord();  // got error here..  
+$key-&gt;if (true;)  
+</code></pre>
+
+<p>And this is solution to do that.</p>
+
+<pre><code>class KeyWord {  
+    public function __call ($name, $argument) {  
+        echo &quot;You call $name with arguments: &quot;. print_r ($argument, true);  
+    }  
+    public static function __callStatic ($name, $argument) {  
+        echo &quot;You call statically $name with argument: &quot;. print_r ($argument, true);  
+    }  
+}  
+
+$x = new KeyWord();  
+
+$x-&gt;static (1,2);  
+
+KeyWord::unknownStaticMethod(1,2,3);  
+
+?&gt;  
+</code></pre>
+
+<p>Now calling method with the keyword..</p>
+
+<p>:)</p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/default-value-for-return/">Default value for return</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/">PHP: Menghitung lama eksekusi sebuah skrip</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

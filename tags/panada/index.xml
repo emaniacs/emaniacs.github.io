@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Panada on http://blog.aredhi.com</title>
+      <title>Panada on http://blog.aredhi.com </title>
     <link>http://blog.aredhi.com/tags/panada/</link>
-    <description>Recent content in Panada on http://blog.aredhi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 15 Jan 2012 23:59:00 +0700</lastBuildDate>
-    <atom:link href="http://blog.aredhi.com/tags/panada/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Sun, 15 Jan 2012 23:59:00 WIB</updated>
     
     <item>
       <title>Panada: Membuat Halaman Login Dengan Session</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</link>
-      <pubDate>Sun, 15 Jan 2012 23:59:00 +0700</pubDate>
-      
+      <pubDate>Sun, 15 Jan 2012 23:59:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</guid>
       <description>
 
@@ -204,8 +203,8 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     <item>
       <title>Panada: Membuat Halaman Login</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login/</link>
-      <pubDate>Sun, 19 Jun 2011 06:19:00 +0700</pubDate>
-      
+      <pubDate>Sun, 19 Jun 2011 06:19:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login/</guid>
       <description>
 
@@ -396,8 +395,8 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     <item>
       <title>Format penulisan file pada Panada</title>
       <link>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</link>
-      <pubDate>Sat, 11 Jun 2011 18:11:00 +0700</pubDate>
-      
+      <pubDate>Sat, 11 Jun 2011 18:11:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ZRenRr8ZCuc/TfZI5My8iZI/AAAAAAAAAlg/gO5PC8tMvIk/
 s320/panada-format-file.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -510,8 +509,8 @@ adalah &lt;strong&gt;&lt;em&gt;namaView&lt;/em&gt;&lt;/strong&gt; maka skrip ter
     <item>
       <title>Panada: Hello World</title>
       <link>http://blog.aredhi.com/post/panada-hello-world/</link>
-      <pubDate>Thu, 09 Jun 2011 06:09:00 +0700</pubDate>
-      
+      <pubDate>Thu, 09 Jun 2011 06:09:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/panada-hello-world/</guid>
       <description>&lt;p&gt;Setelah sukses melakukan &lt;a href=&#34;http://chars19.blogspot.com/2011/06/install-panada.html&#34;&gt;instalasi
 Panada&lt;/a&gt; sekarang saya
@@ -559,8 +558,8 @@ kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;
     <item>
       <title>Install Panada</title>
       <link>http://blog.aredhi.com/post/install-panada/</link>
-      <pubDate>Fri, 03 Jun 2011 18:03:00 +0700</pubDate>
-      
+      <pubDate>Fri, 03 Jun 2011 18:03:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/install-panada/</guid>
       <description>&lt;p&gt;Seperti instalasi Framework lainnya, cukup mudah untuk melakukan instalasi
 Framework ini,,&lt;/p&gt;
@@ -603,8 +602,8 @@ Panada.&lt;/p&gt;
     <item>
       <title>Panada Framework, A PHP 5 Base Web Framework</title>
       <link>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</link>
-      <pubDate>Wed, 01 Jun 2011 18:01:00 +0700</pubDate>
-      
+      <pubDate>Wed, 01 Jun 2011 18:01:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</guid>
       <description>&lt;p&gt;Berdasarkan&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt; dokumentasi
 Panada&lt;/a&gt;, framework ini adalah

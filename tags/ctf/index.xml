@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ctf on http://blog.aredhi.com</title>
+      <title>Ctf on http://blog.aredhi.com </title>
     <link>http://blog.aredhi.com/tags/ctf/</link>
-    <description>Recent content in Ctf on http://blog.aredhi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 20 May 2013 19:30:00 +0700</lastBuildDate>
-    <atom:link href="http://blog.aredhi.com/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Mon, 20 May 2013 19:30:00 WIB</updated>
     
     <item>
       <title>CTF Online EAsy Crypto 1 (EASY)</title>
       <link>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</link>
-      <pubDate>Mon, 20 May 2013 19:30:00 +0700</pubDate>
-      
+      <pubDate>Mon, 20 May 2013 19:30:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</guid>
       <description>&lt;p&gt;Text yang akan diencrypt adalah seperti ini&lt;/p&gt;
 

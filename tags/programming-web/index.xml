@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming Web on http://blog.aredhi.com</title>
+      <title>Programming Web on http://blog.aredhi.com </title>
     <link>http://blog.aredhi.com/tags/programming-web/</link>
-    <description>Recent content in Programming Web on http://blog.aredhi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 19 Mar 2012 20:08:00 +0700</lastBuildDate>
-    <atom:link href="http://blog.aredhi.com/tags/programming-web/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Mon, 19 Mar 2012 20:08:00 WIB</updated>
     
     <item>
       <title>Using keyword as method in PHP</title>
       <link>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</link>
-      <pubDate>Mon, 19 Mar 2012 20:08:00 +0700</pubDate>
-      
+      <pubDate>Mon, 19 Mar 2012 20:08:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/using-keyword-as-method-in-php/</guid>
       <description>&lt;p&gt;As we know, we can&amp;rsquo;t use keyword like if, while in common language programming
 as function, method or variables, neither does in PHP Programming. Last time,
@@ -97,8 +96,8 @@ KeyWord::unknownStaticMethod(1,2,3);
     <item>
       <title>PHP: Menghitung lama eksekusi sebuah skrip</title>
       <link>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</link>
-      <pubDate>Sat, 25 Feb 2012 00:00:00 +0700</pubDate>
-      
+      <pubDate>Sat, 25 Feb 2012 00:00:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-JLzChwOBXv4/T0d_Jj8_HYI/AAAAAAAAArA/BGcIwYJeqeQ/
 s1600/time.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -234,8 +233,8 @@ s1600/Screenshot+at+2012-02-24+22:29:01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>localStorage dengan HTML5</title>
       <link>http://blog.aredhi.com/post/localstorage-dengan-html/</link>
-      <pubDate>Tue, 17 Jan 2012 17:17:00 +0700</pubDate>
-      
+      <pubDate>Tue, 17 Jan 2012 17:17:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/localstorage-dengan-html/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-_xFwIsxjJ3U/TxL4PvepcSI/AAAAAAAAAqo/0tfgksmnZe8/
 s1600/localStorage.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -312,8 +311,8 @@ apakah support localStorage atau tidak.&lt;/p&gt;
     <item>
       <title>Panada: Membuat Halaman Login Dengan Session</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</link>
-      <pubDate>Sun, 15 Jan 2012 23:59:00 +0700</pubDate>
-      
+      <pubDate>Sun, 15 Jan 2012 23:59:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login-dengan-session/</guid>
       <description>
 
@@ -504,8 +503,8 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     <item>
       <title>Test Speed: Penggabungan string (concat dan implode)</title>
       <link>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</link>
-      <pubDate>Mon, 08 Aug 2011 20:08:00 +0700</pubDate>
-      
+      <pubDate>Mon, 08 Aug 2011 20:08:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/test-speed-penggabungan-string-concat-dan-implode/</guid>
       <description>&lt;p&gt;Pada PHP kita bisa menggunakan 2 cara untuk menggabung string yaitu dengan
 operator
@@ -583,8 +582,8 @@ mencolok.&lt;/p&gt;
     <item>
       <title>HTML: Mencegah teks otomatis pada input (autocomplete)</title>
       <link>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</link>
-      <pubDate>Sun, 07 Aug 2011 20:07:00 +0700</pubDate>
-      
+      <pubDate>Sun, 07 Aug 2011 20:07:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/html-mencegah-teks-otomatis-pada-input-autocomplete/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-KbhobXi1PcA/TgbqURRNFKI/AAAAAAAAAmU/zO-
 3dd6Qz-k/s1600/autocomplete.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -620,8 +619,8 @@ digunakan pada textarea, hal ini tidak akan berfungsi.&lt;/p&gt;
     <item>
       <title>Javascript: onclick, tag didalam tag (parent and child)</title>
       <link>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</link>
-      <pubDate>Mon, 27 Jun 2011 06:27:00 +0700</pubDate>
-      
+      <pubDate>Mon, 27 Jun 2011 06:27:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/javascript-onclick-tag-didalam-tag-parent-and-child/</guid>
       <description>&lt;p&gt;Masalah ini berawal dari sebuah &lt;em&gt;thread&lt;/em&gt; yang ada di
 &lt;a href=&#34;http://kaskus.us/&#34;&gt;Kaskus&lt;/a&gt; disitu ada pertanyaan bagaimana mengatasi &lt;em&gt;event
@@ -694,8 +693,8 @@ untuk parent.&lt;/p&gt;
     <item>
       <title>Panada: Membuat Halaman Login</title>
       <link>http://blog.aredhi.com/post/panada-membuat-halaman-login/</link>
-      <pubDate>Sun, 19 Jun 2011 06:19:00 +0700</pubDate>
-      
+      <pubDate>Sun, 19 Jun 2011 06:19:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/panada-membuat-halaman-login/</guid>
       <description>
 
@@ -886,8 +885,8 @@ Hal ini sama dengan kebanyakan PHP Framework yang lainnya.&lt;/p&gt;
     <item>
       <title>Format penulisan file pada Panada</title>
       <link>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</link>
-      <pubDate>Sat, 11 Jun 2011 18:11:00 +0700</pubDate>
-      
+      <pubDate>Sat, 11 Jun 2011 18:11:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/format-penulisan-file-pada-panada/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://4.bp.blogspot.com/-ZRenRr8ZCuc/TfZI5My8iZI/AAAAAAAAAlg/gO5PC8tMvIk/
 s320/panada-format-file.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1000,8 +999,8 @@ adalah &lt;strong&gt;&lt;em&gt;namaView&lt;/em&gt;&lt;/strong&gt; maka skrip ter
     <item>
       <title>Panada: Hello World</title>
       <link>http://blog.aredhi.com/post/panada-hello-world/</link>
-      <pubDate>Thu, 09 Jun 2011 06:09:00 +0700</pubDate>
-      
+      <pubDate>Thu, 09 Jun 2011 06:09:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/panada-hello-world/</guid>
       <description>&lt;p&gt;Setelah sukses melakukan &lt;a href=&#34;http://chars19.blogspot.com/2011/06/install-panada.html&#34;&gt;instalasi
 Panada&lt;/a&gt; sekarang saya
@@ -1049,8 +1048,8 @@ kNlYMbmI/AAAAAAAAAlY/2TZ2R13umt4/s400/hello-world-with-panada.png&#34; alt=&#34;
     <item>
       <title>Setting Nginx dan PHP</title>
       <link>http://blog.aredhi.com/post/setting-nginx-dan-php/</link>
-      <pubDate>Mon, 06 Jun 2011 06:06:00 +0700</pubDate>
-      
+      <pubDate>Mon, 06 Jun 2011 06:06:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/setting-nginx-dan-php/</guid>
       <description>
 
@@ -1197,8 +1196,8 @@ perintah untuk menghentikan nginx&lt;br /&gt;
     <item>
       <title>Install Panada</title>
       <link>http://blog.aredhi.com/post/install-panada/</link>
-      <pubDate>Fri, 03 Jun 2011 18:03:00 +0700</pubDate>
-      
+      <pubDate>Fri, 03 Jun 2011 18:03:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/install-panada/</guid>
       <description>&lt;p&gt;Seperti instalasi Framework lainnya, cukup mudah untuk melakukan instalasi
 Framework ini,,&lt;/p&gt;
@@ -1241,8 +1240,8 @@ Panada.&lt;/p&gt;
     <item>
       <title>Variabel Variabels dengan PHP (fungsi dan class)</title>
       <link>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</link>
-      <pubDate>Thu, 02 Jun 2011 06:02:00 +0700</pubDate>
-      
+      <pubDate>Thu, 02 Jun 2011 06:02:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/variabel-variabels-dengan-php-fungsi-dan-class/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-Pg76as8kwtc/TeemfoENpgI/AAAAAAAAAi8/F3s3yVo7lKk/
 s200/var-var.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1324,8 +1323,8 @@ membuat variable dari nilai sebuah variable.&lt;/p&gt;
     <item>
       <title>Panada Framework, A PHP 5 Base Web Framework</title>
       <link>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</link>
-      <pubDate>Wed, 01 Jun 2011 18:01:00 +0700</pubDate>
-      
+      <pubDate>Wed, 01 Jun 2011 18:01:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/</guid>
       <description>&lt;p&gt;Berdasarkan&lt;a href=&#34;http://www.panadaframework.com/documentation/id&#34;&gt; dokumentasi
 Panada&lt;/a&gt;, framework ini adalah
@@ -1395,8 +1394,8 @@ library atau model maka digunakan _$this-&amp;gt;load-&amp;gt;model(&amp;lsquo;n
     <item>
       <title>Trik / Rahasia PHP yang jarang diketahui</title>
       <link>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</link>
-      <pubDate>Tue, 31 May 2011 14:22:00 +0700</pubDate>
-      
+      <pubDate>Tue, 31 May 2011 14:22:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://www.php.net/images/logos/php-med-trans.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 

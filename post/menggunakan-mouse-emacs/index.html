@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/menggunakan-mouse-emacs/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Menggunakan Mouse (Emacs) &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/menggunakan-mouse-emacs/"><h2 class="post-title">Menggunakan Mouse (Emacs)</h2></a>
+
+                    <p class="post-meta">
+                        <i>Saturday , 05 Mar 2011 05:05:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    
+
+<p><img src="http://2.bp.blogspot.com/--ja8SCeUlpc/TY9z8TDWnRI/AAAAAAAAAWI/ZeLsYEn7xtQ/
+s320/emacs-mouse.png" alt="" /></p>
+
+<p>Mouse merupakan perangkat yang cukup penting dalam komputer, dengan mouse
+semua jadi lebih mudah dan cepat ketika berinteraksi dengan komputer, tapi
+kadang membuat kita jadi lebih malas atau kurang aktif. Dengan mouse kita bisa
+melakukan apapun di komputer dengan satu tangan, cepat tapi tetap saja takkan
+bisa menggantikan fungsi keyboard secara penuh, apalagi terkait masalah
+penulisan. Meski aplikasi2 on-screen-keyboard telah banyak namun siapa yang
+mau mengetik 2 atau 3 halaman menggunakan aplikasi tersebut, bayangkan jika
+satu halaman ada 1000 karakter berarti kita harus mengklik sebanyak seribu
+kali belum lagi ditambahkan spasi atau karakter yang memerlukan penekanan
+tombol Shift atau huruf besar. Selain itu para programmer atau hacker2 hebat
+biasanya mampu mengetik dengan sangat cepat karena terbiasa melakukan coding
+ataupun mengetikkan perintah-perintah.</p>
+
+<p>Meski Emacs dibuat oleh hacker yang lebih sering menggunakan keyboard bukan
+berarti fungsi mouse jadi tak berguna, justru di Emacs penggunaan mouse jadi
+lebih atraktif karena fungsi klik pada mouse bisa digabungkan dengan keyboard.
+Ingin menjadikan penekanan tombol klik tengah pada keyboard sebagai shorcut
+untuk keluar dari Emacs, atau untuk perintah penyimpanan file, ini bisa
+dilakukan.</p>
+
+<p>Ada 5 tombol mouse yang bisa digunakan di Emacs:</p>
+
+<ol>
+<li>mouse 1</li>
+<li>mouse 2</li>
+<li> mouse 3</li>
+<li>mouse 4</li>
+<li>mouse 5
+
+<br /></li>
+</ol>
+
+<h2 id="mouse-1-klik-kiri:111eb7ab6d40e41c347acf46bbe0a097">Mouse 1 (Klik Kiri)</h2>
+
+<ol>
+<li><p>Klik 1 kali.<br />
+Dibaca sebagai mouse-1, dan di dalam fungsi disebut mouse-set-point.<br />
+Fungsinya: sama dengan fungsi mouse secara umum, yaitu untuk mengarahkan
+posisi cursor ke tempat yang diklik.</p></li>
+
+<li><p>Klik-Drag<br />
+Sama dengan fungsi mouse secara umum, untuk melakukan blok atau menyeleksi
+teks sampai klik dilepaskan lagi, jika melakukan seleksi terhadap file maka
+Emacs akan langsung memasukkan teks yang diseleksi di register(kalo ga salah)
+bisa dilihat di (Edit – Paste from Kill Menu).</p></li>
+</ol>
+
+<p><img src="http://4.bp.blogspot.com/_ypU0iaR-
+LmM/TY99j1EEt3I/AAAAAAAAAWw/ZJ6jCLOxQhU/s320/emacs-paste-from-
+menu%20(1).png" alt="" /></p>
+
+<ol>
+<li><p>Klik 2 kali<br />
+Untuk menyeleksi 1 kata.</p></li>
+
+<li><p>Klik 3 kali<br />
+Untuk menyeleksi 1 baris.</p></li>
+</ol>
+
+<h2 id="mouse-2-klik-tengah:111eb7ab6d40e41c347acf46bbe0a097">Mouse 2 (Klik Tengah)</h2>
+
+<p>Untuk “yank” atau secara bebas bisa diartikan sebagai paste, shortcutnya C-y.
+Nama macronya ‘mouse-yank-at-click’</p>
+
+<h2 id="mouse-3-klik-kanan:111eb7ab6d40e41c347acf46bbe0a097">Mouse 3 (Klik Kanan)</h2>
+
+<ol>
+<li><p>Klik 1 kali.<br />
+Untuk melakukan seleksi dari cursor aktif ke posisi klik kanan.<br />
+Nama macronya ‘mouse-save-then-kill’</p></li>
+
+<li><p>Klik 2 kali (double click)<br />
+Sama dengan klik 1 kali, tapi teks yang diseleksi langsung dicut.<br />
+Hampir sama dengan C-w</p></li>
+</ol>
+
+<h2 id="mouse-4-scroll-up:111eb7ab6d40e41c347acf46bbe0a097">Mouse 4 (Scroll Up)</h2>
+
+<p>Sama dengan fungsi umum mouse.</p>
+
+<h2 id="mouse-5-scroll-down:111eb7ab6d40e41c347acf46bbe0a097">Mouse 5 (Scroll Down)</h2>
+
+<p>Sama dengan fungsi umum mouse.</p>
+
+<p><em>Note:<br />
+Anda bisa berimprovisasi dengan menggabungkan klik pada mouse dengan tombol
+pada keyboard seperti Alt atau Control.</em></p>
+
+<blockquote>
+<p>Referensi<br />
+   +  M-: RET (info “(emacs) Mouse Commands”)</p>
+</blockquote>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/emacs-chatting-dengan-erc/">Emacs Chatting dengan ERC</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/mode-line-emacs/">Mode Line (Emacs)</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

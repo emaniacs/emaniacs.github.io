@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/trik-rahasia-php-yang-jarang-diketahui/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Trik / Rahasia PHP yang jarang diketahui &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/trik-rahasia-php-yang-jarang-diketahui/"><h2 class="post-title">Trik / Rahasia PHP yang jarang diketahui</h2></a>
+
+                    <p class="post-meta">
+                        <i>Tuesday , 31 May 2011 14:22:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://www.php.net/images/logos/php-med-trans.png" alt="" /></p>
+
+<p>Sebenarnya lebih tepat aturan bukan rahasia, tapi karena orang jarang yang
+tahu makanya kadang disebut rahasia, hal ini dilupakan karena mungkin tidak
+terlalu penting atau juga karena memang tak peduli, padahal menurut ane, ini
+merupakan sesuatu yang bisa jadi nilai tambah ketika melakukan koding, ataupun
+ketika interview masalah PHP.</p>
+
+<p>Berikut ini adalah beberapa aturan-aturan dalam PHP yang jarang diketahui oleh
+kebanyakan programmer,,</p>
+
+<ol>
+<li><p>Fungsi dalam PHP incase-sensitif.<br />
+Termasuk built-in fungsi dari PHP, fungsi
+<em><a href="http://php.net/manual/en/function.echo.php">echo</a></em> bisa dipanggil dengan
+Echo, ECHO atau yang lainnya.</p></li>
+
+<li><p>constant case-sensitif.<br />
+const VAR = &ldquo;variabel&rdquo;,<br />
+maka nilai VAR diatas hanya bisa dipanggil dengan VAR, error jika dipanggil
+dengan Var.</p></li>
+
+<li><p>keyword PHP seperti <strong>NULL</strong> incase-sensitif<br />
+NULL, null, NUll dan yang lainnya adalah sama.</p></li>
+
+<li><p>Single quote (&lsquo;) dan Double quote(&ldquo;) adalah sama-sama string, tapi single quote tidak menerjemahkan nilai variabel.</p>
+
+<pre><code>$v = 'variabel';  
+</code></pre>
+
+<p>echo &lsquo;nilai variabel = $x&rsquo;;  // mencetak nilai variabel = $x<br />
+echo &ldquo;nilai variabel = $x&rdquo;;  // mencetak nilai variabel = variabel</p></li>
+
+<li><p>close tag pada baris comment tetap dianggap sebagai penutup tag PHP.</p>
+
+<pre><code>echo &quot;test&quot;;  
+</code></pre>
+
+<p>// close tag pada comment ini akan dianggap sebagai close tag dari kode php yang dibuat ?&gt;</p></li>
+
+<li><p>Nilai false pada PHP</p>
+
+<ol>
+<li>keyword <strong>false</strong>.</li>
+<li>Keyword <strong>NULL</strong></li>
+<li>integer 0</li>
+<li>floating point 0.0</li>
+<li>empty string (&ldquo;&rdquo;)</li>
+<li>string &ldquo;0&rdquo;</li>
+<li>array dengan jumlah element nol.</li>
+<li>object tanpa nilai atau tanpa fungsi.</li>
+</ol></li>
+
+<li><p>Variabel yang tidak diinisialisasikan bernilai <strong>NULL</strong>.</p></li>
+
+<li><p>Nilai sebuah variabel bisa dijadikan variabel dengan double dollar (<strong>$$</strong>).</p>
+
+<pre><code>$v = &quot;satu&quot;;  
+</code></pre>
+
+<p>$$v = 1;</p></li>
+</ol>
+
+<p>Pada kode diatas baris kedua akan menciptakan sebuah variabel baru yaitu $satu
+yang bernilai 1.</p>
+
+<ol>
+<li><p>Variabel alias bisa dengan menggunakan ampersand(&amp;).</p>
+
+<pre><code>$x = &quot;satu&quot;;  
+</code></pre>
+
+<p>$y =&amp; $x ;</p></li>
+</ol>
+
+<p>Jika kita merubah nilai $y otomatis akan merubah nilai $x juga.</p>
+
+<ol>
+<li><p>Jika sebuah variabel alias diberikan perintah unset maka variabel aslinya tidak berubah.</p>
+
+<pre><code>$x = &quot;satu&quot;;  
+</code></pre>
+
+<p>$y =&amp; $x ;<br />
+echo &ldquo;Nilai x = $x\n&rdquo;;<br />
+echo &ldquo;Nilai y = $y\n&rdquo;;<br />
+$y = &ldquo;dua&rdquo;;<br />
+echo &ldquo;Nilai x setelah y diruba $x\n&rdquo;;<br />
+echo &ldquo;Nilai y setelah dirubah $y\n&rdquo;;<br />
+unset($y);<br />
+echo &ldquo;Nilai x setelah y diunset $x\n&rdquo;;<br />
+echo &ldquo;Nilai y setelah diunset $y\n&rdquo;;</p></li>
+</ol>
+
+<p>Pada baris terakhir akan menghasilkan error karena y telah dirubah.</p>
+
+<ol>
+<li>Selain menggunakan <strong>!=</strong> untuk pertidaksamaan bisa juga dengan <strong>&lt;&gt;</strong></li>
+<li>Persamaan dengan 3 samadengan (<strong>===</strong>) bernilai <strong>TRUE</strong> jika kedua variabel yang dijadikan perbandingan mempunyai _nilai dan type data yang sama _</li>
+<li>Int + Float, maka Int akan dirubah menjadi Float terlebih dahulu.</li>
+<li>String + Float, maka String dirubah menjadi Float.</li>
+<li>String + Int, String dirubah menjadi Number, jika Number adalah Float maka Int dirubah menjadi Float.</li>
+<li>String bisa di Increment.</li>
+
+<li><p>Operasi pada String dilakukan pada semua huruf sesuai posisinya.<br />
+&ldquo;satu&rdquo; | &ldquo;dua&rdquo; sama dengan &ldquo;s&rdquo;|&ldquo;d&rdquo;, &ldquo;a&rdquo;|&ldquo;u&rdquo;, &ldquo;t&rdquo;|&ldquo;a&rdquo;</p></li>
+
+<li><p>Fungsi bisa bersarang(nested)</p>
+
+<pre><code>function induk() {  
+</code></pre>
+
+<p>echo &ldquo;ini dari fungsi induk\n&rdquo;;<br />
+   function anak() {<br />
+      echo &ldquo;ini dari fungsi anak\n&rdquo;;<br />
+   }<br />
+}</p></li>
+</ol>
+
+<p>Untuk memanggil fungsi anak() maka fungsi induk harus dipanggil terlebih
+dahulu.</p>
+
+<ol>
+<li><p>Memanggil fungsi bisa dengan nilai pada variabel.</p>
+
+<pre><code>function test(){  
+</code></pre>
+
+<p>echo &ldquo;ini fungsi test\n&rdquo;;<br />
+}<br />
+$var = &ldquo;test&rdquo;;<br />
+$var();</p></li>
+</ol>
+
+<p>Perintah terakhir diatas adalah memanggil fungsi test().</p>
+
+<ol>
+<li>Selain dengan <strong>function</strong>, untuk membuat fungsi bisa dengan _<a href="http://php.net/manual/en/function.create-function.php">create_function()</a>_.</li>
+<li>Didalam double-quote nilai variabel yang ingin diambil bisa dipisahkan dengan {}.</li>
+<li>Jika escape karakter tidak diketahui, maka akan diignore atau diabaikan.</li>
+<li><em><a href="http://php.net/manual/en/function.echo.php">echo</a></em> bukanlah fungsi, karena itu echo lebih cepat dari <em><a href="http://php.net/manual/en/function.print.php">print</a>.</em></li>
+<li>Karakter yang akan dihapus oleh trim, ltrim, rtrim<br /></li>
+</ol>
+
+<p>&rdquo; &ldquo;</p>
+
+<p>0x20</p>
+
+<p>Space</p>
+
+<p>&ldquo;\t&rdquo;</p>
+
+<p>0x09</p>
+
+<p>Tab</p>
+
+<p>&ldquo;\n&rdquo;</p>
+
+<p>0x0A</p>
+
+<p>Newline(linefeed)</p>
+
+<p>&ldquo;\r&rdquo;</p>
+
+<p>0x0D</p>
+
+<p>Carriage Return</p>
+
+<p>&ldquo;\0&rdquo;</p>
+
+<p>0x00</p>
+
+<p>Null Byte</p>
+
+<p>&ldquo;\x0B</p>
+
+<p>0x0B</p>
+
+<p>Vertical Tab</p>
+
+<ol>
+<li><p>Fungsi <em><a href="http://php.net/manual/en/function.trim.php">trim()</a></em> bisa juga untuk menghapus karakter lain, dengan mengisi variabel kedua pada fungsi tersebut.</p>
+
+<pre><code>$var = &quot;XsatuX&quot;;  
+</code></pre>
+
+<p>echo ltrim($var, &ldquo;X&rdquo;);</p></li>
+</ol>
+
+<p>Kode diatas akan mencetak &ldquo;satuX&rdquo;;</p>
+
+<ol>
+<li>_<a href="http://php.net/manual/en/function.substr-replace.php">substr_replace()</a>_ bisa digunakan untuk insert atau delete karakter.</li>
+<li><em><a href="http://php.net/manual/en/function.join.php">join()</a></em> adalah alias dari <em><a href="http://php.net/manual/en/function.implode.php">implode()</a>, <a href="http://php.net/manual/en/function.sizeof.php">sizeof()</a> juga alias dari <a href="http://php.net/manual/en/function.count.php">count()</a>.</em></li>
+<li><strike>_<a href="http://php.net/manual/en/function.preg-match.php">preg_match()</a>_ bisa untuk mengcapture teks, tapi tak lebih dari 99 karakter</strike>.</li>
+<li><strong>$variabel[3]</strong> sama dengan <strong>$variabel[&lsquo;3&rsquo;]</strong> tapi tidak dengan** $variabel[&lsquo;03&rsquo;]**</li>
+<li><strong>$variabel[index]</strong> sama dengan** $variabel[&lsquo;index&rsquo;]**, tapi yang pertama lebih lambat karena PHP akan melakukan cek terhadap nilai constant terlebih dahulu.</li>
+<li>Jika perintah pada opsi diatas dilakukan pada string atau diapit double-quote maka cara yang benar adalah cara pertama ($variabel[index]).</li>
+<li>_<a href="http://php.net/manual/en/function.array-push.php">array_push</a>_($array, 1) sama dengan $array[] = 1</li>
+<li>Kecuali <a href="http://php.net/manual/en/function.natsort.php">natsort()</a>_ dan _<a href="http://php.net/manual/en/function.natcasesort.php">natcasesort()</a>, fungsi sort yang lainnya melakukan sorting berdasarkan ascii value.<br /></li>
+</ol>
+
+<p>Normal SortAscii Sort</p>
+
+<p>1.txt</p>
+
+<p>1.txt</p>
+
+<p>5.txt</p>
+
+<p>10.txt</p>
+
+<p>10.txt</p>
+
+<p>5.txt</p>
+
+<p><strong><em>Referensi:</em></strong><br />
+<strong><em> <a href="http://php.net/manual/">php-manual</a></em></strong></p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/panada-framework-a-php-base-web-framework/">Panada Framework, A PHP 5 Base Web Framework</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/menang-iwanfals/">Menang @iwanfals</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

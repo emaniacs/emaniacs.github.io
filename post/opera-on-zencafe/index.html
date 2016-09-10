@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/opera-on-zencafe/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Opera 10.10 on Zencafe &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/opera-on-zencafe/"><h2 class="post-title">Opera 10.10 on Zencafe</h2></a>
+
+                    <p class="post-meta">
+                        <i>Thursday , 10 Jun 2010 02:21:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://4.bp.blogspot.com/_ypU0iaR-
+LmM/TDIU23bguaI/AAAAAAAAAQ0/qZxUMmaImlM/s320/opera.jpg" alt="" /><br />
+Linux Zencafe yang selama ini W pake buat warnet berjalan dengan lancar hingga
+suatu hari ada salah satu pelanggan W yang menjalanka firefox tapi karena
+tidak ada tanda sama sekali ketika kita menjalankan suatu aplikasi maka kadang
+pelanggan W mengklik shorcut Firefox berkali-kali hingga terjadi error dan
+firefox tidak bisa dijalankan.W yang awalnya tak tau permasalahannya dimana
+akhirnya mencoba untuk menginstall Opera di Zencafe, namun setelah download di
+situs resmi <a href="http://www.opera.com/browser/download/">Opera</a>, ternyata ada
+kekurangan dependensi yaitu library qt( libqt3-mt).</p>
+
+<p>Namun setelah berkelana didunia maya W masih ga menemukan cara praktis untuk
+menyelesaikan ini, meski ada saran untuk melakukan compile sendiri tapi W
+malas untuk download QT coz gede banget &gt;100M. Cara ini menggunakan file Qt
+library yang dipaketkan buat Ubuntu yaitu
+libqt3-mt_3%3a3.3.8-b-5ubuntu3_i386.deb dan libaudio2_1.9.2-1_i386.deb yang
+bisa didownload di repo ubuntu.</p>
+
+<p>File yang harus disiapkan</p>
+
+<ul>
+<li><p>libaudio2_1.9.2-1_i386.deb</p></li>
+
+<li><p>libqt3-mt_3%3a3.3.8-b-5ubuntu3_i386.deb</p></li>
+
+<li><p>opera-10.10.gcc4-shared-qt3.i386.tar.bz2</p></li>
+
+<li><p>Extract file data.tar.gz pada file libaudio dengan xarchiver kemudian extract file data.tar.gz dengan perintah <code>tar xf data.tar.gz</code> perintah ini akan menghasilkan directori usr pada direktory aktif.<img src="http://ambo.co.cc/wp-content/uploads/2010/06/xarchiver2-300x149.gif" alt="" /></p></li>
+
+<li><p>Copy semua file pada usr ke /usr/</p>
+
+<ul>
+<li><p>cp usr/lib/* /usr/lib -rf</p></li>
+
+<li><p>cp usr/share/* /usr/share -rf</p></li>
+</ul></li>
+
+<li><p>hapus file data.tar.gz dan folder usr, (optional karena pas extract berikutnya bisa ditimpa).</p></li>
+
+<li><p>Lakukan hal yang sama pada no 1 dan 2 pada file libqt3-mt</p></li>
+
+<li><p>file librari dan dependensi opera berarti telah terinstall dan sekarang waktunya menginstall Opera.</p></li>
+
+<li><p>extract file oopera-10.10.gcc4-shared-qt3.i386.tar.bz2, kemudian pindahkan ke direktori /usr/lib</p>
+
+<ul>
+<li><p>tar xf opera-10.10.gcc4-shared-qt3.i386.tar.bz2</p></li>
+
+<li><p>mv opera-10.10-4742.gcc4-shared-qt3.i386 /usr/lib/opera.10.10</p></li>
+</ul></li>
+
+<li><p>Pindah ke direktori /usr/lib/opera.10.10</p>
+
+<ul>
+<li>mv /usr/lib/opera.10.10
+<br />
+<br />
+
+<br /></li>
+</ul></li>
+
+<li><p>Install opera, jawab semua konfirmasi dengan yes</p>
+
+<ul>
+<li>./install.sh
+<br />
+<br />
+
+<br />
+<br /></li>
+</ul></li>
+</ul>
+
+<p>Instalasi Opera telah selesai.<br />
+Sekarang kita buat sebuah skrip untuk konfirmasi pengeksekusian Firefox atau
+Opera agar pelanggan tidak mengklik shorcut secara berulang kali. Berikut
+skripnya.</p>
+
+<pre><code>#!/usr/bin/env bash  
+#filename: /usr/local/bin/run-browser  
+if test $1 -eq 0; then  
+notify-send -t 2000 &quot;LOADING...&quot; &quot;RUNNING MOZILLA FIREFOX&quot;  
+exec firefox  
+else  
+if test $1 -eq 1; then  
+   notify-send -t 2000 &quot;LOADING...&quot; &quot;RUNNING OPERA BROWSER&quot;  
+   exec opera  
+else  
+   notify-send &quot;UNKNOWN ERROR&quot; &quot;:(&quot;  
+fi  
+fi  
+</code></pre>
+
+<p>Berikan hak eksekusi pada file <em>run-browser</em> <code>chmod +x /usr/local/bin/run-
+browser</code>.<br />
+Agar lebih memudahkan user buatlah sebuah shorcut di Desktop yang pada textbox
+commandnya diisi dengan perintah <em>run-browser 0</em> untuk Firefox dan untuk Opera
+ganti angka nol dengan 1.</p>
+
+<p><img src="http://ambo.co.cc/wp-content/uploads/2010/06/desktop-300x168.gif" alt="" /></p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/google-translate-perl/">Google translate - Perl</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/defacement-rasa-palestine/">Defacement rasa Palestine</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

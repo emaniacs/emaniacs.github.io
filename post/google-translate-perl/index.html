@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/google-translate-perl/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Google translate - Perl &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/google-translate-perl/"><h2 class="post-title">Google translate - Perl</h2></a>
+
+                    <p class="post-meta">
+                        <i>Wednesday , 23 Jun 2010 19:56:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/windows">windows</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://1.bp.blogspot.com/_ypU0iaR-LmM/TDITz-
+BFVYI/AAAAAAAAAQs/umysQJAVTdk/s320/google-perl.png" alt="" /><br />
+Didunia internet siapa yang tak mengenal Google, rasanya mungkin ga ada. Dan
+mungkin jika ada sepertinya anda baru<br />
+mengenal internet. LOL.<br />
+Banyak hal yang membuat Google begitu tangguh didunia internet (ga cuma
+disearch engine tapi hampir disemua aspek, bahkan baru-baru ini Google
+meluncurkan inovasi baru yaitu <a href="http://googleblog.blogspot.com/2010/06/google-voice-for-everyone.html">Google
+Voice</a>
+yang diklaim sebagai metode baru dalam komunikasi.<br />
+Salah satu yang fitur yang menurut saya menjadikan google powerfull adalah
+tersedianya <a href="http://code.google.com/apis/ajaxlanguage/documentation/">Google
+Api</a>, yang membuat
+kita (terutama programmer) dapat dengan mudah berinteraksi dengan Google
+product.<br />
+Ini yang akan saya bahas khususnya <a href="http://code.google.com/apis/ajaxlanguage/documentation/">Google Translate
+Api</a>, dimana dengan
+menggunakan sebuah kode singkat kita bisa memanfaatkan Google Translate
+sebagai kamus yang mencakup seluruh bahasa didunia (tentu saja yang udah
+difasilitasi oleh Google).</p>
+
+<p>Untuk Google translate kita bisa menggunakan alamat ini <code>http://ajax.googleapi
+s.com/ajax/services/language/translate?v=1.0&amp;q;=$query&amp;langpair;=$fromTo  
+</code></p>
+
+<ul>
+<li><p>$query<br />
+merupakan bahasa yang ingin kita translate.</p></li>
+
+<li><p>$fromTo<br />
+adalah bahasa yang ingin kita translate ke bahasa lainnya, formatnya adalah
+**&ldquo;bahasaAwal|bahasaTujuan&rdquo; **pembatas Pipe (|).</p></li>
+</ul>
+
+<p>Misalkan kita ingin melakukan translate kata &ldquo;home&rdquo; dari bahasa Inggris(en) ke
+Indonesia(id), maka urlnya akan menjadi begini <em><a href="http://ajax.googleapis.com/aja">http://ajax.googleapis.com/aja</a>
+x/services/language/translate?v=1.0&q;=home&langpair;=en|id</em>. Format output
+dari Url tersebut adalah begini:<br />
+<strong><code>{  
+&quot;responseData&quot;:  
+{&quot;translatedText&quot;:&quot;rumah&quot;},  
+&quot;responseDetails&quot;: null,  
+&quot;responseStatus&quot;: 200  
+}</code></strong></p>
+
+<p>Output inilah yang akan kita coba parsing dengan bahasa Perl, berikut contoh
+kodenya :</p>
+
+<pre><code>#!/usr/bin/perl  
+if($#ARGV lt 0) {  
+print &quot;Need 2 argument.\nUsage: $ARGV  .\n&quot;;  
+print &quot;Ex: $ARGV \&quot;en.id\&quot; \&quot;keep moving\&quot;.\n&quot;;  
+exit;  
+}  
+use LWP::Simple;  
+$argS=0;  
+$fromTo=&quot;en|id&quot;;  
+if($ARGV[0] =~ /\./) {  
+$fromTo=$ARGV[0];  
+$fromTo=~ s/\./\|/;  
+$argS=1;  
+}  
+foreach $argNum ($argS .. $#ARGV) {  
+$query=join &quot; &quot;, $query, $ARGV[$argNum];  
+}  
+$ret= get(&quot;http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&amp;q;=$query&amp;langpair;=$fromTo&quot;);  
+if($ret =~ /200/) {  
+@retArr=split(/:/,$ret);  
+$retFinal=substr(@retArr[2],0,-20);  
+print &quot;$retFinal&quot;;  
+}else{  
+print &quot;Check your input: Error..!\n&quot;;  
+}
+</code></pre>
+
+<p>Penjelasan:</p>
+
+<ul>
+<li><p>baris 1 untuk memberitahukan interpreter yang kita gunakan yaitu Perl.</p></li>
+
+<li><p>baris 2 -6 untuk melakukan cek terhadap kata dari kalimat yang ingin ditranslate, jika tidak ada maka berikan warning, exit.</p></li>
+
+<li><p>baris 7 , kita menggunakan module _LWP:Simpl_e untuk melakukan akses ke internet.</p></li>
+
+<li><p>baris 8 dan 9 , merupakan nilai default untuk proses berikutnya.</p></li>
+
+<li><p>baris 10 kita melakukan cek pada argumen yang pertama (indeks 0, Perl memulai indeks array dari NOL) terhadap karakter titik, jika ada maka argument pertama dijadikan acuan translate bahasa (baris 11), kemudian tanda titik kita ganti dengan tanda Pipe (baris 12), yang berarti kalimat yang akan ditranslate dimulai dari argument ke dua(indeks 1) (baris 13).</p></li>
+
+<li><p>baris 15 - 17, mengambil semua argument dimulai dari <strong>$args</strong> hingga panjang semua argument yang diberikan(<strong>$#ARGV</strong>), yang kemudian semuanya disatukan (<em>join</em>) pada variabel <strong>$query</strong>.</p></li>
+
+<li><p>baris 18, melakukan koneksi ke Google Translate, nilai baliknya dimasukkan ke variabel <strong>$ret</strong></p></li>
+
+<li><p>baris 19, cek nilai <strong>$ret</strong>, jika ada angka 200 berarti format url yang diberikan sesuai, jika tidak berarti ada format yang salah pada argument (misalkan bahasa yang ditranslate tidak ada) (baris 23 - 25).</p></li>
+
+<li><p>baris 20, memecah nilai <strong>$ret</strong> dengan pemisah : dan dimasukkan ke array <strong>@retArray</strong>.</p></li>
+
+<li><p>baris 21, membuang karakter pada <strong>@retArray</strong> yang ke2 20 karakter dari belakang (Lihat dibawah), yang kemudian dimasukkan ke variabel <strong>$retFinal</strong>, yang merupakan hasil dari translate bahasa yang diinginkan, kemudian mencetak ke monitor (baris 22).</p></li>
+</ul>
+
+<p>Keterangan parsing output dari Google Translate:</p>
+
+<p>Output Total : <strong>{&ldquo;responseData&rdquo;: {&ldquo;translatedText&rdquo;:&ldquo;rumah&rdquo;},
+&ldquo;responseDetails&rdquo;: null, &ldquo;responseStatus&rdquo;: 200}</strong></p>
+
+<ul>
+<li><p><strong>@retArray[0]</strong> → {&ldquo;responseData&rdquo;</p></li>
+
+<li><p><strong>@retArray[1]</strong> → {&ldquo;translatedText&rdquo;</p></li>
+
+<li><p><strong>@retArray[2]</strong> → &ldquo;rumah&rdquo;}, &ldquo;responseDetails&rdquo; → 27 karakter, dan kita buang 20 karakter dari belakang.</p></li>
+
+<li><p><strong>@retArray[3]</strong> → null, &ldquo;responseStatus&rdquo;</p></li>
+
+<li><p><strong>@retArray[3]</strong> → 200}</p></li>
+</ul>
+
+<p>Sebuah translator dengan yang dilabelin <strong>Powered By Google Translate</strong>, telah
+berhasil kita buat.</p>
+
+<p>Contoh penggunaan:<br />
+Translate dari Inggris ke Indonesia (default) :<br />
+<code>$ gootranslate who are you</code><br />
+Output → &ldquo;siapa kau?&rdquo;<br />
+Translate dari Indonesia ke Inggris :<br />
+<code>$ gootranslate id.en bagaimana menurut mu</code><br />
+Output →&rdquo;what do you think&rdquo;<br />
+Translate dari Inggris ke Jepang :<br />
+<code>$ gootranslate en.ja i love you</code><br />
+Output → &ldquo;わたしは、あなたを愛しています&rdquo;</p>
+
+<p>Simpel bukan, meski terlalu panjang kodenya, atau malah bingung. Kalau mo
+lebih simple lagi kita bisa menggunakan perintah shell seperti curl dipadu
+dengan sed, dan hanya 1 baris lho, tapi tentu saja lebih membingungkan. Check
+this out</p>
+
+<p><code>$ curl -s \  
+'http://ajax.googleapis.com/ajax/services/language/translate?=1.0&amp;q;=rumah&amp;lan
+gpair;=en|id' | \  
+sed 's/.*{&quot;translatedText&quot;:&quot;\\([^&quot;]*\\)&quot;.*/\1\n/'</code></p>
+
+<p>**<br />
+**</p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/google-translate-perl-update/">Google translate - perl (update)</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/opera-on-zencafe/">Opera 10.10 on Zencafe</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

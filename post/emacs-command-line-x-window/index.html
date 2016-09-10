@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/emacs-command-line-x-window/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Emacs Command Line (X window) &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/emacs-command-line-x-window/"><h2 class="post-title">Emacs Command Line (X window)</h2></a>
+
+                    <p class="post-meta">
+                        <i>Wednesday , 16 Mar 2011 16:16:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p>X window yang dimaksud dalam penjelasan ini yaitu tampilan emacs ketika muncul
+dilayar.<br />
+Hal ini berguna untuk mengatur tampilan emacs misalkan font yang ingin
+digunakan, atau warna background atau foreground tampilan emacs dan masih
+banyak lagi.</p>
+
+<p>Selain menggunakan opsi yang ada dibawah ini bisa juga menggunakan _init file
+_bahkan sepertinya lebih banyak menggunakan file init daripada opsi-opsi pada
+command line. Inilah salah satu fitur yang menurut saya tidak terlalu berguna
+yang terdapat pada Emacs.</p>
+
+<ul>
+<li><p><strong>–name name</strong><br />
+Fungsinya untuk memberikan nama pada window yang akan digunakan oleh emacs.</p></li>
+
+<li><p><strong>-T name, –title name</strong><br />
+Kurang lebih sama dengan yang diatas yaitu untuk mengganti titel window pada
+emacs.</p></li>
+
+<li><p><strong>-r, -rv, –reverse-video</strong><br />
+Untuk membalik warna pada emacs.</p></li>
+
+<li><p><strong>-fn font, –font font</strong><br />
+Menggunakan font pilihan sendiri</p></li>
+
+<li><p><strong>–xrm resources</strong></p></li>
+
+<li><p><strong>–color=mode</strong></p></li>
+
+<li><p><strong>-bw pixels, –border-width pixels</strong><br />
+Menentukan ukuran lebar border pada window emacs.</p></li>
+
+<li><p><strong>-ib pixels. –internal-border pixels</strong></p></li>
+
+<li><p><strong>-g geometry, –geometry geometry</strong><br />
+Ukuran window emacs ketika tampil, untuk opsi geometry ini bisa dilihat pada
+manual X kemudian cari kata geometry ($man X) trus tekan slash(/) ketikkan
+geometry.<br />
+Format opsi geometry yaitu: LEBARxTINGGI+Xoff+Yoff<br />
+Untuk Xoff(X offset) dan Yoff(Y offset) bisa dikosongkan.<br />
+Contoh: 1000×500 –&gt; berarti window emacs akan tampil dengan lebar 1000 dan
+tinggi 500<br />
+Penjelasan x dan y offset:<br />
++0+0 –&gt; pojok kiri atas.<br />
+-0+0 –&gt; pojok kanan atas.<br />
+-0-0 –&gt; pojok kanan bawah.<br />
++0-0 –&gt; pojok kiri bawah</p></li>
+
+<li><p><strong>-lsp pixels, –line-spacing pixels</strong></p></li>
+
+<li><p><strong>-vb, –vertical-scroll-bar</strong></p></li>
+
+<li><p><strong>-fg, –fullheight</strong><br />
+Menampilkan window emacs dengan tinggi window sama dengan tinggi layar.</p></li>
+
+<li><p><strong>-fs, –fullscreen</strong><br />
+Menampilakan window emacs dalam keadaan fullscreen</p></li>
+
+<li><p><strong>-fw, –fullwidth</strong><br />
+Menampilkan window emacs dengan lebar window sama dengan lebar layar.</p></li>
+
+<li><p><strong>-fg color, –foreground-color color</strong><br />
+Membuat warna text sesuai keinginan(Default “hitam”).<br />
+Contoh: $emacs -fg red<br />
+warna text pada emacs akan menjadi merah</p></li>
+
+<li><p><strong>-bg color, –background-color color</strong><br />
+Untuk mengganti warna background.</p></li>
+
+<li><p><strong>-bd color, –border-color color</strong><br />
+Mengganti warna border.</p></li>
+
+<li><p><strong>-cr color, –cursor-color color</strong><br />
+Mengganti warna cursor</p></li>
+
+<li><p><strong>-ms color, –mouse-color color</strong></p></li>
+
+<li><p>Mengganti warna cursor</p></li>
+
+<li><p><strong>-d displayname, –display displayname</strong></p></li>
+
+<li><p><strong>-nbi, –no-bitmap-icon</strong></p></li>
+
+<li><p><strong>–iconic</strong></p></li>
+
+<li><p>Menjalankan emacs d pada mode iconic, yaitu dalam keadaan minimize</p></li>
+
+<li><p><strong>-nbc, –no-blinking-cursor</strong></p></li>
+
+<li><p>Untuk membuat cursor tidak berkedip</p></li>
+
+<li><p><strong>-nw, –no-window-system</strong></p></li>
+
+<li><p>Menjalankan emacs tanpa menggunakan window, jika dulu saya menggunakan vim untuk mengedit file di shell atau terminal, karena jika menggunakan emacs akan sedikit lebih lama ketika loading awal, namun setelah saya mengetahui opsi ini saya sekarang lebih suka edit file di shell dengan menggunakan $emacs -Q -nw bahkan saya sendiri membuat alias perintah emacs –no-window ini dengan enw di file bash.rc</p></li>
+
+<li><p><strong>-D, –basic-display</strong></p></li>
+</ul>
+
+<blockquote>
+<p>Referensi</p>
+
+<ul>
+<li><strong>$ emacs &ndash;help</strong>
+
+<br /></li>
+</ul>
+</blockquote>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/jangan-ngaku-orang-minang-kalau-tidak-sholat/">Jangan ngaku orang Minang kalau tidak sholat</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/bactrace-aplikasi-di-linux/">Bactrace Aplikasi di Linux</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

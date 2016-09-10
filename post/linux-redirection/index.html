@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/linux-redirection/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Linux Redirection : 2&gt;&amp;1 &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/linux-redirection/"><h2 class="post-title">Linux Redirection : 2&gt;&amp;1</h2></a>
+
+                    <p class="post-meta">
+                        <i>Tuesday , 15 Mar 2011 03:15:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/hacking">hacking</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    
+
+<p>Redirection dalam sistem unix dan Linux merupakan salah satu cara untuk
+melewatkan output dari suatu program ke program lain, dengan redirection kita
+bisa menyimpan output suatu file baik kedalam sebuah file atau diproses dengan
+program lain.</p>
+
+<p>Ada 3 redirection yang sering dijumpai dalam perintah linux.</p>
+
+<ol>
+<li>Standar input (stdin)</li>
+<li>Standar output (stdout)</li>
+<li>Standar error (stderr)</li>
+<li>Pipe
+
+<br /></li>
+</ol>
+
+<p>Seperti halnya filosofi *nix, yaitu “Everything is file”, semuanya adalah file
+begitu juga dengan 3 standar output,input dan error diatas, yang didefinisikan
+dengan angka(deskriptor file), stdin adalah 0, stdout = 1, dan stderr dengan
+angka 2. Semua angka ini didefinisikan pada file /usr/include/unistd.h</p>
+
+<p><strong><code>$grep -n STDIN -2 /usr/include/unistd.h  
+181-  
+182-/* Standard file descriptors. */  
+183:#define STDIN_FILENO 0 /* Standard input. */  
+184-#define STDOUT_FILENO 1 /* Standard output. */  
+185-#define STDERR_FILENO 2 /* Standard error output. */</code></strong></p>
+
+<h2 id="standar-input-stdin:65229fec76386ffbabfcc72f94c7be86">Standar Input (stdin)</h2>
+
+<p>Hampir semua program menerima input dari pemakainya, baik dari keyboard atau
+device input lainnya. Secara default stdin adalah keyboard. Disini penggunaan
+stdin bisa dengan tanda ‘&lt;’.</p>
+
+<p>Contoh:<br />
+<strong><code>$cat &lt; its.file  
+line 1  
+line 2</code></strong><br />
+pada perintah diatas _‘cat’_ menerima input _‘its.file’_ dan kemudian
+menampilkannya di stdout.</p>
+
+<h2 id="standar-output-stdout:65229fec76386ffbabfcc72f94c7be86">Standar Output (stdout)</h2>
+
+<p>Begitu juga dengan stdout, kebanyakan program di Linux juga memprint outputnya
+di stdout. Misalkan program<em> ls</em>, program ini akan menampilkan isi direktori
+aktif kemudian mencetaknya di stdout.</p>
+
+<p>Contoh:<br />
+<strong><code>$ls &gt; listdirektori.txt</code></strong><br />
+dari perintah diatas maka semua output dari ls akan disimpan ke dalam
+file<em>‘listdirektori.txt’</em>, perintah ini (&gt;) membuat file baru bernama
+_‘listdirektori.txt’_ jika file tersebut telah ada maka isi file tersebut akan
+diganti dengan output dari<em>ls</em>.<br />
+Agar file yang telah ada tidak diganti/ditimpa dengan yang baru gunakan 2
+tanda ‘&gt;’<br />
+<strong><code>$ls &gt;&gt; listdirektori.txt</code></strong><br />
+Isi file ‘listdirektori.txt’ akan ditambahkan dengan output ls.</p>
+
+<p>Perintah ini juga bisa digunakan untuk copi file ke file lain.<br />
+<strong><code>$cat file1 &gt; file2</code></strong></p>
+
+<p>Selain output pada file kita juga bisa melakukan redirect pada device.<br />
+<strong><code>$cat musik.wav &gt; /dev/audio</code></strong><br />
+Seperti memainkan file musik lewat pemutar mp3 kita, kita akan mendengarkan
+suara ketika melakukan perintah ini. Karena _/dev/audio_ adalah file
+deskriptor dari speaker yang kita punya.</p>
+
+<h2 id="pipe:65229fec76386ffbabfcc72f94c7be86">Pipe</h2>
+
+<p>Dari 2 hal diatas kita telah lihat bagaimana melakukan redirection input  ke
+dalam suatu program dan redirection output suatu program ke dalam sebuah file.
+Dengan pipe kita bisa melakukan redirection output suatu program menjadi input
+bagi program lain.</p>
+
+<p>Contoh:<br />
+<strong><code>$cat 'file.txt' | grep 'linux'</code></strong><br />
+Perintah ini berarti kita mencari kata ‘_linux_‘ di dalam file ‘_file.txt_‘,
+meski sebenarnya bisa dengan perintah grep ‘linux’ ‘file.txt’ namun pipe akan
+sangat berguna untuk melakukan proses secara berulang terhadap output
+tersebut, seperti contoh berikut:</p>
+
+<p><strong><code>$cat 'file.txt' | grep 'linux' | tr a-z A-Z</code></strong><br />
+Yaitu menampilkan file ‘file.txt’, kemudian hanya menampilkan kata ‘linux’
+kemudian mengubahnya menjadi huruf besar semua (<strong><code>tr a-z A-z</code></strong>).</p>
+
+<p>Ketika melakukan perintah pada Linux, sering kita menemui error, dan kemudian
+error ini akan ditampilkan lewat stderr.<br />
+<strong><code>$cat 'not_exist_file'  
+cat: not_exist_file: No such file or directory</code></strong><br />
+Output dari perintah diatas ditampilkan di screen (terminal) lewat stderr,
+untuk menghindari error ini bisa dilakukan dengan cara berikut.</p>
+
+<hr />
+
+<p><strong><code>$cat not_exist_file 2&gt; /dev/null</code></strong><br />
+tanda 2 diatas berarti semua output dari stderr akan diteruskan ke
+<em>/dev/null</em>, dan tidak akan menampilkan apapun, jika file _not_exist<em>file</em>
+benar-benar tidak ada.<br />
+Mungkin tidak begitu terlihat perbedaannya tapi coba jalankan 2 perintah
+berikut, agar lebih memahami<br />
+<strong><code>$find / -name *.txt  
+$find / -name *.txt 2&gt;/dev/null</code></strong><br />
+perintah pertama pasti akan mengeluarkan banyak output karena error yang
+didapat perintah find ketika mengakses file/direktori, sedangkan perintah
+kedua semua output error (dari stderr , angka 2) akan dilewatkan ke /dev/null.</p>
+
+<p>Penggunaan redirection diatas juga bisa digabung dengan redirection lainnya.</p>
+
+<p>Bagaimana dengan judul dari posting diatas <strong>2&gt;&amp;1</strong>, kalimat ini dalam suatu
+perintah di Linux berarti melewatkan setiap output dari stderr ke stdin, jadi
+setiap error yang dikeluarkan akan diteruskan menuju standar output.
+tanda<strong>&gt;</strong> sendiri adalah redirection pada suatu file tapi karena tanda <strong>&amp;</strong>
+maka output tersebut diteruskan lagi ke stdout / 1. Jika tanda <strong>&amp;</strong> tidak ada
+maka outputnya adalah sebuah file dengan nama 1.</p>
+
+<blockquote>
+<p>Referensi:<br />
++ <a href="http://linuxhelp.blogspot.com/2006/01
+/inputoutput-redirection-made-simple-in.html">http://linuxhelp.blogspot.com</a></p>
+</blockquote>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/bactrace-aplikasi-di-linux/">Bactrace Aplikasi di Linux</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/emacs-command-line-lisp-oriented/">Emacs Command line – (Lisp Oriented)</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

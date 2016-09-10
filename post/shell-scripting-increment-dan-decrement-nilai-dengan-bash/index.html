@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Shell Scripting: Increment dan Decrement nilai dengan Bash &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/shell-scripting-increment-dan-decrement-nilai-dengan-bash/"><h2 class="post-title">Shell Scripting: Increment dan Decrement nilai dengan Bash</h2></a>
+
+                    <p class="post-meta">
+                        <i>Tuesday , 01 Nov 2011 21:19:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming">programming</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://1.bp.blogspot.com/-hHNti_XJi0A/TqwP40jbm1I/AAAAAAAAApA/9GqFrLF4ckA/
+s1600/increment-decrement.png" alt="" /></p>
+
+<p>Increment dan Decrement pada bahasa pemrograman adalah menaikkan/menurunkan
+nilai satu variabel satu tingkat dari nilai yang telah diset pada variabel
+tersebut.<br />
+Misalkan kita mempunya sebuah variabel dengan nama <strong>_var</strong> yang nilainya
+adalah <strong>3</strong> jika kita lakukan _decrement_ maka nilai variabel tersebut
+menjadi <strong>2</strong> dan akan kembali menjadi **3 **jika kita melakukan proses
+<em>increment.</em><br />
+_<br />
+_<br />
+Seperti kebanyakan bahasa pemrograman melakukan proses ini bisa dilakukan
+dengan mudah yaitu dengan menambahkan dua(2) karakter plus(+) untuk proses
+_increment_ dan minus(-) pada proses <em>decrement</em>. Misalkan pada bahasa C
+seperti kode berikut.</p>
+
+<pre><code>int main() {  
+ int x = 3;  
+ x++; // nilai x menjadi 4  
+ x--; // nilai x kembali menjadi 3  
+
+ return;  
+}  
+</code></pre>
+
+<p>Bagaimana melakukannya pada scripting language seperti Bash, dulu saya
+berpikir bisa melakukannya dengan cara yang hampir sama dengan kebanyakan
+bahasa program pada umumnya seperti dibawah ini</p>
+
+<pre><code># deklarasi variabel _var  
+_var=3  
+
+#increment _var  
+$_var++  
+</code></pre>
+
+<p>Namun ternyata cara seperti itu justru menghasilkan error yang artinya tidak
+dikenali oleh bash sendiri, setelah saya baca beberapa tulisan di internet dan
+manual bash sendiri ada beberapa cara yang bisa dilakukan yaitu</p>
+
+<ol>
+<li><p>Menggunakan perintah <strong>expr.</strong><br />
+Cara ini cara yang pertama yang saya pelajari (<em><strong>man expr</strong></em>), contoh
+menggunakan expr</p>
+
+<pre><code># deklarasi variabel _var  
+</code></pre>
+
+<p>_var=3</p>
+
+<p>#increment _var<br />
+_var=$(expr $x + 1)</p></li>
+
+<li><p>Menggunakan perintah <strong>let.</strong><br />
+Meski menggunakan perintah <strong>let</strong> tapi perintah ini bukanlah suatu program
+melainkan _built-in syntax_ dari Bash jadi perintah ini lebih cepat dari
+<strong>expr</strong>. Perintahnya mirip dengan kebanyakan bahasa programming lainnya dalam
+melakukan operasi <em>increment.</em></p>
+
+<pre><code># deklarasi variabel _var  
+</code></pre>
+
+<p>_var=3</p>
+
+<p>#increment _var<br />
+let &lsquo;_var++&rsquo;</p></li>
+
+<li><p>Melakukan operasi didalam 2 tanda kurung.<br />
+Cara ketiga yaitu mirip dengan cara yang biasa dilakukan pada bahasa
+programming lainnya tapi perintah ini harus diapit oleh 2 tanda kurung,
+contohnya seperti dibawah ini</p>
+
+<pre><code># deklarasi variabel _var  
+</code></pre>
+
+<p>_var=3</p>
+
+<p>#increment _var<br />
+((_var++))</p></li>
+</ol>
+
+<p>Secara pribadi saya sendiri lebih suka melakukannya dengan cara ketiga,</p>
+
+<p>HINT:</p>
+
+<ul>
+<li><p>Dalam memberikan nilai variabel dalam shell-scripting(bash) tidak boleh ada spasi antara nama variabel dan nilai yang diberikan.<br />
+Cara yang salah <strong>x = 5</strong><br />
+Cara yang benar <strong>x=5</strong></p></li>
+
+<li><p>Jika menggunakan <strong>expr</strong> untuk perkalian adalah dengan menggunakan karakter <strong>bintang(*)</strong>, agar bisa dikenali oleh <strong>expr</strong> maka harus ditambahkan karakter <strong>escape(\)</strong>, contoh: <strong>expr $x \* 4.</strong></p></li>
+</ul>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/touchpad-tap-button-dengan-debian/">Touchpad Tap Button dengan Debian</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/let-s-go-programming-language/">Let&#39;s Go Programming Language</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

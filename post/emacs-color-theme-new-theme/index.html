@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/emacs-color-theme-new-theme/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Emacs Color Theme ( new Theme ) &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/emacs-color-theme-new-theme/"><h2 class="post-title">Emacs Color Theme ( new Theme )</h2></a>
+
+                    <p class="post-meta">
+                        <i>Monday , 11 Apr 2011 23:09:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://2.bp.blogspot.com/-S1AZ7cPt5xA/TaMcWqeeOsI/AAAAAAAAAXo/XgQdIUXq9L0/
+s1600/emacs-logo.png" alt="" /></p>
+
+<p>Setelah lelah membaca buku, capek mengetik kode ane bingung mau ngapain, trus
+coba jalan-jalan <a href="http://www.emacswiki.org/">http://www.emacswiki.org/</a> trus kesasar di bagian <a href="http://www.emacswiki.org/emacs/ColorTheme">Color
+Theme</a>, ternyata banyak banget tema
+untuk Emacs.</p>
+
+<p>Akhirnya mutusin untuk coba ganti tema Emacs, dengan nuansa gelap, karena
+sebelumnya warna tema Emacs ane, berwarna cerah.</p>
+
+<p>Secara default jika download color-theme pun telah tersedia berbagai tema,
+yang bisa langsung dipakai.</p>
+
+<p>Cara Instalasai Tema.</p>
+
+<ol>
+<li><p>Download color-theme.el disitus resminya <a href="http://www.nongnu.org/color-theme/">http://www.nongnu.org/color-theme/</a> atau bisa langsung download disini, <a href="http://download.savannah.gnu.org/releases/color-theme/">http://download.savannah.gnu.org/releases/color-theme/</a>.<br />
+<em>** $ wget &ldquo;<a href="http://download.savannah.gnu.org/releases/color-theme/color-">http://download.savannah.gnu.org/releases/color-theme/color-</a>
+theme-6.6.0.tar.gz&rdquo;**</em></p></li>
+
+<li><p>Pilih versi paling tinggi (saat ini versi 6.6.0), kemudian extract file tersebut,<br />
+<em>** $tar xf color-theme-6.6.0.tar.gz**</em></p></li>
+
+<li><p>Install dengan perintah make ; make install.<br />
+<strong>_ $ cd color-theme-6.6.0<br />
+$ make<br />
+$ sudo make install_</strong></p></li>
+
+<li><p>Kemudian edit file <strong>.emacs</strong> di direktori home, tambahkan kode berikut<br />
+<em>** (require &lsquo;color-theme-autoload &ldquo;color-theme-autoloads&rdquo;)**</em></p></li>
+
+<li><p>Jalankan Emacs, untuk mengganti theme tekan tombol Alt+x color-theme Tab dan tekan Tab untuk melihat popup color-theme yang tersedia.</p></li>
+</ol>
+
+<p><img src="http://3.bp.blogspot.com/-wf3pA9_maTM/TaMcrU_IKwI/AAAAAAAAAXs/nubVjRFl-j8/
+s400/my-emacs-theme1.png" alt="" /></p>
+
+<p>Emacs dengan tema standar</p>
+
+<p>Setelah ane coba semua, terasa belum puas akhirnya mutusin untuk bikin tema
+sendiri, walau cukup ribet karena harus tahu kode-kode warna untuk html, tapi
+kalo di emacs bisa dengan menekan tombol Alt+x list-color-display Ret untuk
+melihat daftar warna.</p>
+
+<p><img src="http://2.bp.blogspot.com/-pasBl4HTgBE/TaMnZLlVvHI/AAAAAAAAAX0/9QL6oM2SGLM/
+s320/list-color.png" alt="" /></p>
+
+<p>Setelah berhasil membuat sebuat tema, tema ini diberi nama &ldquo;smooth-in-the-
+dark&rdquo; seperti namanya tema ini cukup nyaman dilihat meski backgroundnya gelap,
+berikut kodenya,</p>
+
+<pre><code>(defun color-theme-smooth-in-the-dark ()  
+  &quot;created by Ardi   
+  (interactive)  
+  (color-theme-install  
+   '(color-theme-smooth-in-the-dark  
+      ((background-color . &quot;#393b3c&quot;)  
+      (background-mode . light)  
+      (border-color . &quot;#544f4f&quot;)  
+      (cursor-color . &quot;#0f576c&quot;)  
+      (foreground-color . &quot;#b7b7a9&quot;)  
+      (mouse-color . &quot;black&quot;))  
+     (fringe ((t (:background &quot;#544f4f&quot;))))  
+     (mode-line ((t (:foreground &quot;#eeeeec&quot; :background &quot;#666765&quot;))))  
+     (region ((t (:background &quot;#2b4855&quot;))))  
+     (font-lock-builtin-face ((t (:foreground &quot;#1fc4e5&quot;))))  
+     (font-lock-comment-face ((t (:foreground &quot;#bc7677&quot;))))  
+     (font-lock-function-name-face ((t (:foreground &quot;#ffee61&quot;))))  
+     (font-lock-keyword-face ((t (:foreground &quot;#4f8ac9&quot;))))  
+     (font-lock-string-face ((t (:foreground &quot;#c68d5d&quot;))))  
+     (font-lock-type-face ((t (:foreground&quot;#6fe000&quot;))))  
+     (font-lock-variable-name-face ((t (:foreground &quot;#f80dd0&quot;))))  
+     (minibuffer-prompt ((t (:foreground &quot;#03aa07&quot; :bold t))))  
+     (font-lock-warning-face ((t (:foreground &quot;Red&quot; :bold t))))  
+     )))  
+(provide 'color-theme-smooth-in-the-dark)  
+</code></pre>
+
+<p>Simpan kode diatas dengan nama color-theme-smooth-in-the-dark.el simpan
+didirektori konfigurasi Emacs, kemudian tambahkan kode berikut di file .emacs.<br />
+(color-theme-smooth-in-the-dark)<br />
+Perintah ini harus dipanggil setelah perintah (require &lsquo;color-theme) seperti
+yang tertera diatas.</p>
+
+<p><img src="http://2.bp.blogspot.com/-kGBJbuElDLQ/TaMcxyn1cDI/AAAAAAAAAXw/uiXDUhzdPFk/
+s400/my-emacs-theme2.png" alt="" /></p>
+
+<p>Emacs dengan tema smooth-in-the-dark</p>
+
+<p>Menurut ane, warnanya cukup nyaman, silahkan nilai masing2.</p>
+
+<p>Kalo capek dan ga mau repot dengan kode warna-warna untuk tema diatas bisa
+dengan menggunakan color-theme generatornya disini <http://alexpogosyan.com
+/color-theme-creator/> , ane pun awalnya menggunakan generator ini.</p>
+
+<p>Selamat ngoprek.</p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/konversi-bilangan-ip-address-dengan-php/">Konversi Bilangan (Ip Address) dengan PHP</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/ylmf-os-linux-rasa-windows/">ylmf Os, Linux Rasa Windows</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

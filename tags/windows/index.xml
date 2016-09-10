@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Windows on http://blog.aredhi.com</title>
+      <title>Windows on http://blog.aredhi.com </title>
     <link>http://blog.aredhi.com/tags/windows/</link>
-    <description>Recent content in Windows on http://blog.aredhi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jun 2011 18:13:00 +0700</lastBuildDate>
-    <atom:link href="http://blog.aredhi.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Mon, 13 Jun 2011 18:13:00 WIB</updated>
     
     <item>
       <title>Emacs: Folding kode dengan mouse</title>
       <link>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</link>
-      <pubDate>Mon, 13 Jun 2011 18:13:00 +0700</pubDate>
-      
+      <pubDate>Mon, 13 Jun 2011 18:13:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
 s1600/hideshowvis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -76,8 +75,8 @@ aktif.&lt;/p&gt;
     <item>
       <title>Cream - Vim editor yang ramah</title>
       <link>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</link>
-      <pubDate>Sat, 07 May 2011 17:55:00 +0700</pubDate>
-      
+      <pubDate>Sat, 07 May 2011 17:55:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/</guid>
       <description>&lt;p&gt;Mendengar nama Vi(m) kita pasti ingat dengan sebuah editor mini dengan
 kemampuan yang luar biasa, begitu juga dengan Cream, editor ini menggunakan
@@ -190,8 +189,8 @@ Faq Cream&lt;/p&gt;
     <item>
       <title>Singkatan Recursive ( Emacs )</title>
       <link>http://blog.aredhi.com/post/singkatan-recursive-emacs/</link>
-      <pubDate>Mon, 21 Mar 2011 06:44:00 +0700</pubDate>
-      
+      <pubDate>Mon, 21 Mar 2011 06:44:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/singkatan-recursive-emacs/</guid>
       <description>&lt;p&gt;Judul diatas merupakan salah kebiasaan unik dari hacker, yaitu Singkatan
 Rekursif, atau singkatan yang memanggil dirinya sendiri. Tulisan ini saya
@@ -308,8 +307,8 @@ Eight Megabytes And Constantly Swapping**&lt;/p&gt;
     <item>
       <title>Copy Paste di Emacs (CUA mode)</title>
       <link>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</link>
-      <pubDate>Mon, 07 Mar 2011 07:07:00 +0700</pubDate>
-      
+      <pubDate>Mon, 07 Mar 2011 07:07:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/copy-paste-di-emacs-cua-mode/</guid>
       <description>&lt;p&gt;Dalam kebanyakan editor saat ini, untuk melakukan copy paste digunakan shorcut
 Control-c untuk copy, C-v untuk paste dan C-x untuk cut. Sedangkan Emacs yang
@@ -347,8 +346,8 @@ menggunakan shorcut &lt;strong&gt;&lt;code&gt;C-1 C-c&lt;/code&gt;&lt;/strong&g
     <item>
       <title>Emacs Chatting dengan ERC</title>
       <link>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</link>
-      <pubDate>Sun, 06 Mar 2011 06:06:00 +0700</pubDate>
-      
+      <pubDate>Sun, 06 Mar 2011 06:06:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/emacs-chatting-dengan-erc/</guid>
       <description>&lt;p&gt;Sekali lagi Emacs bukan teks editor biasa, bahkan kadang disebut sebagai
 sistem operasi, karna saking lengkapnnya aplikasi dan plugin2 emacs. Salah
@@ -414,8 +413,8 @@ s1600/emacs-erc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
     <item>
       <title>GNU Emacs</title>
       <link>http://blog.aredhi.com/post/gnu-emacs/</link>
-      <pubDate>Sun, 04 Jul 2010 19:41:00 +0700</pubDate>
-      
+      <pubDate>Sun, 04 Jul 2010 19:41:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/gnu-emacs/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://i919.photobucket.com/albums/ad35/chars19/blogMe/emacs23.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
 GNU Emacs merupakan editor yang sangat powerfull, aplikasi ini bahkan jauh
@@ -473,8 +472,8 @@ Control atau Shift.&lt;/p&gt;
     <item>
       <title>Google translate - Perl</title>
       <link>http://blog.aredhi.com/post/google-translate-perl/</link>
-      <pubDate>Wed, 23 Jun 2010 19:56:00 +0700</pubDate>
-      
+      <pubDate>Wed, 23 Jun 2010 19:56:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/google-translate-perl/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://1.bp.blogspot.com/_ypU0iaR-LmM/TDITz-
 BFVYI/AAAAAAAAAQs/umysQJAVTdk/s320/google-perl.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
@@ -624,8 +623,8 @@ sed &#39;s/.*{&amp;quot;translatedText&amp;quot;:&amp;quot;\\([^&amp;quot;]*\\)&
     <item>
       <title>Mencari bilangan prima dengan Python</title>
       <link>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</link>
-      <pubDate>Tue, 18 May 2010 23:45:00 +0700</pubDate>
-      
+      <pubDate>Tue, 18 May 2010 23:45:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/mencari-bilangan-prima-dengan-python/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://3.bp.blogspot.com/_ypU0iaR-
 LmM/TDIhx5nD31I/AAAAAAAAARE/7HegaxuEUG8/s320/python-prime.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;

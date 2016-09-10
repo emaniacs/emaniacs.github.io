@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/konversi-bilangan-ip-address-dengan-php/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Konversi Bilangan (Ip Address) dengan PHP &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/konversi-bilangan-ip-address-dengan-php/"><h2 class="post-title">Konversi Bilangan (Ip Address) dengan PHP</h2></a>
+
+                    <p class="post-meta">
+                        <i>Friday , 22 Apr 2011 18:06:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://2.bp.blogspot.com/-K4BWMl0w6WQ/TbFjwX_7E3I/AAAAAAAAAX8/sgrCvDnZ09g/
+s320/0xphp.png" alt="" /></p>
+
+<p>Kode ini berawal ketika sedang kuliah dan diberi tugas dari dosen untuk
+melakukan konversi bilangan ip address dari desimal ke binary atau sebaliknya,
+karena malas nulis akhirnya ane coba untuk membuat kode untuk melakukan
+konversi bilangan tersebut.<br />
+Dari kedua kode ini, hanya untuk konversi bilangan dari binary ke desimal atau
+sebaliknya dengan format bilangan seperti ip address, meski tak tertutup untuk
+format bilangan lain tapi ane sendiri belum nyoba untuk melakukannya.<br />
+Format bilangannya adalah seperti ini :<br />
+**$a = &ldquo;192.168.255.254&rdquo; **untuk konversi bilangan dari desimal ke biner.<br />
+<strong>$b = &ldquo;11001010&rdquo;</strong> untuk konversi bilangan dari biner ke desimal.<br />
+berikut Fungsi untuk konversi desimal ke biner</p>
+
+<pre><code>function dectobin($dec){  
+  $hasil = $h = '';  
+  $arr = explode('.', $dec);  
+  foreach($arr as $nilai){  
+    while((int)$nilai &gt;= 1){  
+      $modulus = $nilai % 2;  
+      $nilai = floor($nilai / 2);  
+      $h = $modulus . $h;  
+    }  
+    $hasil .= $h . &quot;.&quot;;  
+    $h = '';  
+  }  
+  return $hasil;  
+}  
+?&gt;  
+</code></pre>
+
+<p>Fungsi untuk konversi biner ke desimal</p>
+
+<pre><code>&lt;php  
+ function bintodec($bin){  
+  $hasil = $h ='';  
+  $arr = explode('.', $bin);  
+  foreach($arr as $nilai){  
+    for($i = strlen($nilai)-1, $j=0; $i&gt;=0; $i--, $j++){  
+      if( (int)$nilai[$j] == 1)  
+       $h += pow(2, $i);  
+    }  
+    $hasil .= $h . &quot;.&quot;;  
+    $h = 0;  
+  }  
+  return $hasil;  
+}  
+?&gt;  
+</code></pre>
+
+<p>Dan untuk melakukan pemanggilan fungsi bisa dengan cara berikut</p>
+
+<pre><code>$a = &quot;192.168.255.254&quot;;  
+$b = &quot;11001010.10011111.00010111.00000000&quot;;  
+echo &quot;Nilai biner dari  $a =&gt; &quot; .  dectobin($a) . &quot;\n&quot;;  
+echo &quot;Nilai desimal dari $b =&gt; &quot; . bintodec($b) . &quot;\n&quot;;  
+?&gt;  
+</code></pre>
+
+<p>Berikut kode lengkapnya</p>
+
+<pre><code>$a = &quot;192.168.255.254&quot;;  
+$b = &quot;11001010.10011111.00010111.00000000&quot;;  
+$c = &quot;11001010.10011111.00010111.11111111&quot;;  
+$d = &quot;00110101.01100000.11101000.00101001&quot;;  
+$e = &quot;11111111.11111111.11111111.00101101&quot;;  
+   
+function dectobin($dec){  
+  $hasil = $h = '';  
+  $arr = explode('.', $dec);  
+  foreach($arr as $nilai){  
+    while((int)$nilai &gt;= 1){  
+      $modulus = $nilai % 2;  
+      $nilai = floor($nilai / 2);  
+      $h = $modulus . $h;  
+    }  
+    $hasil .= $h . &quot;.&quot;;  
+    $h = '';  
+  }  
+   
+  return $hasil;  
+}  
+   
+function bintodec($bin){  
+  $hasil = $h ='';  
+  $arr = explode('.', $bin);  
+  foreach($arr as $nilai){  
+    for($i = strlen($nilai)-1, $j=0; $i&gt;=0; $i--, $j++){  
+      if( (int)$nilai[$j] == 1)  
+       $h += pow(2, $i);  
+    }  
+    $hasil .= $h . &quot;.&quot;;  
+    $h = 0;  
+  }  
+  return $hasil;  
+}  
+
+echo &quot;Nilai binary dari $a =&gt; &quot;, to_bin($a) , &quot;\n&quot;;  
+echo &quot;Nilai desimal dari $b =&gt; &quot;, to_dec($b) , &quot;\n&quot;;  
+echo &quot;Nilai desimal dari $c =&gt; &quot;, to_dec($c) , &quot;\n&quot;;  
+echo &quot;Nilai desimal dari $d =&gt; &quot;, to_dec($d) , &quot;\n&quot;;  
+echo &quot;Nilai desimal dari $e =&gt; &quot;, to_dec($e) , &quot;\n&quot;;  
+
+?&gt;  
+</code></pre>
+
+<p>Meski sebenarnya Php telah menyediakan fungsi-fungsi untuk melakukan konversi
+tersebut, tapi fungsi diatas hanya digunakan untuk pemahaman terhadap proses
+konversi bilangan tersebut.<br />
+Untuk melakukan konversi bilangan dari binari bisa digunakan fungsi
+bindec($target) , dan untuk sebaliknya gunakan decbin($target), bahkan fungsi
+untuk konversi ke bilangan basis yang lain seperti oktal atau hexadesimal juga
+tersedia.</p>
+
+<pre><code>echo &quot;Konversi '1001010' ke desimal =&gt; &quot; . bindec('1001010') . &quot;\n&quot;;  
+echo &quot;Konversi '787' ke binary =&gt; &quot;. decbin('787') .&quot;\n&quot;;  
+echo &quot;Konversi '787' ke hexadesimal =&gt; &quot; .base_convert(&quot;787&quot;, 10, 16) . &quot;\n&quot;;  
+
+?&gt;  
+</code></pre>
+
+<p>Ref :</p>
+
+<ul>
+<li><a href="http://php.net/manual/en/function.base-convert.php">function.base-convert</a></li>
+<li><a href="http://php.net/manual/en/function.decbin.php">function decbin</a>
+
+
+<br /></li>
+</ul>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/cream-vim-editor-yang-ramah/">Cream - Vim editor yang ramah</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/emacs-color-theme-new-theme/">Emacs Color Theme ( new Theme )</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/emacs-command-line/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Emacs Command Line &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/emacs-command-line/"><h2 class="post-title">Emacs Command Line</h2></a>
+
+                    <p class="post-meta">
+                        <i>Friday , 11 Mar 2011 11:11:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    
+
+<p><img src="http://3.bp.blogspot.com/-H0ynPXoLovY/TY9qm3hwvOI/AAAAAAAAAV4/rBG7Bq6iYCo/
+s320/emacs--help.png" alt="" /></p>
+
+<p>Salah satu hal yang hampir selalu ada disetiap program *nix adalah<em>command
+line options</em>, begitu juga dengan Emacs juga memiliki hal ini._Command line
+options_ atau _arguments_ ini adalah perintah yang kita masukkan ketika
+menjalankan program, perintah ini bisa untuk konfigurasi ataupun untuk untuk
+perintah pada program untuk melakukan sesuatu baik sebelum program akan
+ditampilkan ataupun sesaat setelah berjalan.</p>
+
+<p>Disistem *nix option biasanya diawali dengan karater
+<a href="http://en.wikipedia.org/wiki/Dash">dash(-)</a> baik single ataupun double,
+sedangkan program di Windows biasanya diawali
+dengan<a href="http://en.wikipedia.org/wiki/Slash_(punctuation)">slash(/)</a> <strong><a href="http://en.wikipedia.org/wiki/Slash_(musician)">i like
+slash</a></strong>.</p>
+
+<p>Untuk melihat apa saja perintah yang dimengerti oleh program bisa dengan
+mengetikan program dengan argument <strong>–help</strong> atau <strong>-h</strong>, misalkan: <strong><code>$emacs
+--help</code></strong> selain itu bisa juga dengan perintah manual (<strong><code>$man emacs</code></strong>) untuk
+mesin *nix, sedangkan untuk Windows penulis tidak tahu atau malah tidak ada.</p>
+
+<h2 id="emacs-options:781bbcd01c0cf8ab9d544defcd7dcad6">Emacs Options</h2>
+
+<p>Berikut beberapa opsi dari emacs yang didapat dari output manual emacs, untuk
+mengeksekusi opsi ini maka harus diawali dengan nama program terlebih dahulu
+(dalam hal ini emacs)</p>
+
+<h3 id="standar-options-http-chars19-blogspot-com-2011-03-emacs-command-line:781bbcd01c0cf8ab9d544defcd7dcad6">[Standar Options](<a href="http://chars19.blogspot.com/2011/03/emacs-command-line-">http://chars19.blogspot.com/2011/03/emacs-command-line-</a></h3>
+
+<p>standard-options.html)</p>
+
+<ul>
+<li><em>namaFile</em></li>
+<li>–file <em>namaFile</em>, –find-file <em>namaFile</em>, –visit <em>namaFile</em></li>
+<li>+<em>number</em></li>
+<li>+<em>line:column</em></li>
+<li>-q, –no-init-file</li>
+<li>–no-site-file</li>
+<li>–no-desktop</li>
+<li>-nl, –no-shared-memory</li>
+<li>-Q, –quick</li>
+<li>–no-splash</li>
+<li>–debug-init</li>
+<li>-u <em>namaUser</em>, –user <em>namaUser</em></li>
+<li>-t <em>namaFile</em>, –terminal <em>namaFile</em></li>
+<li>–multibyte, –no-unibyte</li>
+<li>–unibyte, –no-multibyte</li>
+<li>–version</li>
+<li>–help</li>
+</ul>
+
+<h3 id="lisp-oriented:781bbcd01c0cf8ab9d544defcd7dcad6">[Lisp Oriented</h3>
+
+<p>](<a href="http://chars19.blogspot.com/2011/03/emacs-command-line-lisp-oriented.html">http://chars19.blogspot.com/2011/03/emacs-command-line-lisp-oriented.html</a>)</p>
+
+<p>Untuk Opsi di bawah ini adalah opsi_ lisp oriented_ atau berorientasi dengan
+bahasa Lisp (Emacs dibangun dengan bahasa Lisp dan C)</p>
+
+<ul>
+<li>-f <em>function</em>, –funcall <em>function</em></li>
+<li>-l <em>file</em>, –load file</li>
+<li>–eval_ _“_lisp expression_“, –execute “_lisp expression_“</li>
+</ul>
+
+<h3 id="batch-mode-http-chars19-blogspot-com-2011-03-emacs-command-line-lisp:781bbcd01c0cf8ab9d544defcd7dcad6">[Batch Mode](<a href="http://chars19.blogspot.com/2011/03/emacs-command-line-lisp-">http://chars19.blogspot.com/2011/03/emacs-command-line-lisp-</a></h3>
+
+<p>oriented.html)</p>
+
+<p>Sedangkan opsi dibawah ini digunakan ketika menjalankan Emacs sebagai batch
+editor. Emacs sebagai batch editor yaitu menjalankan Emacs seperti interpreter
+pada bahasa python, yang tentu saja bahasa yang digunakan bahasa Lisp.</p>
+
+<ul>
+<li>–batch</li>
+<li>–script <em>namaScript</em></li>
+<li>–insert <em>namaFile</em></li>
+<li>–kill</li>
+<li>-L <em>direktori</em>, –directory <em>direktori</em></li>
+</ul>
+
+<h3 id="x-window:781bbcd01c0cf8ab9d544defcd7dcad6">[X window</h3>
+
+<p>](<a href="http://chars19.blogspot.com/2011/03/emacs-command-line-x-window.html">http://chars19.blogspot.com/2011/03/emacs-command-line-x-window.html</a>)</p>
+
+<p>Emacs opsi untuk konfigurasi X window, yaitu opsi Emacs untuk mengatur
+tampilan emacs sendiri mulai dari warna, title ataupun font yang akan
+digunakan oleh Emacs.</p>
+
+<ul>
+<li>–name name</li>
+<li>-T name, –title name</li>
+<li>-r, -rv, –reverse-video</li>
+<li>-fn font, –font font</li>
+<li>–xrm resources</li>
+<li>–color=mode</li>
+<li>-bw pixels, –border-width pixels</li>
+<li>-ib pixels. –internal-border pixels</li>
+<li>-g geometry, –geometry geometry</li>
+<li>-lsp pixels, –line-spacing pixels</li>
+<li>-vb, –vertical-scroll-bar</li>
+<li>-fg, –fullheight</li>
+<li>-fs, –fullscreen</li>
+<li>-fw, –fullwidth</li>
+<li>-fg color, –foreground-color color</li>
+<li>-bg color, –background-color color</li>
+<li>-bd color, –border-color color</li>
+<li>-cr color, –cursor-color color</li>
+<li>-ms color, –mouse-color color</li>
+<li>-d displayname, –display displayname</li>
+<li>-nbi, –no-bitmap-icon</li>
+<li>–iconic</li>
+<li>-nbc, –no-blinking-cursor</li>
+<li>-nw, –no-window-system</li>
+<li>-D, –basic-display
+<br />
+<br />
+
+
+<br /></li>
+</ul>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/emacs-command-line-standard-options/">Emacs Command line – (Standard Options)</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/emacs-shorcuts/">Emacs Shorcuts</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+

@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming Python on http://blog.aredhi.com</title>
+      <title>Programming Python on http://blog.aredhi.com </title>
     <link>http://blog.aredhi.com/tags/programming-python/</link>
-    <description>Recent content in Programming Python on http://blog.aredhi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 20 May 2013 19:30:00 +0700</lastBuildDate>
-    <atom:link href="http://blog.aredhi.com/tags/programming-python/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <author>Novi Ardi</author>
+    <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
+    <updated>Mon, 20 May 2013 19:30:00 WIB</updated>
     
     <item>
       <title>CTF Online EAsy Crypto 1 (EASY)</title>
       <link>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</link>
-      <pubDate>Mon, 20 May 2013 19:30:00 +0700</pubDate>
-      
+      <pubDate>Mon, 20 May 2013 19:30:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/ctf-online-easy-crypto-easy/</guid>
       <description>&lt;p&gt;Text yang akan diencrypt adalah seperti ini&lt;/p&gt;
 
@@ -78,8 +77,8 @@ Jadi tokoh yang dimaksud adalah WS Rendra (rendra)&lt;/p&gt;
     <item>
       <title>Get site ranking with python and beautifulsoup</title>
       <link>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</link>
-      <pubDate>Wed, 21 Nov 2012 21:21:00 +0700</pubDate>
-      
+      <pubDate>Wed, 21 Nov 2012 21:21:00 WIB</pubDate>
+      <author>Novi Ardi</author>
       <guid>http://blog.aredhi.com/post/get-site-ranking-with-python-and-beautifulsoup/</guid>
       <description>&lt;p&gt;To get information about site, we can use &lt;a href=&#34;http://alexa.com/&#34;&gt;alexa.com&lt;/a&gt; but
 sometimes we just need some pieces of information like ranking of site global

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="canonical" href="http://blog.aredhi.com/post/emacs-folding-kode-dengan-mouse/"/>
+        <meta name="webcrawlers" content="all" />
+        <meta name="spiders" content="all" />
+        <meta name="author" content="aredhi.com, N.Ardi"/>
+        <meta name="email" content="noone.nu1@gmail.com"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="description" content="blog about my life, programming and computer"/>
+        <meta name="keywords" content="aredhi.com, novi ardi, linux, gnu, emacs, vim, timeline, terminal"/>
+        <link rel="Publisher" href="https://plus.google.com/100907373656175842280/posts"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+            <title> Emacs: Folding kode dengan mouse &middot; http://blog.aredhi.com </title>
+        
+
+        <link rel="stylesheet" href="/css/pure-min.css">
+
+        <link rel="stylesheet" href="/css/grids-responsive-min.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/default.min.css">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="" rel="alternate" type="application/rss+xml" title="http://blog.aredhi.com" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)
+            },i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16502901-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="logo">
+            <a href="/"><img id="img-logo" src="/img/ambo.jpg"/></a>
+        </div>
+        <div class="header">
+            <h1 class="brand-title">:)</h1>
+            <h2 class="brand-tagline"></h2>
+
+            <nav class="nav">
+                <p class="social-link">
+                    <a href="/page/about" class="icons">About</a>
+                    
+                    <a href="https://twitter.com/e_maniacs" class="icons fa fa-twitter"></a>
+                    
+                    <a href="http://github.com/emaniacs" class="icons fa fa-github"></a>
+                    
+                </p>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="content container">
+            <section class="post">
+                
+                <header class="post-header">
+                    <a href="/post/emacs-folding-kode-dengan-mouse/"><h2 class="post-title">Emacs: Folding kode dengan mouse</h2></a>
+
+                    <p class="post-meta">
+                        <i>Monday , 13 Jun 2011 18:13:00</i>
+
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-linux">gnu linux</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/windows">windows</a>
+                        
+                        <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
+                        
+                    </p>
+                    <hr/>
+                </header>
+                
+
+                <div class="post-description">
+                    <p><img src="http://3.bp.blogspot.com/-sbWD3ixiYA4/TfYC6oAx8BI/AAAAAAAAAlc/8vM6oC4RXtE/
+s1600/hideshowvis.png" alt="" /></p>
+
+<p>Ketika mencoba Emacs pertama kali, saya sempat bingung gimana caranya
+melakukan folding atau menyembunyikan kode didalam suatu blok. Folding kode
+sangat berguna untuk melakukan review terhadap kode. Saya cari di internet ada
+beberapa cara dan setelah dicoba saya paling tertarik dengan
+<a href="http://www.emacswiki.org/emacs/HideShow">hideshow</a>, hal ini karena  hideshow
+melakukan folding code berdasarkan penanda ekspresi blok pada setiap bahasa
+programming, misalkan bahasa C, maka blok nya dimulai dari karakter &ldquo;{&rdquo;.</p>
+
+<p>Berdasarkan situsnya Hideshow merupakan minor-mode dari <a href="http://www.emacswiki.org/emacs/OutlineMode">Outline-
+mode</a> yang secara default telah
+terinstall pada Emacs (saya menggunakan Emacs 23.2.3), cara mengaktifkannya
+bisa dengan M-xhs-minor-modeRet atau agar aktif setiap kali Emacs dijalankan,
+tambahkan kode berikut pada file<strong>_ .emacs_</strong></p>
+
+<pre><code>(add-hook 'php-mode-hook 'hs-minor-mode)  
+(add-hook 'java-mode-hook 'hs-minor-mode)  
+</code></pre>
+
+<p>Kode diatas untuk mengaktifkan hideshow jika kita membuka file Java dan Php.</p>
+
+<p>Agar lebih mudah saya sendiri membuat shortcut untuk  mengaktifkan atau
+menonaktifkan hideshow mode ini, yaitu dengan menggunakan tombol [f7],
+tambahkan kode berikut pada <em><strong>.emacs</strong></em> agar shortcutnya aktif</p>
+
+<pre><code>(global-set-key [f7] 'hs-minor-mode)
+</code></pre>
+
+<p>Setelah mencoba beberapa lama, saya penasaran untuk membuat kode agar folding
+bisa dilakukan dengan mouse, hal ini saya dapat ketika mempelajari bagaimana
+membuat shortcut pada <a href="http://www.emacswiki.org/emacs/TheFringe">fringe</a> di
+Emacs.<a href="http://www.emacswiki.org/emacs/TheFringe">Fringe</a> sendiri adalah margin
+antara line-number dengan editor area, seperti yang terlihat pada gambar
+diatas.</p>
+
+<p>Setelah melakukan beberapa percobaan akhirnya berhasil juga membuat beberapa
+baris kode untuk membuat hideshow mode menggunakan mouse.</p>
+
+<p>Berikut kodenya</p>
+
+<pre><code>(defun hideshow-toggle-with-mouse (event)  
+  &quot; Toggle hideshow with mouse   &quot;  
+  (interactive &quot;@e&quot;)  
+  (mouse-set-point event)  
+  (end-of-line)  
+  (hs-toggle-hiding))  
+
+(global-set-key (kbd &quot;&quot;) 'hideshow-toggle-with-mouse)  
+</code></pre>
+
+<p>Ketikkan kode tersebut di file .emacs dan sekarang folding bisa dilakukan
+dengan mouse. Untuk mengaktifkan perintah diatas hideshow-mode harus telah
+aktif.</p>
+
+                </div>
+            </section>
+
+            
+            <div class="nextprev pure-g">
+                <div class="pure-u-1-2 prev">
+                    
+                        <a title="Previous post" href="http://blog.aredhi.com/post/panada-membuat-halaman-login/">Panada: Membuat Halaman Login</a>
+                    
+                </div>
+                <div class="pure-u-1-2 next">
+                    
+                        <a title="Next post" href="http://blog.aredhi.com/post/format-penulisan-file-pada-panada/">Format penulisan file pada Panada</a>
+                    
+                </div>
+            </div>
+            <br/>
+            
+            <hr/>
+            <div id="disqus_thread"></div>
+        </div>
+
+        <div class="footer">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item">
+                <a href="/page/about" class="pure-menu-link icons">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="https://twitter.com/e_maniacs" class="icons pure-menu-link fa fa-twitter"></a></li>
+            
+            <li class="pure-menu-item">
+                <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
+            
+        </ul>
+        <p class="last-update"> Last update 2015-05-12 11:19:22 &#43;0700 WIB</p>
+    </div>
+</div>
+
+
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript">
+	     
+	    var disqus_shortname = 'blogaredhicom';
+	    
+	     
+	    (function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
+
