@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="canonical" href="http://blog.aredhi.com/post/using-keyword-as-method-in-php/"/>
+        <link rel="canonical" href="http://blog.aredhi.com/post/iwan-ponger-nyolong-ayam/"/>
         <meta name="webcrawlers" content="all" />
         <meta name="spiders" content="all" />
         <meta name="author" content="aredhi.com, N.Ardi"/>
@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         
-            <title> Using keyword as method in PHP &middot; http://blog.aredhi.com </title>
+            <title> Iwan Ponger - Nyolong ayam &middot; http://blog.aredhi.com </title>
         
 
         <link rel="stylesheet" href="/css/pure-min.css">
@@ -69,17 +69,13 @@
             <section class="post">
                 
                 <header class="post-header">
-                    <a href="/post/using-keyword-as-method-in-php/"><h2 class="post-title">Using keyword as method in PHP</h2></a>
+                    <a href="/post/iwan-ponger-nyolong-ayam/"><h2 class="post-title">Iwan Ponger - Nyolong ayam</h2></a>
 
                     <p class="post-meta">
-                        <i>Monday , 19 Mar 2012 20:08:00</i>
+                        <i>Friday , 07 Oct 2016 16:59:00</i>
 
                         
-                        <a class="post-category post-category-design" href="/tags/programming">programming</a>
-                        
-                        <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
-                        
-                        <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                        <a class="post-category post-category-design" href="/tags/opini">opini</a>
                         
                     </p>
                     <hr/>
@@ -87,82 +83,46 @@
                 
 
                 <div class="post-description">
-                    <p>As we know, we can&rsquo;t use keyword like if, while in common language programming
-as function, method or variables, neither does in PHP Programming. Last time,
-i agree with this condition, but when i learn about Object Oriented
-Programming i found a way how to make this is possible, i&rsquo;ve got a trick how
-to make keyword as a method or function (as a variable we can do that easily)
-in PHP Programming.</p>
+                    <p>Ketika masa remaja dulu saya mempunyai teman yang benar-benar sangat bangsat
+hampir semua kejahatan baik skala kecil atau besar pernah dia lakukan, misalkan
+mabok, ngerjain teman sampai merampok toko di pasar.
+Namanya Iwan tapi sering dipanggil &ldquo;ponger&rdquo;, yang diambil dari nama anjingnya.</p>
 
-<p><em><strong>How to do that?</strong></em></p>
+<p>Salah satu agenda yang sering saya lakukan khususnya malam minggu adalah
+begadang bersama sambil masak-masak atau istilah waktu itu &ldquo;tanak-tanak&rdquo;,
+yang hampir semua bahannya adalah hasil nyuri baik dari pasar atau dari
+rumah warga. Untuk proses pencurian bahan-bahan ini kita melakukan bergantian.</p>
 
-<p>In PHP Programming there a feature in OOP, as known as with <a href="http://php.net/manual/en/language.oop5.magic.php">magic
-method</a>, with this feature
-we can do a &ldquo;magic&rdquo; in PHP. For completed information about it you can click
-that link.</p>
+<p>Ada suatu moment saya dan Iwan kebagian untuk mencuri ayam, dan kami melakukan
+proses ini dengan pembagian tugas dimana saya sebagai pengawas dan pembawa ayam
+hasil curian dan dia sebagai eksekutor yang tugasnya masuk ke dalam kandang dan
+menangkap ayam.</p>
 
-<p><em><strong>Keyword as Function.</strong></em></p>
+<p>Sebagai penjual sate ayam tentu dia sudah sangat paham bagaimana menangkap ayam
+dengan sangat tenang, tapi untuk mencuri dia melakukannya dengan sangat rapi.</p>
 
-<p>Based on Php Manual about
-<a href="http://www.blogger.com/php.net/manual/en/reserved.keywords.php">keyword</a>, we
-can&rsquo;t use keyword as function, so if we coding like this, Php will show an
-error like this.</p>
+<p>Iwan: <strong>Waang tunggu dilua bia den maambiak ayam</strong> (Lu tunggu diluar biar gw yang
+        ambil ayamnya)</p>
 
-<p><img src="http://4.bp.blogspot.com/-ljAkUiIgeUw/T2cdrmIkc9I/AAAAAAAAAsA/Deb6r4ipVz4/
-s640/Screenshot+at+2012-03-19+18:49:58.png" alt="" /></p>
+<p>Saya: Oke</p>
 
-<p>while as a function.</p>
+<p>1-2 menit kemudian dari dalam kandang dia langsung memberikan beberapa ekor ayam
+yang sudah mati dari dalam kandang, saya sangat heran, ini ayam diapain sampai
+benar-benar tidak bergerak sama sekali, kalau tidak salah ada sekitar 3 ekor
+ayam.</p>
 
-<p>And, how to use it (or other keywords) as function? We can&rsquo;t do that but, we
-can use it as a string in a variable with function create_function(). This is
-sample.</p>
+<p>Setelah semua selesai kami bergegas untuk kabur, dan ditengah jalan saya
+bertanya:</p>
 
-<pre><code>$if = '';  
-$if = create_function ('$var', 'return (bool)$var;');  
+<p>Saya: <strong>Ang pangaan ayam nyo nger</strong> (Lu apain ayamnya nger)</p>
 
-var_dump ( $if(true));  
-</code></pre>
+<p>Iwan: <strong>Den puta liyia nyo</strong> (Lehernya gw putar)</p>
 
-<p><em><strong>Keyword as Method.</strong></em><br />
-Using keyword in method will give an error like above sample, we can use a
-trik like above, or we can use magic call with <a href="http://id.php.net/manu
-al/en/language.oop5.overloading.php#object.call">__call</a> or <a href="http://id.p
-hp.net/manual/en/language.oop5.overloading.php#object.callStatic">__callStatic</a>. First time
-this is failure example.</p>
+<p>Saya: Haaah..</p>
 
-<pre><code>class Keyword {  
-    public function if ($var) {  
-        return (bool)$var;  
-    }  
-}  
-
-$key = new KeyWord();  // got error here..  
-$key-&gt;if (true;)  
-</code></pre>
-
-<p>And this is solution to do that.</p>
-
-<pre><code>class KeyWord {  
-    public function __call ($name, $argument) {  
-        echo &quot;You call $name with arguments: &quot;. print_r ($argument, true);  
-    }  
-    public static function __callStatic ($name, $argument) {  
-        echo &quot;You call statically $name with argument: &quot;. print_r ($argument, true);  
-    }  
-}  
-
-$x = new KeyWord();  
-
-$x-&gt;static (1,2);  
-
-KeyWord::unknownStaticMethod(1,2,3);  
-
-?&gt;  
-</code></pre>
-
-<p>Now calling method with the keyword..</p>
-
-<p>:)</p>
+<p>Ternyata dia memutar leher ayam agar ayamnya mati dan tidak mengeluarkan sama
+sekali dan dia melakukan itu dengan sangat santai bahkan setelah saya tanya dia
+juga terlihat santai. :))</p>
 
                 </div>
             </section>
@@ -171,12 +131,10 @@ KeyWord::unknownStaticMethod(1,2,3);
             <div class="nextprev pure-g">
                 <div class="pure-u-1-2 prev">
                     
-                        <a title="Previous post" href="http://blog.aredhi.com/post/default-value-for-return/">Default value for return</a>
-                    
                 </div>
                 <div class="pure-u-1-2 next">
                     
-                        <a title="Next post" href="http://blog.aredhi.com/post/php-menghitung-lama-eksekusi-sebuah-skrip/">PHP: Menghitung lama eksekusi sebuah skrip</a>
+                        <a title="Next post" href="http://blog.aredhi.com/post/kawan-aku-ngantuk/">kawan aku ngantuk</a>
                     
                 </div>
             </div>
