@@ -6,7 +6,33 @@
     <language>en-US</language>
     <author>Novi Ardi</author>
     <rights>Copyright (c) 2015, Novi Ardi; all rights reserved.</rights>
-    <updated>Sun, 09 Oct 2016 11:42:29 WIB</updated>
+    <updated>Tue, 18 Oct 2016 19:53:23 WIB</updated>
+    
+    <item>
+      <title>karma dan recursive</title>
+      <link>http://blog.aredhi.com/post/karma-dan-recursive/</link>
+      <pubDate>Tue, 18 Oct 2016 19:53:23 WIB</pubDate>
+      <author>Novi Ardi</author>
+      <guid>http://blog.aredhi.com/post/karma-dan-recursive/</guid>
+      <description>&lt;p&gt;Hari ini ketika antri sedang ambil wudhu, ada 1 teman yang antri di depan saya,
+sambil bercanda dan berbicara dengan teman yang ada didepan pelan-pelan saya
+&lt;em&gt;nyoba nyalip&lt;/em&gt; dan tentu saja teman saya sadar, ketika tiba giliran teman yang
+di depan saya ambil wudhu dan datang satu orang teman yang ikutan antri di
+belakang saya dan dia melakukan apa yang saya lakukan terhadap teman saya
+sebelumnya, dan seketika saya tertawa sambil berkata bahwa saya juga melakukan
+hal yang sama.&lt;/p&gt;
+
+&lt;p&gt;Tiba-tiba teringat kalo saya kena karma terhadap apa yang saya lakukan
+sebelumnya, saya mulai berpikir kalau karma itu benar-benar terjadi persis sama
+dengan yang dilakukan oleh pelakunya berarti akan terjadi pengulangan tanpa
+henti, kalau dalam istilah &lt;em&gt;computer&lt;/em&gt; disebut &lt;em&gt;loop recursion&lt;/em&gt;. Misalkan saya
+memukul seseorang, kemudian saya kena karma dipukul oleh orang lain yang artinya
+orang yang memukul saya juga akan dipukul oleh orang lainnya, dan ini akan terus
+berlanjut tanpa henti.&lt;/p&gt;
+
+&lt;p&gt;Sepertinya saya tidak paham apa arti sebenarnya karma. :)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iwan ponger membela agama</title>
@@ -515,29 +541,6 @@ menggunakan perintah &lt;code&gt;pkill&lt;/code&gt;, berikut contohnya:&lt;/p&gt
 &lt;strong&gt;-STOP&lt;/strong&gt; dan &lt;strong&gt;-CONT&lt;/strong&gt; untuk melanjutkan kembali.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;Referensi: http://www.cybercity.biz&lt;/code&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Add shortcut with lxde or openbox</title>
-      <link>http://blog.aredhi.com/post/add-shortcut-with-openbox/</link>
-      <pubDate>Tue, 13 Jan 2015 06:13:59 WIB</pubDate>
-      <author>Novi Ardi</author>
-      <guid>http://blog.aredhi.com/post/add-shortcut-with-openbox/</guid>
-      <description>
-
-&lt;p&gt;Edit file &lt;strong&gt;$HOME/.config/openbox/lxde-rc.xml&lt;/strong&gt; and then add your shortcut in.&lt;/p&gt;
-
-&lt;h2 id=&#34;example:1f01811bf99e5d5fe3916b9033aff375&#34;&gt;Example&lt;/h2&gt;
-
-&lt;p&gt;Set &lt;code&gt;Control+Winkey+F12&lt;/code&gt; as shortcut for &lt;code&gt;vim&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;keybind key=&amp;quot;C-W-F12&amp;quot;&amp;gt;
-    &amp;lt;action name=&amp;quot;Execute&amp;quot;&amp;gt;
-        &amp;lt;command&amp;gt;/usr/local/bin/grkill&amp;lt;/command&amp;gt;
-    &amp;lt;/action&amp;gt;
-&amp;lt;/keybind&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

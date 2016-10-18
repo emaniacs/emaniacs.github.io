@@ -79,6 +79,34 @@
                         
                         <section class="post">
                             <header class="post-header">
+                                <a href="/post/panada-hello-world/"><h2 class="post-title">Panada: Hello World</h2></a>
+
+                                <p class="post-meta">
+                                    <i>Thursday , 09 Jun 2011 06:09:00</i>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/panada">panada</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming-web">programming web</a>
+                                    
+                                    <a class="post-category post-category-design" href="/tags/programming-php">programming php</a>
+                                    
+                                </p>
+                            </header>
+
+                            <div class="post-description">
+                                <p>
+                                    Setelah sukses melakukan instalasi Panada sekarang saya mo bikin sebuah tutorial untuk menampilkan hello world menggunakan Panada. Buatlah dua(2) buah file masing-masing di apps/controller/helloworld.php dan _apps/view/hworld.php _kemudian edit file tersebut seperti ini apps/controller/helloworld.php class Controller_helloworld extends Panada { function __construct() { parent::__construct(); } function index() { // data yang akan dikirim ke view $data = array ( 'title' =&gt; 'Panada Framework', 'h1' =&gt; 'Hello, world with Panada' ); // tampilkan view $this-&gt;view_hworld($data); } } ?&gt; apps/view/hworld.php # Tampilan HTML program bisa dilihat _/index.php/helloworld _, sesuaikan __ dengan instalan panada di komputer anda.
+                                </p>
+                                
+                                <div class="read-more-link">
+                                    <a href="/post/panada-hello-world/">Read More…</a>
+                                </div>
+                                
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <header class="post-header">
                                 <a href="/post/setting-nginx-dan-php/"><h2 class="post-title">Setting Nginx dan PHP</h2></a>
 
                                 <p class="post-meta">
@@ -339,33 +367,9 @@
                             </div>
                         </section>
                         
-                        <section class="post">
-                            <header class="post-header">
-                                <a href="/post/emacs-color-theme-new-theme/"><h2 class="post-title">Emacs Color Theme ( new Theme )</h2></a>
-
-                                <p class="post-meta">
-                                    <i>Monday , 11 Apr 2011 23:09:00</i>
-                                    
-                                    <a class="post-category post-category-design" href="/tags/gnu-emacs">gnu emacs</a>
-                                    
-                                </p>
-                            </header>
-
-                            <div class="post-description">
-                                <p>
-                                    Setelah lelah membaca buku, capek mengetik kode ane bingung mau ngapain, trus coba jalan-jalan http://www.emacswiki.org/ trus kesasar di bagian Color Theme, ternyata banyak banget tema untuk Emacs. Akhirnya mutusin untuk coba ganti tema Emacs, dengan nuansa gelap, karena sebelumnya warna tema Emacs ane, berwarna cerah. Secara default jika download color-theme pun telah tersedia berbagai tema, yang bisa langsung dipakai. Cara Instalasai Tema. Download color-theme.el disitus resminya http://www.nongnu.org/color-theme/ atau bisa langsung download disini, http://download.savannah.gnu.org/releases/color-theme/.
-                                </p>
-                                
-                                <div class="read-more-link">
-                                    <a href="/post/emacs-color-theme-new-theme/">Read More…</a>
-                                </div>
-                                
-                            </div>
-                        </section>
-                        
 
                         <div class="pagination">
-                            <span class="info">101 posts</span>
+                            <span class="info">102 posts</span>
 
                             
                                 
@@ -435,7 +439,7 @@
                 <a href="http://github.com/emaniacs" class="icons pure-menu-link fa fa-github"></a></li>
             
         </ul>
-        <p class="last-update"> Last update 2016-10-09 11:42:29 &#43;0700 WIB</p>
+        <p class="last-update"> Last update 2016-10-18 19:53:23 &#43;0700 WIB</p>
     </div>
 </div>
 
